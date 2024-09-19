@@ -4,10 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**device** | [**\OpenAPI\Client\Model\BriefDeviceRequest**](BriefDeviceRequest.md) |  |
-**module** | [**\OpenAPI\Client\Model\BriefModuleRequest**](BriefModuleRequest.md) |  | [optional]
+**device** | [**\OpenAPI\Client\Model\DeviceRequest**](DeviceRequest.md) |  |
 **name** | **string** |  |
-**installed_module** | [**\OpenAPI\Client\Model\BriefModuleRequest**](BriefModuleRequest.md) |  | [optional]
+**installed_module** | [**\OpenAPI\Client\Model\ModuleRequest**](ModuleRequest.md) |  | [optional]
 **label** | **string** | Physical label | [optional]
 **position** | **string** | Identifier to reference when renaming installed components | [optional]
 **description** | **string** |  | [optional]

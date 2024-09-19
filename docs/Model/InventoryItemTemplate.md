@@ -7,12 +7,12 @@ Name | Type | Description | Notes
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**device_type** | [**\OpenAPI\Client\Model\BriefDeviceType**](BriefDeviceType.md) |  |
+**device_type** | [**\OpenAPI\Client\Model\DeviceType**](DeviceType.md) |  |
 **parent** | **int** |  | [optional]
 **name** | **string** | {module} is accepted as a substitution for the module bay position when attached to a module type. |
 **label** | **string** | Physical label | [optional]
-**role** | [**\OpenAPI\Client\Model\BriefInventoryItemRole**](BriefInventoryItemRole.md) |  | [optional]
-**manufacturer** | [**\OpenAPI\Client\Model\BriefManufacturer**](BriefManufacturer.md) |  | [optional]
+**role** | [**\OpenAPI\Client\Model\InventoryItemRole**](InventoryItemRole.md) |  | [optional]
+**manufacturer** | [**\OpenAPI\Client\Model\Manufacturer**](Manufacturer.md) |  | [optional]
 **part_id** | **string** | Manufacturer-assigned part identifier | [optional]
 **description** | **string** |  | [optional]
 **component_type** | **string** |  | [optional]

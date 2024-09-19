@@ -6,9 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**virtual_machine** | [**\OpenAPI\Client\Model\BriefVirtualMachine**](BriefVirtualMachine.md) |  |
+**virtual_machine** | [**\OpenAPI\Client\Model\VirtualMachine**](VirtualMachine.md) |  |
 **name** | **string** |  |
 **description** | **string** |  | [optional]
 **size** | **int** |  |

@@ -6,7 +6,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
 **assigned_object_type** | **string** |  |
 **assigned_object_id** | **int** |  |

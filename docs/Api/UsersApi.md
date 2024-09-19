@@ -1,6 +1,6 @@
 # OpenAPI\Client\UsersApi
 
-All URIs are relative to https://demo.netbox.dev/api/schema, except if the operation defines another base path.
+All URIs are relative to https://netbox.demodash.at/api/schema, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
@@ -444,7 +444,7 @@ void (empty response body)
 ## `usersGroupsList()`
 
 ```php
-usersGroupsList($description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $limit, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $notification_group_id, $notification_group_id__n, $offset, $ordering, $permission_id, $permission_id__n, $q, $user_id, $user_id__n): \OpenAPI\Client\Model\PaginatedGroupList
+usersGroupsList($description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $limit, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $permission_id, $permission_id__n, $q, $user_id, $user_id__n): \OpenAPI\Client\Model\PaginatedGroupList
 ```
 
 
@@ -505,8 +505,6 @@ $name__nic = array('name__nic_example'); // string[]
 $name__nie = array('name__nie_example'); // string[]
 $name__niew = array('name__niew_example'); // string[]
 $name__nisw = array('name__nisw_example'); // string[]
-$notification_group_id = array(56); // int[] | Notification group (ID)
-$notification_group_id__n = array(56); // int[] | Notification group (ID)
 $offset = 56; // int | The initial index from which to return the results.
 $ordering = 'ordering_example'; // string | Which field to use when ordering the results.
 $permission_id = array(56); // int[] | Permission (ID)
@@ -516,7 +514,7 @@ $user_id = array(56); // int[] | User (ID)
 $user_id__n = array(56); // int[] | User (ID)
 
 try {
-    $result = $apiInstance->usersGroupsList($description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $limit, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $notification_group_id, $notification_group_id__n, $offset, $ordering, $permission_id, $permission_id__n, $q, $user_id, $user_id__n);
+    $result = $apiInstance->usersGroupsList($description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $limit, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $permission_id, $permission_id__n, $q, $user_id, $user_id__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UsersApi->usersGroupsList: ', $e->getMessage(), PHP_EOL;
@@ -557,8 +555,6 @@ try {
 | **name__nie** | [**string[]**](../Model/string.md)|  | [optional] |
 | **name__niew** | [**string[]**](../Model/string.md)|  | [optional] |
 | **name__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **notification_group_id** | [**int[]**](../Model/int.md)| Notification group (ID) | [optional] |
-| **notification_group_id__n** | [**int[]**](../Model/int.md)| Notification group (ID) | [optional] |
 | **offset** | **int**| The initial index from which to return the results. | [optional] |
 | **ordering** | **string**| Which field to use when ordering the results. | [optional] |
 | **permission_id** | [**int[]**](../Model/int.md)| Permission (ID) | [optional] |
@@ -2620,7 +2616,7 @@ void (empty response body)
 ## `usersUsersList()`
 
 ```php
-usersUsersList($date_joined, $date_joined__empty, $date_joined__gt, $date_joined__gte, $date_joined__lt, $date_joined__lte, $date_joined__n, $email, $email__empty, $email__ic, $email__ie, $email__iew, $email__isw, $email__n, $email__nic, $email__nie, $email__niew, $email__nisw, $first_name, $first_name__empty, $first_name__ic, $first_name__ie, $first_name__iew, $first_name__isw, $first_name__n, $first_name__nic, $first_name__nie, $first_name__niew, $first_name__nisw, $group, $group__n, $group_id, $group_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $is_active, $is_staff, $is_superuser, $last_login, $last_login__empty, $last_login__gt, $last_login__gte, $last_login__lt, $last_login__lte, $last_login__n, $last_name, $last_name__empty, $last_name__ic, $last_name__ie, $last_name__iew, $last_name__isw, $last_name__n, $last_name__nic, $last_name__nie, $last_name__niew, $last_name__nisw, $limit, $notification_group_id, $notification_group_id__n, $offset, $ordering, $permission_id, $permission_id__n, $q, $username, $username__empty, $username__ic, $username__ie, $username__iew, $username__isw, $username__n, $username__nic, $username__nie, $username__niew, $username__nisw): \OpenAPI\Client\Model\PaginatedUserList
+usersUsersList($date_joined, $date_joined__empty, $date_joined__gt, $date_joined__gte, $date_joined__lt, $date_joined__lte, $date_joined__n, $email, $email__empty, $email__ic, $email__ie, $email__iew, $email__isw, $email__n, $email__nic, $email__nie, $email__niew, $email__nisw, $first_name, $first_name__empty, $first_name__ic, $first_name__ie, $first_name__iew, $first_name__isw, $first_name__n, $first_name__nic, $first_name__nie, $first_name__niew, $first_name__nisw, $group, $group__n, $group_id, $group_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $is_active, $is_staff, $is_superuser, $last_login, $last_login__empty, $last_login__gt, $last_login__gte, $last_login__lt, $last_login__lte, $last_login__n, $last_name, $last_name__empty, $last_name__ic, $last_name__ie, $last_name__iew, $last_name__isw, $last_name__n, $last_name__nic, $last_name__nie, $last_name__niew, $last_name__nisw, $limit, $offset, $ordering, $permission_id, $permission_id__n, $q, $username, $username__empty, $username__ic, $username__ie, $username__iew, $username__isw, $username__n, $username__nic, $username__nie, $username__niew, $username__nisw): \OpenAPI\Client\Model\PaginatedUserList
 ```
 
 
@@ -2713,8 +2709,6 @@ $last_name__nie = array('last_name__nie_example'); // string[]
 $last_name__niew = array('last_name__niew_example'); // string[]
 $last_name__nisw = array('last_name__nisw_example'); // string[]
 $limit = 56; // int | Number of results to return per page.
-$notification_group_id = array(56); // int[] | Notification group (ID)
-$notification_group_id__n = array(56); // int[] | Notification group (ID)
 $offset = 56; // int | The initial index from which to return the results.
 $ordering = 'ordering_example'; // string | Which field to use when ordering the results.
 $permission_id = array(56); // int[] | Permission (ID)
@@ -2733,7 +2727,7 @@ $username__niew = array('username__niew_example'); // string[]
 $username__nisw = array('username__nisw_example'); // string[]
 
 try {
-    $result = $apiInstance->usersUsersList($date_joined, $date_joined__empty, $date_joined__gt, $date_joined__gte, $date_joined__lt, $date_joined__lte, $date_joined__n, $email, $email__empty, $email__ic, $email__ie, $email__iew, $email__isw, $email__n, $email__nic, $email__nie, $email__niew, $email__nisw, $first_name, $first_name__empty, $first_name__ic, $first_name__ie, $first_name__iew, $first_name__isw, $first_name__n, $first_name__nic, $first_name__nie, $first_name__niew, $first_name__nisw, $group, $group__n, $group_id, $group_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $is_active, $is_staff, $is_superuser, $last_login, $last_login__empty, $last_login__gt, $last_login__gte, $last_login__lt, $last_login__lte, $last_login__n, $last_name, $last_name__empty, $last_name__ic, $last_name__ie, $last_name__iew, $last_name__isw, $last_name__n, $last_name__nic, $last_name__nie, $last_name__niew, $last_name__nisw, $limit, $notification_group_id, $notification_group_id__n, $offset, $ordering, $permission_id, $permission_id__n, $q, $username, $username__empty, $username__ic, $username__ie, $username__iew, $username__isw, $username__n, $username__nic, $username__nie, $username__niew, $username__nisw);
+    $result = $apiInstance->usersUsersList($date_joined, $date_joined__empty, $date_joined__gt, $date_joined__gte, $date_joined__lt, $date_joined__lte, $date_joined__n, $email, $email__empty, $email__ic, $email__ie, $email__iew, $email__isw, $email__n, $email__nic, $email__nie, $email__niew, $email__nisw, $first_name, $first_name__empty, $first_name__ic, $first_name__ie, $first_name__iew, $first_name__isw, $first_name__n, $first_name__nic, $first_name__nie, $first_name__niew, $first_name__nisw, $group, $group__n, $group_id, $group_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $is_active, $is_staff, $is_superuser, $last_login, $last_login__empty, $last_login__gt, $last_login__gte, $last_login__lt, $last_login__lte, $last_login__n, $last_name, $last_name__empty, $last_name__ic, $last_name__ie, $last_name__iew, $last_name__isw, $last_name__n, $last_name__nic, $last_name__nie, $last_name__niew, $last_name__nisw, $limit, $offset, $ordering, $permission_id, $permission_id__n, $q, $username, $username__empty, $username__ic, $username__ie, $username__iew, $username__isw, $username__n, $username__nic, $username__nie, $username__niew, $username__nisw);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UsersApi->usersUsersList: ', $e->getMessage(), PHP_EOL;
@@ -2806,8 +2800,6 @@ try {
 | **last_name__niew** | [**string[]**](../Model/string.md)|  | [optional] |
 | **last_name__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **limit** | **int**| Number of results to return per page. | [optional] |
-| **notification_group_id** | [**int[]**](../Model/int.md)| Notification group (ID) | [optional] |
-| **notification_group_id__n** | [**int[]**](../Model/int.md)| Notification group (ID) | [optional] |
 | **offset** | **int**| The initial index from which to return the results. | [optional] |
 | **ordering** | **string**| Which field to use when ordering the results. | [optional] |
 | **permission_id** | [**int[]**](../Model/int.md)| Permission (ID) | [optional] |

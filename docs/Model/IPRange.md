@@ -6,16 +6,15 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
 **family** | [**\OpenAPI\Client\Model\AggregateFamily**](AggregateFamily.md) |  |
 **start_address** | **string** |  |
 **end_address** | **string** |  |
 **size** | **int** |  | [readonly]
-**vrf** | [**\OpenAPI\Client\Model\BriefVRF**](BriefVRF.md) |  | [optional]
-**tenant** | [**\OpenAPI\Client\Model\BriefTenant**](BriefTenant.md) |  | [optional]
+**vrf** | [**\OpenAPI\Client\Model\VRF**](VRF.md) |  | [optional]
+**tenant** | [**\OpenAPI\Client\Model\Tenant**](Tenant.md) |  | [optional]
 **status** | [**\OpenAPI\Client\Model\IPRangeStatus**](IPRangeStatus.md) |  | [optional]
-**role** | [**\OpenAPI\Client\Model\BriefRole**](BriefRole.md) |  | [optional]
+**role** | [**\OpenAPI\Client\Model\Role**](Role.md) |  | [optional]
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTag[]**](NestedTag.md) |  | [optional]

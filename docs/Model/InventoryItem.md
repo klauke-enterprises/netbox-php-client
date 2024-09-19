@@ -6,14 +6,13 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**device** | [**\OpenAPI\Client\Model\BriefDevice**](BriefDevice.md) |  |
+**device** | [**\OpenAPI\Client\Model\Device**](Device.md) |  |
 **parent** | **int** |  | [optional]
 **name** | **string** |  |
 **label** | **string** | Physical label | [optional]
-**role** | [**\OpenAPI\Client\Model\BriefInventoryItemRole**](BriefInventoryItemRole.md) |  | [optional]
-**manufacturer** | [**\OpenAPI\Client\Model\BriefManufacturer**](BriefManufacturer.md) |  | [optional]
+**role** | [**\OpenAPI\Client\Model\InventoryItemRole**](InventoryItemRole.md) |  | [optional]
+**manufacturer** | [**\OpenAPI\Client\Model\Manufacturer**](Manufacturer.md) |  | [optional]
 **part_id** | **string** | Manufacturer-assigned part identifier | [optional]
 **serial** | **string** |  | [optional]
 **asset_tag** | **string** | A unique tag used to identify this item | [optional]

@@ -1,6 +1,6 @@
 # OpenAPI\Client\TenancyApi
 
-All URIs are relative to https://demo.netbox.dev/api/schema, except if the operation defines another base path.
+All URIs are relative to https://netbox.demodash.at/api/schema, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
@@ -437,10 +437,10 @@ $created__lt = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $created__lte = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $created__n = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $created_by_request = 'created_by_request_example'; // string
-$group = array('group_example'); // string[]
-$group__n = array('group__n_example'); // string[]
-$group_id = array('group_id_example'); // string[]
-$group_id__n = array('group_id__n_example'); // string[]
+$group = array(56); // int[] | Contact group (slug)
+$group__n = array(56); // int[] | Contact group (slug)
+$group_id = array(56); // int[] | Contact group (ID)
+$group_id__n = array(56); // int[] | Contact group (ID)
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -503,10 +503,10 @@ try {
 | **created__lte** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **created__n** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **created_by_request** | **string**|  | [optional] |
-| **group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **group** | [**int[]**](../Model/int.md)| Contact group (slug) | [optional] |
+| **group__n** | [**int[]**](../Model/int.md)| Contact group (slug) | [optional] |
+| **group_id** | [**int[]**](../Model/int.md)| Contact group (ID) | [optional] |
+| **group_id__n** | [**int[]**](../Model/int.md)| Contact group (ID) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -1136,10 +1136,10 @@ $apiInstance = new OpenAPI\Client\Api\TenancyApi(
     new GuzzleHttp\Client(),
     $config
 );
-$ancestor = array('ancestor_example'); // string[]
-$ancestor__n = array('ancestor__n_example'); // string[]
-$ancestor_id = array('ancestor_id_example'); // string[]
-$ancestor_id__n = array('ancestor_id__n_example'); // string[]
+$ancestor = array(56); // int[] | Contact group (slug)
+$ancestor__n = array(56); // int[] | Contact group (slug)
+$ancestor_id = array(56); // int[] | Contact group (ID)
+$ancestor_id__n = array(56); // int[] | Contact group (ID)
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $created__empty = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $created__gt = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -1220,10 +1220,10 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **ancestor** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **ancestor** | [**int[]**](../Model/int.md)| Contact group (slug) | [optional] |
+| **ancestor__n** | [**int[]**](../Model/int.md)| Contact group (slug) | [optional] |
+| **ancestor_id** | [**int[]**](../Model/int.md)| Contact group (ID) | [optional] |
+| **ancestor_id__n** | [**int[]**](../Model/int.md)| Contact group (ID) | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **created__empty** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **created__gt** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -2651,10 +2651,10 @@ $email__nic = array('email__nic_example'); // string[]
 $email__nie = array('email__nie_example'); // string[]
 $email__niew = array('email__niew_example'); // string[]
 $email__nisw = array('email__nisw_example'); // string[]
-$group = array('group_example'); // string[]
-$group__n = array('group__n_example'); // string[]
-$group_id = array('group_id_example'); // string[]
-$group_id__n = array('group_id__n_example'); // string[]
+$group = array(56); // int[] | Contact group (slug)
+$group__n = array(56); // int[] | Contact group (slug)
+$group_id = array(56); // int[] | Contact group (ID)
+$group_id__n = array(56); // int[] | Contact group (ID)
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -2775,10 +2775,10 @@ try {
 | **email__nie** | [**string[]**](../Model/string.md)|  | [optional] |
 | **email__niew** | [**string[]**](../Model/string.md)|  | [optional] |
 | **email__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **group** | [**int[]**](../Model/int.md)| Contact group (slug) | [optional] |
+| **group__n** | [**int[]**](../Model/int.md)| Contact group (slug) | [optional] |
+| **group_id** | [**int[]**](../Model/int.md)| Contact group (ID) | [optional] |
+| **group_id__n** | [**int[]**](../Model/int.md)| Contact group (ID) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -3435,10 +3435,10 @@ $apiInstance = new OpenAPI\Client\Api\TenancyApi(
     new GuzzleHttp\Client(),
     $config
 );
-$ancestor = array('ancestor_example'); // string[]
-$ancestor__n = array('ancestor__n_example'); // string[]
-$ancestor_id = array('ancestor_id_example'); // string[]
-$ancestor_id__n = array('ancestor_id__n_example'); // string[]
+$ancestor = array(56); // int[] | Tenant group (slug)
+$ancestor__n = array(56); // int[] | Tenant group (slug)
+$ancestor_id = array(56); // int[] | Tenant group (ID)
+$ancestor_id__n = array(56); // int[] | Tenant group (ID)
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $created__empty = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $created__gt = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -3519,10 +3519,10 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **ancestor** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **ancestor** | [**int[]**](../Model/int.md)| Tenant group (slug) | [optional] |
+| **ancestor__n** | [**int[]**](../Model/int.md)| Tenant group (slug) | [optional] |
+| **ancestor_id** | [**int[]**](../Model/int.md)| Tenant group (ID) | [optional] |
+| **ancestor_id__n** | [**int[]**](../Model/int.md)| Tenant group (ID) | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **created__empty** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **created__gt** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -4182,8 +4182,8 @@ $apiInstance = new OpenAPI\Client\Api\TenancyApi(
 );
 $contact = array(56); // int[] | Contact
 $contact__n = array(56); // int[] | Contact
-$contact_group = array('contact_group_example'); // string[]
-$contact_group__n = array('contact_group__n_example'); // string[]
+$contact_group = array(56); // int[] | Contact group
+$contact_group__n = array(56); // int[] | Contact group
 $contact_role = array(56); // int[] | Contact Role
 $contact_role__n = array(56); // int[] | Contact Role
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -4205,10 +4205,10 @@ $description__nic = array('description__nic_example'); // string[]
 $description__nie = array('description__nie_example'); // string[]
 $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
-$group = array('group_example'); // string[]
-$group__n = array('group__n_example'); // string[]
-$group_id = array('group_id_example'); // string[]
-$group_id__n = array('group_id__n_example'); // string[]
+$group = array(56); // int[] | Tenant group (slug)
+$group__n = array(56); // int[] | Tenant group (slug)
+$group_id = array(56); // int[] | Tenant group (ID)
+$group_id__n = array(56); // int[] | Tenant group (ID)
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -4268,8 +4268,8 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **contact** | [**int[]**](../Model/int.md)| Contact | [optional] |
 | **contact__n** | [**int[]**](../Model/int.md)| Contact | [optional] |
-| **contact_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **contact_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **contact_group** | [**int[]**](../Model/int.md)| Contact group | [optional] |
+| **contact_group__n** | [**int[]**](../Model/int.md)| Contact group | [optional] |
 | **contact_role** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **contact_role__n** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -4291,10 +4291,10 @@ try {
 | **description__nie** | [**string[]**](../Model/string.md)|  | [optional] |
 | **description__niew** | [**string[]**](../Model/string.md)|  | [optional] |
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **group** | [**int[]**](../Model/int.md)| Tenant group (slug) | [optional] |
+| **group__n** | [**int[]**](../Model/int.md)| Tenant group (slug) | [optional] |
+| **group_id** | [**int[]**](../Model/int.md)| Tenant group (ID) | [optional] |
+| **group_id__n** | [**int[]**](../Model/int.md)| Tenant group (ID) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |

@@ -4,8 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**device_type** | [**\OpenAPI\Client\Model\BriefDeviceTypeRequest**](BriefDeviceTypeRequest.md) |  | [optional]
-**module_type** | [**\OpenAPI\Client\Model\BriefModuleTypeRequest**](BriefModuleTypeRequest.md) |  | [optional]
+**device_type** | [**\OpenAPI\Client\Model\DeviceTypeRequest**](DeviceTypeRequest.md) |  |
 **name** | **string** | {module} is accepted as a substitution for the module bay position when attached to a module type. |
 **label** | **string** | Physical label | [optional]
 **position** | **string** | Identifier to reference when renaming installed components | [optional]

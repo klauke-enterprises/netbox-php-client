@@ -6,11 +6,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
 **asn** | **int** | 16- or 32-bit autonomous system number |
-**rir** | [**\OpenAPI\Client\Model\BriefRIR**](BriefRIR.md) |  | [optional]
-**tenant** | [**\OpenAPI\Client\Model\BriefTenant**](BriefTenant.md) |  | [optional]
+**rir** | [**\OpenAPI\Client\Model\RIR**](RIR.md) |  | [optional]
+**tenant** | [**\OpenAPI\Client\Model\Tenant**](Tenant.md) |  | [optional]
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTag[]**](NestedTag.md) |  | [optional]

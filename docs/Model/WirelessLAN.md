@@ -6,14 +6,13 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
 **ssid** | **string** |  |
 **description** | **string** |  | [optional]
-**group** | [**\OpenAPI\Client\Model\BriefWirelessLANGroup**](BriefWirelessLANGroup.md) |  | [optional]
+**group** | [**\OpenAPI\Client\Model\WirelessLANGroup**](WirelessLANGroup.md) |  | [optional]
 **status** | [**\OpenAPI\Client\Model\WirelessLANStatus**](WirelessLANStatus.md) |  | [optional]
-**vlan** | [**\OpenAPI\Client\Model\BriefVLAN**](BriefVLAN.md) |  | [optional]
-**tenant** | [**\OpenAPI\Client\Model\BriefTenant**](BriefTenant.md) |  | [optional]
+**vlan** | [**\OpenAPI\Client\Model\VLAN**](VLAN.md) |  | [optional]
+**tenant** | [**\OpenAPI\Client\Model\Tenant**](Tenant.md) |  | [optional]
 **auth_type** | [**\OpenAPI\Client\Model\WirelessLANAuthType**](WirelessLANAuthType.md) |  | [optional]
 **auth_cipher** | [**\OpenAPI\Client\Model\WirelessLANAuthCipher**](WirelessLANAuthCipher.md) |  | [optional]
 **auth_psk** | **string** |  | [optional]

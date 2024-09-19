@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**group** | [**\OpenAPI\Client\Model\BriefFHRPGroup**](BriefFHRPGroup.md) |  |
+**group** | [**\OpenAPI\Client\Model\FHRPGroup**](FHRPGroup.md) |  |
 **interface_type** | **string** |  |
 **interface_id** | **int** |  |
 **interface** | **mixed** |  | [readonly]

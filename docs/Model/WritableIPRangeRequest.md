@@ -6,10 +6,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **start_address** | **string** |  |
 **end_address** | **string** |  |
-**vrf** | [**\OpenAPI\Client\Model\BriefVRFRequest**](BriefVRFRequest.md) |  | [optional]
-**tenant** | [**\OpenAPI\Client\Model\BriefTenantRequest**](BriefTenantRequest.md) |  | [optional]
+**vrf** | [**\OpenAPI\Client\Model\VRFRequest**](VRFRequest.md) |  | [optional]
+**tenant** | [**\OpenAPI\Client\Model\TenantRequest**](TenantRequest.md) |  | [optional]
 **status** | **string** | Operational status of this range  * &#x60;active&#x60; - Active * &#x60;reserved&#x60; - Reserved * &#x60;deprecated&#x60; - Deprecated | [optional]
-**role** | [**\OpenAPI\Client\Model\BriefRoleRequest**](BriefRoleRequest.md) |  | [optional]
+**role** | [**\OpenAPI\Client\Model\RoleRequest**](RoleRequest.md) |  | [optional]
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTagRequest[]**](NestedTagRequest.md) |  | [optional]

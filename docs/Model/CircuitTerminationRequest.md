@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**circuit** | [**\OpenAPI\Client\Model\BriefCircuitRequest**](BriefCircuitRequest.md) |  |
+**circuit** | [**\OpenAPI\Client\Model\CircuitRequest**](CircuitRequest.md) |  |
 **term_side** | **string** | * &#x60;A&#x60; - A * &#x60;Z&#x60; - Z |
-**site** | [**\OpenAPI\Client\Model\BriefSiteRequest**](BriefSiteRequest.md) |  | [optional]
-**provider_network** | [**\OpenAPI\Client\Model\BriefProviderNetworkRequest**](BriefProviderNetworkRequest.md) |  | [optional]
+**site** | [**\OpenAPI\Client\Model\SiteRequest**](SiteRequest.md) |  | [optional]
+**provider_network** | [**\OpenAPI\Client\Model\ProviderNetworkRequest**](ProviderNetworkRequest.md) |  | [optional]
 **port_speed** | **int** | Physical circuit speed | [optional]
 **upstream_speed** | **int** | Upstream speed, if different from port speed | [optional]
 **xconnect_id** | **string** | ID of the local cross-connect | [optional]

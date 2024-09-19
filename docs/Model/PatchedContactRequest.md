@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**group** | [**\OpenAPI\Client\Model\BriefContactGroupRequest**](BriefContactGroupRequest.md) |  | [optional]
+**group** | [**\OpenAPI\Client\Model\ContactGroupRequest**](ContactGroupRequest.md) |  | [optional]
 **name** | **string** |  | [optional]
 **title** | **string** |  | [optional]
 **phone** | **string** |  | [optional]

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **object_type** | **string** |  |
 **object_id** | **int** |  |
 **object** | **mixed** |  | [readonly]
-**user** | [**\OpenAPI\Client\Model\BriefUser**](BriefUser.md) |  |
+**user** | [**\OpenAPI\Client\Model\User**](User.md) |  |
 **created** | **\DateTime** |  | [readonly]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

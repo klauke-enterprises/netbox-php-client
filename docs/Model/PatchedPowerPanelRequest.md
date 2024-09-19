@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**site** | [**\OpenAPI\Client\Model\BriefSiteRequest**](BriefSiteRequest.md) |  | [optional]
-**location** | [**\OpenAPI\Client\Model\BriefLocationRequest**](BriefLocationRequest.md) |  | [optional]
+**site** | [**\OpenAPI\Client\Model\SiteRequest**](SiteRequest.md) |  | [optional]
+**location** | [**\OpenAPI\Client\Model\LocationRequest**](LocationRequest.md) |  | [optional]
 **name** | **string** |  | [optional]
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]

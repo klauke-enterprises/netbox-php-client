@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**l2vpn** | [**\OpenAPI\Client\Model\BriefL2VPNRequest**](BriefL2VPNRequest.md) |  | [optional]
+**l2vpn** | [**\OpenAPI\Client\Model\L2VPNRequest**](L2VPNRequest.md) |  | [optional]
 **assigned_object_type** | **string** |  | [optional]
 **assigned_object_id** | **int** |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTagRequest[]**](NestedTagRequest.md) |  | [optional]

@@ -6,9 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**provider** | [**\OpenAPI\Client\Model\BriefProvider**](BriefProvider.md) |  |
+**provider** | [**\OpenAPI\Client\Model\Provider**](Provider.md) |  |
 **name** | **string** |  | [optional] [default to '']
 **account** | **string** |  |
 **description** | **string** |  | [optional]

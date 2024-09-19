@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **id** | **float** |  | [readonly]
 **name** | **string** |  | [readonly]
 **face** | [**\OpenAPI\Client\Model\RackUnitFace**](RackUnitFace.md) |  |
-**device** | [**\OpenAPI\Client\Model\BriefDevice**](BriefDevice.md) |  | [readonly]
+**device** | [**\OpenAPI\Client\Model\Device**](Device.md) |  | [readonly]
 **occupied** | **bool** |  | [readonly]
 **display** | **string** |  | [readonly]
 

@@ -5,11 +5,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  | [optional]
-**type** | [**\OpenAPI\Client\Model\BriefClusterTypeRequest**](BriefClusterTypeRequest.md) |  | [optional]
-**group** | [**\OpenAPI\Client\Model\BriefClusterGroupRequest**](BriefClusterGroupRequest.md) |  | [optional]
+**type** | [**\OpenAPI\Client\Model\ClusterTypeRequest**](ClusterTypeRequest.md) |  | [optional]
+**group** | [**\OpenAPI\Client\Model\ClusterGroupRequest**](ClusterGroupRequest.md) |  | [optional]
 **status** | **string** | * &#x60;planned&#x60; - Planned * &#x60;staging&#x60; - Staging * &#x60;active&#x60; - Active * &#x60;decommissioning&#x60; - Decommissioning * &#x60;offline&#x60; - Offline | [optional]
-**tenant** | [**\OpenAPI\Client\Model\BriefTenantRequest**](BriefTenantRequest.md) |  | [optional]
-**site** | [**\OpenAPI\Client\Model\BriefSiteRequest**](BriefSiteRequest.md) |  | [optional]
+**tenant** | [**\OpenAPI\Client\Model\TenantRequest**](TenantRequest.md) |  | [optional]
+**site** | [**\OpenAPI\Client\Model\SiteRequest**](SiteRequest.md) |  | [optional]
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTagRequest[]**](NestedTagRequest.md) |  | [optional]

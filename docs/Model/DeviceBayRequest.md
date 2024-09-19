@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**device** | [**\OpenAPI\Client\Model\BriefDeviceRequest**](BriefDeviceRequest.md) |  |
+**device** | [**\OpenAPI\Client\Model\DeviceRequest**](DeviceRequest.md) |  |
 **name** | **string** |  |
 **label** | **string** | Physical label | [optional]
 **description** | **string** |  | [optional]
-**installed_device** | [**\OpenAPI\Client\Model\BriefDeviceRequest**](BriefDeviceRequest.md) |  | [optional]
+**installed_device** | [**\OpenAPI\Client\Model\DeviceRequest**](DeviceRequest.md) |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTagRequest[]**](NestedTagRequest.md) |  | [optional]
 **custom_fields** | **array<string,mixed>** |  | [optional]
 

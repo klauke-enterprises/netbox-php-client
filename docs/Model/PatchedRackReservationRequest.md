@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rack** | [**\OpenAPI\Client\Model\BriefRackRequest**](BriefRackRequest.md) |  | [optional]
+**rack** | [**\OpenAPI\Client\Model\RackRequest**](RackRequest.md) |  | [optional]
 **units** | **int[]** |  | [optional]
-**user** | [**\OpenAPI\Client\Model\BriefUserRequest**](BriefUserRequest.md) |  | [optional]
-**tenant** | [**\OpenAPI\Client\Model\BriefTenantRequest**](BriefTenantRequest.md) |  | [optional]
+**user** | [**\OpenAPI\Client\Model\UserRequest**](UserRequest.md) |  | [optional]
+**tenant** | [**\OpenAPI\Client\Model\TenantRequest**](TenantRequest.md) |  | [optional]
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTagRequest[]**](NestedTagRequest.md) |  | [optional]

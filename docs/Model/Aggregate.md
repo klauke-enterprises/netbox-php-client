@@ -6,12 +6,11 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
 **family** | [**\OpenAPI\Client\Model\AggregateFamily**](AggregateFamily.md) |  |
 **prefix** | **string** |  |
-**rir** | [**\OpenAPI\Client\Model\BriefRIR**](BriefRIR.md) |  |
-**tenant** | [**\OpenAPI\Client\Model\BriefTenant**](BriefTenant.md) |  | [optional]
+**rir** | [**\OpenAPI\Client\Model\RIR**](RIR.md) |  |
+**tenant** | [**\OpenAPI\Client\Model\Tenant**](Tenant.md) |  | [optional]
 **date_added** | **\DateTime** |  | [optional]
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]

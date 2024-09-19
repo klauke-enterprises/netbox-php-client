@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**manufacturer** | [**\OpenAPI\Client\Model\BriefManufacturerRequest**](BriefManufacturerRequest.md) |  | [optional]
-**default_platform** | [**\OpenAPI\Client\Model\BriefPlatformRequest**](BriefPlatformRequest.md) |  | [optional]
+**manufacturer** | [**\OpenAPI\Client\Model\ManufacturerRequest**](ManufacturerRequest.md) |  | [optional]
+**default_platform** | [**\OpenAPI\Client\Model\PlatformRequest**](PlatformRequest.md) |  | [optional]
 **model** | **string** |  | [optional]
 **slug** | **string** |  | [optional]
 **part_number** | **string** | Discrete part number (optional) | [optional]

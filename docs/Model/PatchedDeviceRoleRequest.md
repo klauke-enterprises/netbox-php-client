@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **slug** | **string** |  | [optional]
 **color** | **string** |  | [optional]
 **vm_role** | **bool** | Virtual machines may be assigned to this role | [optional]
-**config_template** | [**\OpenAPI\Client\Model\BriefConfigTemplateRequest**](BriefConfigTemplateRequest.md) |  | [optional]
+**config_template** | [**\OpenAPI\Client\Model\ConfigTemplateRequest**](ConfigTemplateRequest.md) |  | [optional]
 **description** | **string** |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTagRequest[]**](NestedTagRequest.md) |  | [optional]
 **custom_fields** | **array<string,mixed>** |  | [optional]

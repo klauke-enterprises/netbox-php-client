@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 **object_type** | **string** |  |
 **object_id** | **int** |  |
 **object** | **array<string,mixed>** |  | [readonly]
-**contact** | [**\OpenAPI\Client\Model\BriefContact**](BriefContact.md) |  |
-**role** | [**\OpenAPI\Client\Model\BriefContactRole**](BriefContactRole.md) |  | [optional]
-**priority** | [**\OpenAPI\Client\Model\BriefCircuitGroupAssignmentSerializerPriority**](BriefCircuitGroupAssignmentSerializerPriority.md) |  | [optional]
+**contact** | [**\OpenAPI\Client\Model\Contact**](Contact.md) |  |
+**role** | [**\OpenAPI\Client\Model\ContactRole**](ContactRole.md) |  | [optional]
+**priority** | [**\OpenAPI\Client\Model\ContactAssignmentPriority**](ContactAssignmentPriority.md) |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTag[]**](NestedTag.md) |  | [optional]
 **custom_fields** | **array<string,mixed>** |  | [optional]
 **created** | **\DateTime** |  | [readonly]

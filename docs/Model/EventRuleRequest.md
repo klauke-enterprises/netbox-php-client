@@ -6,10 +6,14 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **object_types** | **string[]** |  |
 **name** | **string** |  |
+**type_create** | **bool** | Triggers when a matching object is created. | [optional]
+**type_update** | **bool** | Triggers when a matching object is updated. | [optional]
+**type_delete** | **bool** | Triggers when a matching object is deleted. | [optional]
+**type_job_start** | **bool** | Triggers when a job for a matching object is started. | [optional]
+**type_job_end** | **bool** | Triggers when a job for a matching object terminates. | [optional]
 **enabled** | **bool** |  | [optional]
-**event_types** | **string[]** | The types of event which will trigger this rule. |
 **conditions** | **mixed** | A set of conditions which determine whether the event will be generated. | [optional]
-**action_type** | **string** | * &#x60;webhook&#x60; - Webhook * &#x60;script&#x60; - Script * &#x60;notification&#x60; - Notification |
+**action_type** | **string** | * &#x60;webhook&#x60; - Webhook * &#x60;script&#x60; - Script |
 **action_object_type** | **string** |  |
 **action_object_id** | **int** |  | [optional]
 **description** | **string** |  | [optional]

@@ -6,18 +6,17 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
 **object_type** | **string** |  | [readonly]
 **object_id** | **int** |  | [optional]
 **name** | **string** |  |
-**status** | [**\OpenAPI\Client\Model\BriefJobStatus**](BriefJobStatus.md) |  |
+**status** | [**\OpenAPI\Client\Model\JobStatus**](JobStatus.md) |  |
 **created** | **\DateTime** |  | [readonly]
 **scheduled** | **\DateTime** |  | [optional]
 **interval** | **int** | Recurrence interval (in minutes) | [optional]
 **started** | **\DateTime** |  | [optional]
 **completed** | **\DateTime** |  | [optional]
-**user** | [**\OpenAPI\Client\Model\BriefUser**](BriefUser.md) |  | [readonly]
+**user** | [**\OpenAPI\Client\Model\User**](User.md) |  | [readonly]
 **data** | **mixed** |  | [optional]
 **error** | **string** |  | [readonly]
 **job_id** | **string** |  |

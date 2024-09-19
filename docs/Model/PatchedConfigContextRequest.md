@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **tenant_groups** | **int[]** |  | [optional]
 **tenants** | **int[]** |  | [optional]
 **tags** | **string[]** |  | [optional]
-**data_source** | [**\OpenAPI\Client\Model\BriefDataSourceRequest**](BriefDataSourceRequest.md) |  | [optional]
+**data_source** | [**\OpenAPI\Client\Model\DataSourceRequest**](DataSourceRequest.md) |  | [optional]
 **data** | **mixed** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

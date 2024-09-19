@@ -5,11 +5,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  |
-**device** | [**\OpenAPI\Client\Model\BriefDeviceRequest**](BriefDeviceRequest.md) |  |
+**device** | [**\OpenAPI\Client\Model\DeviceRequest**](DeviceRequest.md) |  |
 **identifier** | **int** |  | [optional]
-**tenant** | [**\OpenAPI\Client\Model\BriefTenantRequest**](BriefTenantRequest.md) |  | [optional]
-**primary_ip4** | [**\OpenAPI\Client\Model\BriefIPAddressRequest**](BriefIPAddressRequest.md) |  | [optional]
-**primary_ip6** | [**\OpenAPI\Client\Model\BriefIPAddressRequest**](BriefIPAddressRequest.md) |  | [optional]
+**tenant** | [**\OpenAPI\Client\Model\TenantRequest**](TenantRequest.md) |  | [optional]
+**primary_ip4** | [**\OpenAPI\Client\Model\IPAddressRequest**](IPAddressRequest.md) |  | [optional]
+**primary_ip6** | [**\OpenAPI\Client\Model\IPAddressRequest**](IPAddressRequest.md) |  | [optional]
 **status** | **string** | * &#x60;active&#x60; - Active * &#x60;planned&#x60; - Planned * &#x60;offline&#x60; - Offline |
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]

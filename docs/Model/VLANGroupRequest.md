@@ -8,6 +8,8 @@ Name | Type | Description | Notes
 **slug** | **string** |  |
 **scope_type** | **string** |  | [optional]
 **scope_id** | **int** |  | [optional]
+**min_vid** | **int** | Lowest permissible ID of a child VLAN | [optional]
+**max_vid** | **int** | Highest permissible ID of a child VLAN | [optional]
 **description** | **string** |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTagRequest[]**](NestedTagRequest.md) |  | [optional]
 **custom_fields** | **array<string,mixed>** |  | [optional]

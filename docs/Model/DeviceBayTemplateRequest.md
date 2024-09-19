@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**device_type** | [**\OpenAPI\Client\Model\BriefDeviceTypeRequest**](BriefDeviceTypeRequest.md) |  |
+**device_type** | [**\OpenAPI\Client\Model\DeviceTypeRequest**](DeviceTypeRequest.md) |  |
 **name** | **string** | {module} is accepted as a substitution for the module bay position when attached to a module type. |
 **label** | **string** | Physical label | [optional]
 **description** | **string** |  | [optional]

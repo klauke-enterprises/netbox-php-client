@@ -1,6 +1,6 @@
 # OpenAPI\Client\VpnApi
 
-All URIs are relative to https://demo.netbox.dev/api/schema, except if the operation defines another base path.
+All URIs are relative to https://netbox.demodash.at/api/schema, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
@@ -432,7 +432,7 @@ void (empty response body)
 ## `vpnIkePoliciesList()`
 
 ```php
-vpnIkePoliciesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $ike_proposal, $ike_proposal__n, $ike_proposal_id, $ike_proposal_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $mode, $mode__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $preshared_key, $preshared_key__ic, $preshared_key__ie, $preshared_key__iew, $preshared_key__isw, $preshared_key__n, $preshared_key__nic, $preshared_key__nie, $preshared_key__niew, $preshared_key__nisw, $q, $tag, $tag__n, $updated_by_request, $version, $version__n): \OpenAPI\Client\Model\PaginatedIKEPolicyList
+vpnIkePoliciesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $ike_proposal, $ike_proposal__n, $ike_proposal_id, $ike_proposal_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $mode, $mode__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $preshared_key, $preshared_key__ic, $preshared_key__ie, $preshared_key__iew, $preshared_key__isw, $preshared_key__n, $preshared_key__nic, $preshared_key__nie, $preshared_key__niew, $preshared_key__nisw, $proposal, $proposal__n, $proposal_id, $proposal_id__n, $q, $tag, $tag__n, $updated_by_request, $version, $version__n): \OpenAPI\Client\Model\PaginatedIKEPolicyList
 ```
 
 
@@ -527,6 +527,10 @@ $preshared_key__nic = 'preshared_key__nic_example'; // string
 $preshared_key__nie = 'preshared_key__nie_example'; // string
 $preshared_key__niew = 'preshared_key__niew_example'; // string
 $preshared_key__nisw = 'preshared_key__nisw_example'; // string
+$proposal = array('proposal_example'); // string[]
+$proposal__n = array('proposal__n_example'); // string[]
+$proposal_id = array(56); // int[]
+$proposal_id__n = array(56); // int[]
 $q = 'q_example'; // string | Search
 $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
@@ -535,7 +539,7 @@ $version = array(56); // int[]
 $version__n = array(56); // int[]
 
 try {
-    $result = $apiInstance->vpnIkePoliciesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $ike_proposal, $ike_proposal__n, $ike_proposal_id, $ike_proposal_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $mode, $mode__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $preshared_key, $preshared_key__ic, $preshared_key__ie, $preshared_key__iew, $preshared_key__isw, $preshared_key__n, $preshared_key__nic, $preshared_key__nie, $preshared_key__niew, $preshared_key__nisw, $q, $tag, $tag__n, $updated_by_request, $version, $version__n);
+    $result = $apiInstance->vpnIkePoliciesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $ike_proposal, $ike_proposal__n, $ike_proposal_id, $ike_proposal_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $mode, $mode__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $preshared_key, $preshared_key__ic, $preshared_key__ie, $preshared_key__iew, $preshared_key__isw, $preshared_key__n, $preshared_key__nic, $preshared_key__nie, $preshared_key__niew, $preshared_key__nisw, $proposal, $proposal__n, $proposal_id, $proposal_id__n, $q, $tag, $tag__n, $updated_by_request, $version, $version__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling VpnApi->vpnIkePoliciesList: ', $e->getMessage(), PHP_EOL;
@@ -610,6 +614,10 @@ try {
 | **preshared_key__nie** | **string**|  | [optional] |
 | **preshared_key__niew** | **string**|  | [optional] |
 | **preshared_key__nisw** | **string**|  | [optional] |
+| **proposal** | [**string[]**](../Model/string.md)|  | [optional] |
+| **proposal__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **proposal_id** | [**int[]**](../Model/int.md)|  | [optional] |
+| **proposal_id__n** | [**int[]**](../Model/int.md)|  | [optional] |
 | **q** | **string**| Search | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -1920,7 +1928,7 @@ void (empty response body)
 ## `vpnIpsecPoliciesList()`
 
 ```php
-vpnIpsecPoliciesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $ipsec_proposal, $ipsec_proposal__n, $ipsec_proposal_id, $ipsec_proposal_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $pfs_group, $pfs_group__n, $q, $tag, $tag__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedIPSecPolicyList
+vpnIpsecPoliciesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $ipsec_proposal, $ipsec_proposal__n, $ipsec_proposal_id, $ipsec_proposal_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $pfs_group, $pfs_group__n, $proposal, $proposal__n, $proposal_id, $proposal_id__n, $q, $tag, $tag__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedIPSecPolicyList
 ```
 
 
@@ -2005,13 +2013,17 @@ $offset = 56; // int | The initial index from which to return the results.
 $ordering = 'ordering_example'; // string | Which field to use when ordering the results.
 $pfs_group = array(56); // int[] | Diffie-Hellman group for Perfect Forward Secrecy
 $pfs_group__n = array(56); // int[] | Diffie-Hellman group for Perfect Forward Secrecy
+$proposal = array('proposal_example'); // string[]
+$proposal__n = array('proposal__n_example'); // string[]
+$proposal_id = array(56); // int[]
+$proposal_id__n = array(56); // int[]
 $q = 'q_example'; // string | Search
 $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->vpnIpsecPoliciesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $ipsec_proposal, $ipsec_proposal__n, $ipsec_proposal_id, $ipsec_proposal_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $pfs_group, $pfs_group__n, $q, $tag, $tag__n, $updated_by_request);
+    $result = $apiInstance->vpnIpsecPoliciesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $ipsec_proposal, $ipsec_proposal__n, $ipsec_proposal_id, $ipsec_proposal_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $pfs_group, $pfs_group__n, $proposal, $proposal__n, $proposal_id, $proposal_id__n, $q, $tag, $tag__n, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling VpnApi->vpnIpsecPoliciesList: ', $e->getMessage(), PHP_EOL;
@@ -2076,6 +2088,10 @@ try {
 | **ordering** | **string**| Which field to use when ordering the results. | [optional] |
 | **pfs_group** | [**int[]**](../Model/int.md)| Diffie-Hellman group for Perfect Forward Secrecy | [optional] |
 | **pfs_group__n** | [**int[]**](../Model/int.md)| Diffie-Hellman group for Perfect Forward Secrecy | [optional] |
+| **proposal** | [**string[]**](../Model/string.md)|  | [optional] |
+| **proposal__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **proposal_id** | [**int[]**](../Model/int.md)|  | [optional] |
+| **proposal_id__n** | [**int[]**](../Model/int.md)|  | [optional] |
 | **q** | **string**| Search | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -4978,10 +4994,10 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $type = array('type_example'); // string[]
@@ -5079,10 +5095,10 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **type** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -7185,10 +7201,10 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $tunnel_id = array(56); // int[]
@@ -7277,10 +7293,10 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tunnel_id** | [**int[]**](../Model/int.md)|  | [optional] |

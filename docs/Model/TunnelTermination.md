@@ -6,14 +6,13 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**tunnel** | [**\OpenAPI\Client\Model\BriefTunnel**](BriefTunnel.md) |  |
+**tunnel** | [**\OpenAPI\Client\Model\Tunnel**](Tunnel.md) |  |
 **role** | [**\OpenAPI\Client\Model\TunnelTerminationRole**](TunnelTerminationRole.md) |  |
 **termination_type** | **string** |  |
 **termination_id** | **int** |  |
 **termination** | **mixed** |  | [readonly]
-**outside_ip** | [**\OpenAPI\Client\Model\BriefIPAddress**](BriefIPAddress.md) |  | [optional]
+**outside_ip** | [**\OpenAPI\Client\Model\IPAddress**](IPAddress.md) |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTag[]**](NestedTag.md) |  | [optional]
 **custom_fields** | **array<string,mixed>** |  | [optional]
 **created** | **\DateTime** |  | [readonly]

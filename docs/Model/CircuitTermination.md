@@ -6,19 +6,18 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**circuit** | [**\OpenAPI\Client\Model\BriefCircuit**](BriefCircuit.md) |  |
+**circuit** | [**\OpenAPI\Client\Model\Circuit**](Circuit.md) |  |
 **term_side** | **string** | * &#x60;A&#x60; - A * &#x60;Z&#x60; - Z |
-**site** | [**\OpenAPI\Client\Model\BriefSite**](BriefSite.md) |  | [optional]
-**provider_network** | [**\OpenAPI\Client\Model\BriefProviderNetwork**](BriefProviderNetwork.md) |  | [optional]
+**site** | [**\OpenAPI\Client\Model\Site**](Site.md) |  | [optional]
+**provider_network** | [**\OpenAPI\Client\Model\ProviderNetwork**](ProviderNetwork.md) |  | [optional]
 **port_speed** | **int** | Physical circuit speed | [optional]
 **upstream_speed** | **int** | Upstream speed, if different from port speed | [optional]
 **xconnect_id** | **string** | ID of the local cross-connect | [optional]
 **pp_info** | **string** | Patch panel ID and port number(s) | [optional]
 **description** | **string** |  | [optional]
 **mark_connected** | **bool** | Treat as if a cable is connected | [optional]
-**cable** | [**\OpenAPI\Client\Model\BriefCable**](BriefCable.md) |  | [readonly]
+**cable** | [**\OpenAPI\Client\Model\Cable**](Cable.md) |  | [readonly]
 **cable_end** | **string** |  | [readonly]
 **link_peers** | **mixed[]** |  | [readonly]
 **link_peers_type** | **string** | Return the type of the peer link terminations, or None. | [readonly]

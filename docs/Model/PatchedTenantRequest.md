@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  | [optional]
 **slug** | **string** |  | [optional]
-**group** | [**\OpenAPI\Client\Model\BriefTenantGroupRequest**](BriefTenantGroupRequest.md) |  | [optional]
+**group** | [**\OpenAPI\Client\Model\TenantGroupRequest**](TenantGroupRequest.md) |  | [optional]
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTagRequest[]**](NestedTagRequest.md) |  | [optional]

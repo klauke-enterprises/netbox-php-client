@@ -6,10 +6,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**device** | [**\OpenAPI\Client\Model\BriefDevice**](BriefDevice.md) |  | [optional]
-**virtual_machine** | [**\OpenAPI\Client\Model\BriefVirtualMachine**](BriefVirtualMachine.md) |  | [optional]
+**device** | [**\OpenAPI\Client\Model\Device**](Device.md) |  | [optional]
+**virtual_machine** | [**\OpenAPI\Client\Model\VirtualMachine**](VirtualMachine.md) |  | [optional]
 **name** | **string** |  |
 **protocol** | [**\OpenAPI\Client\Model\ServiceProtocol**](ServiceProtocol.md) |  | [optional]
 **ports** | **int[]** |  |

@@ -6,14 +6,13 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**rack** | [**\OpenAPI\Client\Model\BriefRack**](BriefRack.md) |  |
+**rack** | [**\OpenAPI\Client\Model\Rack**](Rack.md) |  |
 **units** | **int[]** |  |
 **created** | **\DateTime** |  | [readonly]
 **last_updated** | **\DateTime** |  | [readonly]
-**user** | [**\OpenAPI\Client\Model\BriefUser**](BriefUser.md) |  |
-**tenant** | [**\OpenAPI\Client\Model\BriefTenant**](BriefTenant.md) |  | [optional]
+**user** | [**\OpenAPI\Client\Model\User**](User.md) |  |
+**tenant** | [**\OpenAPI\Client\Model\Tenant**](Tenant.md) |  | [optional]
 **description** | **string** |  |
 **comments** | **string** |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTag[]**](NestedTag.md) |  | [optional]

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**virtual_machine** | [**\OpenAPI\Client\Model\BriefVirtualMachineRequest**](BriefVirtualMachineRequest.md) |  | [optional]
+**virtual_machine** | [**\OpenAPI\Client\Model\VirtualMachineRequest**](VirtualMachineRequest.md) |  | [optional]
 **name** | **string** |  | [optional]
 **description** | **string** |  | [optional]
 **size** | **int** |  | [optional]

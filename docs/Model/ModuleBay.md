@@ -6,12 +6,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**device** | [**\OpenAPI\Client\Model\BriefDevice**](BriefDevice.md) |  |
-**module** | [**\OpenAPI\Client\Model\BriefModule**](BriefModule.md) |  | [optional]
+**device** | [**\OpenAPI\Client\Model\Device**](Device.md) |  |
 **name** | **string** |  |
-**installed_module** | [**\OpenAPI\Client\Model\BriefModule**](BriefModule.md) |  | [optional]
+**installed_module** | [**\OpenAPI\Client\Model\Module**](Module.md) |  | [optional]
 **label** | **string** | Physical label | [optional]
 **position** | **string** | Identifier to reference when renaming installed components | [optional]
 **description** | **string** |  | [optional]

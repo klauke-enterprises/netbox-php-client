@@ -66,40 +66,22 @@ $apiInstance = new OpenAPI\Client\Api\CircuitsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$circuit_group_assignment_request = array(new \OpenAPI\Client\Model\CircuitGroupAssignmentRequest()); // \OpenAPI\Client\Model\CircuitGroupAssignmentRequest[]
+$circuit_termination_request = array(new \OpenAPI\Client\Model\CircuitTerminationRequest()); // \OpenAPI\Client\Model\CircuitTerminationRequest[]
 
 try {
-    $apiInstance->circuitsCircuitGroupAssignmentsBulkDestroy($circuit_group_assignment_request);
+    $apiInstance->circuitsCircuitTerminationsBulkDestroy($circuit_termination_request);
 } catch (Exception $e) {
-    echo 'Exception when calling CircuitsApi->circuitsCircuitGroupAssignmentsBulkDestroy: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CircuitsApi->circuitsCircuitTerminationsBulkDestroy: ', $e->getMessage(), PHP_EOL;
 }
 
 ```
 
 ## API Endpoints
 
-All URIs are relative to *https://demo.netbox.dev/api/schema*
+All URIs are relative to *https://netbox.demodash.at/api/schema*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*CircuitsApi* | [**circuitsCircuitGroupAssignmentsBulkDestroy**](docs/Api/CircuitsApi.md#circuitscircuitgroupassignmentsbulkdestroy) | **DELETE** /api/circuits/circuit-group-assignments/ | 
-*CircuitsApi* | [**circuitsCircuitGroupAssignmentsBulkPartialUpdate**](docs/Api/CircuitsApi.md#circuitscircuitgroupassignmentsbulkpartialupdate) | **PATCH** /api/circuits/circuit-group-assignments/ | 
-*CircuitsApi* | [**circuitsCircuitGroupAssignmentsBulkUpdate**](docs/Api/CircuitsApi.md#circuitscircuitgroupassignmentsbulkupdate) | **PUT** /api/circuits/circuit-group-assignments/ | 
-*CircuitsApi* | [**circuitsCircuitGroupAssignmentsCreate**](docs/Api/CircuitsApi.md#circuitscircuitgroupassignmentscreate) | **POST** /api/circuits/circuit-group-assignments/ | 
-*CircuitsApi* | [**circuitsCircuitGroupAssignmentsDestroy**](docs/Api/CircuitsApi.md#circuitscircuitgroupassignmentsdestroy) | **DELETE** /api/circuits/circuit-group-assignments/{id}/ | 
-*CircuitsApi* | [**circuitsCircuitGroupAssignmentsList**](docs/Api/CircuitsApi.md#circuitscircuitgroupassignmentslist) | **GET** /api/circuits/circuit-group-assignments/ | 
-*CircuitsApi* | [**circuitsCircuitGroupAssignmentsPartialUpdate**](docs/Api/CircuitsApi.md#circuitscircuitgroupassignmentspartialupdate) | **PATCH** /api/circuits/circuit-group-assignments/{id}/ | 
-*CircuitsApi* | [**circuitsCircuitGroupAssignmentsRetrieve**](docs/Api/CircuitsApi.md#circuitscircuitgroupassignmentsretrieve) | **GET** /api/circuits/circuit-group-assignments/{id}/ | 
-*CircuitsApi* | [**circuitsCircuitGroupAssignmentsUpdate**](docs/Api/CircuitsApi.md#circuitscircuitgroupassignmentsupdate) | **PUT** /api/circuits/circuit-group-assignments/{id}/ | 
-*CircuitsApi* | [**circuitsCircuitGroupsBulkDestroy**](docs/Api/CircuitsApi.md#circuitscircuitgroupsbulkdestroy) | **DELETE** /api/circuits/circuit-groups/ | 
-*CircuitsApi* | [**circuitsCircuitGroupsBulkPartialUpdate**](docs/Api/CircuitsApi.md#circuitscircuitgroupsbulkpartialupdate) | **PATCH** /api/circuits/circuit-groups/ | 
-*CircuitsApi* | [**circuitsCircuitGroupsBulkUpdate**](docs/Api/CircuitsApi.md#circuitscircuitgroupsbulkupdate) | **PUT** /api/circuits/circuit-groups/ | 
-*CircuitsApi* | [**circuitsCircuitGroupsCreate**](docs/Api/CircuitsApi.md#circuitscircuitgroupscreate) | **POST** /api/circuits/circuit-groups/ | 
-*CircuitsApi* | [**circuitsCircuitGroupsDestroy**](docs/Api/CircuitsApi.md#circuitscircuitgroupsdestroy) | **DELETE** /api/circuits/circuit-groups/{id}/ | 
-*CircuitsApi* | [**circuitsCircuitGroupsList**](docs/Api/CircuitsApi.md#circuitscircuitgroupslist) | **GET** /api/circuits/circuit-groups/ | 
-*CircuitsApi* | [**circuitsCircuitGroupsPartialUpdate**](docs/Api/CircuitsApi.md#circuitscircuitgroupspartialupdate) | **PATCH** /api/circuits/circuit-groups/{id}/ | 
-*CircuitsApi* | [**circuitsCircuitGroupsRetrieve**](docs/Api/CircuitsApi.md#circuitscircuitgroupsretrieve) | **GET** /api/circuits/circuit-groups/{id}/ | 
-*CircuitsApi* | [**circuitsCircuitGroupsUpdate**](docs/Api/CircuitsApi.md#circuitscircuitgroupsupdate) | **PUT** /api/circuits/circuit-groups/{id}/ | 
 *CircuitsApi* | [**circuitsCircuitTerminationsBulkDestroy**](docs/Api/CircuitsApi.md#circuitscircuitterminationsbulkdestroy) | **DELETE** /api/circuits/circuit-terminations/ | 
 *CircuitsApi* | [**circuitsCircuitTerminationsBulkPartialUpdate**](docs/Api/CircuitsApi.md#circuitscircuitterminationsbulkpartialupdate) | **PATCH** /api/circuits/circuit-terminations/ | 
 *CircuitsApi* | [**circuitsCircuitTerminationsBulkUpdate**](docs/Api/CircuitsApi.md#circuitscircuitterminationsbulkupdate) | **PUT** /api/circuits/circuit-terminations/ | 
@@ -169,8 +151,6 @@ Class | Method | HTTP request | Description
 *CoreApi* | [**coreDataSourcesUpdate**](docs/Api/CoreApi.md#coredatasourcesupdate) | **PUT** /api/core/data-sources/{id}/ | 
 *CoreApi* | [**coreJobsList**](docs/Api/CoreApi.md#corejobslist) | **GET** /api/core/jobs/ | 
 *CoreApi* | [**coreJobsRetrieve**](docs/Api/CoreApi.md#corejobsretrieve) | **GET** /api/core/jobs/{id}/ | 
-*CoreApi* | [**coreObjectChangesList**](docs/Api/CoreApi.md#coreobjectchangeslist) | **GET** /api/core/object-changes/ | 
-*CoreApi* | [**coreObjectChangesRetrieve**](docs/Api/CoreApi.md#coreobjectchangesretrieve) | **GET** /api/core/object-changes/{id}/ | 
 *DcimApi* | [**dcimCableTerminationsBulkDestroy**](docs/Api/DcimApi.md#dcimcableterminationsbulkdestroy) | **DELETE** /api/dcim/cable-terminations/ | 
 *DcimApi* | [**dcimCableTerminationsBulkPartialUpdate**](docs/Api/DcimApi.md#dcimcableterminationsbulkpartialupdate) | **PATCH** /api/dcim/cable-terminations/ | 
 *DcimApi* | [**dcimCableTerminationsBulkUpdate**](docs/Api/DcimApi.md#dcimcableterminationsbulkupdate) | **PUT** /api/dcim/cable-terminations/ | 
@@ -477,15 +457,6 @@ Class | Method | HTTP request | Description
 *DcimApi* | [**dcimRackRolesPartialUpdate**](docs/Api/DcimApi.md#dcimrackrolespartialupdate) | **PATCH** /api/dcim/rack-roles/{id}/ | 
 *DcimApi* | [**dcimRackRolesRetrieve**](docs/Api/DcimApi.md#dcimrackrolesretrieve) | **GET** /api/dcim/rack-roles/{id}/ | 
 *DcimApi* | [**dcimRackRolesUpdate**](docs/Api/DcimApi.md#dcimrackrolesupdate) | **PUT** /api/dcim/rack-roles/{id}/ | 
-*DcimApi* | [**dcimRackTypesBulkDestroy**](docs/Api/DcimApi.md#dcimracktypesbulkdestroy) | **DELETE** /api/dcim/rack-types/ | 
-*DcimApi* | [**dcimRackTypesBulkPartialUpdate**](docs/Api/DcimApi.md#dcimracktypesbulkpartialupdate) | **PATCH** /api/dcim/rack-types/ | 
-*DcimApi* | [**dcimRackTypesBulkUpdate**](docs/Api/DcimApi.md#dcimracktypesbulkupdate) | **PUT** /api/dcim/rack-types/ | 
-*DcimApi* | [**dcimRackTypesCreate**](docs/Api/DcimApi.md#dcimracktypescreate) | **POST** /api/dcim/rack-types/ | 
-*DcimApi* | [**dcimRackTypesDestroy**](docs/Api/DcimApi.md#dcimracktypesdestroy) | **DELETE** /api/dcim/rack-types/{id}/ | 
-*DcimApi* | [**dcimRackTypesList**](docs/Api/DcimApi.md#dcimracktypeslist) | **GET** /api/dcim/rack-types/ | 
-*DcimApi* | [**dcimRackTypesPartialUpdate**](docs/Api/DcimApi.md#dcimracktypespartialupdate) | **PATCH** /api/dcim/rack-types/{id}/ | 
-*DcimApi* | [**dcimRackTypesRetrieve**](docs/Api/DcimApi.md#dcimracktypesretrieve) | **GET** /api/dcim/rack-types/{id}/ | 
-*DcimApi* | [**dcimRackTypesUpdate**](docs/Api/DcimApi.md#dcimracktypesupdate) | **PUT** /api/dcim/rack-types/{id}/ | 
 *DcimApi* | [**dcimRacksBulkDestroy**](docs/Api/DcimApi.md#dcimracksbulkdestroy) | **DELETE** /api/dcim/racks/ | 
 *DcimApi* | [**dcimRacksBulkPartialUpdate**](docs/Api/DcimApi.md#dcimracksbulkpartialupdate) | **PATCH** /api/dcim/racks/ | 
 *DcimApi* | [**dcimRacksBulkUpdate**](docs/Api/DcimApi.md#dcimracksbulkupdate) | **PUT** /api/dcim/racks/ | 
@@ -659,24 +630,8 @@ Class | Method | HTTP request | Description
 *ExtrasApi* | [**extrasJournalEntriesPartialUpdate**](docs/Api/ExtrasApi.md#extrasjournalentriespartialupdate) | **PATCH** /api/extras/journal-entries/{id}/ | 
 *ExtrasApi* | [**extrasJournalEntriesRetrieve**](docs/Api/ExtrasApi.md#extrasjournalentriesretrieve) | **GET** /api/extras/journal-entries/{id}/ | 
 *ExtrasApi* | [**extrasJournalEntriesUpdate**](docs/Api/ExtrasApi.md#extrasjournalentriesupdate) | **PUT** /api/extras/journal-entries/{id}/ | 
-*ExtrasApi* | [**extrasNotificationGroupsBulkDestroy**](docs/Api/ExtrasApi.md#extrasnotificationgroupsbulkdestroy) | **DELETE** /api/extras/notification-groups/ | 
-*ExtrasApi* | [**extrasNotificationGroupsBulkPartialUpdate**](docs/Api/ExtrasApi.md#extrasnotificationgroupsbulkpartialupdate) | **PATCH** /api/extras/notification-groups/ | 
-*ExtrasApi* | [**extrasNotificationGroupsBulkUpdate**](docs/Api/ExtrasApi.md#extrasnotificationgroupsbulkupdate) | **PUT** /api/extras/notification-groups/ | 
-*ExtrasApi* | [**extrasNotificationGroupsCreate**](docs/Api/ExtrasApi.md#extrasnotificationgroupscreate) | **POST** /api/extras/notification-groups/ | 
-*ExtrasApi* | [**extrasNotificationGroupsDestroy**](docs/Api/ExtrasApi.md#extrasnotificationgroupsdestroy) | **DELETE** /api/extras/notification-groups/{id}/ | 
-*ExtrasApi* | [**extrasNotificationGroupsList**](docs/Api/ExtrasApi.md#extrasnotificationgroupslist) | **GET** /api/extras/notification-groups/ | 
-*ExtrasApi* | [**extrasNotificationGroupsPartialUpdate**](docs/Api/ExtrasApi.md#extrasnotificationgroupspartialupdate) | **PATCH** /api/extras/notification-groups/{id}/ | 
-*ExtrasApi* | [**extrasNotificationGroupsRetrieve**](docs/Api/ExtrasApi.md#extrasnotificationgroupsretrieve) | **GET** /api/extras/notification-groups/{id}/ | 
-*ExtrasApi* | [**extrasNotificationGroupsUpdate**](docs/Api/ExtrasApi.md#extrasnotificationgroupsupdate) | **PUT** /api/extras/notification-groups/{id}/ | 
-*ExtrasApi* | [**extrasNotificationsBulkDestroy**](docs/Api/ExtrasApi.md#extrasnotificationsbulkdestroy) | **DELETE** /api/extras/notifications/ | 
-*ExtrasApi* | [**extrasNotificationsBulkPartialUpdate**](docs/Api/ExtrasApi.md#extrasnotificationsbulkpartialupdate) | **PATCH** /api/extras/notifications/ | 
-*ExtrasApi* | [**extrasNotificationsBulkUpdate**](docs/Api/ExtrasApi.md#extrasnotificationsbulkupdate) | **PUT** /api/extras/notifications/ | 
-*ExtrasApi* | [**extrasNotificationsCreate**](docs/Api/ExtrasApi.md#extrasnotificationscreate) | **POST** /api/extras/notifications/ | 
-*ExtrasApi* | [**extrasNotificationsDestroy**](docs/Api/ExtrasApi.md#extrasnotificationsdestroy) | **DELETE** /api/extras/notifications/{id}/ | 
-*ExtrasApi* | [**extrasNotificationsList**](docs/Api/ExtrasApi.md#extrasnotificationslist) | **GET** /api/extras/notifications/ | 
-*ExtrasApi* | [**extrasNotificationsPartialUpdate**](docs/Api/ExtrasApi.md#extrasnotificationspartialupdate) | **PATCH** /api/extras/notifications/{id}/ | 
-*ExtrasApi* | [**extrasNotificationsRetrieve**](docs/Api/ExtrasApi.md#extrasnotificationsretrieve) | **GET** /api/extras/notifications/{id}/ | 
-*ExtrasApi* | [**extrasNotificationsUpdate**](docs/Api/ExtrasApi.md#extrasnotificationsupdate) | **PUT** /api/extras/notifications/{id}/ | 
+*ExtrasApi* | [**extrasObjectChangesList**](docs/Api/ExtrasApi.md#extrasobjectchangeslist) | **GET** /api/extras/object-changes/ | 
+*ExtrasApi* | [**extrasObjectChangesRetrieve**](docs/Api/ExtrasApi.md#extrasobjectchangesretrieve) | **GET** /api/extras/object-changes/{id}/ | 
 *ExtrasApi* | [**extrasObjectTypesList**](docs/Api/ExtrasApi.md#extrasobjecttypeslist) | **GET** /api/extras/object-types/ | 
 *ExtrasApi* | [**extrasObjectTypesRetrieve**](docs/Api/ExtrasApi.md#extrasobjecttypesretrieve) | **GET** /api/extras/object-types/{id}/ | 
 *ExtrasApi* | [**extrasSavedFiltersBulkDestroy**](docs/Api/ExtrasApi.md#extrassavedfiltersbulkdestroy) | **DELETE** /api/extras/saved-filters/ | 
@@ -694,15 +649,6 @@ Class | Method | HTTP request | Description
 *ExtrasApi* | [**extrasScriptsPartialUpdate**](docs/Api/ExtrasApi.md#extrasscriptspartialupdate) | **PATCH** /api/extras/scripts/{id}/ | 
 *ExtrasApi* | [**extrasScriptsRetrieve**](docs/Api/ExtrasApi.md#extrasscriptsretrieve) | **GET** /api/extras/scripts/{id}/ | 
 *ExtrasApi* | [**extrasScriptsUpdate**](docs/Api/ExtrasApi.md#extrasscriptsupdate) | **PUT** /api/extras/scripts/{id}/ | 
-*ExtrasApi* | [**extrasSubscriptionsBulkDestroy**](docs/Api/ExtrasApi.md#extrassubscriptionsbulkdestroy) | **DELETE** /api/extras/subscriptions/ | 
-*ExtrasApi* | [**extrasSubscriptionsBulkPartialUpdate**](docs/Api/ExtrasApi.md#extrassubscriptionsbulkpartialupdate) | **PATCH** /api/extras/subscriptions/ | 
-*ExtrasApi* | [**extrasSubscriptionsBulkUpdate**](docs/Api/ExtrasApi.md#extrassubscriptionsbulkupdate) | **PUT** /api/extras/subscriptions/ | 
-*ExtrasApi* | [**extrasSubscriptionsCreate**](docs/Api/ExtrasApi.md#extrassubscriptionscreate) | **POST** /api/extras/subscriptions/ | 
-*ExtrasApi* | [**extrasSubscriptionsDestroy**](docs/Api/ExtrasApi.md#extrassubscriptionsdestroy) | **DELETE** /api/extras/subscriptions/{id}/ | 
-*ExtrasApi* | [**extrasSubscriptionsList**](docs/Api/ExtrasApi.md#extrassubscriptionslist) | **GET** /api/extras/subscriptions/ | 
-*ExtrasApi* | [**extrasSubscriptionsPartialUpdate**](docs/Api/ExtrasApi.md#extrassubscriptionspartialupdate) | **PATCH** /api/extras/subscriptions/{id}/ | 
-*ExtrasApi* | [**extrasSubscriptionsRetrieve**](docs/Api/ExtrasApi.md#extrassubscriptionsretrieve) | **GET** /api/extras/subscriptions/{id}/ | 
-*ExtrasApi* | [**extrasSubscriptionsUpdate**](docs/Api/ExtrasApi.md#extrassubscriptionsupdate) | **PUT** /api/extras/subscriptions/{id}/ | 
 *ExtrasApi* | [**extrasTagsBulkDestroy**](docs/Api/ExtrasApi.md#extrastagsbulkdestroy) | **DELETE** /api/extras/tags/ | 
 *ExtrasApi* | [**extrasTagsBulkPartialUpdate**](docs/Api/ExtrasApi.md#extrastagsbulkpartialupdate) | **PATCH** /api/extras/tags/ | 
 *ExtrasApi* | [**extrasTagsBulkUpdate**](docs/Api/ExtrasApi.md#extrastagsbulkupdate) | **PUT** /api/extras/tags/ | 
@@ -875,6 +821,10 @@ Class | Method | HTTP request | Description
 *IpamApi* | [**ipamVrfsPartialUpdate**](docs/Api/IpamApi.md#ipamvrfspartialupdate) | **PATCH** /api/ipam/vrfs/{id}/ | 
 *IpamApi* | [**ipamVrfsRetrieve**](docs/Api/IpamApi.md#ipamvrfsretrieve) | **GET** /api/ipam/vrfs/{id}/ | 
 *IpamApi* | [**ipamVrfsUpdate**](docs/Api/IpamApi.md#ipamvrfsupdate) | **PUT** /api/ipam/vrfs/{id}/ | 
+*PluginsApi* | [**pluginsPrometheusSdDevicesList**](docs/Api/PluginsApi.md#pluginsprometheussddeviceslist) | **GET** /api/plugins/prometheus-sd/devices/ | 
+*PluginsApi* | [**pluginsPrometheusSdIpAddressesList**](docs/Api/PluginsApi.md#pluginsprometheussdipaddresseslist) | **GET** /api/plugins/prometheus-sd/ip-addresses/ | 
+*PluginsApi* | [**pluginsPrometheusSdServicesList**](docs/Api/PluginsApi.md#pluginsprometheussdserviceslist) | **GET** /api/plugins/prometheus-sd/services/ | 
+*PluginsApi* | [**pluginsPrometheusSdVirtualMachinesList**](docs/Api/PluginsApi.md#pluginsprometheussdvirtualmachineslist) | **GET** /api/plugins/prometheus-sd/virtual-machines/ | 
 *SchemaApi* | [**schemaRetrieve**](docs/Api/SchemaApi.md#schemaretrieve) | **GET** /api/schema/ | 
 *StatusApi* | [**statusRetrieve**](docs/Api/StatusApi.md#statusretrieve) | **GET** /api/status/ | 
 *TenancyApi* | [**tenancyContactAssignmentsBulkDestroy**](docs/Api/TenancyApi.md#tenancycontactassignmentsbulkdestroy) | **DELETE** /api/tenancy/contact-assignments/ | 
@@ -1157,141 +1107,12 @@ Class | Method | HTTP request | Description
 - [AvailableVLAN](docs/Model/AvailableVLAN.md)
 - [Bookmark](docs/Model/Bookmark.md)
 - [BookmarkRequest](docs/Model/BookmarkRequest.md)
-- [BriefCable](docs/Model/BriefCable.md)
-- [BriefCableRequest](docs/Model/BriefCableRequest.md)
-- [BriefCircuit](docs/Model/BriefCircuit.md)
-- [BriefCircuitGroup](docs/Model/BriefCircuitGroup.md)
-- [BriefCircuitGroupAssignmentSerializer](docs/Model/BriefCircuitGroupAssignmentSerializer.md)
-- [BriefCircuitGroupAssignmentSerializerPriority](docs/Model/BriefCircuitGroupAssignmentSerializerPriority.md)
-- [BriefCircuitGroupAssignmentSerializerRequest](docs/Model/BriefCircuitGroupAssignmentSerializerRequest.md)
-- [BriefCircuitGroupRequest](docs/Model/BriefCircuitGroupRequest.md)
-- [BriefCircuitRequest](docs/Model/BriefCircuitRequest.md)
-- [BriefCircuitType](docs/Model/BriefCircuitType.md)
-- [BriefCircuitTypeRequest](docs/Model/BriefCircuitTypeRequest.md)
-- [BriefCluster](docs/Model/BriefCluster.md)
-- [BriefClusterGroup](docs/Model/BriefClusterGroup.md)
-- [BriefClusterGroupRequest](docs/Model/BriefClusterGroupRequest.md)
-- [BriefClusterRequest](docs/Model/BriefClusterRequest.md)
-- [BriefClusterType](docs/Model/BriefClusterType.md)
-- [BriefClusterTypeRequest](docs/Model/BriefClusterTypeRequest.md)
-- [BriefConfigTemplate](docs/Model/BriefConfigTemplate.md)
-- [BriefConfigTemplateRequest](docs/Model/BriefConfigTemplateRequest.md)
-- [BriefContact](docs/Model/BriefContact.md)
-- [BriefContactGroup](docs/Model/BriefContactGroup.md)
-- [BriefContactGroupRequest](docs/Model/BriefContactGroupRequest.md)
-- [BriefContactRequest](docs/Model/BriefContactRequest.md)
-- [BriefContactRole](docs/Model/BriefContactRole.md)
-- [BriefContactRoleRequest](docs/Model/BriefContactRoleRequest.md)
-- [BriefCustomFieldChoiceSet](docs/Model/BriefCustomFieldChoiceSet.md)
-- [BriefCustomFieldChoiceSetRequest](docs/Model/BriefCustomFieldChoiceSetRequest.md)
-- [BriefDataFile](docs/Model/BriefDataFile.md)
-- [BriefDataSource](docs/Model/BriefDataSource.md)
-- [BriefDataSourceRequest](docs/Model/BriefDataSourceRequest.md)
-- [BriefDevice](docs/Model/BriefDevice.md)
-- [BriefDeviceRequest](docs/Model/BriefDeviceRequest.md)
-- [BriefDeviceRole](docs/Model/BriefDeviceRole.md)
-- [BriefDeviceRoleRequest](docs/Model/BriefDeviceRoleRequest.md)
-- [BriefDeviceType](docs/Model/BriefDeviceType.md)
-- [BriefDeviceTypeRequest](docs/Model/BriefDeviceTypeRequest.md)
-- [BriefFHRPGroup](docs/Model/BriefFHRPGroup.md)
-- [BriefFHRPGroupRequest](docs/Model/BriefFHRPGroupRequest.md)
-- [BriefIKEPolicy](docs/Model/BriefIKEPolicy.md)
-- [BriefIKEPolicyRequest](docs/Model/BriefIKEPolicyRequest.md)
-- [BriefIPAddress](docs/Model/BriefIPAddress.md)
-- [BriefIPAddressRequest](docs/Model/BriefIPAddressRequest.md)
-- [BriefIPSecPolicy](docs/Model/BriefIPSecPolicy.md)
-- [BriefIPSecPolicyRequest](docs/Model/BriefIPSecPolicyRequest.md)
-- [BriefIPSecProfile](docs/Model/BriefIPSecProfile.md)
-- [BriefIPSecProfileRequest](docs/Model/BriefIPSecProfileRequest.md)
-- [BriefInterface](docs/Model/BriefInterface.md)
-- [BriefInterfaceRequest](docs/Model/BriefInterfaceRequest.md)
-- [BriefInventoryItemRole](docs/Model/BriefInventoryItemRole.md)
-- [BriefInventoryItemRoleRequest](docs/Model/BriefInventoryItemRoleRequest.md)
-- [BriefJob](docs/Model/BriefJob.md)
-- [BriefJobRequest](docs/Model/BriefJobRequest.md)
-- [BriefJobStatus](docs/Model/BriefJobStatus.md)
-- [BriefL2VPN](docs/Model/BriefL2VPN.md)
-- [BriefL2VPNRequest](docs/Model/BriefL2VPNRequest.md)
-- [BriefL2VPNTermination](docs/Model/BriefL2VPNTermination.md)
-- [BriefL2VPNTerminationRequest](docs/Model/BriefL2VPNTerminationRequest.md)
-- [BriefL2VPNType](docs/Model/BriefL2VPNType.md)
-- [BriefLocation](docs/Model/BriefLocation.md)
-- [BriefLocationRequest](docs/Model/BriefLocationRequest.md)
-- [BriefManufacturer](docs/Model/BriefManufacturer.md)
-- [BriefManufacturerRequest](docs/Model/BriefManufacturerRequest.md)
-- [BriefModule](docs/Model/BriefModule.md)
-- [BriefModuleRequest](docs/Model/BriefModuleRequest.md)
-- [BriefModuleType](docs/Model/BriefModuleType.md)
-- [BriefModuleTypeRequest](docs/Model/BriefModuleTypeRequest.md)
-- [BriefPlatform](docs/Model/BriefPlatform.md)
-- [BriefPlatformRequest](docs/Model/BriefPlatformRequest.md)
-- [BriefPowerPanel](docs/Model/BriefPowerPanel.md)
-- [BriefPowerPanelRequest](docs/Model/BriefPowerPanelRequest.md)
-- [BriefPowerPort](docs/Model/BriefPowerPort.md)
-- [BriefPowerPortRequest](docs/Model/BriefPowerPortRequest.md)
-- [BriefPowerPortTemplate](docs/Model/BriefPowerPortTemplate.md)
-- [BriefPowerPortTemplateRequest](docs/Model/BriefPowerPortTemplateRequest.md)
-- [BriefProvider](docs/Model/BriefProvider.md)
-- [BriefProviderAccount](docs/Model/BriefProviderAccount.md)
-- [BriefProviderAccountRequest](docs/Model/BriefProviderAccountRequest.md)
-- [BriefProviderNetwork](docs/Model/BriefProviderNetwork.md)
-- [BriefProviderNetworkRequest](docs/Model/BriefProviderNetworkRequest.md)
-- [BriefProviderRequest](docs/Model/BriefProviderRequest.md)
-- [BriefRIR](docs/Model/BriefRIR.md)
-- [BriefRIRRequest](docs/Model/BriefRIRRequest.md)
-- [BriefRack](docs/Model/BriefRack.md)
-- [BriefRackRequest](docs/Model/BriefRackRequest.md)
-- [BriefRackRole](docs/Model/BriefRackRole.md)
-- [BriefRackRoleRequest](docs/Model/BriefRackRoleRequest.md)
-- [BriefRackType](docs/Model/BriefRackType.md)
-- [BriefRackTypeRequest](docs/Model/BriefRackTypeRequest.md)
-- [BriefRearPortTemplate](docs/Model/BriefRearPortTemplate.md)
-- [BriefRearPortTemplateRequest](docs/Model/BriefRearPortTemplateRequest.md)
-- [BriefRegion](docs/Model/BriefRegion.md)
-- [BriefRegionRequest](docs/Model/BriefRegionRequest.md)
-- [BriefRole](docs/Model/BriefRole.md)
-- [BriefRoleRequest](docs/Model/BriefRoleRequest.md)
-- [BriefSite](docs/Model/BriefSite.md)
-- [BriefSiteGroup](docs/Model/BriefSiteGroup.md)
-- [BriefSiteGroupRequest](docs/Model/BriefSiteGroupRequest.md)
-- [BriefSiteRequest](docs/Model/BriefSiteRequest.md)
-- [BriefTenant](docs/Model/BriefTenant.md)
-- [BriefTenantGroup](docs/Model/BriefTenantGroup.md)
-- [BriefTenantGroupRequest](docs/Model/BriefTenantGroupRequest.md)
-- [BriefTenantRequest](docs/Model/BriefTenantRequest.md)
-- [BriefTunnel](docs/Model/BriefTunnel.md)
-- [BriefTunnelGroup](docs/Model/BriefTunnelGroup.md)
-- [BriefTunnelGroupRequest](docs/Model/BriefTunnelGroupRequest.md)
-- [BriefTunnelRequest](docs/Model/BriefTunnelRequest.md)
-- [BriefUser](docs/Model/BriefUser.md)
-- [BriefUserRequest](docs/Model/BriefUserRequest.md)
-- [BriefVLAN](docs/Model/BriefVLAN.md)
-- [BriefVLANGroup](docs/Model/BriefVLANGroup.md)
-- [BriefVLANGroupRequest](docs/Model/BriefVLANGroupRequest.md)
-- [BriefVLANRequest](docs/Model/BriefVLANRequest.md)
-- [BriefVRF](docs/Model/BriefVRF.md)
-- [BriefVRFRequest](docs/Model/BriefVRFRequest.md)
-- [BriefVirtualChassis](docs/Model/BriefVirtualChassis.md)
-- [BriefVirtualChassisRequest](docs/Model/BriefVirtualChassisRequest.md)
-- [BriefVirtualMachine](docs/Model/BriefVirtualMachine.md)
-- [BriefVirtualMachineRequest](docs/Model/BriefVirtualMachineRequest.md)
-- [BriefWirelessLANGroup](docs/Model/BriefWirelessLANGroup.md)
-- [BriefWirelessLANGroupRequest](docs/Model/BriefWirelessLANGroupRequest.md)
 - [Cable](docs/Model/Cable.md)
-- [CableLengthUnit](docs/Model/CableLengthUnit.md)
 - [CableRequest](docs/Model/CableRequest.md)
-- [CableStatus](docs/Model/CableStatus.md)
 - [CableTermination](docs/Model/CableTermination.md)
 - [CableTerminationRequest](docs/Model/CableTerminationRequest.md)
 - [Circuit](docs/Model/Circuit.md)
-- [CircuitCircuitTermination](docs/Model/CircuitCircuitTermination.md)
-- [CircuitCircuitTerminationRequest](docs/Model/CircuitCircuitTerminationRequest.md)
-- [CircuitGroup](docs/Model/CircuitGroup.md)
-- [CircuitGroupAssignment](docs/Model/CircuitGroupAssignment.md)
-- [CircuitGroupAssignmentRequest](docs/Model/CircuitGroupAssignmentRequest.md)
-- [CircuitGroupRequest](docs/Model/CircuitGroupRequest.md)
 - [CircuitRequest](docs/Model/CircuitRequest.md)
-- [CircuitStatus](docs/Model/CircuitStatus.md)
 - [CircuitTermination](docs/Model/CircuitTermination.md)
 - [CircuitTerminationRequest](docs/Model/CircuitTerminationRequest.md)
 - [CircuitType](docs/Model/CircuitType.md)
@@ -1300,7 +1121,6 @@ Class | Method | HTTP request | Description
 - [ClusterGroup](docs/Model/ClusterGroup.md)
 - [ClusterGroupRequest](docs/Model/ClusterGroupRequest.md)
 - [ClusterRequest](docs/Model/ClusterRequest.md)
-- [ClusterStatus](docs/Model/ClusterStatus.md)
 - [ClusterType](docs/Model/ClusterType.md)
 - [ClusterTypeRequest](docs/Model/ClusterTypeRequest.md)
 - [ConfigContext](docs/Model/ConfigContext.md)
@@ -1319,6 +1139,7 @@ Class | Method | HTTP request | Description
 - [ConsoleServerPortTemplateRequest](docs/Model/ConsoleServerPortTemplateRequest.md)
 - [Contact](docs/Model/Contact.md)
 - [ContactAssignment](docs/Model/ContactAssignment.md)
+- [ContactAssignmentPriority](docs/Model/ContactAssignmentPriority.md)
 - [ContactAssignmentRequest](docs/Model/ContactAssignmentRequest.md)
 - [ContactGroup](docs/Model/ContactGroup.md)
 - [ContactGroupRequest](docs/Model/ContactGroupRequest.md)
@@ -1341,8 +1162,6 @@ Class | Method | HTTP request | Description
 - [DataFile](docs/Model/DataFile.md)
 - [DataSource](docs/Model/DataSource.md)
 - [DataSourceRequest](docs/Model/DataSourceRequest.md)
-- [DataSourceStatus](docs/Model/DataSourceStatus.md)
-- [DataSourceType](docs/Model/DataSourceType.md)
 - [Device](docs/Model/Device.md)
 - [DeviceAirflow](docs/Model/DeviceAirflow.md)
 - [DeviceBay](docs/Model/DeviceBay.md)
@@ -1350,14 +1169,12 @@ Class | Method | HTTP request | Description
 - [DeviceBayTemplate](docs/Model/DeviceBayTemplate.md)
 - [DeviceBayTemplateRequest](docs/Model/DeviceBayTemplateRequest.md)
 - [DeviceFace](docs/Model/DeviceFace.md)
+- [DeviceRequest](docs/Model/DeviceRequest.md)
 - [DeviceRole](docs/Model/DeviceRole.md)
 - [DeviceRoleRequest](docs/Model/DeviceRoleRequest.md)
 - [DeviceStatus](docs/Model/DeviceStatus.md)
 - [DeviceType](docs/Model/DeviceType.md)
-- [DeviceTypeAirflow](docs/Model/DeviceTypeAirflow.md)
 - [DeviceTypeRequest](docs/Model/DeviceTypeRequest.md)
-- [DeviceTypeSubdeviceRole](docs/Model/DeviceTypeSubdeviceRole.md)
-- [DeviceTypeWeightUnit](docs/Model/DeviceTypeWeightUnit.md)
 - [DeviceWithConfigContext](docs/Model/DeviceWithConfigContext.md)
 - [DeviceWithConfigContextRequest](docs/Model/DeviceWithConfigContextRequest.md)
 - [EventRule](docs/Model/EventRule.md)
@@ -1376,7 +1193,6 @@ Class | Method | HTTP request | Description
 - [FrontPortTemplate](docs/Model/FrontPortTemplate.md)
 - [FrontPortTemplateRequest](docs/Model/FrontPortTemplateRequest.md)
 - [FrontPortType](docs/Model/FrontPortType.md)
-- [GenericObject](docs/Model/GenericObject.md)
 - [GenericObjectRequest](docs/Model/GenericObjectRequest.md)
 - [Group](docs/Model/Group.md)
 - [GroupRequest](docs/Model/GroupRequest.md)
@@ -1392,8 +1208,6 @@ Class | Method | HTTP request | Description
 - [IKEProposalRequest](docs/Model/IKEProposalRequest.md)
 - [IPAddress](docs/Model/IPAddress.md)
 - [IPAddressRequest](docs/Model/IPAddressRequest.md)
-- [IPAddressRole](docs/Model/IPAddressRole.md)
-- [IPAddressStatus](docs/Model/IPAddressStatus.md)
 - [IPRange](docs/Model/IPRange.md)
 - [IPRangeRequest](docs/Model/IPRangeRequest.md)
 - [IPRangeStatus](docs/Model/IPRangeStatus.md)
@@ -1426,6 +1240,8 @@ Class | Method | HTTP request | Description
 - [InventoryItemTemplate](docs/Model/InventoryItemTemplate.md)
 - [InventoryItemTemplateRequest](docs/Model/InventoryItemTemplateRequest.md)
 - [Job](docs/Model/Job.md)
+- [JobRequest](docs/Model/JobRequest.md)
+- [JobStatus](docs/Model/JobStatus.md)
 - [JournalEntry](docs/Model/JournalEntry.md)
 - [JournalEntryKind](docs/Model/JournalEntryKind.md)
 - [JournalEntryRequest](docs/Model/JournalEntryRequest.md)
@@ -1433,38 +1249,33 @@ Class | Method | HTTP request | Description
 - [L2VPNRequest](docs/Model/L2VPNRequest.md)
 - [L2VPNTermination](docs/Model/L2VPNTermination.md)
 - [L2VPNTerminationRequest](docs/Model/L2VPNTerminationRequest.md)
+- [L2VPNType](docs/Model/L2VPNType.md)
 - [Location](docs/Model/Location.md)
 - [LocationRequest](docs/Model/LocationRequest.md)
-- [LocationStatus](docs/Model/LocationStatus.md)
 - [Manufacturer](docs/Model/Manufacturer.md)
 - [ManufacturerRequest](docs/Model/ManufacturerRequest.md)
 - [ModelInterface](docs/Model/ModelInterface.md)
 - [Module](docs/Model/Module.md)
 - [ModuleBay](docs/Model/ModuleBay.md)
+- [ModuleBayNestedModule](docs/Model/ModuleBayNestedModule.md)
+- [ModuleBayNestedModuleRequest](docs/Model/ModuleBayNestedModuleRequest.md)
 - [ModuleBayRequest](docs/Model/ModuleBayRequest.md)
 - [ModuleBayTemplate](docs/Model/ModuleBayTemplate.md)
 - [ModuleBayTemplateRequest](docs/Model/ModuleBayTemplateRequest.md)
 - [ModuleRequest](docs/Model/ModuleRequest.md)
-- [ModuleStatus](docs/Model/ModuleStatus.md)
 - [ModuleType](docs/Model/ModuleType.md)
-- [ModuleTypeAirflow](docs/Model/ModuleTypeAirflow.md)
 - [ModuleTypeRequest](docs/Model/ModuleTypeRequest.md)
 - [NestedContactGroup](docs/Model/NestedContactGroup.md)
 - [NestedContactGroupRequest](docs/Model/NestedContactGroupRequest.md)
 - [NestedDevice](docs/Model/NestedDevice.md)
 - [NestedDeviceRequest](docs/Model/NestedDeviceRequest.md)
 - [NestedGroup](docs/Model/NestedGroup.md)
-- [NestedIPAddress](docs/Model/NestedIPAddress.md)
-- [NestedIPAddressRequest](docs/Model/NestedIPAddressRequest.md)
 - [NestedInterface](docs/Model/NestedInterface.md)
 - [NestedInterfaceRequest](docs/Model/NestedInterfaceRequest.md)
 - [NestedInterfaceTemplate](docs/Model/NestedInterfaceTemplate.md)
 - [NestedInterfaceTemplateRequest](docs/Model/NestedInterfaceTemplateRequest.md)
-- [NestedLocation](docs/Model/NestedLocation.md)
-- [NestedLocationRequest](docs/Model/NestedLocationRequest.md)
 - [NestedModuleBay](docs/Model/NestedModuleBay.md)
 - [NestedModuleBayRequest](docs/Model/NestedModuleBayRequest.md)
-- [NestedProviderAccount](docs/Model/NestedProviderAccount.md)
 - [NestedRegion](docs/Model/NestedRegion.md)
 - [NestedRegionRequest](docs/Model/NestedRegionRequest.md)
 - [NestedSiteGroup](docs/Model/NestedSiteGroup.md)
@@ -1478,14 +1289,9 @@ Class | Method | HTTP request | Description
 - [NestedVMInterfaceRequest](docs/Model/NestedVMInterfaceRequest.md)
 - [NestedVirtualMachine](docs/Model/NestedVirtualMachine.md)
 - [NestedVirtualMachineRequest](docs/Model/NestedVirtualMachineRequest.md)
-- [NestedWirelessLANGroup](docs/Model/NestedWirelessLANGroup.md)
 - [NestedWirelessLANGroupRequest](docs/Model/NestedWirelessLANGroupRequest.md)
 - [NestedWirelessLink](docs/Model/NestedWirelessLink.md)
 - [NestedWirelessLinkRequest](docs/Model/NestedWirelessLinkRequest.md)
-- [Notification](docs/Model/Notification.md)
-- [NotificationGroup](docs/Model/NotificationGroup.md)
-- [NotificationGroupRequest](docs/Model/NotificationGroupRequest.md)
-- [NotificationRequest](docs/Model/NotificationRequest.md)
 - [ObjectChange](docs/Model/ObjectChange.md)
 - [ObjectChangeAction](docs/Model/ObjectChangeAction.md)
 - [ObjectPermission](docs/Model/ObjectPermission.md)
@@ -1497,8 +1303,6 @@ Class | Method | HTTP request | Description
 - [PaginatedBookmarkList](docs/Model/PaginatedBookmarkList.md)
 - [PaginatedCableList](docs/Model/PaginatedCableList.md)
 - [PaginatedCableTerminationList](docs/Model/PaginatedCableTerminationList.md)
-- [PaginatedCircuitGroupAssignmentList](docs/Model/PaginatedCircuitGroupAssignmentList.md)
-- [PaginatedCircuitGroupList](docs/Model/PaginatedCircuitGroupList.md)
 - [PaginatedCircuitList](docs/Model/PaginatedCircuitList.md)
 - [PaginatedCircuitTerminationList](docs/Model/PaginatedCircuitTerminationList.md)
 - [PaginatedCircuitTypeList](docs/Model/PaginatedCircuitTypeList.md)
@@ -1555,8 +1359,6 @@ Class | Method | HTTP request | Description
 - [PaginatedModuleBayTemplateList](docs/Model/PaginatedModuleBayTemplateList.md)
 - [PaginatedModuleList](docs/Model/PaginatedModuleList.md)
 - [PaginatedModuleTypeList](docs/Model/PaginatedModuleTypeList.md)
-- [PaginatedNotificationGroupList](docs/Model/PaginatedNotificationGroupList.md)
-- [PaginatedNotificationList](docs/Model/PaginatedNotificationList.md)
 - [PaginatedObjectChangeList](docs/Model/PaginatedObjectChangeList.md)
 - [PaginatedObjectPermissionList](docs/Model/PaginatedObjectPermissionList.md)
 - [PaginatedObjectTypeList](docs/Model/PaginatedObjectTypeList.md)
@@ -1575,7 +1377,6 @@ Class | Method | HTTP request | Description
 - [PaginatedRackList](docs/Model/PaginatedRackList.md)
 - [PaginatedRackReservationList](docs/Model/PaginatedRackReservationList.md)
 - [PaginatedRackRoleList](docs/Model/PaginatedRackRoleList.md)
-- [PaginatedRackTypeList](docs/Model/PaginatedRackTypeList.md)
 - [PaginatedRackUnitList](docs/Model/PaginatedRackUnitList.md)
 - [PaginatedRearPortList](docs/Model/PaginatedRearPortList.md)
 - [PaginatedRearPortTemplateList](docs/Model/PaginatedRearPortTemplateList.md)
@@ -1588,7 +1389,6 @@ Class | Method | HTTP request | Description
 - [PaginatedServiceTemplateList](docs/Model/PaginatedServiceTemplateList.md)
 - [PaginatedSiteGroupList](docs/Model/PaginatedSiteGroupList.md)
 - [PaginatedSiteList](docs/Model/PaginatedSiteList.md)
-- [PaginatedSubscriptionList](docs/Model/PaginatedSubscriptionList.md)
 - [PaginatedTagList](docs/Model/PaginatedTagList.md)
 - [PaginatedTenantGroupList](docs/Model/PaginatedTenantGroupList.md)
 - [PaginatedTenantList](docs/Model/PaginatedTenantList.md)
@@ -1613,7 +1413,6 @@ Class | Method | HTTP request | Description
 - [PatchedASNRequest](docs/Model/PatchedASNRequest.md)
 - [PatchedBookmarkRequest](docs/Model/PatchedBookmarkRequest.md)
 - [PatchedCableTerminationRequest](docs/Model/PatchedCableTerminationRequest.md)
-- [PatchedCircuitGroupRequest](docs/Model/PatchedCircuitGroupRequest.md)
 - [PatchedCircuitTerminationRequest](docs/Model/PatchedCircuitTerminationRequest.md)
 - [PatchedCircuitTypeRequest](docs/Model/PatchedCircuitTypeRequest.md)
 - [PatchedClusterGroupRequest](docs/Model/PatchedClusterGroupRequest.md)
@@ -1639,8 +1438,6 @@ Class | Method | HTTP request | Description
 - [PatchedManufacturerRequest](docs/Model/PatchedManufacturerRequest.md)
 - [PatchedModuleBayRequest](docs/Model/PatchedModuleBayRequest.md)
 - [PatchedModuleBayTemplateRequest](docs/Model/PatchedModuleBayTemplateRequest.md)
-- [PatchedNotificationGroupRequest](docs/Model/PatchedNotificationGroupRequest.md)
-- [PatchedNotificationRequest](docs/Model/PatchedNotificationRequest.md)
 - [PatchedObjectPermissionRequest](docs/Model/PatchedObjectPermissionRequest.md)
 - [PatchedPlatformRequest](docs/Model/PatchedPlatformRequest.md)
 - [PatchedPowerPanelRequest](docs/Model/PatchedPowerPanelRequest.md)
@@ -1653,8 +1450,6 @@ Class | Method | HTTP request | Description
 - [PatchedRoleRequest](docs/Model/PatchedRoleRequest.md)
 - [PatchedRouteTargetRequest](docs/Model/PatchedRouteTargetRequest.md)
 - [PatchedSavedFilterRequest](docs/Model/PatchedSavedFilterRequest.md)
-- [PatchedScriptInputRequest](docs/Model/PatchedScriptInputRequest.md)
-- [PatchedSubscriptionRequest](docs/Model/PatchedSubscriptionRequest.md)
 - [PatchedTagRequest](docs/Model/PatchedTagRequest.md)
 - [PatchedTenantRequest](docs/Model/PatchedTenantRequest.md)
 - [PatchedTokenRequest](docs/Model/PatchedTokenRequest.md)
@@ -1666,7 +1461,6 @@ Class | Method | HTTP request | Description
 - [PatchedWebhookRequest](docs/Model/PatchedWebhookRequest.md)
 - [PatchedWritableAggregateRequest](docs/Model/PatchedWritableAggregateRequest.md)
 - [PatchedWritableCableRequest](docs/Model/PatchedWritableCableRequest.md)
-- [PatchedWritableCircuitGroupAssignmentRequest](docs/Model/PatchedWritableCircuitGroupAssignmentRequest.md)
 - [PatchedWritableCircuitRequest](docs/Model/PatchedWritableCircuitRequest.md)
 - [PatchedWritableClusterRequest](docs/Model/PatchedWritableClusterRequest.md)
 - [PatchedWritableConsolePortRequest](docs/Model/PatchedWritableConsolePortRequest.md)
@@ -1704,7 +1498,6 @@ Class | Method | HTTP request | Description
 - [PatchedWritablePowerPortTemplateRequest](docs/Model/PatchedWritablePowerPortTemplateRequest.md)
 - [PatchedWritablePrefixRequest](docs/Model/PatchedWritablePrefixRequest.md)
 - [PatchedWritableRackRequest](docs/Model/PatchedWritableRackRequest.md)
-- [PatchedWritableRackTypeRequest](docs/Model/PatchedWritableRackTypeRequest.md)
 - [PatchedWritableRearPortRequest](docs/Model/PatchedWritableRearPortRequest.md)
 - [PatchedWritableRearPortTemplateRequest](docs/Model/PatchedWritableRearPortTemplateRequest.md)
 - [PatchedWritableRegionRequest](docs/Model/PatchedWritableRegionRequest.md)
@@ -1743,10 +1536,13 @@ Class | Method | HTTP request | Description
 - [PowerPortRequest](docs/Model/PowerPortRequest.md)
 - [PowerPortTemplate](docs/Model/PowerPortTemplate.md)
 - [PowerPortTemplateRequest](docs/Model/PowerPortTemplateRequest.md)
-- [PowerPortType](docs/Model/PowerPortType.md)
 - [Prefix](docs/Model/Prefix.md)
 - [PrefixRequest](docs/Model/PrefixRequest.md)
 - [PrefixStatus](docs/Model/PrefixStatus.md)
+- [PrometheusDevice](docs/Model/PrometheusDevice.md)
+- [PrometheusIPAddress](docs/Model/PrometheusIPAddress.md)
+- [PrometheusService](docs/Model/PrometheusService.md)
+- [PrometheusVirtualMachine](docs/Model/PrometheusVirtualMachine.md)
 - [Provider](docs/Model/Provider.md)
 - [ProviderAccount](docs/Model/ProviderAccount.md)
 - [ProviderAccountRequest](docs/Model/ProviderAccountRequest.md)
@@ -1756,20 +1552,13 @@ Class | Method | HTTP request | Description
 - [RIR](docs/Model/RIR.md)
 - [RIRRequest](docs/Model/RIRRequest.md)
 - [Rack](docs/Model/Rack.md)
-- [RackAirflow](docs/Model/RackAirflow.md)
-- [RackFormFactor](docs/Model/RackFormFactor.md)
-- [RackOuterUnit](docs/Model/RackOuterUnit.md)
 - [RackRequest](docs/Model/RackRequest.md)
 - [RackReservation](docs/Model/RackReservation.md)
 - [RackReservationRequest](docs/Model/RackReservationRequest.md)
 - [RackRole](docs/Model/RackRole.md)
 - [RackRoleRequest](docs/Model/RackRoleRequest.md)
-- [RackStatus](docs/Model/RackStatus.md)
-- [RackType](docs/Model/RackType.md)
-- [RackTypeRequest](docs/Model/RackTypeRequest.md)
 - [RackUnit](docs/Model/RackUnit.md)
 - [RackUnitFace](docs/Model/RackUnitFace.md)
-- [RackWidth](docs/Model/RackWidth.md)
 - [RearPort](docs/Model/RearPort.md)
 - [RearPortRequest](docs/Model/RearPortRequest.md)
 - [RearPortTemplate](docs/Model/RearPortTemplate.md)
@@ -1783,7 +1572,6 @@ Class | Method | HTTP request | Description
 - [SavedFilter](docs/Model/SavedFilter.md)
 - [SavedFilterRequest](docs/Model/SavedFilterRequest.md)
 - [Script](docs/Model/Script.md)
-- [ScriptInputRequest](docs/Model/ScriptInputRequest.md)
 - [Service](docs/Model/Service.md)
 - [ServiceProtocol](docs/Model/ServiceProtocol.md)
 - [ServiceRequest](docs/Model/ServiceRequest.md)
@@ -1793,8 +1581,6 @@ Class | Method | HTTP request | Description
 - [SiteGroup](docs/Model/SiteGroup.md)
 - [SiteGroupRequest](docs/Model/SiteGroupRequest.md)
 - [SiteRequest](docs/Model/SiteRequest.md)
-- [Subscription](docs/Model/Subscription.md)
-- [SubscriptionRequest](docs/Model/SubscriptionRequest.md)
 - [Tag](docs/Model/Tag.md)
 - [TagRequest](docs/Model/TagRequest.md)
 - [Tenant](docs/Model/Tenant.md)
@@ -1806,11 +1592,9 @@ Class | Method | HTTP request | Description
 - [TokenProvisionRequest](docs/Model/TokenProvisionRequest.md)
 - [TokenRequest](docs/Model/TokenRequest.md)
 - [Tunnel](docs/Model/Tunnel.md)
-- [TunnelEncapsulation](docs/Model/TunnelEncapsulation.md)
 - [TunnelGroup](docs/Model/TunnelGroup.md)
 - [TunnelGroupRequest](docs/Model/TunnelGroupRequest.md)
 - [TunnelRequest](docs/Model/TunnelRequest.md)
-- [TunnelStatus](docs/Model/TunnelStatus.md)
 - [TunnelTermination](docs/Model/TunnelTermination.md)
 - [TunnelTerminationRequest](docs/Model/TunnelTerminationRequest.md)
 - [TunnelTerminationRole](docs/Model/TunnelTerminationRole.md)
@@ -1831,8 +1615,11 @@ Class | Method | HTTP request | Description
 - [VirtualDeviceContextStatus](docs/Model/VirtualDeviceContextStatus.md)
 - [VirtualDisk](docs/Model/VirtualDisk.md)
 - [VirtualDiskRequest](docs/Model/VirtualDiskRequest.md)
+- [VirtualMachine](docs/Model/VirtualMachine.md)
+- [VirtualMachineRequest](docs/Model/VirtualMachineRequest.md)
 - [VirtualMachineWithConfigContext](docs/Model/VirtualMachineWithConfigContext.md)
 - [VirtualMachineWithConfigContextRequest](docs/Model/VirtualMachineWithConfigContextRequest.md)
+- [VirtualMachineWithConfigContextStatus](docs/Model/VirtualMachineWithConfigContextStatus.md)
 - [Webhook](docs/Model/Webhook.md)
 - [WebhookRequest](docs/Model/WebhookRequest.md)
 - [WirelessLAN](docs/Model/WirelessLAN.md)
@@ -1843,11 +1630,10 @@ Class | Method | HTTP request | Description
 - [WirelessLANRequest](docs/Model/WirelessLANRequest.md)
 - [WirelessLANStatus](docs/Model/WirelessLANStatus.md)
 - [WirelessLink](docs/Model/WirelessLink.md)
-- [WirelessLinkDistanceUnit](docs/Model/WirelessLinkDistanceUnit.md)
 - [WirelessLinkRequest](docs/Model/WirelessLinkRequest.md)
+- [WirelessLinkStatus](docs/Model/WirelessLinkStatus.md)
 - [WritableAggregateRequest](docs/Model/WritableAggregateRequest.md)
 - [WritableCableRequest](docs/Model/WritableCableRequest.md)
-- [WritableCircuitGroupAssignmentRequest](docs/Model/WritableCircuitGroupAssignmentRequest.md)
 - [WritableCircuitRequest](docs/Model/WritableCircuitRequest.md)
 - [WritableClusterRequest](docs/Model/WritableClusterRequest.md)
 - [WritableConsolePortRequest](docs/Model/WritableConsolePortRequest.md)
@@ -1885,7 +1671,6 @@ Class | Method | HTTP request | Description
 - [WritablePowerPortTemplateRequest](docs/Model/WritablePowerPortTemplateRequest.md)
 - [WritablePrefixRequest](docs/Model/WritablePrefixRequest.md)
 - [WritableRackRequest](docs/Model/WritableRackRequest.md)
-- [WritableRackTypeRequest](docs/Model/WritableRackTypeRequest.md)
 - [WritableRearPortRequest](docs/Model/WritableRearPortRequest.md)
 - [WritableRearPortTemplateRequest](docs/Model/WritableRearPortTemplateRequest.md)
 - [WritableRegionRequest](docs/Model/WritableRegionRequest.md)
@@ -1939,6 +1724,6 @@ vendor/bin/phpunit
 
 This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: `4.1.1 (4.1)`
+- API version: `4.0.8 (4.0)`
     - Generator version: `7.8.0`
 - Build package: `org.openapitools.codegen.languages.PhpClientCodegen`

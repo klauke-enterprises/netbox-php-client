@@ -6,9 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**source** | [**\OpenAPI\Client\Model\BriefDataSource**](BriefDataSource.md) |  | [readonly]
+**source** | [**\OpenAPI\Client\Model\DataSource**](DataSource.md) |  | [readonly]
 **path** | **string** | File path relative to the data source&#39;s root | [readonly]
 **last_updated** | **\DateTime** |  | [readonly]
 **size** | **int** |  | [readonly]

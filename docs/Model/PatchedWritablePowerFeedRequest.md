@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**power_panel** | [**\OpenAPI\Client\Model\BriefPowerPanelRequest**](BriefPowerPanelRequest.md) |  | [optional]
-**rack** | [**\OpenAPI\Client\Model\BriefRackRequest**](BriefRackRequest.md) |  | [optional]
+**power_panel** | [**\OpenAPI\Client\Model\PowerPanelRequest**](PowerPanelRequest.md) |  | [optional]
+**rack** | [**\OpenAPI\Client\Model\RackRequest**](RackRequest.md) |  | [optional]
 **name** | **string** |  | [optional]
 **status** | **string** | * &#x60;offline&#x60; - Offline * &#x60;active&#x60; - Active * &#x60;planned&#x60; - Planned * &#x60;failed&#x60; - Failed | [optional]
 **type** | **string** | * &#x60;primary&#x60; - Primary * &#x60;redundant&#x60; - Redundant | [optional]
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **max_utilization** | **int** | Maximum permissible draw (percentage) | [optional]
 **mark_connected** | **bool** | Treat as if a cable is connected | [optional]
 **description** | **string** |  | [optional]
-**tenant** | [**\OpenAPI\Client\Model\BriefTenantRequest**](BriefTenantRequest.md) |  | [optional]
+**tenant** | [**\OpenAPI\Client\Model\TenantRequest**](TenantRequest.md) |  | [optional]
 **comments** | **string** |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTagRequest[]**](NestedTagRequest.md) |  | [optional]
 **custom_fields** | **array<string,mixed>** |  | [optional]

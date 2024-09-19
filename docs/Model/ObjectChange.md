@@ -6,10 +6,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
 **time** | **\DateTime** |  | [readonly]
-**user** | [**\OpenAPI\Client\Model\BriefUser**](BriefUser.md) |  | [readonly]
+**user** | [**\OpenAPI\Client\Model\User**](User.md) |  | [readonly]
 **user_name** | **string** |  | [readonly]
 **request_id** | **string** |  | [readonly]
 **action** | [**\OpenAPI\Client\Model\ObjectChangeAction**](ObjectChangeAction.md) |  |

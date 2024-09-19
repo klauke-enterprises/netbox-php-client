@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **prefix** | **string** |  |
-**rir** | [**\OpenAPI\Client\Model\BriefRIRRequest**](BriefRIRRequest.md) |  |
-**tenant** | [**\OpenAPI\Client\Model\BriefTenantRequest**](BriefTenantRequest.md) |  | [optional]
+**rir** | [**\OpenAPI\Client\Model\RIRRequest**](RIRRequest.md) |  |
+**tenant** | [**\OpenAPI\Client\Model\TenantRequest**](TenantRequest.md) |  | [optional]
 **date_added** | **\DateTime** |  | [optional]
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]

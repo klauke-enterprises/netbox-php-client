@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**provider** | [**\OpenAPI\Client\Model\BriefProviderRequest**](BriefProviderRequest.md) |  | [optional]
+**provider** | [**\OpenAPI\Client\Model\ProviderRequest**](ProviderRequest.md) |  | [optional]
 **name** | **string** |  | [optional]
 **service_id** | **string** |  | [optional]
 **description** | **string** |  | [optional]

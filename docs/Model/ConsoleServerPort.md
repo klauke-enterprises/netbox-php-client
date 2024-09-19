@@ -6,17 +6,16 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**device** | [**\OpenAPI\Client\Model\BriefDevice**](BriefDevice.md) |  |
-**module** | [**\OpenAPI\Client\Model\BriefModule**](BriefModule.md) |  | [optional]
+**device** | [**\OpenAPI\Client\Model\Device**](Device.md) |  |
+**module** | [**\OpenAPI\Client\Model\Module**](Module.md) |  | [optional]
 **name** | **string** |  |
 **label** | **string** | Physical label | [optional]
 **type** | [**\OpenAPI\Client\Model\ConsolePortType**](ConsolePortType.md) |  | [optional]
 **speed** | [**\OpenAPI\Client\Model\ConsolePortSpeed**](ConsolePortSpeed.md) |  | [optional]
 **description** | **string** |  | [optional]
 **mark_connected** | **bool** | Treat as if a cable is connected | [optional]
-**cable** | [**\OpenAPI\Client\Model\BriefCable**](BriefCable.md) |  | [readonly]
+**cable** | [**\OpenAPI\Client\Model\Cable**](Cable.md) |  | [readonly]
 **cable_end** | **string** |  | [readonly]
 **link_peers** | **mixed[]** |  | [readonly]
 **link_peers_type** | **string** | Return the type of the peer link terminations, or None. | [readonly]

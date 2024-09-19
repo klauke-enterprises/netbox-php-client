@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **parent** | **mixed** |  | [readonly]
 **name** | **string** |  | [optional]
 **image** | **string** |  |
-**image_height** | **int** |  | [readonly]
-**image_width** | **int** |  | [readonly]
+**image_height** | **int** |  |
+**image_width** | **int** |  |
 **created** | **\DateTime** |  | [readonly]
 **last_updated** | **\DateTime** |  | [readonly]
 

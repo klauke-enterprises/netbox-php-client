@@ -6,15 +6,14 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
 **name** | **string** |  |
-**device** | [**\OpenAPI\Client\Model\BriefDevice**](BriefDevice.md) |  |
+**device** | [**\OpenAPI\Client\Model\Device**](Device.md) |  |
 **identifier** | **int** |  | [optional]
-**tenant** | [**\OpenAPI\Client\Model\BriefTenant**](BriefTenant.md) |  | [optional]
-**primary_ip** | [**\OpenAPI\Client\Model\BriefIPAddress**](BriefIPAddress.md) |  | [readonly]
-**primary_ip4** | [**\OpenAPI\Client\Model\BriefIPAddress**](BriefIPAddress.md) |  | [optional]
-**primary_ip6** | [**\OpenAPI\Client\Model\BriefIPAddress**](BriefIPAddress.md) |  | [optional]
+**tenant** | [**\OpenAPI\Client\Model\Tenant**](Tenant.md) |  | [optional]
+**primary_ip** | [**\OpenAPI\Client\Model\IPAddress**](IPAddress.md) |  | [readonly]
+**primary_ip4** | [**\OpenAPI\Client\Model\IPAddress**](IPAddress.md) |  | [optional]
+**primary_ip6** | [**\OpenAPI\Client\Model\IPAddress**](IPAddress.md) |  | [optional]
 **status** | [**\OpenAPI\Client\Model\VirtualDeviceContextStatus**](VirtualDeviceContextStatus.md) |  |
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]

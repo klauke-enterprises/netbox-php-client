@@ -1,6 +1,6 @@
 # OpenAPI\Client\VirtualizationApi
 
-All URIs are relative to https://demo.netbox.dev/api/schema, except if the operation defines another base path.
+All URIs are relative to https://netbox.demodash.at/api/schema, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
@@ -430,8 +430,8 @@ $apiInstance = new OpenAPI\Client\Api\VirtualizationApi(
 );
 $contact = array(56); // int[] | Contact
 $contact__n = array(56); // int[] | Contact
-$contact_group = array('contact_group_example'); // string[]
-$contact_group__n = array('contact_group__n_example'); // string[]
+$contact_group = array(56); // int[] | Contact group
+$contact_group__n = array(56); // int[] | Contact group
 $contact_role = array(56); // int[] | Contact Role
 $contact_role__n = array(56); // int[] | Contact Role
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -512,8 +512,8 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **contact** | [**int[]**](../Model/int.md)| Contact | [optional] |
 | **contact__n** | [**int[]**](../Model/int.md)| Contact | [optional] |
-| **contact_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **contact_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **contact_group** | [**int[]**](../Model/int.md)| Contact group | [optional] |
+| **contact_group__n** | [**int[]**](../Model/int.md)| Contact group | [optional] |
 | **contact_role** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **contact_role__n** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -1900,8 +1900,8 @@ $apiInstance = new OpenAPI\Client\Api\VirtualizationApi(
 );
 $contact = array(56); // int[] | Contact
 $contact__n = array(56); // int[] | Contact
-$contact_group = array('contact_group_example'); // string[]
-$contact_group__n = array('contact_group__n_example'); // string[]
+$contact_group = array(56); // int[] | Contact group
+$contact_group__n = array(56); // int[] | Contact group
 $contact_role = array(56); // int[] | Contact Role
 $contact_role__n = array(56); // int[] | Contact Role
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -1957,16 +1957,16 @@ $name__nisw = array('name__nisw_example'); // string[]
 $offset = 56; // int | The initial index from which to return the results.
 $ordering = 'ordering_example'; // string | Which field to use when ordering the results.
 $q = 'q_example'; // string | Search
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site (slug)
 $site__n = array('site__n_example'); // string[] | Site (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $status = array('status_example'); // string[]
@@ -1975,10 +1975,10 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $type = array('type_example'); // string[] | Cluster type (slug)
@@ -2001,8 +2001,8 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **contact** | [**int[]**](../Model/int.md)| Contact | [optional] |
 | **contact__n** | [**int[]**](../Model/int.md)| Contact | [optional] |
-| **contact_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **contact_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **contact_group** | [**int[]**](../Model/int.md)| Contact group | [optional] |
+| **contact_group__n** | [**int[]**](../Model/int.md)| Contact group | [optional] |
 | **contact_role** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **contact_role__n** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -2058,16 +2058,16 @@ try {
 | **offset** | **int**| The initial index from which to return the results. | [optional] |
 | **ordering** | **string**| Which field to use when ordering the results. | [optional] |
 | **q** | **string**| Search | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **status** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -2076,10 +2076,10 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **type** | [**string[]**](../Model/string.md)| Cluster type (slug) | [optional] |
@@ -4166,7 +4166,7 @@ void (empty response body)
 ## `virtualizationVirtualMachinesList()`
 
 ```php
-virtualizationVirtualMachinesList($cluster, $cluster__n, $cluster_group, $cluster_group__n, $cluster_group_id, $cluster_group_id__n, $cluster_id, $cluster_id__n, $cluster_type, $cluster_type__n, $cluster_type_id, $cluster_type_id__n, $config_template_id, $config_template_id__n, $contact, $contact__n, $contact_group, $contact_group__n, $contact_role, $contact_role__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $disk, $disk__empty, $disk__gt, $disk__gte, $disk__lt, $disk__lte, $disk__n, $has_primary_ip, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $interface_count, $interface_count__empty, $interface_count__gt, $interface_count__gte, $interface_count__lt, $interface_count__lte, $interface_count__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $local_context_data, $mac_address, $mac_address__ic, $mac_address__ie, $mac_address__iew, $mac_address__isw, $mac_address__n, $mac_address__nic, $mac_address__nie, $mac_address__niew, $mac_address__nisw, $memory, $memory__empty, $memory__gt, $memory__gte, $memory__lt, $memory__lte, $memory__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $platform, $platform__n, $platform_id, $platform_id__n, $primary_ip4_id, $primary_ip4_id__n, $primary_ip6_id, $primary_ip6_id__n, $q, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $serial, $serial__empty, $serial__ic, $serial__ie, $serial__iew, $serial__isw, $serial__n, $serial__nic, $serial__nie, $serial__niew, $serial__nisw, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $status, $status__n, $tag, $tag__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $updated_by_request, $vcpus, $vcpus__empty, $vcpus__gt, $vcpus__gte, $vcpus__lt, $vcpus__lte, $vcpus__n, $virtual_disk_count, $virtual_disk_count__empty, $virtual_disk_count__gt, $virtual_disk_count__gte, $virtual_disk_count__lt, $virtual_disk_count__lte, $virtual_disk_count__n): \OpenAPI\Client\Model\PaginatedVirtualMachineWithConfigContextList
+virtualizationVirtualMachinesList($cluster, $cluster__n, $cluster_group, $cluster_group__n, $cluster_group_id, $cluster_group_id__n, $cluster_id, $cluster_id__n, $cluster_type, $cluster_type__n, $cluster_type_id, $cluster_type_id__n, $config_template_id, $config_template_id__n, $contact, $contact__n, $contact_group, $contact_group__n, $contact_role, $contact_role__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $disk, $disk__empty, $disk__gt, $disk__gte, $disk__lt, $disk__lte, $disk__n, $has_primary_ip, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $interface_count, $interface_count__empty, $interface_count__gt, $interface_count__gte, $interface_count__lt, $interface_count__lte, $interface_count__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $local_context_data, $mac_address, $mac_address__ic, $mac_address__ie, $mac_address__iew, $mac_address__isw, $mac_address__n, $mac_address__nic, $mac_address__nie, $mac_address__niew, $mac_address__nisw, $memory, $memory__empty, $memory__gt, $memory__gte, $memory__lt, $memory__lte, $memory__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $platform, $platform__n, $platform_id, $platform_id__n, $primary_ip4_id, $primary_ip4_id__n, $primary_ip6_id, $primary_ip6_id__n, $q, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $status, $status__n, $tag, $tag__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $updated_by_request, $vcpus, $vcpus__empty, $vcpus__gt, $vcpus__gte, $vcpus__lt, $vcpus__lte, $vcpus__n, $virtual_disk_count, $virtual_disk_count__empty, $virtual_disk_count__gt, $virtual_disk_count__gte, $virtual_disk_count__lt, $virtual_disk_count__lte, $virtual_disk_count__n): \OpenAPI\Client\Model\PaginatedVirtualMachineWithConfigContextList
 ```
 
 
@@ -4213,8 +4213,8 @@ $config_template_id = array(56); // int[] | Config template (ID)
 $config_template_id__n = array(56); // int[] | Config template (ID)
 $contact = array(56); // int[] | Contact
 $contact__n = array(56); // int[] | Contact
-$contact_group = array('contact_group_example'); // string[]
-$contact_group__n = array('contact_group__n_example'); // string[]
+$contact_group = array(56); // int[] | Contact group
+$contact_group__n = array(56); // int[] | Contact group
 $contact_role = array(56); // int[] | Contact Role
 $contact_role__n = array(56); // int[] | Contact Role
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -4311,31 +4311,20 @@ $primary_ip4_id__n = array(56); // int[] | Primary IPv4 (ID)
 $primary_ip6_id = array(56); // int[] | Primary IPv6 (ID)
 $primary_ip6_id__n = array(56); // int[] | Primary IPv6 (ID)
 $q = 'q_example'; // string | Search
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $role = array('role_example'); // string[] | Role (slug)
 $role__n = array('role__n_example'); // string[] | Role (slug)
 $role_id = array(56); // int[] | Role (ID)
 $role_id__n = array(56); // int[] | Role (ID)
-$serial = array('serial_example'); // string[]
-$serial__empty = True; // bool
-$serial__ic = array('serial__ic_example'); // string[]
-$serial__ie = array('serial__ie_example'); // string[]
-$serial__iew = array('serial__iew_example'); // string[]
-$serial__isw = array('serial__isw_example'); // string[]
-$serial__n = array('serial__n_example'); // string[]
-$serial__nic = array('serial__nic_example'); // string[]
-$serial__nie = array('serial__nie_example'); // string[]
-$serial__niew = array('serial__niew_example'); // string[]
-$serial__nisw = array('serial__nisw_example'); // string[]
 $site = array('site_example'); // string[] | Site (slug)
 $site__n = array('site__n_example'); // string[] | Site (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $status = array('status_example'); // string[]
@@ -4344,10 +4333,10 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $updated_by_request = 'updated_by_request_example'; // string
@@ -4367,7 +4356,7 @@ $virtual_disk_count__lte = array(56); // int[]
 $virtual_disk_count__n = array(56); // int[]
 
 try {
-    $result = $apiInstance->virtualizationVirtualMachinesList($cluster, $cluster__n, $cluster_group, $cluster_group__n, $cluster_group_id, $cluster_group_id__n, $cluster_id, $cluster_id__n, $cluster_type, $cluster_type__n, $cluster_type_id, $cluster_type_id__n, $config_template_id, $config_template_id__n, $contact, $contact__n, $contact_group, $contact_group__n, $contact_role, $contact_role__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $disk, $disk__empty, $disk__gt, $disk__gte, $disk__lt, $disk__lte, $disk__n, $has_primary_ip, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $interface_count, $interface_count__empty, $interface_count__gt, $interface_count__gte, $interface_count__lt, $interface_count__lte, $interface_count__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $local_context_data, $mac_address, $mac_address__ic, $mac_address__ie, $mac_address__iew, $mac_address__isw, $mac_address__n, $mac_address__nic, $mac_address__nie, $mac_address__niew, $mac_address__nisw, $memory, $memory__empty, $memory__gt, $memory__gte, $memory__lt, $memory__lte, $memory__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $platform, $platform__n, $platform_id, $platform_id__n, $primary_ip4_id, $primary_ip4_id__n, $primary_ip6_id, $primary_ip6_id__n, $q, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $serial, $serial__empty, $serial__ic, $serial__ie, $serial__iew, $serial__isw, $serial__n, $serial__nic, $serial__nie, $serial__niew, $serial__nisw, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $status, $status__n, $tag, $tag__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $updated_by_request, $vcpus, $vcpus__empty, $vcpus__gt, $vcpus__gte, $vcpus__lt, $vcpus__lte, $vcpus__n, $virtual_disk_count, $virtual_disk_count__empty, $virtual_disk_count__gt, $virtual_disk_count__gte, $virtual_disk_count__lt, $virtual_disk_count__lte, $virtual_disk_count__n);
+    $result = $apiInstance->virtualizationVirtualMachinesList($cluster, $cluster__n, $cluster_group, $cluster_group__n, $cluster_group_id, $cluster_group_id__n, $cluster_id, $cluster_id__n, $cluster_type, $cluster_type__n, $cluster_type_id, $cluster_type_id__n, $config_template_id, $config_template_id__n, $contact, $contact__n, $contact_group, $contact_group__n, $contact_role, $contact_role__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $disk, $disk__empty, $disk__gt, $disk__gte, $disk__lt, $disk__lte, $disk__n, $has_primary_ip, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $interface_count, $interface_count__empty, $interface_count__gt, $interface_count__gte, $interface_count__lt, $interface_count__lte, $interface_count__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $local_context_data, $mac_address, $mac_address__ic, $mac_address__ie, $mac_address__iew, $mac_address__isw, $mac_address__n, $mac_address__nic, $mac_address__nie, $mac_address__niew, $mac_address__nisw, $memory, $memory__empty, $memory__gt, $memory__gte, $memory__lt, $memory__lte, $memory__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $platform, $platform__n, $platform_id, $platform_id__n, $primary_ip4_id, $primary_ip4_id__n, $primary_ip6_id, $primary_ip6_id__n, $q, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $status, $status__n, $tag, $tag__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $updated_by_request, $vcpus, $vcpus__empty, $vcpus__gt, $vcpus__gte, $vcpus__lt, $vcpus__lte, $vcpus__n, $virtual_disk_count, $virtual_disk_count__empty, $virtual_disk_count__gt, $virtual_disk_count__gte, $virtual_disk_count__lt, $virtual_disk_count__lte, $virtual_disk_count__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling VirtualizationApi->virtualizationVirtualMachinesList: ', $e->getMessage(), PHP_EOL;
@@ -4394,8 +4383,8 @@ try {
 | **config_template_id__n** | [**int[]**](../Model/int.md)| Config template (ID) | [optional] |
 | **contact** | [**int[]**](../Model/int.md)| Contact | [optional] |
 | **contact__n** | [**int[]**](../Model/int.md)| Contact | [optional] |
-| **contact_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **contact_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **contact_group** | [**int[]**](../Model/int.md)| Contact group | [optional] |
+| **contact_group__n** | [**int[]**](../Model/int.md)| Contact group | [optional] |
 | **contact_role** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **contact_role__n** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -4492,31 +4481,20 @@ try {
 | **primary_ip6_id** | [**int[]**](../Model/int.md)| Primary IPv6 (ID) | [optional] |
 | **primary_ip6_id__n** | [**int[]**](../Model/int.md)| Primary IPv6 (ID) | [optional] |
 | **q** | **string**| Search | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **role** | [**string[]**](../Model/string.md)| Role (slug) | [optional] |
 | **role__n** | [**string[]**](../Model/string.md)| Role (slug) | [optional] |
 | **role_id** | [**int[]**](../Model/int.md)| Role (ID) | [optional] |
 | **role_id__n** | [**int[]**](../Model/int.md)| Role (ID) | [optional] |
-| **serial** | [**string[]**](../Model/string.md)|  | [optional] |
-| **serial__empty** | **bool**|  | [optional] |
-| **serial__ic** | [**string[]**](../Model/string.md)|  | [optional] |
-| **serial__ie** | [**string[]**](../Model/string.md)|  | [optional] |
-| **serial__iew** | [**string[]**](../Model/string.md)|  | [optional] |
-| **serial__isw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **serial__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **serial__nic** | [**string[]**](../Model/string.md)|  | [optional] |
-| **serial__nie** | [**string[]**](../Model/string.md)|  | [optional] |
-| **serial__niew** | [**string[]**](../Model/string.md)|  | [optional] |
-| **serial__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **status** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -4525,10 +4503,10 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **updated_by_request** | **string**|  | [optional] |

@@ -1,6 +1,6 @@
 # OpenAPI\Client\ExtrasApi
 
-All URIs are relative to https://demo.netbox.dev/api/schema, except if the operation defines another base path.
+All URIs are relative to https://netbox.demodash.at/api/schema, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
@@ -103,24 +103,8 @@ All URIs are relative to https://demo.netbox.dev/api/schema, except if the opera
 | [**extrasJournalEntriesPartialUpdate()**](ExtrasApi.md#extrasJournalEntriesPartialUpdate) | **PATCH** /api/extras/journal-entries/{id}/ |  |
 | [**extrasJournalEntriesRetrieve()**](ExtrasApi.md#extrasJournalEntriesRetrieve) | **GET** /api/extras/journal-entries/{id}/ |  |
 | [**extrasJournalEntriesUpdate()**](ExtrasApi.md#extrasJournalEntriesUpdate) | **PUT** /api/extras/journal-entries/{id}/ |  |
-| [**extrasNotificationGroupsBulkDestroy()**](ExtrasApi.md#extrasNotificationGroupsBulkDestroy) | **DELETE** /api/extras/notification-groups/ |  |
-| [**extrasNotificationGroupsBulkPartialUpdate()**](ExtrasApi.md#extrasNotificationGroupsBulkPartialUpdate) | **PATCH** /api/extras/notification-groups/ |  |
-| [**extrasNotificationGroupsBulkUpdate()**](ExtrasApi.md#extrasNotificationGroupsBulkUpdate) | **PUT** /api/extras/notification-groups/ |  |
-| [**extrasNotificationGroupsCreate()**](ExtrasApi.md#extrasNotificationGroupsCreate) | **POST** /api/extras/notification-groups/ |  |
-| [**extrasNotificationGroupsDestroy()**](ExtrasApi.md#extrasNotificationGroupsDestroy) | **DELETE** /api/extras/notification-groups/{id}/ |  |
-| [**extrasNotificationGroupsList()**](ExtrasApi.md#extrasNotificationGroupsList) | **GET** /api/extras/notification-groups/ |  |
-| [**extrasNotificationGroupsPartialUpdate()**](ExtrasApi.md#extrasNotificationGroupsPartialUpdate) | **PATCH** /api/extras/notification-groups/{id}/ |  |
-| [**extrasNotificationGroupsRetrieve()**](ExtrasApi.md#extrasNotificationGroupsRetrieve) | **GET** /api/extras/notification-groups/{id}/ |  |
-| [**extrasNotificationGroupsUpdate()**](ExtrasApi.md#extrasNotificationGroupsUpdate) | **PUT** /api/extras/notification-groups/{id}/ |  |
-| [**extrasNotificationsBulkDestroy()**](ExtrasApi.md#extrasNotificationsBulkDestroy) | **DELETE** /api/extras/notifications/ |  |
-| [**extrasNotificationsBulkPartialUpdate()**](ExtrasApi.md#extrasNotificationsBulkPartialUpdate) | **PATCH** /api/extras/notifications/ |  |
-| [**extrasNotificationsBulkUpdate()**](ExtrasApi.md#extrasNotificationsBulkUpdate) | **PUT** /api/extras/notifications/ |  |
-| [**extrasNotificationsCreate()**](ExtrasApi.md#extrasNotificationsCreate) | **POST** /api/extras/notifications/ |  |
-| [**extrasNotificationsDestroy()**](ExtrasApi.md#extrasNotificationsDestroy) | **DELETE** /api/extras/notifications/{id}/ |  |
-| [**extrasNotificationsList()**](ExtrasApi.md#extrasNotificationsList) | **GET** /api/extras/notifications/ |  |
-| [**extrasNotificationsPartialUpdate()**](ExtrasApi.md#extrasNotificationsPartialUpdate) | **PATCH** /api/extras/notifications/{id}/ |  |
-| [**extrasNotificationsRetrieve()**](ExtrasApi.md#extrasNotificationsRetrieve) | **GET** /api/extras/notifications/{id}/ |  |
-| [**extrasNotificationsUpdate()**](ExtrasApi.md#extrasNotificationsUpdate) | **PUT** /api/extras/notifications/{id}/ |  |
+| [**extrasObjectChangesList()**](ExtrasApi.md#extrasObjectChangesList) | **GET** /api/extras/object-changes/ |  |
+| [**extrasObjectChangesRetrieve()**](ExtrasApi.md#extrasObjectChangesRetrieve) | **GET** /api/extras/object-changes/{id}/ |  |
 | [**extrasObjectTypesList()**](ExtrasApi.md#extrasObjectTypesList) | **GET** /api/extras/object-types/ |  |
 | [**extrasObjectTypesRetrieve()**](ExtrasApi.md#extrasObjectTypesRetrieve) | **GET** /api/extras/object-types/{id}/ |  |
 | [**extrasSavedFiltersBulkDestroy()**](ExtrasApi.md#extrasSavedFiltersBulkDestroy) | **DELETE** /api/extras/saved-filters/ |  |
@@ -138,15 +122,6 @@ All URIs are relative to https://demo.netbox.dev/api/schema, except if the opera
 | [**extrasScriptsPartialUpdate()**](ExtrasApi.md#extrasScriptsPartialUpdate) | **PATCH** /api/extras/scripts/{id}/ |  |
 | [**extrasScriptsRetrieve()**](ExtrasApi.md#extrasScriptsRetrieve) | **GET** /api/extras/scripts/{id}/ |  |
 | [**extrasScriptsUpdate()**](ExtrasApi.md#extrasScriptsUpdate) | **PUT** /api/extras/scripts/{id}/ |  |
-| [**extrasSubscriptionsBulkDestroy()**](ExtrasApi.md#extrasSubscriptionsBulkDestroy) | **DELETE** /api/extras/subscriptions/ |  |
-| [**extrasSubscriptionsBulkPartialUpdate()**](ExtrasApi.md#extrasSubscriptionsBulkPartialUpdate) | **PATCH** /api/extras/subscriptions/ |  |
-| [**extrasSubscriptionsBulkUpdate()**](ExtrasApi.md#extrasSubscriptionsBulkUpdate) | **PUT** /api/extras/subscriptions/ |  |
-| [**extrasSubscriptionsCreate()**](ExtrasApi.md#extrasSubscriptionsCreate) | **POST** /api/extras/subscriptions/ |  |
-| [**extrasSubscriptionsDestroy()**](ExtrasApi.md#extrasSubscriptionsDestroy) | **DELETE** /api/extras/subscriptions/{id}/ |  |
-| [**extrasSubscriptionsList()**](ExtrasApi.md#extrasSubscriptionsList) | **GET** /api/extras/subscriptions/ |  |
-| [**extrasSubscriptionsPartialUpdate()**](ExtrasApi.md#extrasSubscriptionsPartialUpdate) | **PATCH** /api/extras/subscriptions/{id}/ |  |
-| [**extrasSubscriptionsRetrieve()**](ExtrasApi.md#extrasSubscriptionsRetrieve) | **GET** /api/extras/subscriptions/{id}/ |  |
-| [**extrasSubscriptionsUpdate()**](ExtrasApi.md#extrasSubscriptionsUpdate) | **PUT** /api/extras/subscriptions/{id}/ |  |
 | [**extrasTagsBulkDestroy()**](ExtrasApi.md#extrasTagsBulkDestroy) | **DELETE** /api/extras/tags/ |  |
 | [**extrasTagsBulkPartialUpdate()**](ExtrasApi.md#extrasTagsBulkPartialUpdate) | **PATCH** /api/extras/tags/ |  |
 | [**extrasTagsBulkUpdate()**](ExtrasApi.md#extrasTagsBulkUpdate) | **PUT** /api/extras/tags/ |  |
@@ -1168,7 +1143,7 @@ void (empty response body)
 ## `extrasConfigContextsList()`
 
 ```php
-extrasConfigContextsList($auto_sync_enabled, $cluster_group, $cluster_group__n, $cluster_group_id, $cluster_group_id__n, $cluster_id, $cluster_id__n, $cluster_type, $cluster_type__n, $cluster_type_id, $cluster_type_id__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $data_file_id, $data_file_id__n, $data_source_id, $data_source_id__n, $data_synced, $data_synced__empty, $data_synced__gt, $data_synced__gte, $data_synced__lt, $data_synced__lte, $data_synced__n, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $is_active, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $platform, $platform__n, $platform_id, $platform_id__n, $q, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $tag_id, $tag_id__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n): \OpenAPI\Client\Model\PaginatedConfigContextList
+extrasConfigContextsList($auto_sync_enabled, $cluster_group, $cluster_group__n, $cluster_group_id, $cluster_group_id__n, $cluster_id, $cluster_id__n, $cluster_type, $cluster_type__n, $cluster_type_id, $cluster_type_id__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $data_file_id, $data_file_id__n, $data_source_id, $data_source_id__n, $data_synced, $data_synced__empty, $data_synced__gt, $data_synced__gte, $data_synced__lt, $data_synced__lte, $data_synced__n, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $is_active, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $platform, $platform__n, $platform_id, $platform_id__n, $q, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $tag_id, $tag_id__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n): \OpenAPI\Client\Model\PaginatedConfigContextList
 ```
 
 
@@ -1289,6 +1264,10 @@ $region = array('region_example'); // string[] | Region (slug)
 $region__n = array('region__n_example'); // string[] | Region (slug)
 $region_id = array(56); // int[] | Region
 $region_id__n = array(56); // int[] | Region
+$role = array('role_example'); // string[] | Role (slug)
+$role__n = array('role__n_example'); // string[] | Role (slug)
+$role_id = array(56); // int[] | Role
+$role_id__n = array(56); // int[] | Role
 $site = array('site_example'); // string[] | Site (slug)
 $site__n = array('site__n_example'); // string[] | Site (slug)
 $site_group = array('site_group_example'); // string[] | Site group (slug)
@@ -1319,7 +1298,7 @@ $weight__lte = array(56); // int[]
 $weight__n = array(56); // int[]
 
 try {
-    $result = $apiInstance->extrasConfigContextsList($auto_sync_enabled, $cluster_group, $cluster_group__n, $cluster_group_id, $cluster_group_id__n, $cluster_id, $cluster_id__n, $cluster_type, $cluster_type__n, $cluster_type_id, $cluster_type_id__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $data_file_id, $data_file_id__n, $data_source_id, $data_source_id__n, $data_synced, $data_synced__empty, $data_synced__gt, $data_synced__gte, $data_synced__lt, $data_synced__lte, $data_synced__n, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $is_active, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $platform, $platform__n, $platform_id, $platform_id__n, $q, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $tag_id, $tag_id__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n);
+    $result = $apiInstance->extrasConfigContextsList($auto_sync_enabled, $cluster_group, $cluster_group__n, $cluster_group_id, $cluster_group_id__n, $cluster_id, $cluster_id__n, $cluster_type, $cluster_type__n, $cluster_type_id, $cluster_type_id__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $data_file_id, $data_file_id__n, $data_source_id, $data_source_id__n, $data_synced, $data_synced__empty, $data_synced__gt, $data_synced__gte, $data_synced__lt, $data_synced__lte, $data_synced__n, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $is_active, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $platform, $platform__n, $platform_id, $platform_id__n, $q, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $tag_id, $tag_id__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ExtrasApi->extrasConfigContextsList: ', $e->getMessage(), PHP_EOL;
@@ -1420,6 +1399,10 @@ try {
 | **region__n** | [**string[]**](../Model/string.md)| Region (slug) | [optional] |
 | **region_id** | [**int[]**](../Model/int.md)| Region | [optional] |
 | **region_id__n** | [**int[]**](../Model/int.md)| Region | [optional] |
+| **role** | [**string[]**](../Model/string.md)| Role (slug) | [optional] |
+| **role__n** | [**string[]**](../Model/string.md)| Role (slug) | [optional] |
+| **role_id** | [**int[]**](../Model/int.md)| Role | [optional] |
+| **role_id__n** | [**int[]**](../Model/int.md)| Role | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site (slug) | [optional] |
 | **site_group** | [**string[]**](../Model/string.md)| Site group (slug) | [optional] |
@@ -3725,7 +3708,7 @@ void (empty response body)
 ## `extrasCustomFieldsList()`
 
 ```php
-extrasCustomFieldsList($choice_set, $choice_set__n, $choice_set_id, $choice_set_id__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $filter_logic, $filter_logic__n, $group_name, $group_name__empty, $group_name__ic, $group_name__ie, $group_name__iew, $group_name__isw, $group_name__n, $group_name__nic, $group_name__nie, $group_name__niew, $group_name__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $is_cloneable, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $object_type, $object_type__ic, $object_type__ie, $object_type__iew, $object_type__isw, $object_type__n, $object_type__nic, $object_type__nie, $object_type__niew, $object_type__nisw, $object_type_id, $object_type_id__n, $offset, $ordering, $q, $related_object_type, $related_object_type__n, $related_object_type_id, $related_object_type_id__n, $required, $search_weight, $search_weight__empty, $search_weight__gt, $search_weight__gte, $search_weight__lt, $search_weight__lte, $search_weight__n, $type, $type__n, $ui_editable, $ui_editable__n, $ui_visible, $ui_visible__n, $unique, $updated_by_request, $validation_maximum, $validation_maximum__empty, $validation_maximum__gt, $validation_maximum__gte, $validation_maximum__lt, $validation_maximum__lte, $validation_maximum__n, $validation_minimum, $validation_minimum__empty, $validation_minimum__gt, $validation_minimum__gte, $validation_minimum__lt, $validation_minimum__lte, $validation_minimum__n, $validation_regex, $validation_regex__empty, $validation_regex__ic, $validation_regex__ie, $validation_regex__iew, $validation_regex__isw, $validation_regex__n, $validation_regex__nic, $validation_regex__nie, $validation_regex__niew, $validation_regex__nisw, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n): \OpenAPI\Client\Model\PaginatedCustomFieldList
+extrasCustomFieldsList($choice_set, $choice_set__n, $choice_set_id, $choice_set_id__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $filter_logic, $filter_logic__n, $group_name, $group_name__empty, $group_name__ic, $group_name__ie, $group_name__iew, $group_name__isw, $group_name__n, $group_name__nic, $group_name__nie, $group_name__niew, $group_name__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $is_cloneable, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $object_type, $object_type__ic, $object_type__ie, $object_type__iew, $object_type__isw, $object_type__n, $object_type__nic, $object_type__nie, $object_type__niew, $object_type__nisw, $object_type_id, $object_type_id__n, $offset, $ordering, $q, $related_object_type, $related_object_type__n, $related_object_type_id, $related_object_type_id__n, $required, $search_weight, $search_weight__empty, $search_weight__gt, $search_weight__gte, $search_weight__lt, $search_weight__lte, $search_weight__n, $type, $type__n, $ui_editable, $ui_editable__n, $ui_visible, $ui_visible__n, $updated_by_request, $validation_maximum, $validation_maximum__empty, $validation_maximum__gt, $validation_maximum__gte, $validation_maximum__lt, $validation_maximum__lte, $validation_maximum__n, $validation_minimum, $validation_minimum__empty, $validation_minimum__gt, $validation_minimum__gte, $validation_minimum__lt, $validation_minimum__lte, $validation_minimum__n, $validation_regex, $validation_regex__empty, $validation_regex__ic, $validation_regex__ie, $validation_regex__iew, $validation_regex__isw, $validation_regex__n, $validation_regex__nic, $validation_regex__nie, $validation_regex__niew, $validation_regex__nisw, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n): \OpenAPI\Client\Model\PaginatedCustomFieldList
 ```
 
 
@@ -3864,7 +3847,6 @@ $ui_editable = 'ui_editable_example'; // string | Specifies whether the custom f
 $ui_editable__n = 'ui_editable__n_example'; // string | Specifies whether the custom field value can be edited in the UI  * `yes` - Yes * `no` - No * `hidden` - Hidden
 $ui_visible = 'ui_visible_example'; // string | Specifies whether the custom field is displayed in the UI  * `always` - Always * `if-set` - If set * `hidden` - Hidden
 $ui_visible__n = 'ui_visible__n_example'; // string | Specifies whether the custom field is displayed in the UI  * `always` - Always * `if-set` - If set * `hidden` - Hidden
-$unique = True; // bool
 $updated_by_request = 'updated_by_request_example'; // string
 $validation_maximum = array(56); // int[]
 $validation_maximum__empty = True; // bool
@@ -3900,7 +3882,7 @@ $weight__lte = array(56); // int[]
 $weight__n = array(56); // int[]
 
 try {
-    $result = $apiInstance->extrasCustomFieldsList($choice_set, $choice_set__n, $choice_set_id, $choice_set_id__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $filter_logic, $filter_logic__n, $group_name, $group_name__empty, $group_name__ic, $group_name__ie, $group_name__iew, $group_name__isw, $group_name__n, $group_name__nic, $group_name__nie, $group_name__niew, $group_name__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $is_cloneable, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $object_type, $object_type__ic, $object_type__ie, $object_type__iew, $object_type__isw, $object_type__n, $object_type__nic, $object_type__nie, $object_type__niew, $object_type__nisw, $object_type_id, $object_type_id__n, $offset, $ordering, $q, $related_object_type, $related_object_type__n, $related_object_type_id, $related_object_type_id__n, $required, $search_weight, $search_weight__empty, $search_weight__gt, $search_weight__gte, $search_weight__lt, $search_weight__lte, $search_weight__n, $type, $type__n, $ui_editable, $ui_editable__n, $ui_visible, $ui_visible__n, $unique, $updated_by_request, $validation_maximum, $validation_maximum__empty, $validation_maximum__gt, $validation_maximum__gte, $validation_maximum__lt, $validation_maximum__lte, $validation_maximum__n, $validation_minimum, $validation_minimum__empty, $validation_minimum__gt, $validation_minimum__gte, $validation_minimum__lt, $validation_minimum__lte, $validation_minimum__n, $validation_regex, $validation_regex__empty, $validation_regex__ic, $validation_regex__ie, $validation_regex__iew, $validation_regex__isw, $validation_regex__n, $validation_regex__nic, $validation_regex__nie, $validation_regex__niew, $validation_regex__nisw, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n);
+    $result = $apiInstance->extrasCustomFieldsList($choice_set, $choice_set__n, $choice_set_id, $choice_set_id__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $filter_logic, $filter_logic__n, $group_name, $group_name__empty, $group_name__ic, $group_name__ie, $group_name__iew, $group_name__isw, $group_name__n, $group_name__nic, $group_name__nie, $group_name__niew, $group_name__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $is_cloneable, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $object_type, $object_type__ic, $object_type__ie, $object_type__iew, $object_type__isw, $object_type__n, $object_type__nic, $object_type__nie, $object_type__niew, $object_type__nisw, $object_type_id, $object_type_id__n, $offset, $ordering, $q, $related_object_type, $related_object_type__n, $related_object_type_id, $related_object_type_id__n, $required, $search_weight, $search_weight__empty, $search_weight__gt, $search_weight__gte, $search_weight__lt, $search_weight__lte, $search_weight__n, $type, $type__n, $ui_editable, $ui_editable__n, $ui_visible, $ui_visible__n, $updated_by_request, $validation_maximum, $validation_maximum__empty, $validation_maximum__gt, $validation_maximum__gte, $validation_maximum__lt, $validation_maximum__lte, $validation_maximum__n, $validation_minimum, $validation_minimum__empty, $validation_minimum__gt, $validation_minimum__gte, $validation_minimum__lt, $validation_minimum__lte, $validation_minimum__n, $validation_regex, $validation_regex__empty, $validation_regex__ic, $validation_regex__ie, $validation_regex__iew, $validation_regex__isw, $validation_regex__n, $validation_regex__nic, $validation_regex__nie, $validation_regex__niew, $validation_regex__nisw, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ExtrasApi->extrasCustomFieldsList: ', $e->getMessage(), PHP_EOL;
@@ -4019,7 +4001,6 @@ try {
 | **ui_editable__n** | **string**| Specifies whether the custom field value can be edited in the UI  * &#x60;yes&#x60; - Yes * &#x60;no&#x60; - No * &#x60;hidden&#x60; - Hidden | [optional] |
 | **ui_visible** | **string**| Specifies whether the custom field is displayed in the UI  * &#x60;always&#x60; - Always * &#x60;if-set&#x60; - If set * &#x60;hidden&#x60; - Hidden | [optional] |
 | **ui_visible__n** | **string**| Specifies whether the custom field is displayed in the UI  * &#x60;always&#x60; - Always * &#x60;if-set&#x60; - If set * &#x60;hidden&#x60; - Hidden | [optional] |
-| **unique** | **bool**|  | [optional] |
 | **updated_by_request** | **string**|  | [optional] |
 | **validation_maximum** | [**int[]**](../Model/int.md)|  | [optional] |
 | **validation_maximum__empty** | **bool**|  | [optional] |
@@ -4643,8 +4624,8 @@ $apiInstance = new OpenAPI\Client\Api\ExtrasApi(
     new GuzzleHttp\Client(),
     $config
 );
-$button_class = 'button_class_example'; // string | The class of the first link in a group will be used for the dropdown button  * `default` - Default * `blue` - Blue * `indigo` - Indigo * `purple` - Purple * `pink` - Pink * `red` - Red * `orange` - Orange * `yellow` - Yellow * `green` - Green * `teal` - Teal * `cyan` - Cyan * `gray` - Gray * `black` - Black * `white` - White * `ghost-dark` - Link
-$button_class__n = 'button_class__n_example'; // string | The class of the first link in a group will be used for the dropdown button  * `default` - Default * `blue` - Blue * `indigo` - Indigo * `purple` - Purple * `pink` - Pink * `red` - Red * `orange` - Orange * `yellow` - Yellow * `green` - Green * `teal` - Teal * `cyan` - Cyan * `gray` - Gray * `black` - Black * `white` - White * `ghost-dark` - Link
+$button_class = 'button_class_example'; // string | The class of the first link in a group will be used for the dropdown button  * `outline-dark` - Default * `blue` - Blue * `indigo` - Indigo * `purple` - Purple * `pink` - Pink * `red` - Red * `orange` - Orange * `yellow` - Yellow * `green` - Green * `teal` - Teal * `cyan` - Cyan * `gray` - Gray * `black` - Black * `white` - White * `ghost-dark` - Link
+$button_class__n = 'button_class__n_example'; // string | The class of the first link in a group will be used for the dropdown button  * `outline-dark` - Default * `blue` - Blue * `indigo` - Indigo * `purple` - Purple * `pink` - Pink * `red` - Red * `orange` - Orange * `yellow` - Yellow * `green` - Green * `teal` - Teal * `cyan` - Cyan * `gray` - Gray * `black` - Black * `white` - White * `ghost-dark` - Link
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $created__empty = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $created__gt = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -4749,8 +4730,8 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **button_class** | **string**| The class of the first link in a group will be used for the dropdown button  * &#x60;default&#x60; - Default * &#x60;blue&#x60; - Blue * &#x60;indigo&#x60; - Indigo * &#x60;purple&#x60; - Purple * &#x60;pink&#x60; - Pink * &#x60;red&#x60; - Red * &#x60;orange&#x60; - Orange * &#x60;yellow&#x60; - Yellow * &#x60;green&#x60; - Green * &#x60;teal&#x60; - Teal * &#x60;cyan&#x60; - Cyan * &#x60;gray&#x60; - Gray * &#x60;black&#x60; - Black * &#x60;white&#x60; - White * &#x60;ghost-dark&#x60; - Link | [optional] |
-| **button_class__n** | **string**| The class of the first link in a group will be used for the dropdown button  * &#x60;default&#x60; - Default * &#x60;blue&#x60; - Blue * &#x60;indigo&#x60; - Indigo * &#x60;purple&#x60; - Purple * &#x60;pink&#x60; - Pink * &#x60;red&#x60; - Red * &#x60;orange&#x60; - Orange * &#x60;yellow&#x60; - Yellow * &#x60;green&#x60; - Green * &#x60;teal&#x60; - Teal * &#x60;cyan&#x60; - Cyan * &#x60;gray&#x60; - Gray * &#x60;black&#x60; - Black * &#x60;white&#x60; - White * &#x60;ghost-dark&#x60; - Link | [optional] |
+| **button_class** | **string**| The class of the first link in a group will be used for the dropdown button  * &#x60;outline-dark&#x60; - Default * &#x60;blue&#x60; - Blue * &#x60;indigo&#x60; - Indigo * &#x60;purple&#x60; - Purple * &#x60;pink&#x60; - Pink * &#x60;red&#x60; - Red * &#x60;orange&#x60; - Orange * &#x60;yellow&#x60; - Yellow * &#x60;green&#x60; - Green * &#x60;teal&#x60; - Teal * &#x60;cyan&#x60; - Cyan * &#x60;gray&#x60; - Gray * &#x60;black&#x60; - Black * &#x60;white&#x60; - White * &#x60;ghost-dark&#x60; - Link | [optional] |
+| **button_class__n** | **string**| The class of the first link in a group will be used for the dropdown button  * &#x60;outline-dark&#x60; - Default * &#x60;blue&#x60; - Blue * &#x60;indigo&#x60; - Indigo * &#x60;purple&#x60; - Purple * &#x60;pink&#x60; - Pink * &#x60;red&#x60; - Red * &#x60;orange&#x60; - Orange * &#x60;yellow&#x60; - Yellow * &#x60;green&#x60; - Green * &#x60;teal&#x60; - Teal * &#x60;cyan&#x60; - Cyan * &#x60;gray&#x60; - Gray * &#x60;black&#x60; - Black * &#x60;white&#x60; - White * &#x60;ghost-dark&#x60; - Link | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **created__empty** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **created__gt** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -5662,7 +5643,7 @@ void (empty response body)
 ## `extrasEventRulesList()`
 
 ```php
-extrasEventRulesList($action_object_id, $action_object_id__empty, $action_object_id__gt, $action_object_id__gte, $action_object_id__lt, $action_object_id__lte, $action_object_id__n, $action_object_type, $action_object_type__n, $action_type, $action_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $enabled, $event_type, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $object_type, $object_type__ic, $object_type__ie, $object_type__iew, $object_type__isw, $object_type__n, $object_type__nic, $object_type__nie, $object_type__niew, $object_type__nisw, $object_type_id, $object_type_id__n, $offset, $ordering, $q, $tag, $tag__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedEventRuleList
+extrasEventRulesList($action_object_id, $action_object_id__empty, $action_object_id__gt, $action_object_id__gte, $action_object_id__lt, $action_object_id__lte, $action_object_id__n, $action_object_type, $action_object_type__n, $action_type, $action_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $enabled, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $object_type, $object_type__ic, $object_type__ie, $object_type__iew, $object_type__isw, $object_type__n, $object_type__nic, $object_type__nie, $object_type__niew, $object_type__nisw, $object_type_id, $object_type_id__n, $offset, $ordering, $q, $tag, $tag__n, $type_create, $type_delete, $type_job_end, $type_job_start, $type_update, $updated_by_request): \OpenAPI\Client\Model\PaginatedEventRuleList
 ```
 
 
@@ -5724,7 +5705,6 @@ $description__nie = array('description__nie_example'); // string[]
 $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
 $enabled = True; // bool
-$event_type = array('event_type_example'); // string[]
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -5769,10 +5749,15 @@ $ordering = 'ordering_example'; // string | Which field to use when ordering the
 $q = 'q_example'; // string | Search
 $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
+$type_create = True; // bool
+$type_delete = True; // bool
+$type_job_end = True; // bool
+$type_job_start = True; // bool
+$type_update = True; // bool
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->extrasEventRulesList($action_object_id, $action_object_id__empty, $action_object_id__gt, $action_object_id__gte, $action_object_id__lt, $action_object_id__lte, $action_object_id__n, $action_object_type, $action_object_type__n, $action_type, $action_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $enabled, $event_type, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $object_type, $object_type__ic, $object_type__ie, $object_type__iew, $object_type__isw, $object_type__n, $object_type__nic, $object_type__nie, $object_type__niew, $object_type__nisw, $object_type_id, $object_type_id__n, $offset, $ordering, $q, $tag, $tag__n, $updated_by_request);
+    $result = $apiInstance->extrasEventRulesList($action_object_id, $action_object_id__empty, $action_object_id__gt, $action_object_id__gte, $action_object_id__lt, $action_object_id__lte, $action_object_id__n, $action_object_type, $action_object_type__n, $action_type, $action_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $enabled, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $object_type, $object_type__ic, $object_type__ie, $object_type__iew, $object_type__isw, $object_type__n, $object_type__nic, $object_type__nie, $object_type__niew, $object_type__nisw, $object_type_id, $object_type_id__n, $offset, $ordering, $q, $tag, $tag__n, $type_create, $type_delete, $type_job_end, $type_job_start, $type_update, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ExtrasApi->extrasEventRulesList: ', $e->getMessage(), PHP_EOL;
@@ -5814,7 +5799,6 @@ try {
 | **description__niew** | [**string[]**](../Model/string.md)|  | [optional] |
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **enabled** | **bool**|  | [optional] |
-| **event_type** | [**string[]**](../Model/string.md)|  | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -5859,6 +5843,11 @@ try {
 | **q** | **string**| Search | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **type_create** | **bool**|  | [optional] |
+| **type_delete** | **bool**|  | [optional] |
+| **type_job_end** | **bool**|  | [optional] |
+| **type_job_start** | **bool**|  | [optional] |
+| **type_update** | **bool**|  | [optional] |
 | **updated_by_request** | **string**|  | [optional] |
 
 ### Return type
@@ -8367,15 +8356,15 @@ try {
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
-## `extrasNotificationGroupsBulkDestroy()`
+## `extrasObjectChangesList()`
 
 ```php
-extrasNotificationGroupsBulkDestroy($notification_group_request)
+extrasObjectChangesList($action, $action__n, $changed_object_id, $changed_object_id__empty, $changed_object_id__gt, $changed_object_id__gte, $changed_object_id__lt, $changed_object_id__lte, $changed_object_id__n, $changed_object_type, $changed_object_type__n, $changed_object_type_id, $changed_object_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $limit, $object_repr, $object_repr__empty, $object_repr__ic, $object_repr__ie, $object_repr__iew, $object_repr__isw, $object_repr__n, $object_repr__nic, $object_repr__nie, $object_repr__niew, $object_repr__nisw, $offset, $ordering, $q, $related_object_id, $related_object_id__empty, $related_object_id__gt, $related_object_id__gte, $related_object_id__lt, $related_object_id__lte, $related_object_id__n, $related_object_type, $related_object_type__n, $request_id, $time_after, $time_before, $user, $user__n, $user_id, $user_id__n, $user_name, $user_name__empty, $user_name__ic, $user_name__ie, $user_name__iew, $user_name__isw, $user_name__n, $user_name__nic, $user_name__nie, $user_name__niew, $user_name__nisw): \OpenAPI\Client\Model\PaginatedObjectChangeList
 ```
 
 
 
-Delete a list of notification group objects.
+Retrieve a list of recent changes.
 
 ### Example
 
@@ -8401,348 +8390,74 @@ $apiInstance = new OpenAPI\Client\Api\ExtrasApi(
     new GuzzleHttp\Client(),
     $config
 );
-$notification_group_request = array(new \OpenAPI\Client\Model\NotificationGroupRequest()); // \OpenAPI\Client\Model\NotificationGroupRequest[]
-
-try {
-    $apiInstance->extrasNotificationGroupsBulkDestroy($notification_group_request);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationGroupsBulkDestroy: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **notification_group_request** | [**\OpenAPI\Client\Model\NotificationGroupRequest[]**](../Model/NotificationGroupRequest.md)|  | |
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: Not defined
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationGroupsBulkPartialUpdate()`
-
-```php
-extrasNotificationGroupsBulkPartialUpdate($notification_group_request): \OpenAPI\Client\Model\NotificationGroup[]
-```
-
-
-
-Patch a list of notification group objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$notification_group_request = array(new \OpenAPI\Client\Model\NotificationGroupRequest()); // \OpenAPI\Client\Model\NotificationGroupRequest[]
-
-try {
-    $result = $apiInstance->extrasNotificationGroupsBulkPartialUpdate($notification_group_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationGroupsBulkPartialUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **notification_group_request** | [**\OpenAPI\Client\Model\NotificationGroupRequest[]**](../Model/NotificationGroupRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\NotificationGroup[]**](../Model/NotificationGroup.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationGroupsBulkUpdate()`
-
-```php
-extrasNotificationGroupsBulkUpdate($notification_group_request): \OpenAPI\Client\Model\NotificationGroup[]
-```
-
-
-
-Put a list of notification group objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$notification_group_request = array(new \OpenAPI\Client\Model\NotificationGroupRequest()); // \OpenAPI\Client\Model\NotificationGroupRequest[]
-
-try {
-    $result = $apiInstance->extrasNotificationGroupsBulkUpdate($notification_group_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationGroupsBulkUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **notification_group_request** | [**\OpenAPI\Client\Model\NotificationGroupRequest[]**](../Model/NotificationGroupRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\NotificationGroup[]**](../Model/NotificationGroup.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationGroupsCreate()`
-
-```php
-extrasNotificationGroupsCreate($notification_group_request): \OpenAPI\Client\Model\NotificationGroup
-```
-
-
-
-Post a list of notification group objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$notification_group_request = new \OpenAPI\Client\Model\NotificationGroupRequest(); // \OpenAPI\Client\Model\NotificationGroupRequest
-
-try {
-    $result = $apiInstance->extrasNotificationGroupsCreate($notification_group_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationGroupsCreate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **notification_group_request** | [**\OpenAPI\Client\Model\NotificationGroupRequest**](../Model/NotificationGroupRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\NotificationGroup**](../Model/NotificationGroup.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationGroupsDestroy()`
-
-```php
-extrasNotificationGroupsDestroy($id)
-```
-
-
-
-Delete a notification group object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this notification group.
-
-try {
-    $apiInstance->extrasNotificationGroupsDestroy($id);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationGroupsDestroy: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this notification group. | |
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: Not defined
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationGroupsList()`
-
-```php
-extrasNotificationGroupsList($limit, $offset, $ordering): \OpenAPI\Client\Model\PaginatedNotificationGroupList
-```
-
-
-
-Get a list of notification group objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
+$action = 'action_example'; // string | * `create` - Created * `update` - Updated * `delete` - Deleted
+$action__n = 'action__n_example'; // string | * `create` - Created * `update` - Updated * `delete` - Deleted
+$changed_object_id = array(56); // int[]
+$changed_object_id__empty = True; // bool
+$changed_object_id__gt = array(56); // int[]
+$changed_object_id__gte = array(56); // int[]
+$changed_object_id__lt = array(56); // int[]
+$changed_object_id__lte = array(56); // int[]
+$changed_object_id__n = array(56); // int[]
+$changed_object_type = 'changed_object_type_example'; // string
+$changed_object_type__n = 'changed_object_type__n_example'; // string
+$changed_object_type_id = array(56); // int[]
+$changed_object_type_id__n = array(56); // int[]
+$id = array(56); // int[]
+$id__empty = True; // bool
+$id__gt = array(56); // int[]
+$id__gte = array(56); // int[]
+$id__lt = array(56); // int[]
+$id__lte = array(56); // int[]
+$id__n = array(56); // int[]
 $limit = 56; // int | Number of results to return per page.
+$object_repr = array('object_repr_example'); // string[]
+$object_repr__empty = True; // bool
+$object_repr__ic = array('object_repr__ic_example'); // string[]
+$object_repr__ie = array('object_repr__ie_example'); // string[]
+$object_repr__iew = array('object_repr__iew_example'); // string[]
+$object_repr__isw = array('object_repr__isw_example'); // string[]
+$object_repr__n = array('object_repr__n_example'); // string[]
+$object_repr__nic = array('object_repr__nic_example'); // string[]
+$object_repr__nie = array('object_repr__nie_example'); // string[]
+$object_repr__niew = array('object_repr__niew_example'); // string[]
+$object_repr__nisw = array('object_repr__nisw_example'); // string[]
 $offset = 56; // int | The initial index from which to return the results.
 $ordering = 'ordering_example'; // string | Which field to use when ordering the results.
+$q = 'q_example'; // string | Search
+$related_object_id = array(56); // int[]
+$related_object_id__empty = True; // bool
+$related_object_id__gt = array(56); // int[]
+$related_object_id__gte = array(56); // int[]
+$related_object_id__lt = array(56); // int[]
+$related_object_id__lte = array(56); // int[]
+$related_object_id__n = array(56); // int[]
+$related_object_type = 56; // int
+$related_object_type__n = 56; // int
+$request_id = 'request_id_example'; // string
+$time_after = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime
+$time_before = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime
+$user = array('user_example'); // string[] | User name
+$user__n = array('user__n_example'); // string[] | User name
+$user_id = array(56); // int[] | User (ID)
+$user_id__n = array(56); // int[] | User (ID)
+$user_name = array('user_name_example'); // string[]
+$user_name__empty = True; // bool
+$user_name__ic = array('user_name__ic_example'); // string[]
+$user_name__ie = array('user_name__ie_example'); // string[]
+$user_name__iew = array('user_name__iew_example'); // string[]
+$user_name__isw = array('user_name__isw_example'); // string[]
+$user_name__n = array('user_name__n_example'); // string[]
+$user_name__nic = array('user_name__nic_example'); // string[]
+$user_name__nie = array('user_name__nie_example'); // string[]
+$user_name__niew = array('user_name__niew_example'); // string[]
+$user_name__nisw = array('user_name__nisw_example'); // string[]
 
 try {
-    $result = $apiInstance->extrasNotificationGroupsList($limit, $offset, $ordering);
+    $result = $apiInstance->extrasObjectChangesList($action, $action__n, $changed_object_id, $changed_object_id__empty, $changed_object_id__gt, $changed_object_id__gte, $changed_object_id__lt, $changed_object_id__lte, $changed_object_id__n, $changed_object_type, $changed_object_type__n, $changed_object_type_id, $changed_object_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $limit, $object_repr, $object_repr__empty, $object_repr__ic, $object_repr__ie, $object_repr__iew, $object_repr__isw, $object_repr__n, $object_repr__nic, $object_repr__nie, $object_repr__niew, $object_repr__nisw, $offset, $ordering, $q, $related_object_id, $related_object_id__empty, $related_object_id__gt, $related_object_id__gte, $related_object_id__lt, $related_object_id__lte, $related_object_id__n, $related_object_type, $related_object_type__n, $request_id, $time_after, $time_before, $user, $user__n, $user_id, $user_id__n, $user_name, $user_name__empty, $user_name__ic, $user_name__ie, $user_name__iew, $user_name__isw, $user_name__n, $user_name__nic, $user_name__nie, $user_name__niew, $user_name__nisw);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationGroupsList: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ExtrasApi->extrasObjectChangesList: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
@@ -8750,13 +8465,72 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **action** | **string**| * &#x60;create&#x60; - Created * &#x60;update&#x60; - Updated * &#x60;delete&#x60; - Deleted | [optional] |
+| **action__n** | **string**| * &#x60;create&#x60; - Created * &#x60;update&#x60; - Updated * &#x60;delete&#x60; - Deleted | [optional] |
+| **changed_object_id** | [**int[]**](../Model/int.md)|  | [optional] |
+| **changed_object_id__empty** | **bool**|  | [optional] |
+| **changed_object_id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
+| **changed_object_id__gte** | [**int[]**](../Model/int.md)|  | [optional] |
+| **changed_object_id__lt** | [**int[]**](../Model/int.md)|  | [optional] |
+| **changed_object_id__lte** | [**int[]**](../Model/int.md)|  | [optional] |
+| **changed_object_id__n** | [**int[]**](../Model/int.md)|  | [optional] |
+| **changed_object_type** | **string**|  | [optional] |
+| **changed_object_type__n** | **string**|  | [optional] |
+| **changed_object_type_id** | [**int[]**](../Model/int.md)|  | [optional] |
+| **changed_object_type_id__n** | [**int[]**](../Model/int.md)|  | [optional] |
+| **id** | [**int[]**](../Model/int.md)|  | [optional] |
+| **id__empty** | **bool**|  | [optional] |
+| **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
+| **id__gte** | [**int[]**](../Model/int.md)|  | [optional] |
+| **id__lt** | [**int[]**](../Model/int.md)|  | [optional] |
+| **id__lte** | [**int[]**](../Model/int.md)|  | [optional] |
+| **id__n** | [**int[]**](../Model/int.md)|  | [optional] |
 | **limit** | **int**| Number of results to return per page. | [optional] |
+| **object_repr** | [**string[]**](../Model/string.md)|  | [optional] |
+| **object_repr__empty** | **bool**|  | [optional] |
+| **object_repr__ic** | [**string[]**](../Model/string.md)|  | [optional] |
+| **object_repr__ie** | [**string[]**](../Model/string.md)|  | [optional] |
+| **object_repr__iew** | [**string[]**](../Model/string.md)|  | [optional] |
+| **object_repr__isw** | [**string[]**](../Model/string.md)|  | [optional] |
+| **object_repr__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **object_repr__nic** | [**string[]**](../Model/string.md)|  | [optional] |
+| **object_repr__nie** | [**string[]**](../Model/string.md)|  | [optional] |
+| **object_repr__niew** | [**string[]**](../Model/string.md)|  | [optional] |
+| **object_repr__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **offset** | **int**| The initial index from which to return the results. | [optional] |
 | **ordering** | **string**| Which field to use when ordering the results. | [optional] |
+| **q** | **string**| Search | [optional] |
+| **related_object_id** | [**int[]**](../Model/int.md)|  | [optional] |
+| **related_object_id__empty** | **bool**|  | [optional] |
+| **related_object_id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
+| **related_object_id__gte** | [**int[]**](../Model/int.md)|  | [optional] |
+| **related_object_id__lt** | [**int[]**](../Model/int.md)|  | [optional] |
+| **related_object_id__lte** | [**int[]**](../Model/int.md)|  | [optional] |
+| **related_object_id__n** | [**int[]**](../Model/int.md)|  | [optional] |
+| **related_object_type** | **int**|  | [optional] |
+| **related_object_type__n** | **int**|  | [optional] |
+| **request_id** | **string**|  | [optional] |
+| **time_after** | **\DateTime**|  | [optional] |
+| **time_before** | **\DateTime**|  | [optional] |
+| **user** | [**string[]**](../Model/string.md)| User name | [optional] |
+| **user__n** | [**string[]**](../Model/string.md)| User name | [optional] |
+| **user_id** | [**int[]**](../Model/int.md)| User (ID) | [optional] |
+| **user_id__n** | [**int[]**](../Model/int.md)| User (ID) | [optional] |
+| **user_name** | [**string[]**](../Model/string.md)|  | [optional] |
+| **user_name__empty** | **bool**|  | [optional] |
+| **user_name__ic** | [**string[]**](../Model/string.md)|  | [optional] |
+| **user_name__ie** | [**string[]**](../Model/string.md)|  | [optional] |
+| **user_name__iew** | [**string[]**](../Model/string.md)|  | [optional] |
+| **user_name__isw** | [**string[]**](../Model/string.md)|  | [optional] |
+| **user_name__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **user_name__nic** | [**string[]**](../Model/string.md)|  | [optional] |
+| **user_name__nie** | [**string[]**](../Model/string.md)|  | [optional] |
+| **user_name__niew** | [**string[]**](../Model/string.md)|  | [optional] |
+| **user_name__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PaginatedNotificationGroupList**](../Model/PaginatedNotificationGroupList.md)
+[**\OpenAPI\Client\Model\PaginatedObjectChangeList**](../Model/PaginatedObjectChangeList.md)
 
 ### Authorization
 
@@ -8771,15 +8545,15 @@ try {
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
-## `extrasNotificationGroupsPartialUpdate()`
+## `extrasObjectChangesRetrieve()`
 
 ```php
-extrasNotificationGroupsPartialUpdate($id, $patched_notification_group_request): \OpenAPI\Client\Model\NotificationGroup
+extrasObjectChangesRetrieve($id): \OpenAPI\Client\Model\ObjectChange
 ```
 
 
 
-Patch a notification group object.
+Retrieve a list of recent changes.
 
 ### Example
 
@@ -8805,14 +8579,13 @@ $apiInstance = new OpenAPI\Client\Api\ExtrasApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int | A unique integer value identifying this notification group.
-$patched_notification_group_request = new \OpenAPI\Client\Model\PatchedNotificationGroupRequest(); // \OpenAPI\Client\Model\PatchedNotificationGroupRequest
+$id = 56; // int | A unique integer value identifying this object change.
 
 try {
-    $result = $apiInstance->extrasNotificationGroupsPartialUpdate($id, $patched_notification_group_request);
+    $result = $apiInstance->extrasObjectChangesRetrieve($id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationGroupsPartialUpdate: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ExtrasApi->extrasObjectChangesRetrieve: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
@@ -8820,79 +8593,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this notification group. | |
-| **patched_notification_group_request** | [**\OpenAPI\Client\Model\PatchedNotificationGroupRequest**](../Model/PatchedNotificationGroupRequest.md)|  | [optional] |
+| **id** | **int**| A unique integer value identifying this object change. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\NotificationGroup**](../Model/NotificationGroup.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationGroupsRetrieve()`
-
-```php
-extrasNotificationGroupsRetrieve($id): \OpenAPI\Client\Model\NotificationGroup
-```
-
-
-
-Get a notification group object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this notification group.
-
-try {
-    $result = $apiInstance->extrasNotificationGroupsRetrieve($id);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationGroupsRetrieve: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this notification group. | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\NotificationGroup**](../Model/NotificationGroup.md)
+[**\OpenAPI\Client\Model\ObjectChange**](../Model/ObjectChange.md)
 
 ### Authorization
 
@@ -8901,684 +8606,6 @@ try {
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationGroupsUpdate()`
-
-```php
-extrasNotificationGroupsUpdate($id, $notification_group_request): \OpenAPI\Client\Model\NotificationGroup
-```
-
-
-
-Put a notification group object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this notification group.
-$notification_group_request = new \OpenAPI\Client\Model\NotificationGroupRequest(); // \OpenAPI\Client\Model\NotificationGroupRequest
-
-try {
-    $result = $apiInstance->extrasNotificationGroupsUpdate($id, $notification_group_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationGroupsUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this notification group. | |
-| **notification_group_request** | [**\OpenAPI\Client\Model\NotificationGroupRequest**](../Model/NotificationGroupRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\NotificationGroup**](../Model/NotificationGroup.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationsBulkDestroy()`
-
-```php
-extrasNotificationsBulkDestroy($notification_request)
-```
-
-
-
-Delete a list of notification objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$notification_request = array(new \OpenAPI\Client\Model\NotificationRequest()); // \OpenAPI\Client\Model\NotificationRequest[]
-
-try {
-    $apiInstance->extrasNotificationsBulkDestroy($notification_request);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationsBulkDestroy: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **notification_request** | [**\OpenAPI\Client\Model\NotificationRequest[]**](../Model/NotificationRequest.md)|  | |
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: Not defined
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationsBulkPartialUpdate()`
-
-```php
-extrasNotificationsBulkPartialUpdate($notification_request): \OpenAPI\Client\Model\Notification[]
-```
-
-
-
-Patch a list of notification objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$notification_request = array(new \OpenAPI\Client\Model\NotificationRequest()); // \OpenAPI\Client\Model\NotificationRequest[]
-
-try {
-    $result = $apiInstance->extrasNotificationsBulkPartialUpdate($notification_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationsBulkPartialUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **notification_request** | [**\OpenAPI\Client\Model\NotificationRequest[]**](../Model/NotificationRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\Notification[]**](../Model/Notification.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationsBulkUpdate()`
-
-```php
-extrasNotificationsBulkUpdate($notification_request): \OpenAPI\Client\Model\Notification[]
-```
-
-
-
-Put a list of notification objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$notification_request = array(new \OpenAPI\Client\Model\NotificationRequest()); // \OpenAPI\Client\Model\NotificationRequest[]
-
-try {
-    $result = $apiInstance->extrasNotificationsBulkUpdate($notification_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationsBulkUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **notification_request** | [**\OpenAPI\Client\Model\NotificationRequest[]**](../Model/NotificationRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\Notification[]**](../Model/Notification.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationsCreate()`
-
-```php
-extrasNotificationsCreate($notification_request): \OpenAPI\Client\Model\Notification
-```
-
-
-
-Post a list of notification objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$notification_request = new \OpenAPI\Client\Model\NotificationRequest(); // \OpenAPI\Client\Model\NotificationRequest
-
-try {
-    $result = $apiInstance->extrasNotificationsCreate($notification_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationsCreate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **notification_request** | [**\OpenAPI\Client\Model\NotificationRequest**](../Model/NotificationRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\Notification**](../Model/Notification.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationsDestroy()`
-
-```php
-extrasNotificationsDestroy($id)
-```
-
-
-
-Delete a notification object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this notification.
-
-try {
-    $apiInstance->extrasNotificationsDestroy($id);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationsDestroy: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this notification. | |
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: Not defined
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationsList()`
-
-```php
-extrasNotificationsList($limit, $offset, $ordering): \OpenAPI\Client\Model\PaginatedNotificationList
-```
-
-
-
-Get a list of notification objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$limit = 56; // int | Number of results to return per page.
-$offset = 56; // int | The initial index from which to return the results.
-$ordering = 'ordering_example'; // string | Which field to use when ordering the results.
-
-try {
-    $result = $apiInstance->extrasNotificationsList($limit, $offset, $ordering);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationsList: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **limit** | **int**| Number of results to return per page. | [optional] |
-| **offset** | **int**| The initial index from which to return the results. | [optional] |
-| **ordering** | **string**| Which field to use when ordering the results. | [optional] |
-
-### Return type
-
-[**\OpenAPI\Client\Model\PaginatedNotificationList**](../Model/PaginatedNotificationList.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationsPartialUpdate()`
-
-```php
-extrasNotificationsPartialUpdate($id, $patched_notification_request): \OpenAPI\Client\Model\Notification
-```
-
-
-
-Patch a notification object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this notification.
-$patched_notification_request = new \OpenAPI\Client\Model\PatchedNotificationRequest(); // \OpenAPI\Client\Model\PatchedNotificationRequest
-
-try {
-    $result = $apiInstance->extrasNotificationsPartialUpdate($id, $patched_notification_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationsPartialUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this notification. | |
-| **patched_notification_request** | [**\OpenAPI\Client\Model\PatchedNotificationRequest**](../Model/PatchedNotificationRequest.md)|  | [optional] |
-
-### Return type
-
-[**\OpenAPI\Client\Model\Notification**](../Model/Notification.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationsRetrieve()`
-
-```php
-extrasNotificationsRetrieve($id): \OpenAPI\Client\Model\Notification
-```
-
-
-
-Get a notification object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this notification.
-
-try {
-    $result = $apiInstance->extrasNotificationsRetrieve($id);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationsRetrieve: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this notification. | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\Notification**](../Model/Notification.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasNotificationsUpdate()`
-
-```php
-extrasNotificationsUpdate($id, $notification_request): \OpenAPI\Client\Model\Notification
-```
-
-
-
-Put a notification object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this notification.
-$notification_request = new \OpenAPI\Client\Model\NotificationRequest(); // \OpenAPI\Client\Model\NotificationRequest
-
-try {
-    $result = $apiInstance->extrasNotificationsUpdate($id, $notification_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasNotificationsUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this notification. | |
-| **notification_request** | [**\OpenAPI\Client\Model\NotificationRequest**](../Model/NotificationRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\Notification**](../Model/Notification.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
 - **Accept**: `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
@@ -10756,7 +9783,7 @@ try {
 ## `extrasScriptsPartialUpdate()`
 
 ```php
-extrasScriptsPartialUpdate($id, $patched_script_input_request): \OpenAPI\Client\Model\Script
+extrasScriptsPartialUpdate($id): \OpenAPI\Client\Model\Script
 ```
 
 
@@ -10788,10 +9815,9 @@ $apiInstance = new OpenAPI\Client\Api\ExtrasApi(
     $config
 );
 $id = 'id_example'; // string
-$patched_script_input_request = new \OpenAPI\Client\Model\PatchedScriptInputRequest(); // \OpenAPI\Client\Model\PatchedScriptInputRequest
 
 try {
-    $result = $apiInstance->extrasScriptsPartialUpdate($id, $patched_script_input_request);
+    $result = $apiInstance->extrasScriptsPartialUpdate($id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ExtrasApi->extrasScriptsPartialUpdate: ', $e->getMessage(), PHP_EOL;
@@ -10803,7 +9829,6 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**|  | |
-| **patched_script_input_request** | [**\OpenAPI\Client\Model\PatchedScriptInputRequest**](../Model/PatchedScriptInputRequest.md)|  | [optional] |
 
 ### Return type
 
@@ -10815,7 +9840,7 @@ try {
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json`, `multipart/form-data`
+- **Content-Type**: Not defined
 - **Accept**: `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
@@ -10892,7 +9917,7 @@ try {
 ## `extrasScriptsUpdate()`
 
 ```php
-extrasScriptsUpdate($id, $script_input_request): \OpenAPI\Client\Model\Script
+extrasScriptsUpdate($id): \OpenAPI\Client\Model\Script
 ```
 
 
@@ -10924,10 +9949,9 @@ $apiInstance = new OpenAPI\Client\Api\ExtrasApi(
     $config
 );
 $id = 'id_example'; // string
-$script_input_request = new \OpenAPI\Client\Model\ScriptInputRequest(); // \OpenAPI\Client\Model\ScriptInputRequest
 
 try {
-    $result = $apiInstance->extrasScriptsUpdate($id, $script_input_request);
+    $result = $apiInstance->extrasScriptsUpdate($id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ExtrasApi->extrasScriptsUpdate: ', $e->getMessage(), PHP_EOL;
@@ -10939,7 +9963,6 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**|  | |
-| **script_input_request** | [**\OpenAPI\Client\Model\ScriptInputRequest**](../Model/ScriptInputRequest.md)|  | |
 
 ### Return type
 
@@ -10951,616 +9974,7 @@ try {
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasSubscriptionsBulkDestroy()`
-
-```php
-extrasSubscriptionsBulkDestroy($subscription_request)
-```
-
-
-
-Delete a list of subscription objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$subscription_request = array(new \OpenAPI\Client\Model\SubscriptionRequest()); // \OpenAPI\Client\Model\SubscriptionRequest[]
-
-try {
-    $apiInstance->extrasSubscriptionsBulkDestroy($subscription_request);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasSubscriptionsBulkDestroy: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **subscription_request** | [**\OpenAPI\Client\Model\SubscriptionRequest[]**](../Model/SubscriptionRequest.md)|  | |
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: Not defined
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasSubscriptionsBulkPartialUpdate()`
-
-```php
-extrasSubscriptionsBulkPartialUpdate($subscription_request): \OpenAPI\Client\Model\Subscription[]
-```
-
-
-
-Patch a list of subscription objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$subscription_request = array(new \OpenAPI\Client\Model\SubscriptionRequest()); // \OpenAPI\Client\Model\SubscriptionRequest[]
-
-try {
-    $result = $apiInstance->extrasSubscriptionsBulkPartialUpdate($subscription_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasSubscriptionsBulkPartialUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **subscription_request** | [**\OpenAPI\Client\Model\SubscriptionRequest[]**](../Model/SubscriptionRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\Subscription[]**](../Model/Subscription.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasSubscriptionsBulkUpdate()`
-
-```php
-extrasSubscriptionsBulkUpdate($subscription_request): \OpenAPI\Client\Model\Subscription[]
-```
-
-
-
-Put a list of subscription objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$subscription_request = array(new \OpenAPI\Client\Model\SubscriptionRequest()); // \OpenAPI\Client\Model\SubscriptionRequest[]
-
-try {
-    $result = $apiInstance->extrasSubscriptionsBulkUpdate($subscription_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasSubscriptionsBulkUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **subscription_request** | [**\OpenAPI\Client\Model\SubscriptionRequest[]**](../Model/SubscriptionRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\Subscription[]**](../Model/Subscription.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasSubscriptionsCreate()`
-
-```php
-extrasSubscriptionsCreate($subscription_request): \OpenAPI\Client\Model\Subscription
-```
-
-
-
-Post a list of subscription objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$subscription_request = new \OpenAPI\Client\Model\SubscriptionRequest(); // \OpenAPI\Client\Model\SubscriptionRequest
-
-try {
-    $result = $apiInstance->extrasSubscriptionsCreate($subscription_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasSubscriptionsCreate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **subscription_request** | [**\OpenAPI\Client\Model\SubscriptionRequest**](../Model/SubscriptionRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\Subscription**](../Model/Subscription.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasSubscriptionsDestroy()`
-
-```php
-extrasSubscriptionsDestroy($id)
-```
-
-
-
-Delete a subscription object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this subscription.
-
-try {
-    $apiInstance->extrasSubscriptionsDestroy($id);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasSubscriptionsDestroy: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this subscription. | |
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
 - **Content-Type**: Not defined
-- **Accept**: Not defined
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasSubscriptionsList()`
-
-```php
-extrasSubscriptionsList($limit, $offset, $ordering): \OpenAPI\Client\Model\PaginatedSubscriptionList
-```
-
-
-
-Get a list of subscription objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$limit = 56; // int | Number of results to return per page.
-$offset = 56; // int | The initial index from which to return the results.
-$ordering = 'ordering_example'; // string | Which field to use when ordering the results.
-
-try {
-    $result = $apiInstance->extrasSubscriptionsList($limit, $offset, $ordering);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasSubscriptionsList: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **limit** | **int**| Number of results to return per page. | [optional] |
-| **offset** | **int**| The initial index from which to return the results. | [optional] |
-| **ordering** | **string**| Which field to use when ordering the results. | [optional] |
-
-### Return type
-
-[**\OpenAPI\Client\Model\PaginatedSubscriptionList**](../Model/PaginatedSubscriptionList.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasSubscriptionsPartialUpdate()`
-
-```php
-extrasSubscriptionsPartialUpdate($id, $patched_subscription_request): \OpenAPI\Client\Model\Subscription
-```
-
-
-
-Patch a subscription object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this subscription.
-$patched_subscription_request = new \OpenAPI\Client\Model\PatchedSubscriptionRequest(); // \OpenAPI\Client\Model\PatchedSubscriptionRequest
-
-try {
-    $result = $apiInstance->extrasSubscriptionsPartialUpdate($id, $patched_subscription_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasSubscriptionsPartialUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this subscription. | |
-| **patched_subscription_request** | [**\OpenAPI\Client\Model\PatchedSubscriptionRequest**](../Model/PatchedSubscriptionRequest.md)|  | [optional] |
-
-### Return type
-
-[**\OpenAPI\Client\Model\Subscription**](../Model/Subscription.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasSubscriptionsRetrieve()`
-
-```php
-extrasSubscriptionsRetrieve($id): \OpenAPI\Client\Model\Subscription
-```
-
-
-
-Get a subscription object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this subscription.
-
-try {
-    $result = $apiInstance->extrasSubscriptionsRetrieve($id);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasSubscriptionsRetrieve: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this subscription. | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\Subscription**](../Model/Subscription.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `extrasSubscriptionsUpdate()`
-
-```php
-extrasSubscriptionsUpdate($id, $subscription_request): \OpenAPI\Client\Model\Subscription
-```
-
-
-
-Put a subscription object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\ExtrasApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this subscription.
-$subscription_request = new \OpenAPI\Client\Model\SubscriptionRequest(); // \OpenAPI\Client\Model\SubscriptionRequest
-
-try {
-    $result = $apiInstance->extrasSubscriptionsUpdate($id, $subscription_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ExtrasApi->extrasSubscriptionsUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this subscription. | |
-| **subscription_request** | [**\OpenAPI\Client\Model\SubscriptionRequest**](../Model/SubscriptionRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\Subscription**](../Model/Subscription.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
 - **Accept**: `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)

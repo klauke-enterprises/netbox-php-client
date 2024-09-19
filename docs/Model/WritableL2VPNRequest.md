@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **export_targets** | **int[]** |  | [optional]
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]
-**tenant** | [**\OpenAPI\Client\Model\BriefTenantRequest**](BriefTenantRequest.md) |  | [optional]
+**tenant** | [**\OpenAPI\Client\Model\TenantRequest**](TenantRequest.md) |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTagRequest[]**](NestedTagRequest.md) |  | [optional]
 **custom_fields** | **array<string,mixed>** |  | [optional]
 

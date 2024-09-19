@@ -1,6 +1,6 @@
 # OpenAPI\Client\DcimApi
 
-All URIs are relative to https://demo.netbox.dev/api/schema, except if the operation defines another base path.
+All URIs are relative to https://netbox.demodash.at/api/schema, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
@@ -310,15 +310,6 @@ All URIs are relative to https://demo.netbox.dev/api/schema, except if the opera
 | [**dcimRackRolesPartialUpdate()**](DcimApi.md#dcimRackRolesPartialUpdate) | **PATCH** /api/dcim/rack-roles/{id}/ |  |
 | [**dcimRackRolesRetrieve()**](DcimApi.md#dcimRackRolesRetrieve) | **GET** /api/dcim/rack-roles/{id}/ |  |
 | [**dcimRackRolesUpdate()**](DcimApi.md#dcimRackRolesUpdate) | **PUT** /api/dcim/rack-roles/{id}/ |  |
-| [**dcimRackTypesBulkDestroy()**](DcimApi.md#dcimRackTypesBulkDestroy) | **DELETE** /api/dcim/rack-types/ |  |
-| [**dcimRackTypesBulkPartialUpdate()**](DcimApi.md#dcimRackTypesBulkPartialUpdate) | **PATCH** /api/dcim/rack-types/ |  |
-| [**dcimRackTypesBulkUpdate()**](DcimApi.md#dcimRackTypesBulkUpdate) | **PUT** /api/dcim/rack-types/ |  |
-| [**dcimRackTypesCreate()**](DcimApi.md#dcimRackTypesCreate) | **POST** /api/dcim/rack-types/ |  |
-| [**dcimRackTypesDestroy()**](DcimApi.md#dcimRackTypesDestroy) | **DELETE** /api/dcim/rack-types/{id}/ |  |
-| [**dcimRackTypesList()**](DcimApi.md#dcimRackTypesList) | **GET** /api/dcim/rack-types/ |  |
-| [**dcimRackTypesPartialUpdate()**](DcimApi.md#dcimRackTypesPartialUpdate) | **PATCH** /api/dcim/rack-types/{id}/ |  |
-| [**dcimRackTypesRetrieve()**](DcimApi.md#dcimRackTypesRetrieve) | **GET** /api/dcim/rack-types/{id}/ |  |
-| [**dcimRackTypesUpdate()**](DcimApi.md#dcimRackTypesUpdate) | **PUT** /api/dcim/rack-types/{id}/ |  |
 | [**dcimRacksBulkDestroy()**](DcimApi.md#dcimRacksBulkDestroy) | **DELETE** /api/dcim/racks/ |  |
 | [**dcimRacksBulkPartialUpdate()**](DcimApi.md#dcimRacksBulkPartialUpdate) | **PATCH** /api/dcim/racks/ |  |
 | [**dcimRacksBulkUpdate()**](DcimApi.md#dcimRacksBulkUpdate) | **PUT** /api/dcim/racks/ |  |
@@ -1528,10 +1519,10 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $termination_a_id = array(56); // int[]
@@ -1640,10 +1631,10 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **termination_a_id** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -2284,7 +2275,7 @@ void (empty response body)
 ## `dcimConsolePortTemplatesList()`
 
 ```php
-dcimConsolePortTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedConsolePortTemplateList
+dcimConsolePortTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedConsolePortTemplateList
 ```
 
 
@@ -2336,6 +2327,8 @@ $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
 $device_type_id = array(56); // int[] | Device type (ID)
 $device_type_id__n = array(56); // int[] | Device type (ID)
+$devicetype_id = array(56); // int[] | Device type (ID)
+$devicetype_id__n = array(56); // int[] | Device type (ID)
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -2365,6 +2358,8 @@ $limit = 56; // int | Number of results to return per page.
 $modified_by_request = 'modified_by_request_example'; // string
 $module_type_id = array(56); // int[] | Module type (ID)
 $module_type_id__n = array(56); // int[] | Module type (ID)
+$moduletype_id = array(56); // int[] | Module type (ID)
+$moduletype_id__n = array(56); // int[] | Module type (ID)
 $name = array('name_example'); // string[]
 $name__empty = True; // bool
 $name__ic = array('name__ic_example'); // string[]
@@ -2384,7 +2379,7 @@ $type__n = 'type__n_example'; // string | * `Serial` - [('de-9', 'DE-9'), ('db-2
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->dcimConsolePortTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $type, $type__n, $updated_by_request);
+    $result = $apiInstance->dcimConsolePortTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $type, $type__n, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimConsolePortTemplatesList: ', $e->getMessage(), PHP_EOL;
@@ -2416,6 +2411,8 @@ try {
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **device_type_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -2445,6 +2442,8 @@ try {
 | **modified_by_request** | **string**|  | [optional] |
 | **module_type_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **module_type_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **name** | [**string[]**](../Model/string.md)|  | [optional] |
 | **name__empty** | **bool**|  | [optional] |
 | **name__ic** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -3021,7 +3020,7 @@ void (empty response body)
 ## `dcimConsolePortsList()`
 
 ```php
-dcimConsolePortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $speed, $speed__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedConsolePortList
+dcimConsolePortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $speed, $speed__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedConsolePortList
 ```
 
 
@@ -3085,8 +3084,6 @@ $device_role = array('device_role_example'); // string[] | Device role (slug)
 $device_role__n = array('device_role__n_example'); // string[] | Device role (slug)
 $device_role_id = array(56); // int[] | Device role (ID)
 $device_role_id__n = array(56); // int[] | Device role (ID)
-$device_status = array('device_status_example'); // string[]
-$device_status__n = array('device_status__n_example'); // string[]
 $device_type = array('device_type_example'); // string[] | Device type (model)
 $device_type__n = array('device_type__n_example'); // string[] | Device type (model)
 $device_type_id = array(56); // int[] | Device type (ID)
@@ -3144,16 +3141,16 @@ $rack = array('rack_example'); // string[] | Rack (name)
 $rack__n = array('rack__n_example'); // string[] | Rack (name)
 $rack_id = array(56); // int[] | Rack (ID)
 $rack_id__n = array(56); // int[] | Rack (ID)
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $speed = 56; // int | Port speed in bits per second  * `1200` - 1200 bps * `2400` - 2400 bps * `4800` - 4800 bps * `9600` - 9600 bps * `19200` - 19.2 kbps * `38400` - 38.4 kbps * `57600` - 57.6 kbps * `115200` - 115.2 kbps
@@ -3169,7 +3166,7 @@ $virtual_chassis_id = array(56); // int[] | Virtual Chassis (ID)
 $virtual_chassis_id__n = array(56); // int[] | Virtual Chassis (ID)
 
 try {
-    $result = $apiInstance->dcimConsolePortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $speed, $speed__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
+    $result = $apiInstance->dcimConsolePortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $speed, $speed__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimConsolePortsList: ', $e->getMessage(), PHP_EOL;
@@ -3213,8 +3210,6 @@ try {
 | **device_role__n** | [**string[]**](../Model/string.md)| Device role (slug) | [optional] |
 | **device_role_id** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
 | **device_role_id__n** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
-| **device_status** | [**string[]**](../Model/string.md)|  | [optional] |
-| **device_status__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type__n** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
@@ -3272,16 +3267,16 @@ try {
 | **rack__n** | [**string[]**](../Model/string.md)| Rack (name) | [optional] |
 | **rack_id** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
 | **rack_id__n** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **speed** | **int**| Port speed in bits per second  * &#x60;1200&#x60; - 1200 bps * &#x60;2400&#x60; - 2400 bps * &#x60;4800&#x60; - 4800 bps * &#x60;9600&#x60; - 9600 bps * &#x60;19200&#x60; - 19.2 kbps * &#x60;38400&#x60; - 38.4 kbps * &#x60;57600&#x60; - 57.6 kbps * &#x60;115200&#x60; - 115.2 kbps | [optional] |
@@ -3921,7 +3916,7 @@ void (empty response body)
 ## `dcimConsoleServerPortTemplatesList()`
 
 ```php
-dcimConsoleServerPortTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedConsoleServerPortTemplateList
+dcimConsoleServerPortTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedConsoleServerPortTemplateList
 ```
 
 
@@ -3973,6 +3968,8 @@ $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
 $device_type_id = array(56); // int[] | Device type (ID)
 $device_type_id__n = array(56); // int[] | Device type (ID)
+$devicetype_id = array(56); // int[] | Device type (ID)
+$devicetype_id__n = array(56); // int[] | Device type (ID)
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -4002,6 +3999,8 @@ $limit = 56; // int | Number of results to return per page.
 $modified_by_request = 'modified_by_request_example'; // string
 $module_type_id = array(56); // int[] | Module type (ID)
 $module_type_id__n = array(56); // int[] | Module type (ID)
+$moduletype_id = array(56); // int[] | Module type (ID)
+$moduletype_id__n = array(56); // int[] | Module type (ID)
 $name = array('name_example'); // string[]
 $name__empty = True; // bool
 $name__ic = array('name__ic_example'); // string[]
@@ -4021,7 +4020,7 @@ $type__n = 'type__n_example'; // string | * `Serial` - [('de-9', 'DE-9'), ('db-2
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->dcimConsoleServerPortTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $type, $type__n, $updated_by_request);
+    $result = $apiInstance->dcimConsoleServerPortTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $type, $type__n, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimConsoleServerPortTemplatesList: ', $e->getMessage(), PHP_EOL;
@@ -4053,6 +4052,8 @@ try {
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **device_type_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -4082,6 +4083,8 @@ try {
 | **modified_by_request** | **string**|  | [optional] |
 | **module_type_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **module_type_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **name** | [**string[]**](../Model/string.md)|  | [optional] |
 | **name__empty** | **bool**|  | [optional] |
 | **name__ic** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -4658,7 +4661,7 @@ void (empty response body)
 ## `dcimConsoleServerPortsList()`
 
 ```php
-dcimConsoleServerPortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $speed, $speed__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedConsoleServerPortList
+dcimConsoleServerPortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $speed, $speed__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedConsoleServerPortList
 ```
 
 
@@ -4722,8 +4725,6 @@ $device_role = array('device_role_example'); // string[] | Device role (slug)
 $device_role__n = array('device_role__n_example'); // string[] | Device role (slug)
 $device_role_id = array(56); // int[] | Device role (ID)
 $device_role_id__n = array(56); // int[] | Device role (ID)
-$device_status = array('device_status_example'); // string[]
-$device_status__n = array('device_status__n_example'); // string[]
 $device_type = array('device_type_example'); // string[] | Device type (model)
 $device_type__n = array('device_type__n_example'); // string[] | Device type (model)
 $device_type_id = array(56); // int[] | Device type (ID)
@@ -4781,16 +4782,16 @@ $rack = array('rack_example'); // string[] | Rack (name)
 $rack__n = array('rack__n_example'); // string[] | Rack (name)
 $rack_id = array(56); // int[] | Rack (ID)
 $rack_id__n = array(56); // int[] | Rack (ID)
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $speed = 56; // int | Port speed in bits per second  * `1200` - 1200 bps * `2400` - 2400 bps * `4800` - 4800 bps * `9600` - 9600 bps * `19200` - 19.2 kbps * `38400` - 38.4 kbps * `57600` - 57.6 kbps * `115200` - 115.2 kbps
@@ -4806,7 +4807,7 @@ $virtual_chassis_id = array(56); // int[] | Virtual Chassis (ID)
 $virtual_chassis_id__n = array(56); // int[] | Virtual Chassis (ID)
 
 try {
-    $result = $apiInstance->dcimConsoleServerPortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $speed, $speed__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
+    $result = $apiInstance->dcimConsoleServerPortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $speed, $speed__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimConsoleServerPortsList: ', $e->getMessage(), PHP_EOL;
@@ -4850,8 +4851,6 @@ try {
 | **device_role__n** | [**string[]**](../Model/string.md)| Device role (slug) | [optional] |
 | **device_role_id** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
 | **device_role_id__n** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
-| **device_status** | [**string[]**](../Model/string.md)|  | [optional] |
-| **device_status__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type__n** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
@@ -4909,16 +4908,16 @@ try {
 | **rack__n** | [**string[]**](../Model/string.md)| Rack (name) | [optional] |
 | **rack_id** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
 | **rack_id__n** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **speed** | **int**| Port speed in bits per second  * &#x60;1200&#x60; - 1200 bps * &#x60;2400&#x60; - 2400 bps * &#x60;4800&#x60; - 4800 bps * &#x60;9600&#x60; - 9600 bps * &#x60;19200&#x60; - 19.2 kbps * &#x60;38400&#x60; - 38.4 kbps * &#x60;57600&#x60; - 57.6 kbps * &#x60;115200&#x60; - 115.2 kbps | [optional] |
@@ -5558,7 +5557,7 @@ void (empty response body)
 ## `dcimDeviceBayTemplatesList()`
 
 ```php
-dcimDeviceBayTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $updated_by_request): \OpenAPI\Client\Model\PaginatedDeviceBayTemplateList
+dcimDeviceBayTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $updated_by_request): \OpenAPI\Client\Model\PaginatedDeviceBayTemplateList
 ```
 
 
@@ -5610,6 +5609,8 @@ $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
 $device_type_id = array(56); // int[] | Device type (ID)
 $device_type_id__n = array(56); // int[] | Device type (ID)
+$devicetype_id = array(56); // int[] | Device type (ID)
+$devicetype_id__n = array(56); // int[] | Device type (ID)
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -5654,7 +5655,7 @@ $q = 'q_example'; // string | Search
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->dcimDeviceBayTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $updated_by_request);
+    $result = $apiInstance->dcimDeviceBayTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimDeviceBayTemplatesList: ', $e->getMessage(), PHP_EOL;
@@ -5686,6 +5687,8 @@ try {
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **device_type_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -6287,7 +6290,7 @@ void (empty response body)
 ## `dcimDeviceBaysList()`
 
 ```php
-dcimDeviceBaysList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $installed_device, $installed_device__n, $installed_device_id, $installed_device_id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedDeviceBayList
+dcimDeviceBaysList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $installed_device, $installed_device__n, $installed_device_id, $installed_device_id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedDeviceBayList
 ```
 
 
@@ -6345,8 +6348,6 @@ $device_role = array('device_role_example'); // string[] | Device role (slug)
 $device_role__n = array('device_role__n_example'); // string[] | Device role (slug)
 $device_role_id = array(56); // int[] | Device role (ID)
 $device_role_id__n = array(56); // int[] | Device role (ID)
-$device_status = array('device_status_example'); // string[]
-$device_status__n = array('device_status__n_example'); // string[]
 $device_type = array('device_type_example'); // string[] | Device type (model)
 $device_type__n = array('device_type__n_example'); // string[] | Device type (model)
 $device_type_id = array(56); // int[] | Device type (ID)
@@ -6404,16 +6405,16 @@ $rack = array('rack_example'); // string[] | Rack (name)
 $rack__n = array('rack__n_example'); // string[] | Rack (name)
 $rack_id = array(56); // int[] | Rack (ID)
 $rack_id__n = array(56); // int[] | Rack (ID)
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $tag = array('tag_example'); // string[]
@@ -6425,7 +6426,7 @@ $virtual_chassis_id = array(56); // int[] | Virtual Chassis (ID)
 $virtual_chassis_id__n = array(56); // int[] | Virtual Chassis (ID)
 
 try {
-    $result = $apiInstance->dcimDeviceBaysList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $installed_device, $installed_device__n, $installed_device_id, $installed_device_id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
+    $result = $apiInstance->dcimDeviceBaysList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $installed_device, $installed_device__n, $installed_device_id, $installed_device_id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimDeviceBaysList: ', $e->getMessage(), PHP_EOL;
@@ -6463,8 +6464,6 @@ try {
 | **device_role__n** | [**string[]**](../Model/string.md)| Device role (slug) | [optional] |
 | **device_role_id** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
 | **device_role_id__n** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
-| **device_status** | [**string[]**](../Model/string.md)|  | [optional] |
-| **device_status__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type__n** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
@@ -6522,16 +6521,16 @@ try {
 | **rack__n** | [**string[]**](../Model/string.md)| Rack (name) | [optional] |
 | **rack_id** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
 | **rack_id__n** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -8900,8 +8899,8 @@ $console_server_port_count__n = array(56); // int[]
 $console_server_ports = True; // bool | Has console server ports
 $contact = array(56); // int[] | Contact
 $contact__n = array(56); // int[] | Contact
-$contact_group = array('contact_group_example'); // string[]
-$contact_group__n = array('contact_group__n_example'); // string[]
+$contact_group = array(56); // int[] | Contact group
+$contact_group__n = array(56); // int[] | Contact group
 $contact_role = array(56); // int[] | Contact Role
 $contact_role__n = array(56); // int[] | Contact Role
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -8986,8 +8985,8 @@ $latitude__lte = array(3.4); // float[]
 $latitude__n = array(3.4); // float[]
 $limit = 56; // int | Number of results to return per page.
 $local_context_data = True; // bool | Has local config context data
-$location_id = array('location_id_example'); // string[]
-$location_id__n = array('location_id__n_example'); // string[]
+$location_id = array(56); // int[] | Location (ID)
+$location_id__n = array(56); // int[] | Location (ID)
 $longitude = array(3.4); // float[]
 $longitude__empty = True; // bool
 $longitude__gt = array(3.4); // float[]
@@ -9081,10 +9080,10 @@ $rear_port_count__gte = array(56); // int[]
 $rear_port_count__lt = array(56); // int[]
 $rear_port_count__lte = array(56); // int[]
 $rear_port_count__n = array(56); // int[]
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $role = array('role_example'); // string[] | Role (slug)
 $role__n = array('role__n_example'); // string[] | Role (slug)
 $role_id = array(56); // int[] | Role (ID)
@@ -9102,10 +9101,10 @@ $serial__niew = array('serial__niew_example'); // string[]
 $serial__nisw = array('serial__nisw_example'); // string[]
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $status = array('status_example'); // string[]
@@ -9114,10 +9113,10 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $updated_by_request = 'updated_by_request_example'; // string
@@ -9190,8 +9189,8 @@ try {
 | **console_server_ports** | **bool**| Has console server ports | [optional] |
 | **contact** | [**int[]**](../Model/int.md)| Contact | [optional] |
 | **contact__n** | [**int[]**](../Model/int.md)| Contact | [optional] |
-| **contact_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **contact_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **contact_group** | [**int[]**](../Model/int.md)| Contact group | [optional] |
+| **contact_group__n** | [**int[]**](../Model/int.md)| Contact group | [optional] |
 | **contact_role** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **contact_role__n** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -9276,8 +9275,8 @@ try {
 | **latitude__n** | [**float[]**](../Model/float.md)|  | [optional] |
 | **limit** | **int**| Number of results to return per page. | [optional] |
 | **local_context_data** | **bool**| Has local config context data | [optional] |
-| **location_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **location_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **location_id** | [**int[]**](../Model/int.md)| Location (ID) | [optional] |
+| **location_id__n** | [**int[]**](../Model/int.md)| Location (ID) | [optional] |
 | **longitude** | [**float[]**](../Model/float.md)|  | [optional] |
 | **longitude__empty** | **bool**|  | [optional] |
 | **longitude__gt** | [**float[]**](../Model/float.md)|  | [optional] |
@@ -9371,10 +9370,10 @@ try {
 | **rear_port_count__lt** | [**int[]**](../Model/int.md)|  | [optional] |
 | **rear_port_count__lte** | [**int[]**](../Model/int.md)|  | [optional] |
 | **rear_port_count__n** | [**int[]**](../Model/int.md)|  | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **role** | [**string[]**](../Model/string.md)| Role (slug) | [optional] |
 | **role__n** | [**string[]**](../Model/string.md)| Role (slug) | [optional] |
 | **role_id** | [**int[]**](../Model/int.md)| Role (ID) | [optional] |
@@ -9392,10 +9391,10 @@ try {
 | **serial__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **status** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -9404,10 +9403,10 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **updated_by_request** | **string**|  | [optional] |
@@ -10058,7 +10057,7 @@ void (empty response body)
 ## `dcimFrontPortTemplatesList()`
 
 ```php
-dcimFrontPortTemplatesList($color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $rear_port_id, $rear_port_id__n, $rear_port_position, $rear_port_position__empty, $rear_port_position__gt, $rear_port_position__gte, $rear_port_position__lt, $rear_port_position__lte, $rear_port_position__n, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedFrontPortTemplateList
+dcimFrontPortTemplatesList($color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $rear_port_id, $rear_port_id__n, $rear_port_position, $rear_port_position__empty, $rear_port_position__gt, $rear_port_position__gte, $rear_port_position__lt, $rear_port_position__lte, $rear_port_position__n, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedFrontPortTemplateList
 ```
 
 
@@ -10121,6 +10120,8 @@ $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
 $device_type_id = array(56); // int[] | Device type (ID)
 $device_type_id__n = array(56); // int[] | Device type (ID)
+$devicetype_id = array(56); // int[] | Device type (ID)
+$devicetype_id__n = array(56); // int[] | Device type (ID)
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -10150,6 +10151,8 @@ $limit = 56; // int | Number of results to return per page.
 $modified_by_request = 'modified_by_request_example'; // string
 $module_type_id = array(56); // int[] | Module type (ID)
 $module_type_id__n = array(56); // int[] | Module type (ID)
+$moduletype_id = array(56); // int[] | Module type (ID)
+$moduletype_id__n = array(56); // int[] | Module type (ID)
 $name = array('name_example'); // string[]
 $name__empty = True; // bool
 $name__ic = array('name__ic_example'); // string[]
@@ -10178,7 +10181,7 @@ $type__n = array('type__n_example'); // string[]
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->dcimFrontPortTemplatesList($color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $rear_port_id, $rear_port_id__n, $rear_port_position, $rear_port_position__empty, $rear_port_position__gt, $rear_port_position__gte, $rear_port_position__lt, $rear_port_position__lte, $rear_port_position__n, $type, $type__n, $updated_by_request);
+    $result = $apiInstance->dcimFrontPortTemplatesList($color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $rear_port_id, $rear_port_id__n, $rear_port_position, $rear_port_position__empty, $rear_port_position__gt, $rear_port_position__gte, $rear_port_position__lt, $rear_port_position__lte, $rear_port_position__n, $type, $type__n, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimFrontPortTemplatesList: ', $e->getMessage(), PHP_EOL;
@@ -10221,6 +10224,8 @@ try {
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **device_type_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -10250,6 +10255,8 @@ try {
 | **modified_by_request** | **string**|  | [optional] |
 | **module_type_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **module_type_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **name** | [**string[]**](../Model/string.md)|  | [optional] |
 | **name__empty** | **bool**|  | [optional] |
 | **name__ic** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -10835,7 +10842,7 @@ void (empty response body)
 ## `dcimFrontPortsList()`
 
 ```php
-dcimFrontPortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $rear_port_id, $rear_port_id__n, $rear_port_position, $rear_port_position__empty, $rear_port_position__gt, $rear_port_position__gte, $rear_port_position__lt, $rear_port_position__lte, $rear_port_position__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedFrontPortList
+dcimFrontPortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $rear_port_id, $rear_port_id__n, $rear_port_position, $rear_port_position__empty, $rear_port_position__gt, $rear_port_position__gte, $rear_port_position__lt, $rear_port_position__lte, $rear_port_position__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedFrontPortList
 ```
 
 
@@ -10909,8 +10916,6 @@ $device_role = array('device_role_example'); // string[] | Device role (slug)
 $device_role__n = array('device_role__n_example'); // string[] | Device role (slug)
 $device_role_id = array(56); // int[] | Device role (ID)
 $device_role_id__n = array(56); // int[] | Device role (ID)
-$device_status = array('device_status_example'); // string[]
-$device_status__n = array('device_status__n_example'); // string[]
 $device_type = array('device_type_example'); // string[] | Device type (model)
 $device_type__n = array('device_type__n_example'); // string[] | Device type (model)
 $device_type_id = array(56); // int[] | Device type (ID)
@@ -10977,16 +10982,16 @@ $rear_port_position__gte = array(56); // int[]
 $rear_port_position__lt = array(56); // int[]
 $rear_port_position__lte = array(56); // int[]
 $rear_port_position__n = array(56); // int[]
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $tag = array('tag_example'); // string[]
@@ -11000,7 +11005,7 @@ $virtual_chassis_id = array(56); // int[] | Virtual Chassis (ID)
 $virtual_chassis_id__n = array(56); // int[] | Virtual Chassis (ID)
 
 try {
-    $result = $apiInstance->dcimFrontPortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $rear_port_id, $rear_port_id__n, $rear_port_position, $rear_port_position__empty, $rear_port_position__gt, $rear_port_position__gte, $rear_port_position__lt, $rear_port_position__lte, $rear_port_position__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
+    $result = $apiInstance->dcimFrontPortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $rear_port_id, $rear_port_id__n, $rear_port_position, $rear_port_position__empty, $rear_port_position__gt, $rear_port_position__gte, $rear_port_position__lt, $rear_port_position__lte, $rear_port_position__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimFrontPortsList: ', $e->getMessage(), PHP_EOL;
@@ -11054,8 +11059,6 @@ try {
 | **device_role__n** | [**string[]**](../Model/string.md)| Device role (slug) | [optional] |
 | **device_role_id** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
 | **device_role_id__n** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
-| **device_status** | [**string[]**](../Model/string.md)|  | [optional] |
-| **device_status__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type__n** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
@@ -11122,16 +11125,16 @@ try {
 | **rear_port_position__lt** | [**int[]**](../Model/int.md)|  | [optional] |
 | **rear_port_position__lte** | [**int[]**](../Model/int.md)|  | [optional] |
 | **rear_port_position__n** | [**int[]**](../Model/int.md)|  | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -11769,7 +11772,7 @@ void (empty response body)
 ## `dcimInterfaceTemplatesList()`
 
 ```php
-dcimInterfaceTemplatesList($bridge_id, $bridge_id__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $enabled, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $mgmt_only, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $poe_mode, $poe_mode__n, $poe_type, $poe_type__n, $q, $rf_role, $rf_role__n, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedInterfaceTemplateList
+dcimInterfaceTemplatesList($bridge_id, $bridge_id__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $enabled, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $mgmt_only, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $poe_mode, $poe_mode__n, $poe_type, $poe_type__n, $q, $rf_role, $rf_role__n, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedInterfaceTemplateList
 ```
 
 
@@ -11823,6 +11826,8 @@ $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
 $device_type_id = array(56); // int[] | Device type (ID)
 $device_type_id__n = array(56); // int[] | Device type (ID)
+$devicetype_id = array(56); // int[] | Device type (ID)
+$devicetype_id__n = array(56); // int[] | Device type (ID)
 $enabled = True; // bool
 $id = array(56); // int[]
 $id__empty = True; // bool
@@ -11854,6 +11859,8 @@ $mgmt_only = True; // bool
 $modified_by_request = 'modified_by_request_example'; // string
 $module_type_id = array(56); // int[] | Module type (ID)
 $module_type_id__n = array(56); // int[] | Module type (ID)
+$moduletype_id = array(56); // int[] | Module type (ID)
+$moduletype_id__n = array(56); // int[] | Module type (ID)
 $name = array('name_example'); // string[]
 $name__empty = True; // bool
 $name__ic = array('name__ic_example'); // string[]
@@ -11879,7 +11886,7 @@ $type__n = array('type__n_example'); // string[]
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->dcimInterfaceTemplatesList($bridge_id, $bridge_id__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $enabled, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $mgmt_only, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $poe_mode, $poe_mode__n, $poe_type, $poe_type__n, $q, $rf_role, $rf_role__n, $type, $type__n, $updated_by_request);
+    $result = $apiInstance->dcimInterfaceTemplatesList($bridge_id, $bridge_id__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $enabled, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $mgmt_only, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $poe_mode, $poe_mode__n, $poe_type, $poe_type__n, $q, $rf_role, $rf_role__n, $type, $type__n, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimInterfaceTemplatesList: ', $e->getMessage(), PHP_EOL;
@@ -11913,6 +11920,8 @@ try {
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **device_type_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **enabled** | **bool**|  | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
@@ -11944,6 +11953,8 @@ try {
 | **modified_by_request** | **string**|  | [optional] |
 | **module_type_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **module_type_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **name** | [**string[]**](../Model/string.md)|  | [optional] |
 | **name__empty** | **bool**|  | [optional] |
 | **name__ic** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -12526,7 +12537,7 @@ void (empty response body)
 ## `dcimInterfacesList()`
 
 ```php
-dcimInterfacesList($bridge_id, $bridge_id__n, $cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $duplex, $duplex__n, $enabled, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $kind, $l2vpn, $l2vpn__n, $l2vpn_id, $l2vpn_id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $lag_id, $lag_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mac_address, $mac_address__ic, $mac_address__ie, $mac_address__iew, $mac_address__isw, $mac_address__n, $mac_address__nic, $mac_address__nie, $mac_address__niew, $mac_address__nisw, $mark_connected, $mgmt_only, $mode, $mode__n, $modified_by_request, $module_id, $module_id__n, $mtu, $mtu__empty, $mtu__gt, $mtu__gte, $mtu__lt, $mtu__lte, $mtu__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $parent_id, $parent_id__n, $poe_mode, $poe_mode__n, $poe_type, $poe_type__n, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $rf_channel, $rf_channel__n, $rf_channel_frequency, $rf_channel_frequency__empty, $rf_channel_frequency__gt, $rf_channel_frequency__gte, $rf_channel_frequency__lt, $rf_channel_frequency__lte, $rf_channel_frequency__n, $rf_channel_width, $rf_channel_width__empty, $rf_channel_width__gt, $rf_channel_width__gte, $rf_channel_width__lt, $rf_channel_width__lte, $rf_channel_width__n, $rf_role, $rf_role__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $speed, $speed__empty, $speed__gt, $speed__gte, $speed__lt, $speed__lte, $speed__n, $tag, $tag__n, $tx_power, $tx_power__empty, $tx_power__gt, $tx_power__gte, $tx_power__lt, $tx_power__lte, $tx_power__n, $type, $type__n, $updated_by_request, $vdc, $vdc__n, $vdc_id, $vdc_id__n, $vdc_identifier, $vdc_identifier__n, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n, $virtual_chassis_member, $virtual_chassis_member_id, $vlan, $vlan_id, $vrf, $vrf__n, $vrf_id, $vrf_id__n, $wireless_lan_id, $wireless_lan_id__n, $wireless_link_id, $wireless_link_id__n, $wwn, $wwn__ic, $wwn__ie, $wwn__iew, $wwn__isw, $wwn__n, $wwn__nic, $wwn__nie, $wwn__niew, $wwn__nisw): \OpenAPI\Client\Model\PaginatedInterfaceList
+dcimInterfacesList($bridge_id, $bridge_id__n, $cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $duplex, $duplex__n, $enabled, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $kind, $l2vpn, $l2vpn__n, $l2vpn_id, $l2vpn_id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $lag_id, $lag_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mac_address, $mac_address__ic, $mac_address__ie, $mac_address__iew, $mac_address__isw, $mac_address__n, $mac_address__nic, $mac_address__nie, $mac_address__niew, $mac_address__nisw, $mark_connected, $mgmt_only, $mode, $mode__n, $modified_by_request, $module_id, $module_id__n, $mtu, $mtu__empty, $mtu__gt, $mtu__gte, $mtu__lt, $mtu__lte, $mtu__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $parent_id, $parent_id__n, $poe_mode, $poe_mode__n, $poe_type, $poe_type__n, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $rf_channel, $rf_channel__n, $rf_channel_frequency, $rf_channel_frequency__empty, $rf_channel_frequency__gt, $rf_channel_frequency__gte, $rf_channel_frequency__lt, $rf_channel_frequency__lte, $rf_channel_frequency__n, $rf_channel_width, $rf_channel_width__empty, $rf_channel_width__gt, $rf_channel_width__gte, $rf_channel_width__lt, $rf_channel_width__lte, $rf_channel_width__n, $rf_role, $rf_role__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $speed, $speed__empty, $speed__gt, $speed__gte, $speed__lt, $speed__lte, $speed__n, $tag, $tag__n, $tx_power, $tx_power__empty, $tx_power__gt, $tx_power__gte, $tx_power__lt, $tx_power__lte, $tx_power__n, $type, $type__n, $updated_by_request, $vdc, $vdc__n, $vdc_id, $vdc_id__n, $vdc_identifier, $vdc_identifier__n, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n, $virtual_chassis_member, $virtual_chassis_member_id, $vlan, $vlan_id, $vrf, $vrf__n, $vrf_id, $vrf_id__n, $wireless_lan_id, $wireless_lan_id__n, $wireless_link_id, $wireless_link_id__n, $wwn, $wwn__ic, $wwn__ie, $wwn__iew, $wwn__isw, $wwn__n, $wwn__nic, $wwn__nie, $wwn__niew, $wwn__nisw): \OpenAPI\Client\Model\PaginatedInterfaceList
 ```
 
 
@@ -12592,8 +12603,6 @@ $device_role = array('device_role_example'); // string[] | Device role (slug)
 $device_role__n = array('device_role__n_example'); // string[] | Device role (slug)
 $device_role_id = array(56); // int[] | Device role (ID)
 $device_role_id__n = array(56); // int[] | Device role (ID)
-$device_status = array('device_status_example'); // string[]
-$device_status__n = array('device_status__n_example'); // string[]
 $device_type = array('device_type_example'); // string[] | Device type (model)
 $device_type__n = array('device_type__n_example'); // string[] | Device type (model)
 $device_type_id = array(56); // int[] | Device type (ID)
@@ -12687,10 +12696,10 @@ $rack = array('rack_example'); // string[] | Rack (name)
 $rack__n = array('rack__n_example'); // string[] | Rack (name)
 $rack_id = array(56); // int[] | Rack (ID)
 $rack_id__n = array(56); // int[] | Rack (ID)
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $rf_channel = array('rf_channel_example'); // string[]
 $rf_channel__n = array('rf_channel__n_example'); // string[]
 $rf_channel_frequency = array(3.4); // float[]
@@ -12711,10 +12720,10 @@ $rf_role = array('rf_role_example'); // string[]
 $rf_role__n = array('rf_role__n_example'); // string[]
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $speed = array(56); // int[]
@@ -12770,7 +12779,7 @@ $wwn__niew = array('wwn__niew_example'); // string[]
 $wwn__nisw = array('wwn__nisw_example'); // string[]
 
 try {
-    $result = $apiInstance->dcimInterfacesList($bridge_id, $bridge_id__n, $cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $duplex, $duplex__n, $enabled, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $kind, $l2vpn, $l2vpn__n, $l2vpn_id, $l2vpn_id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $lag_id, $lag_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mac_address, $mac_address__ic, $mac_address__ie, $mac_address__iew, $mac_address__isw, $mac_address__n, $mac_address__nic, $mac_address__nie, $mac_address__niew, $mac_address__nisw, $mark_connected, $mgmt_only, $mode, $mode__n, $modified_by_request, $module_id, $module_id__n, $mtu, $mtu__empty, $mtu__gt, $mtu__gte, $mtu__lt, $mtu__lte, $mtu__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $parent_id, $parent_id__n, $poe_mode, $poe_mode__n, $poe_type, $poe_type__n, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $rf_channel, $rf_channel__n, $rf_channel_frequency, $rf_channel_frequency__empty, $rf_channel_frequency__gt, $rf_channel_frequency__gte, $rf_channel_frequency__lt, $rf_channel_frequency__lte, $rf_channel_frequency__n, $rf_channel_width, $rf_channel_width__empty, $rf_channel_width__gt, $rf_channel_width__gte, $rf_channel_width__lt, $rf_channel_width__lte, $rf_channel_width__n, $rf_role, $rf_role__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $speed, $speed__empty, $speed__gt, $speed__gte, $speed__lt, $speed__lte, $speed__n, $tag, $tag__n, $tx_power, $tx_power__empty, $tx_power__gt, $tx_power__gte, $tx_power__lt, $tx_power__lte, $tx_power__n, $type, $type__n, $updated_by_request, $vdc, $vdc__n, $vdc_id, $vdc_id__n, $vdc_identifier, $vdc_identifier__n, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n, $virtual_chassis_member, $virtual_chassis_member_id, $vlan, $vlan_id, $vrf, $vrf__n, $vrf_id, $vrf_id__n, $wireless_lan_id, $wireless_lan_id__n, $wireless_link_id, $wireless_link_id__n, $wwn, $wwn__ic, $wwn__ie, $wwn__iew, $wwn__isw, $wwn__n, $wwn__nic, $wwn__nie, $wwn__niew, $wwn__nisw);
+    $result = $apiInstance->dcimInterfacesList($bridge_id, $bridge_id__n, $cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $duplex, $duplex__n, $enabled, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $kind, $l2vpn, $l2vpn__n, $l2vpn_id, $l2vpn_id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $lag_id, $lag_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mac_address, $mac_address__ic, $mac_address__ie, $mac_address__iew, $mac_address__isw, $mac_address__n, $mac_address__nic, $mac_address__nie, $mac_address__niew, $mac_address__nisw, $mark_connected, $mgmt_only, $mode, $mode__n, $modified_by_request, $module_id, $module_id__n, $mtu, $mtu__empty, $mtu__gt, $mtu__gte, $mtu__lt, $mtu__lte, $mtu__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $parent_id, $parent_id__n, $poe_mode, $poe_mode__n, $poe_type, $poe_type__n, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $rf_channel, $rf_channel__n, $rf_channel_frequency, $rf_channel_frequency__empty, $rf_channel_frequency__gt, $rf_channel_frequency__gte, $rf_channel_frequency__lt, $rf_channel_frequency__lte, $rf_channel_frequency__n, $rf_channel_width, $rf_channel_width__empty, $rf_channel_width__gt, $rf_channel_width__gte, $rf_channel_width__lt, $rf_channel_width__lte, $rf_channel_width__n, $rf_role, $rf_role__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $speed, $speed__empty, $speed__gt, $speed__gte, $speed__lt, $speed__lte, $speed__n, $tag, $tag__n, $tx_power, $tx_power__empty, $tx_power__gt, $tx_power__gte, $tx_power__lt, $tx_power__lte, $tx_power__n, $type, $type__n, $updated_by_request, $vdc, $vdc__n, $vdc_id, $vdc_id__n, $vdc_identifier, $vdc_identifier__n, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n, $virtual_chassis_member, $virtual_chassis_member_id, $vlan, $vlan_id, $vrf, $vrf__n, $vrf_id, $vrf_id__n, $wireless_lan_id, $wireless_lan_id__n, $wireless_link_id, $wireless_link_id__n, $wwn, $wwn__ic, $wwn__ie, $wwn__iew, $wwn__isw, $wwn__n, $wwn__nic, $wwn__nie, $wwn__niew, $wwn__nisw);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimInterfacesList: ', $e->getMessage(), PHP_EOL;
@@ -12816,8 +12825,6 @@ try {
 | **device_role__n** | [**string[]**](../Model/string.md)| Device role (slug) | [optional] |
 | **device_role_id** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
 | **device_role_id__n** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
-| **device_status** | [**string[]**](../Model/string.md)|  | [optional] |
-| **device_status__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type__n** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
@@ -12911,10 +12918,10 @@ try {
 | **rack__n** | [**string[]**](../Model/string.md)| Rack (name) | [optional] |
 | **rack_id** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
 | **rack_id__n** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **rf_channel** | [**string[]**](../Model/string.md)|  | [optional] |
 | **rf_channel__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **rf_channel_frequency** | [**float[]**](../Model/float.md)|  | [optional] |
@@ -12935,10 +12942,10 @@ try {
 | **rf_role__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **speed** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -14369,7 +14376,7 @@ void (empty response body)
 ## `dcimInventoryItemTemplatesList()`
 
 ```php
-dcimInventoryItemTemplatesList($component_id, $component_id__empty, $component_id__gt, $component_id__gte, $component_id__lt, $component_id__lte, $component_id__n, $component_type, $component_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $parent_id, $parent_id__n, $part_id, $part_id__empty, $part_id__ic, $part_id__ie, $part_id__iew, $part_id__isw, $part_id__n, $part_id__nic, $part_id__nie, $part_id__niew, $part_id__nisw, $q, $role, $role__n, $role_id, $role_id__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedInventoryItemTemplateList
+dcimInventoryItemTemplatesList($component_id, $component_id__empty, $component_id__gt, $component_id__gte, $component_id__lt, $component_id__lte, $component_id__n, $component_type, $component_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $parent_id, $parent_id__n, $part_id, $part_id__empty, $part_id__ic, $part_id__ie, $part_id__iew, $part_id__isw, $part_id__n, $part_id__nic, $part_id__nie, $part_id__niew, $part_id__nisw, $q, $role, $role__n, $role_id, $role_id__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedInventoryItemTemplateList
 ```
 
 
@@ -14430,6 +14437,8 @@ $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
 $device_type_id = array(56); // int[] | Device type (ID)
 $device_type_id__n = array(56); // int[] | Device type (ID)
+$devicetype_id = array(56); // int[] | Device type (ID)
+$devicetype_id__n = array(56); // int[] | Device type (ID)
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -14495,7 +14504,7 @@ $role_id__n = array(56); // int[] | Role (ID)
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->dcimInventoryItemTemplatesList($component_id, $component_id__empty, $component_id__gt, $component_id__gte, $component_id__lt, $component_id__lte, $component_id__n, $component_type, $component_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $parent_id, $parent_id__n, $part_id, $part_id__empty, $part_id__ic, $part_id__ie, $part_id__iew, $part_id__isw, $part_id__n, $part_id__nic, $part_id__nie, $part_id__niew, $part_id__nisw, $q, $role, $role__n, $role_id, $role_id__n, $updated_by_request);
+    $result = $apiInstance->dcimInventoryItemTemplatesList($component_id, $component_id__empty, $component_id__gt, $component_id__gte, $component_id__lt, $component_id__lte, $component_id__n, $component_type, $component_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $parent_id, $parent_id__n, $part_id, $part_id__empty, $part_id__ic, $part_id__ie, $part_id__iew, $part_id__isw, $part_id__n, $part_id__nic, $part_id__nie, $part_id__niew, $part_id__nisw, $q, $role, $role__n, $role_id, $role_id__n, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimInventoryItemTemplatesList: ', $e->getMessage(), PHP_EOL;
@@ -14536,6 +14545,8 @@ try {
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **device_type_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -15158,7 +15169,7 @@ void (empty response body)
 ## `dcimInventoryItemsList()`
 
 ```php
-dcimInventoryItemsList($asset_tag, $asset_tag__empty, $asset_tag__ic, $asset_tag__ie, $asset_tag__iew, $asset_tag__isw, $asset_tag__n, $asset_tag__nic, $asset_tag__nie, $asset_tag__niew, $asset_tag__nisw, $component_id, $component_id__empty, $component_id__gt, $component_id__gte, $component_id__lt, $component_id__lte, $component_id__n, $component_type, $component_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $discovered, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $parent_id, $parent_id__n, $part_id, $part_id__empty, $part_id__ic, $part_id__ie, $part_id__iew, $part_id__isw, $part_id__n, $part_id__nic, $part_id__nie, $part_id__niew, $part_id__nisw, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $serial, $serial__empty, $serial__ic, $serial__ie, $serial__iew, $serial__isw, $serial__n, $serial__nic, $serial__nie, $serial__niew, $serial__nisw, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedInventoryItemList
+dcimInventoryItemsList($asset_tag, $asset_tag__empty, $asset_tag__ic, $asset_tag__ie, $asset_tag__iew, $asset_tag__isw, $asset_tag__n, $asset_tag__nic, $asset_tag__nie, $asset_tag__niew, $asset_tag__nisw, $component_id, $component_id__empty, $component_id__gt, $component_id__gte, $component_id__lt, $component_id__lte, $component_id__n, $component_type, $component_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $discovered, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $parent_id, $parent_id__n, $part_id, $part_id__empty, $part_id__ic, $part_id__ie, $part_id__iew, $part_id__isw, $part_id__n, $part_id__nic, $part_id__nie, $part_id__niew, $part_id__nisw, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $serial, $serial__empty, $serial__ic, $serial__ie, $serial__iew, $serial__isw, $serial__n, $serial__nic, $serial__nie, $serial__niew, $serial__nisw, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedInventoryItemList
 ```
 
 
@@ -15236,8 +15247,6 @@ $device_role = array('device_role_example'); // string[] | Device role (slug)
 $device_role__n = array('device_role__n_example'); // string[] | Device role (slug)
 $device_role_id = array(56); // int[] | Device role (ID)
 $device_role_id__n = array(56); // int[] | Device role (ID)
-$device_status = array('device_status_example'); // string[]
-$device_status__n = array('device_status__n_example'); // string[]
 $device_type = array('device_type_example'); // string[] | Device type (model)
 $device_type__n = array('device_type__n_example'); // string[] | Device type (model)
 $device_type_id = array(56); // int[] | Device type (ID)
@@ -15309,10 +15318,10 @@ $rack = array('rack_example'); // string[] | Rack (name)
 $rack__n = array('rack__n_example'); // string[] | Rack (name)
 $rack_id = array(56); // int[] | Rack (ID)
 $rack_id__n = array(56); // int[] | Rack (ID)
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $role = array('role_example'); // string[] | Role (slug)
 $role__n = array('role__n_example'); // string[] | Role (slug)
 $role_id = array(56); // int[] | Role (ID)
@@ -15330,10 +15339,10 @@ $serial__niew = array('serial__niew_example'); // string[]
 $serial__nisw = array('serial__nisw_example'); // string[]
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $tag = array('tag_example'); // string[]
@@ -15345,7 +15354,7 @@ $virtual_chassis_id = array(56); // int[] | Virtual Chassis (ID)
 $virtual_chassis_id__n = array(56); // int[] | Virtual Chassis (ID)
 
 try {
-    $result = $apiInstance->dcimInventoryItemsList($asset_tag, $asset_tag__empty, $asset_tag__ic, $asset_tag__ie, $asset_tag__iew, $asset_tag__isw, $asset_tag__n, $asset_tag__nic, $asset_tag__nie, $asset_tag__niew, $asset_tag__nisw, $component_id, $component_id__empty, $component_id__gt, $component_id__gte, $component_id__lt, $component_id__lte, $component_id__n, $component_type, $component_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $discovered, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $parent_id, $parent_id__n, $part_id, $part_id__empty, $part_id__ic, $part_id__ie, $part_id__iew, $part_id__isw, $part_id__n, $part_id__nic, $part_id__nie, $part_id__niew, $part_id__nisw, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $serial, $serial__empty, $serial__ic, $serial__ie, $serial__iew, $serial__isw, $serial__n, $serial__nic, $serial__nie, $serial__niew, $serial__nisw, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
+    $result = $apiInstance->dcimInventoryItemsList($asset_tag, $asset_tag__empty, $asset_tag__ic, $asset_tag__ie, $asset_tag__iew, $asset_tag__isw, $asset_tag__n, $asset_tag__nic, $asset_tag__nie, $asset_tag__niew, $asset_tag__nisw, $component_id, $component_id__empty, $component_id__gt, $component_id__gte, $component_id__lt, $component_id__lte, $component_id__n, $component_type, $component_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $discovered, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $parent_id, $parent_id__n, $part_id, $part_id__empty, $part_id__ic, $part_id__ie, $part_id__iew, $part_id__isw, $part_id__n, $part_id__nic, $part_id__nie, $part_id__niew, $part_id__nisw, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $serial, $serial__empty, $serial__ic, $serial__ie, $serial__iew, $serial__isw, $serial__n, $serial__nic, $serial__nie, $serial__niew, $serial__nisw, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimInventoryItemsList: ', $e->getMessage(), PHP_EOL;
@@ -15403,8 +15412,6 @@ try {
 | **device_role__n** | [**string[]**](../Model/string.md)| Device role (slug) | [optional] |
 | **device_role_id** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
 | **device_role_id__n** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
-| **device_status** | [**string[]**](../Model/string.md)|  | [optional] |
-| **device_status__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type__n** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
@@ -15476,10 +15483,10 @@ try {
 | **rack__n** | [**string[]**](../Model/string.md)| Rack (name) | [optional] |
 | **rack_id** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
 | **rack_id__n** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **role** | [**string[]**](../Model/string.md)| Role (slug) | [optional] |
 | **role__n** | [**string[]**](../Model/string.md)| Role (slug) | [optional] |
 | **role_id** | [**int[]**](../Model/int.md)| Role (ID) | [optional] |
@@ -15497,10 +15504,10 @@ try {
 | **serial__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -16100,14 +16107,14 @@ $apiInstance = new OpenAPI\Client\Api\DcimApi(
     new GuzzleHttp\Client(),
     $config
 );
-$ancestor = array('ancestor_example'); // string[]
-$ancestor__n = array('ancestor__n_example'); // string[]
-$ancestor_id = array('ancestor_id_example'); // string[]
-$ancestor_id__n = array('ancestor_id__n_example'); // string[]
+$ancestor = array(56); // int[] | Location (slug)
+$ancestor__n = array(56); // int[] | Location (slug)
+$ancestor_id = array(56); // int[] | Location (ID)
+$ancestor_id__n = array(56); // int[] | Location (ID)
 $contact = array(56); // int[] | Contact
 $contact__n = array(56); // int[] | Contact
-$contact_group = array('contact_group_example'); // string[]
-$contact_group__n = array('contact_group__n_example'); // string[]
+$contact_group = array(56); // int[] | Contact group
+$contact_group__n = array(56); // int[] | Contact group
 $contact_role = array(56); // int[] | Contact Role
 $contact_role__n = array(56); // int[] | Contact Role
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -16174,16 +16181,16 @@ $parent__n = array('parent__n_example'); // string[] | Parent location (slug)
 $parent_id = array(56); // int[] | Parent location (ID)
 $parent_id__n = array(56); // int[] | Parent location (ID)
 $q = 'q_example'; // string | Search
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site (slug)
 $site__n = array('site__n_example'); // string[] | Site (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $slug = array('slug_example'); // string[]
@@ -16203,10 +16210,10 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $updated_by_request = 'updated_by_request_example'; // string
@@ -16223,14 +16230,14 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **ancestor** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **ancestor** | [**int[]**](../Model/int.md)| Location (slug) | [optional] |
+| **ancestor__n** | [**int[]**](../Model/int.md)| Location (slug) | [optional] |
+| **ancestor_id** | [**int[]**](../Model/int.md)| Location (ID) | [optional] |
+| **ancestor_id__n** | [**int[]**](../Model/int.md)| Location (ID) | [optional] |
 | **contact** | [**int[]**](../Model/int.md)| Contact | [optional] |
 | **contact__n** | [**int[]**](../Model/int.md)| Contact | [optional] |
-| **contact_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **contact_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **contact_group** | [**int[]**](../Model/int.md)| Contact group | [optional] |
+| **contact_group__n** | [**int[]**](../Model/int.md)| Contact group | [optional] |
 | **contact_role** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **contact_role__n** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -16297,16 +16304,16 @@ try {
 | **parent_id** | [**int[]**](../Model/int.md)| Parent location (ID) | [optional] |
 | **parent_id__n** | [**int[]**](../Model/int.md)| Parent location (ID) | [optional] |
 | **q** | **string**| Search | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **slug** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -16326,10 +16333,10 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **updated_by_request** | **string**|  | [optional] |
@@ -16925,8 +16932,8 @@ $apiInstance = new OpenAPI\Client\Api\DcimApi(
 );
 $contact = array(56); // int[] | Contact
 $contact__n = array(56); // int[] | Contact
-$contact_group = array('contact_group_example'); // string[]
-$contact_group__n = array('contact_group__n_example'); // string[]
+$contact_group = array(56); // int[] | Contact group
+$contact_group__n = array(56); // int[] | Contact group
 $contact_role = array(56); // int[] | Contact Role
 $contact_role__n = array(56); // int[] | Contact Role
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -17007,8 +17014,8 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **contact** | [**int[]**](../Model/int.md)| Contact | [optional] |
 | **contact__n** | [**int[]**](../Model/int.md)| Contact | [optional] |
-| **contact_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **contact_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **contact_group** | [**int[]**](../Model/int.md)| Contact group | [optional] |
+| **contact_group__n** | [**int[]**](../Model/int.md)| Contact group | [optional] |
 | **contact_role** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **contact_role__n** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -17633,7 +17640,7 @@ void (empty response body)
 ## `dcimModuleBayTemplatesList()`
 
 ```php
-dcimModuleBayTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $position, $position__empty, $position__ic, $position__ie, $position__iew, $position__isw, $position__n, $position__nic, $position__nie, $position__niew, $position__nisw, $q, $updated_by_request): \OpenAPI\Client\Model\PaginatedModuleBayTemplateList
+dcimModuleBayTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $position, $position__empty, $position__ic, $position__ie, $position__iew, $position__isw, $position__n, $position__nic, $position__nie, $position__niew, $position__nisw, $q, $updated_by_request): \OpenAPI\Client\Model\PaginatedModuleBayTemplateList
 ```
 
 
@@ -17685,6 +17692,8 @@ $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
 $device_type_id = array(56); // int[] | Device type (ID)
 $device_type_id__n = array(56); // int[] | Device type (ID)
+$devicetype_id = array(56); // int[] | Device type (ID)
+$devicetype_id__n = array(56); // int[] | Device type (ID)
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -17712,8 +17721,6 @@ $last_updated__lte = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \Date
 $last_updated__n = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $limit = 56; // int | Number of results to return per page.
 $modified_by_request = 'modified_by_request_example'; // string
-$module_type_id = array(56); // int[] | Module type (ID)
-$module_type_id__n = array(56); // int[] | Module type (ID)
 $name = array('name_example'); // string[]
 $name__empty = True; // bool
 $name__ic = array('name__ic_example'); // string[]
@@ -17742,7 +17749,7 @@ $q = 'q_example'; // string | Search
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->dcimModuleBayTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $position, $position__empty, $position__ic, $position__ie, $position__iew, $position__isw, $position__n, $position__nic, $position__nie, $position__niew, $position__nisw, $q, $updated_by_request);
+    $result = $apiInstance->dcimModuleBayTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $position, $position__empty, $position__ic, $position__ie, $position__iew, $position__isw, $position__n, $position__nic, $position__nie, $position__niew, $position__nisw, $q, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimModuleBayTemplatesList: ', $e->getMessage(), PHP_EOL;
@@ -17774,6 +17781,8 @@ try {
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **device_type_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -17801,8 +17810,6 @@ try {
 | **last_updated__n** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **limit** | **int**| Number of results to return per page. | [optional] |
 | **modified_by_request** | **string**|  | [optional] |
-| **module_type_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
-| **module_type_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **name** | [**string[]**](../Model/string.md)|  | [optional] |
 | **name__empty** | **bool**|  | [optional] |
 | **name__ic** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -18388,7 +18395,7 @@ void (empty response body)
 ## `dcimModuleBaysList()`
 
 ```php
-dcimModuleBaysList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $installed_module_id, $installed_module_id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $parent_id, $parent_id__n, $position, $position__empty, $position__ic, $position__ie, $position__iew, $position__isw, $position__n, $position__nic, $position__nie, $position__niew, $position__nisw, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedModuleBayList
+dcimModuleBaysList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $installed_module_id, $installed_module_id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $position, $position__empty, $position__ic, $position__ie, $position__iew, $position__isw, $position__n, $position__nic, $position__nie, $position__niew, $position__nisw, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedModuleBayList
 ```
 
 
@@ -18446,8 +18453,6 @@ $device_role = array('device_role_example'); // string[] | Device role (slug)
 $device_role__n = array('device_role__n_example'); // string[] | Device role (slug)
 $device_role_id = array(56); // int[] | Device role (ID)
 $device_role_id__n = array(56); // int[] | Device role (ID)
-$device_status = array('device_status_example'); // string[]
-$device_status__n = array('device_status__n_example'); // string[]
 $device_type = array('device_type_example'); // string[] | Device type (model)
 $device_type__n = array('device_type__n_example'); // string[] | Device type (model)
 $device_type_id = array(56); // int[] | Device type (ID)
@@ -18485,8 +18490,6 @@ $location__n = array('location__n_example'); // string[] | Location (slug)
 $location_id = array(56); // int[] | Location (ID)
 $location_id__n = array(56); // int[] | Location (ID)
 $modified_by_request = 'modified_by_request_example'; // string
-$module_id = array(56); // int[] | Module (ID)
-$module_id__n = array(56); // int[] | Module (ID)
 $name = array('name_example'); // string[]
 $name__empty = True; // bool
 $name__ic = array('name__ic_example'); // string[]
@@ -18500,8 +18503,6 @@ $name__niew = array('name__niew_example'); // string[]
 $name__nisw = array('name__nisw_example'); // string[]
 $offset = 56; // int | The initial index from which to return the results.
 $ordering = 'ordering_example'; // string | Which field to use when ordering the results.
-$parent_id = array(56); // int[] | Parent module bay (ID)
-$parent_id__n = array(56); // int[] | Parent module bay (ID)
 $position = array('position_example'); // string[]
 $position__empty = True; // bool
 $position__ic = array('position__ic_example'); // string[]
@@ -18518,16 +18519,16 @@ $rack = array('rack_example'); // string[] | Rack (name)
 $rack__n = array('rack__n_example'); // string[] | Rack (name)
 $rack_id = array(56); // int[] | Rack (ID)
 $rack_id__n = array(56); // int[] | Rack (ID)
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $tag = array('tag_example'); // string[]
@@ -18539,7 +18540,7 @@ $virtual_chassis_id = array(56); // int[] | Virtual Chassis (ID)
 $virtual_chassis_id__n = array(56); // int[] | Virtual Chassis (ID)
 
 try {
-    $result = $apiInstance->dcimModuleBaysList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $installed_module_id, $installed_module_id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $parent_id, $parent_id__n, $position, $position__empty, $position__ic, $position__ie, $position__iew, $position__isw, $position__n, $position__nic, $position__nie, $position__niew, $position__nisw, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
+    $result = $apiInstance->dcimModuleBaysList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $installed_module_id, $installed_module_id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $modified_by_request, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $position, $position__empty, $position__ic, $position__ie, $position__iew, $position__isw, $position__n, $position__nic, $position__nie, $position__niew, $position__nisw, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimModuleBaysList: ', $e->getMessage(), PHP_EOL;
@@ -18577,8 +18578,6 @@ try {
 | **device_role__n** | [**string[]**](../Model/string.md)| Device role (slug) | [optional] |
 | **device_role_id** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
 | **device_role_id__n** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
-| **device_status** | [**string[]**](../Model/string.md)|  | [optional] |
-| **device_status__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type__n** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
@@ -18616,8 +18615,6 @@ try {
 | **location_id** | [**int[]**](../Model/int.md)| Location (ID) | [optional] |
 | **location_id__n** | [**int[]**](../Model/int.md)| Location (ID) | [optional] |
 | **modified_by_request** | **string**|  | [optional] |
-| **module_id** | [**int[]**](../Model/int.md)| Module (ID) | [optional] |
-| **module_id__n** | [**int[]**](../Model/int.md)| Module (ID) | [optional] |
 | **name** | [**string[]**](../Model/string.md)|  | [optional] |
 | **name__empty** | **bool**|  | [optional] |
 | **name__ic** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -18631,8 +18628,6 @@ try {
 | **name__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **offset** | **int**| The initial index from which to return the results. | [optional] |
 | **ordering** | **string**| Which field to use when ordering the results. | [optional] |
-| **parent_id** | [**int[]**](../Model/int.md)| Parent module bay (ID) | [optional] |
-| **parent_id__n** | [**int[]**](../Model/int.md)| Parent module bay (ID) | [optional] |
 | **position** | [**string[]**](../Model/string.md)|  | [optional] |
 | **position__empty** | **bool**|  | [optional] |
 | **position__ic** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -18649,16 +18644,16 @@ try {
 | **rack__n** | [**string[]**](../Model/string.md)| Rack (name) | [optional] |
 | **rack_id** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
 | **rack_id__n** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -19227,7 +19222,7 @@ void (empty response body)
 ## `dcimModuleTypesList()`
 
 ```php
-dcimModuleTypesList($airflow, $airflow__n, $console_ports, $console_server_ports, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $interfaces, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $model, $model__empty, $model__ic, $model__ie, $model__iew, $model__isw, $model__n, $model__nic, $model__nie, $model__niew, $model__nisw, $modified_by_request, $offset, $ordering, $part_number, $part_number__empty, $part_number__ic, $part_number__ie, $part_number__iew, $part_number__isw, $part_number__n, $part_number__nic, $part_number__nie, $part_number__niew, $part_number__nisw, $pass_through_ports, $power_outlets, $power_ports, $q, $tag, $tag__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n, $weight_unit, $weight_unit__n): \OpenAPI\Client\Model\PaginatedModuleTypeList
+dcimModuleTypesList($console_ports, $console_server_ports, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $interfaces, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $model, $model__empty, $model__ic, $model__ie, $model__iew, $model__isw, $model__n, $model__nic, $model__nie, $model__niew, $model__nisw, $modified_by_request, $offset, $ordering, $part_number, $part_number__empty, $part_number__ic, $part_number__ie, $part_number__iew, $part_number__isw, $part_number__n, $part_number__nic, $part_number__nie, $part_number__niew, $part_number__nisw, $pass_through_ports, $power_outlets, $power_ports, $q, $tag, $tag__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n, $weight_unit, $weight_unit__n): \OpenAPI\Client\Model\PaginatedModuleTypeList
 ```
 
 
@@ -19258,8 +19253,6 @@ $apiInstance = new OpenAPI\Client\Api\DcimApi(
     new GuzzleHttp\Client(),
     $config
 );
-$airflow = 'airflow_example'; // string | * `front-to-rear` - Front to rear * `rear-to-front` - Rear to front * `left-to-right` - Left to right * `right-to-left` - Right to left * `side-to-rear` - Side to rear * `passive` - Passive
-$airflow__n = 'airflow__n_example'; // string | * `front-to-rear` - Front to rear * `rear-to-front` - Rear to front * `left-to-right` - Left to right * `right-to-left` - Right to left * `side-to-rear` - Side to rear * `passive` - Passive
 $console_ports = True; // bool | Has console ports
 $console_server_ports = True; // bool | Has console server ports
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -19344,7 +19337,7 @@ $weight_unit = 'weight_unit_example'; // string | * `kg` - Kilograms * `g` - Gra
 $weight_unit__n = 'weight_unit__n_example'; // string | * `kg` - Kilograms * `g` - Grams * `lb` - Pounds * `oz` - Ounces
 
 try {
-    $result = $apiInstance->dcimModuleTypesList($airflow, $airflow__n, $console_ports, $console_server_ports, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $interfaces, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $model, $model__empty, $model__ic, $model__ie, $model__iew, $model__isw, $model__n, $model__nic, $model__nie, $model__niew, $model__nisw, $modified_by_request, $offset, $ordering, $part_number, $part_number__empty, $part_number__ic, $part_number__ie, $part_number__iew, $part_number__isw, $part_number__n, $part_number__nic, $part_number__nie, $part_number__niew, $part_number__nisw, $pass_through_ports, $power_outlets, $power_ports, $q, $tag, $tag__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n, $weight_unit, $weight_unit__n);
+    $result = $apiInstance->dcimModuleTypesList($console_ports, $console_server_ports, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $interfaces, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $model, $model__empty, $model__ic, $model__ie, $model__iew, $model__isw, $model__n, $model__nic, $model__nie, $model__niew, $model__nisw, $modified_by_request, $offset, $ordering, $part_number, $part_number__empty, $part_number__ic, $part_number__ie, $part_number__iew, $part_number__isw, $part_number__n, $part_number__nic, $part_number__nie, $part_number__niew, $part_number__nisw, $pass_through_ports, $power_outlets, $power_ports, $q, $tag, $tag__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n, $weight_unit, $weight_unit__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimModuleTypesList: ', $e->getMessage(), PHP_EOL;
@@ -19355,8 +19348,6 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **airflow** | **string**| * &#x60;front-to-rear&#x60; - Front to rear * &#x60;rear-to-front&#x60; - Rear to front * &#x60;left-to-right&#x60; - Left to right * &#x60;right-to-left&#x60; - Right to left * &#x60;side-to-rear&#x60; - Side to rear * &#x60;passive&#x60; - Passive | [optional] |
-| **airflow__n** | **string**| * &#x60;front-to-rear&#x60; - Front to rear * &#x60;rear-to-front&#x60; - Rear to front * &#x60;left-to-right&#x60; - Left to right * &#x60;right-to-left&#x60; - Right to left * &#x60;side-to-rear&#x60; - Side to rear * &#x60;passive&#x60; - Passive | [optional] |
 | **console_ports** | **bool**| Has console ports | [optional] |
 | **console_server_ports** | **bool**| Has console server ports | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -20081,8 +20072,8 @@ $manufacturer__n = array('manufacturer__n_example'); // string[] | Manufacturer 
 $manufacturer_id = array(56); // int[] | Manufacturer (ID)
 $manufacturer_id__n = array(56); // int[] | Manufacturer (ID)
 $modified_by_request = 'modified_by_request_example'; // string
-$module_bay_id = array('module_bay_id_example'); // string[]
-$module_bay_id__n = array('module_bay_id__n_example'); // string[]
+$module_bay_id = array(56); // int[] | Module Bay (ID)
+$module_bay_id__n = array(56); // int[] | Module Bay (ID)
 $module_type = array('module_type_example'); // string[] | Module type (model)
 $module_type__n = array('module_type__n_example'); // string[] | Module type (model)
 $module_type_id = array(56); // int[] | Module type (ID)
@@ -20171,8 +20162,8 @@ try {
 | **manufacturer_id** | [**int[]**](../Model/int.md)| Manufacturer (ID) | [optional] |
 | **manufacturer_id__n** | [**int[]**](../Model/int.md)| Manufacturer (ID) | [optional] |
 | **modified_by_request** | **string**|  | [optional] |
-| **module_bay_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **module_bay_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **module_bay_id** | [**int[]**](../Model/int.md)| Module Bay (ID) | [optional] |
+| **module_bay_id__n** | [**int[]**](../Model/int.md)| Module Bay (ID) | [optional] |
 | **module_type** | [**string[]**](../Model/string.md)| Module type (model) | [optional] |
 | **module_type__n** | [**string[]**](../Model/string.md)| Module type (model) | [optional] |
 | **module_type_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
@@ -21613,16 +21604,16 @@ $power_panel_id__n = array(56); // int[] | Power panel (ID)
 $q = 'q_example'; // string | Search
 $rack_id = array(56); // int[] | Rack (ID)
 $rack_id__n = array(56); // int[] | Rack (ID)
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $status = array('status_example'); // string[]
@@ -21633,10 +21624,10 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $type = 'type_example'; // string | * `primary` - Primary * `redundant` - Redundant
@@ -21746,16 +21737,16 @@ try {
 | **q** | **string**| Search | [optional] |
 | **rack_id** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
 | **rack_id__n** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **status** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -21766,10 +21757,10 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **type** | **string**| * &#x60;primary&#x60; - Primary * &#x60;redundant&#x60; - Redundant | [optional] |
@@ -22408,7 +22399,7 @@ void (empty response body)
 ## `dcimPowerOutletTemplatesList()`
 
 ```php
-dcimPowerOutletTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $feed_leg, $feed_leg__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $power_port_id, $power_port_id__n, $q, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedPowerOutletTemplateList
+dcimPowerOutletTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $feed_leg, $feed_leg__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $power_port_id, $power_port_id__n, $q, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedPowerOutletTemplateList
 ```
 
 
@@ -22460,6 +22451,8 @@ $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
 $device_type_id = array(56); // int[] | Device type (ID)
 $device_type_id__n = array(56); // int[] | Device type (ID)
+$devicetype_id = array(56); // int[] | Device type (ID)
+$devicetype_id__n = array(56); // int[] | Device type (ID)
 $feed_leg = array('feed_leg_example'); // string[] | Phase (for three-phase feeds)
 $feed_leg__n = array('feed_leg__n_example'); // string[] | Phase (for three-phase feeds)
 $id = array(56); // int[]
@@ -22491,6 +22484,8 @@ $limit = 56; // int | Number of results to return per page.
 $modified_by_request = 'modified_by_request_example'; // string
 $module_type_id = array(56); // int[] | Module type (ID)
 $module_type_id__n = array(56); // int[] | Module type (ID)
+$moduletype_id = array(56); // int[] | Module type (ID)
+$moduletype_id__n = array(56); // int[] | Module type (ID)
 $name = array('name_example'); // string[]
 $name__empty = True; // bool
 $name__ic = array('name__ic_example'); // string[]
@@ -22507,12 +22502,12 @@ $ordering = 'ordering_example'; // string | Which field to use when ordering the
 $power_port_id = array(56); // int[] | Power port (ID)
 $power_port_id__n = array(56); // int[] | Power port (ID)
 $q = 'q_example'; // string | Search
-$type = 'type_example'; // string | * `IEC 60320` - [('iec-60320-c5', 'C5'), ('iec-60320-c7', 'C7'), ('iec-60320-c13', 'C13'), ('iec-60320-c15', 'C15'), ('iec-60320-c19', 'C19'), ('iec-60320-c21', 'C21')] * `IEC 60309` - [('iec-60309-p-n-e-4h', 'P+N+E 4H'), ('iec-60309-p-n-e-6h', 'P+N+E 6H'), ('iec-60309-p-n-e-9h', 'P+N+E 9H'), ('iec-60309-2p-e-4h', '2P+E 4H'), ('iec-60309-2p-e-6h', '2P+E 6H'), ('iec-60309-2p-e-9h', '2P+E 9H'), ('iec-60309-3p-e-4h', '3P+E 4H'), ('iec-60309-3p-e-6h', '3P+E 6H'), ('iec-60309-3p-e-9h', '3P+E 9H'), ('iec-60309-3p-n-e-4h', '3P+N+E 4H'), ('iec-60309-3p-n-e-6h', '3P+N+E 6H'), ('iec-60309-3p-n-e-9h', '3P+N+E 9H')] * `IEC 60906-1` - [('iec-60906-1', 'IEC 60906-1'), ('nbr-14136-10a', '2P+T 10A (NBR 14136)'), ('nbr-14136-20a', '2P+T 20A (NBR 14136)')] * `NEMA (Non-locking)` - [('nema-1-15r', 'NEMA 1-15R'), ('nema-5-15r', 'NEMA 5-15R'), ('nema-5-20r', 'NEMA 5-20R'), ('nema-5-30r', 'NEMA 5-30R'), ('nema-5-50r', 'NEMA 5-50R'), ('nema-6-15r', 'NEMA 6-15R'), ('nema-6-20r', 'NEMA 6-20R'), ('nema-6-30r', 'NEMA 6-30R'), ('nema-6-50r', 'NEMA 6-50R'), ('nema-10-30r', 'NEMA 10-30R'), ('nema-10-50r', 'NEMA 10-50R'), ('nema-14-20r', 'NEMA 14-20R'), ('nema-14-30r', 'NEMA 14-30R'), ('nema-14-50r', 'NEMA 14-50R'), ('nema-14-60r', 'NEMA 14-60R'), ('nema-15-15r', 'NEMA 15-15R'), ('nema-15-20r', 'NEMA 15-20R'), ('nema-15-30r', 'NEMA 15-30R'), ('nema-15-50r', 'NEMA 15-50R'), ('nema-15-60r', 'NEMA 15-60R')] * `NEMA (Locking)` - [('nema-l1-15r', 'NEMA L1-15R'), ('nema-l5-15r', 'NEMA L5-15R'), ('nema-l5-20r', 'NEMA L5-20R'), ('nema-l5-30r', 'NEMA L5-30R'), ('nema-l5-50r', 'NEMA L5-50R'), ('nema-l6-15r', 'NEMA L6-15R'), ('nema-l6-20r', 'NEMA L6-20R'), ('nema-l6-30r', 'NEMA L6-30R'), ('nema-l6-50r', 'NEMA L6-50R'), ('nema-l10-30r', 'NEMA L10-30R'), ('nema-l14-20r', 'NEMA L14-20R'), ('nema-l14-30r', 'NEMA L14-30R'), ('nema-l14-50r', 'NEMA L14-50R'), ('nema-l14-60r', 'NEMA L14-60R'), ('nema-l15-20r', 'NEMA L15-20R'), ('nema-l15-30r', 'NEMA L15-30R'), ('nema-l15-50r', 'NEMA L15-50R'), ('nema-l15-60r', 'NEMA L15-60R'), ('nema-l21-20r', 'NEMA L21-20R'), ('nema-l21-30r', 'NEMA L21-30R'), ('nema-l22-20r', 'NEMA L22-20R'), ('nema-l22-30r', 'NEMA L22-30R')] * `California Style` - [('CS6360C', 'CS6360C'), ('CS6364C', 'CS6364C'), ('CS8164C', 'CS8164C'), ('CS8264C', 'CS8264C'), ('CS8364C', 'CS8364C'), ('CS8464C', 'CS8464C')] * `ITA/International` - [('ita-e', 'ITA Type E (CEE 7/5)'), ('ita-f', 'ITA Type F (CEE 7/3)'), ('ita-g', 'ITA Type G (BS 1363)'), ('ita-h', 'ITA Type H'), ('ita-i', 'ITA Type I'), ('ita-j', 'ITA Type J'), ('ita-k', 'ITA Type K'), ('ita-l', 'ITA Type L (CEI 23-50)'), ('ita-m', 'ITA Type M (BS 546)'), ('ita-n', 'ITA Type N'), ('ita-o', 'ITA Type O'), ('ita-multistandard', 'ITA Multistandard')] * `USB` - [('usb-a', 'USB Type A'), ('usb-micro-b', 'USB Micro B'), ('usb-c', 'USB Type C')] * `Molex` - [('molex-micro-fit-1x2', 'Molex Micro-Fit 1x2'), ('molex-micro-fit-2x2', 'Molex Micro-Fit 2x2'), ('molex-micro-fit-2x4', 'Molex Micro-Fit 2x4')] * `DC` - [('dc-terminal', 'DC Terminal')] * `Proprietary` - [('hdot-cx', 'HDOT Cx'), ('saf-d-grid', 'Saf-D-Grid'), ('neutrik-powercon-20a', 'Neutrik powerCON (20A)'), ('neutrik-powercon-32a', 'Neutrik powerCON (32A)'), ('neutrik-powercon-true1', 'Neutrik powerCON TRUE1'), ('neutrik-powercon-true1-top', 'Neutrik powerCON TRUE1 TOP'), ('ubiquiti-smartpower', 'Ubiquiti SmartPower')] * `Other` - [('hardwired', 'Hardwired'), ('other', 'Other')]
-$type__n = 'type__n_example'; // string | * `IEC 60320` - [('iec-60320-c5', 'C5'), ('iec-60320-c7', 'C7'), ('iec-60320-c13', 'C13'), ('iec-60320-c15', 'C15'), ('iec-60320-c19', 'C19'), ('iec-60320-c21', 'C21')] * `IEC 60309` - [('iec-60309-p-n-e-4h', 'P+N+E 4H'), ('iec-60309-p-n-e-6h', 'P+N+E 6H'), ('iec-60309-p-n-e-9h', 'P+N+E 9H'), ('iec-60309-2p-e-4h', '2P+E 4H'), ('iec-60309-2p-e-6h', '2P+E 6H'), ('iec-60309-2p-e-9h', '2P+E 9H'), ('iec-60309-3p-e-4h', '3P+E 4H'), ('iec-60309-3p-e-6h', '3P+E 6H'), ('iec-60309-3p-e-9h', '3P+E 9H'), ('iec-60309-3p-n-e-4h', '3P+N+E 4H'), ('iec-60309-3p-n-e-6h', '3P+N+E 6H'), ('iec-60309-3p-n-e-9h', '3P+N+E 9H')] * `IEC 60906-1` - [('iec-60906-1', 'IEC 60906-1'), ('nbr-14136-10a', '2P+T 10A (NBR 14136)'), ('nbr-14136-20a', '2P+T 20A (NBR 14136)')] * `NEMA (Non-locking)` - [('nema-1-15r', 'NEMA 1-15R'), ('nema-5-15r', 'NEMA 5-15R'), ('nema-5-20r', 'NEMA 5-20R'), ('nema-5-30r', 'NEMA 5-30R'), ('nema-5-50r', 'NEMA 5-50R'), ('nema-6-15r', 'NEMA 6-15R'), ('nema-6-20r', 'NEMA 6-20R'), ('nema-6-30r', 'NEMA 6-30R'), ('nema-6-50r', 'NEMA 6-50R'), ('nema-10-30r', 'NEMA 10-30R'), ('nema-10-50r', 'NEMA 10-50R'), ('nema-14-20r', 'NEMA 14-20R'), ('nema-14-30r', 'NEMA 14-30R'), ('nema-14-50r', 'NEMA 14-50R'), ('nema-14-60r', 'NEMA 14-60R'), ('nema-15-15r', 'NEMA 15-15R'), ('nema-15-20r', 'NEMA 15-20R'), ('nema-15-30r', 'NEMA 15-30R'), ('nema-15-50r', 'NEMA 15-50R'), ('nema-15-60r', 'NEMA 15-60R')] * `NEMA (Locking)` - [('nema-l1-15r', 'NEMA L1-15R'), ('nema-l5-15r', 'NEMA L5-15R'), ('nema-l5-20r', 'NEMA L5-20R'), ('nema-l5-30r', 'NEMA L5-30R'), ('nema-l5-50r', 'NEMA L5-50R'), ('nema-l6-15r', 'NEMA L6-15R'), ('nema-l6-20r', 'NEMA L6-20R'), ('nema-l6-30r', 'NEMA L6-30R'), ('nema-l6-50r', 'NEMA L6-50R'), ('nema-l10-30r', 'NEMA L10-30R'), ('nema-l14-20r', 'NEMA L14-20R'), ('nema-l14-30r', 'NEMA L14-30R'), ('nema-l14-50r', 'NEMA L14-50R'), ('nema-l14-60r', 'NEMA L14-60R'), ('nema-l15-20r', 'NEMA L15-20R'), ('nema-l15-30r', 'NEMA L15-30R'), ('nema-l15-50r', 'NEMA L15-50R'), ('nema-l15-60r', 'NEMA L15-60R'), ('nema-l21-20r', 'NEMA L21-20R'), ('nema-l21-30r', 'NEMA L21-30R'), ('nema-l22-20r', 'NEMA L22-20R'), ('nema-l22-30r', 'NEMA L22-30R')] * `California Style` - [('CS6360C', 'CS6360C'), ('CS6364C', 'CS6364C'), ('CS8164C', 'CS8164C'), ('CS8264C', 'CS8264C'), ('CS8364C', 'CS8364C'), ('CS8464C', 'CS8464C')] * `ITA/International` - [('ita-e', 'ITA Type E (CEE 7/5)'), ('ita-f', 'ITA Type F (CEE 7/3)'), ('ita-g', 'ITA Type G (BS 1363)'), ('ita-h', 'ITA Type H'), ('ita-i', 'ITA Type I'), ('ita-j', 'ITA Type J'), ('ita-k', 'ITA Type K'), ('ita-l', 'ITA Type L (CEI 23-50)'), ('ita-m', 'ITA Type M (BS 546)'), ('ita-n', 'ITA Type N'), ('ita-o', 'ITA Type O'), ('ita-multistandard', 'ITA Multistandard')] * `USB` - [('usb-a', 'USB Type A'), ('usb-micro-b', 'USB Micro B'), ('usb-c', 'USB Type C')] * `Molex` - [('molex-micro-fit-1x2', 'Molex Micro-Fit 1x2'), ('molex-micro-fit-2x2', 'Molex Micro-Fit 2x2'), ('molex-micro-fit-2x4', 'Molex Micro-Fit 2x4')] * `DC` - [('dc-terminal', 'DC Terminal')] * `Proprietary` - [('hdot-cx', 'HDOT Cx'), ('saf-d-grid', 'Saf-D-Grid'), ('neutrik-powercon-20a', 'Neutrik powerCON (20A)'), ('neutrik-powercon-32a', 'Neutrik powerCON (32A)'), ('neutrik-powercon-true1', 'Neutrik powerCON TRUE1'), ('neutrik-powercon-true1-top', 'Neutrik powerCON TRUE1 TOP'), ('ubiquiti-smartpower', 'Ubiquiti SmartPower')] * `Other` - [('hardwired', 'Hardwired'), ('other', 'Other')]
+$type = 'type_example'; // string | * `IEC 60320` - [('iec-60320-c5', 'C5'), ('iec-60320-c7', 'C7'), ('iec-60320-c13', 'C13'), ('iec-60320-c15', 'C15'), ('iec-60320-c19', 'C19'), ('iec-60320-c21', 'C21')] * `IEC 60309` - [('iec-60309-p-n-e-4h', 'P+N+E 4H'), ('iec-60309-p-n-e-6h', 'P+N+E 6H'), ('iec-60309-p-n-e-9h', 'P+N+E 9H'), ('iec-60309-2p-e-4h', '2P+E 4H'), ('iec-60309-2p-e-6h', '2P+E 6H'), ('iec-60309-2p-e-9h', '2P+E 9H'), ('iec-60309-3p-e-4h', '3P+E 4H'), ('iec-60309-3p-e-6h', '3P+E 6H'), ('iec-60309-3p-e-9h', '3P+E 9H'), ('iec-60309-3p-n-e-4h', '3P+N+E 4H'), ('iec-60309-3p-n-e-6h', '3P+N+E 6H'), ('iec-60309-3p-n-e-9h', '3P+N+E 9H')] * `IEC 60906-1` - [('iec-60906-1', 'IEC 60906-1'), ('nbr-14136-10a', '2P+T 10A (NBR 14136)'), ('nbr-14136-20a', '2P+T 20A (NBR 14136)')] * `NEMA (Non-locking)` - [('nema-1-15r', 'NEMA 1-15R'), ('nema-5-15r', 'NEMA 5-15R'), ('nema-5-20r', 'NEMA 5-20R'), ('nema-5-30r', 'NEMA 5-30R'), ('nema-5-50r', 'NEMA 5-50R'), ('nema-6-15r', 'NEMA 6-15R'), ('nema-6-20r', 'NEMA 6-20R'), ('nema-6-30r', 'NEMA 6-30R'), ('nema-6-50r', 'NEMA 6-50R'), ('nema-10-30r', 'NEMA 10-30R'), ('nema-10-50r', 'NEMA 10-50R'), ('nema-14-20r', 'NEMA 14-20R'), ('nema-14-30r', 'NEMA 14-30R'), ('nema-14-50r', 'NEMA 14-50R'), ('nema-14-60r', 'NEMA 14-60R'), ('nema-15-15r', 'NEMA 15-15R'), ('nema-15-20r', 'NEMA 15-20R'), ('nema-15-30r', 'NEMA 15-30R'), ('nema-15-50r', 'NEMA 15-50R'), ('nema-15-60r', 'NEMA 15-60R')] * `NEMA (Locking)` - [('nema-l1-15r', 'NEMA L1-15R'), ('nema-l5-15r', 'NEMA L5-15R'), ('nema-l5-20r', 'NEMA L5-20R'), ('nema-l5-30r', 'NEMA L5-30R'), ('nema-l5-50r', 'NEMA L5-50R'), ('nema-l6-15r', 'NEMA L6-15R'), ('nema-l6-20r', 'NEMA L6-20R'), ('nema-l6-30r', 'NEMA L6-30R'), ('nema-l6-50r', 'NEMA L6-50R'), ('nema-l10-30r', 'NEMA L10-30R'), ('nema-l14-20r', 'NEMA L14-20R'), ('nema-l14-30r', 'NEMA L14-30R'), ('nema-l14-50r', 'NEMA L14-50R'), ('nema-l14-60r', 'NEMA L14-60R'), ('nema-l15-20r', 'NEMA L15-20R'), ('nema-l15-30r', 'NEMA L15-30R'), ('nema-l15-50r', 'NEMA L15-50R'), ('nema-l15-60r', 'NEMA L15-60R'), ('nema-l21-20r', 'NEMA L21-20R'), ('nema-l21-30r', 'NEMA L21-30R'), ('nema-l22-30r', 'NEMA L22-30R')] * `California Style` - [('CS6360C', 'CS6360C'), ('CS6364C', 'CS6364C'), ('CS8164C', 'CS8164C'), ('CS8264C', 'CS8264C'), ('CS8364C', 'CS8364C'), ('CS8464C', 'CS8464C')] * `ITA/International` - [('ita-e', 'ITA Type E (CEE 7/5)'), ('ita-f', 'ITA Type F (CEE 7/3)'), ('ita-g', 'ITA Type G (BS 1363)'), ('ita-h', 'ITA Type H'), ('ita-i', 'ITA Type I'), ('ita-j', 'ITA Type J'), ('ita-k', 'ITA Type K'), ('ita-l', 'ITA Type L (CEI 23-50)'), ('ita-m', 'ITA Type M (BS 546)'), ('ita-n', 'ITA Type N'), ('ita-o', 'ITA Type O'), ('ita-multistandard', 'ITA Multistandard')] * `USB` - [('usb-a', 'USB Type A'), ('usb-micro-b', 'USB Micro B'), ('usb-c', 'USB Type C')] * `Molex` - [('molex-micro-fit-1x2', 'Molex Micro-Fit 1x2'), ('molex-micro-fit-2x2', 'Molex Micro-Fit 2x2'), ('molex-micro-fit-2x4', 'Molex Micro-Fit 2x4')] * `DC` - [('dc-terminal', 'DC Terminal')] * `Proprietary` - [('hdot-cx', 'HDOT Cx'), ('saf-d-grid', 'Saf-D-Grid'), ('neutrik-powercon-20a', 'Neutrik powerCON (20A)'), ('neutrik-powercon-32a', 'Neutrik powerCON (32A)'), ('neutrik-powercon-true1', 'Neutrik powerCON TRUE1'), ('neutrik-powercon-true1-top', 'Neutrik powerCON TRUE1 TOP'), ('ubiquiti-smartpower', 'Ubiquiti SmartPower')] * `Other` - [('hardwired', 'Hardwired'), ('other', 'Other')]
+$type__n = 'type__n_example'; // string | * `IEC 60320` - [('iec-60320-c5', 'C5'), ('iec-60320-c7', 'C7'), ('iec-60320-c13', 'C13'), ('iec-60320-c15', 'C15'), ('iec-60320-c19', 'C19'), ('iec-60320-c21', 'C21')] * `IEC 60309` - [('iec-60309-p-n-e-4h', 'P+N+E 4H'), ('iec-60309-p-n-e-6h', 'P+N+E 6H'), ('iec-60309-p-n-e-9h', 'P+N+E 9H'), ('iec-60309-2p-e-4h', '2P+E 4H'), ('iec-60309-2p-e-6h', '2P+E 6H'), ('iec-60309-2p-e-9h', '2P+E 9H'), ('iec-60309-3p-e-4h', '3P+E 4H'), ('iec-60309-3p-e-6h', '3P+E 6H'), ('iec-60309-3p-e-9h', '3P+E 9H'), ('iec-60309-3p-n-e-4h', '3P+N+E 4H'), ('iec-60309-3p-n-e-6h', '3P+N+E 6H'), ('iec-60309-3p-n-e-9h', '3P+N+E 9H')] * `IEC 60906-1` - [('iec-60906-1', 'IEC 60906-1'), ('nbr-14136-10a', '2P+T 10A (NBR 14136)'), ('nbr-14136-20a', '2P+T 20A (NBR 14136)')] * `NEMA (Non-locking)` - [('nema-1-15r', 'NEMA 1-15R'), ('nema-5-15r', 'NEMA 5-15R'), ('nema-5-20r', 'NEMA 5-20R'), ('nema-5-30r', 'NEMA 5-30R'), ('nema-5-50r', 'NEMA 5-50R'), ('nema-6-15r', 'NEMA 6-15R'), ('nema-6-20r', 'NEMA 6-20R'), ('nema-6-30r', 'NEMA 6-30R'), ('nema-6-50r', 'NEMA 6-50R'), ('nema-10-30r', 'NEMA 10-30R'), ('nema-10-50r', 'NEMA 10-50R'), ('nema-14-20r', 'NEMA 14-20R'), ('nema-14-30r', 'NEMA 14-30R'), ('nema-14-50r', 'NEMA 14-50R'), ('nema-14-60r', 'NEMA 14-60R'), ('nema-15-15r', 'NEMA 15-15R'), ('nema-15-20r', 'NEMA 15-20R'), ('nema-15-30r', 'NEMA 15-30R'), ('nema-15-50r', 'NEMA 15-50R'), ('nema-15-60r', 'NEMA 15-60R')] * `NEMA (Locking)` - [('nema-l1-15r', 'NEMA L1-15R'), ('nema-l5-15r', 'NEMA L5-15R'), ('nema-l5-20r', 'NEMA L5-20R'), ('nema-l5-30r', 'NEMA L5-30R'), ('nema-l5-50r', 'NEMA L5-50R'), ('nema-l6-15r', 'NEMA L6-15R'), ('nema-l6-20r', 'NEMA L6-20R'), ('nema-l6-30r', 'NEMA L6-30R'), ('nema-l6-50r', 'NEMA L6-50R'), ('nema-l10-30r', 'NEMA L10-30R'), ('nema-l14-20r', 'NEMA L14-20R'), ('nema-l14-30r', 'NEMA L14-30R'), ('nema-l14-50r', 'NEMA L14-50R'), ('nema-l14-60r', 'NEMA L14-60R'), ('nema-l15-20r', 'NEMA L15-20R'), ('nema-l15-30r', 'NEMA L15-30R'), ('nema-l15-50r', 'NEMA L15-50R'), ('nema-l15-60r', 'NEMA L15-60R'), ('nema-l21-20r', 'NEMA L21-20R'), ('nema-l21-30r', 'NEMA L21-30R'), ('nema-l22-30r', 'NEMA L22-30R')] * `California Style` - [('CS6360C', 'CS6360C'), ('CS6364C', 'CS6364C'), ('CS8164C', 'CS8164C'), ('CS8264C', 'CS8264C'), ('CS8364C', 'CS8364C'), ('CS8464C', 'CS8464C')] * `ITA/International` - [('ita-e', 'ITA Type E (CEE 7/5)'), ('ita-f', 'ITA Type F (CEE 7/3)'), ('ita-g', 'ITA Type G (BS 1363)'), ('ita-h', 'ITA Type H'), ('ita-i', 'ITA Type I'), ('ita-j', 'ITA Type J'), ('ita-k', 'ITA Type K'), ('ita-l', 'ITA Type L (CEI 23-50)'), ('ita-m', 'ITA Type M (BS 546)'), ('ita-n', 'ITA Type N'), ('ita-o', 'ITA Type O'), ('ita-multistandard', 'ITA Multistandard')] * `USB` - [('usb-a', 'USB Type A'), ('usb-micro-b', 'USB Micro B'), ('usb-c', 'USB Type C')] * `Molex` - [('molex-micro-fit-1x2', 'Molex Micro-Fit 1x2'), ('molex-micro-fit-2x2', 'Molex Micro-Fit 2x2'), ('molex-micro-fit-2x4', 'Molex Micro-Fit 2x4')] * `DC` - [('dc-terminal', 'DC Terminal')] * `Proprietary` - [('hdot-cx', 'HDOT Cx'), ('saf-d-grid', 'Saf-D-Grid'), ('neutrik-powercon-20a', 'Neutrik powerCON (20A)'), ('neutrik-powercon-32a', 'Neutrik powerCON (32A)'), ('neutrik-powercon-true1', 'Neutrik powerCON TRUE1'), ('neutrik-powercon-true1-top', 'Neutrik powerCON TRUE1 TOP'), ('ubiquiti-smartpower', 'Ubiquiti SmartPower')] * `Other` - [('hardwired', 'Hardwired'), ('other', 'Other')]
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->dcimPowerOutletTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $feed_leg, $feed_leg__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $power_port_id, $power_port_id__n, $q, $type, $type__n, $updated_by_request);
+    $result = $apiInstance->dcimPowerOutletTemplatesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $feed_leg, $feed_leg__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $power_port_id, $power_port_id__n, $q, $type, $type__n, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimPowerOutletTemplatesList: ', $e->getMessage(), PHP_EOL;
@@ -22544,6 +22539,8 @@ try {
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **device_type_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **feed_leg** | [**string[]**](../Model/string.md)| Phase (for three-phase feeds) | [optional] |
 | **feed_leg__n** | [**string[]**](../Model/string.md)| Phase (for three-phase feeds) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -22575,6 +22572,8 @@ try {
 | **modified_by_request** | **string**|  | [optional] |
 | **module_type_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **module_type_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **name** | [**string[]**](../Model/string.md)|  | [optional] |
 | **name__empty** | **bool**|  | [optional] |
 | **name__ic** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -22591,8 +22590,8 @@ try {
 | **power_port_id** | [**int[]**](../Model/int.md)| Power port (ID) | [optional] |
 | **power_port_id__n** | [**int[]**](../Model/int.md)| Power port (ID) | [optional] |
 | **q** | **string**| Search | [optional] |
-| **type** | **string**| * &#x60;IEC 60320&#x60; - [(&#39;iec-60320-c5&#39;, &#39;C5&#39;), (&#39;iec-60320-c7&#39;, &#39;C7&#39;), (&#39;iec-60320-c13&#39;, &#39;C13&#39;), (&#39;iec-60320-c15&#39;, &#39;C15&#39;), (&#39;iec-60320-c19&#39;, &#39;C19&#39;), (&#39;iec-60320-c21&#39;, &#39;C21&#39;)] * &#x60;IEC 60309&#x60; - [(&#39;iec-60309-p-n-e-4h&#39;, &#39;P+N+E 4H&#39;), (&#39;iec-60309-p-n-e-6h&#39;, &#39;P+N+E 6H&#39;), (&#39;iec-60309-p-n-e-9h&#39;, &#39;P+N+E 9H&#39;), (&#39;iec-60309-2p-e-4h&#39;, &#39;2P+E 4H&#39;), (&#39;iec-60309-2p-e-6h&#39;, &#39;2P+E 6H&#39;), (&#39;iec-60309-2p-e-9h&#39;, &#39;2P+E 9H&#39;), (&#39;iec-60309-3p-e-4h&#39;, &#39;3P+E 4H&#39;), (&#39;iec-60309-3p-e-6h&#39;, &#39;3P+E 6H&#39;), (&#39;iec-60309-3p-e-9h&#39;, &#39;3P+E 9H&#39;), (&#39;iec-60309-3p-n-e-4h&#39;, &#39;3P+N+E 4H&#39;), (&#39;iec-60309-3p-n-e-6h&#39;, &#39;3P+N+E 6H&#39;), (&#39;iec-60309-3p-n-e-9h&#39;, &#39;3P+N+E 9H&#39;)] * &#x60;IEC 60906-1&#x60; - [(&#39;iec-60906-1&#39;, &#39;IEC 60906-1&#39;), (&#39;nbr-14136-10a&#39;, &#39;2P+T 10A (NBR 14136)&#39;), (&#39;nbr-14136-20a&#39;, &#39;2P+T 20A (NBR 14136)&#39;)] * &#x60;NEMA (Non-locking)&#x60; - [(&#39;nema-1-15r&#39;, &#39;NEMA 1-15R&#39;), (&#39;nema-5-15r&#39;, &#39;NEMA 5-15R&#39;), (&#39;nema-5-20r&#39;, &#39;NEMA 5-20R&#39;), (&#39;nema-5-30r&#39;, &#39;NEMA 5-30R&#39;), (&#39;nema-5-50r&#39;, &#39;NEMA 5-50R&#39;), (&#39;nema-6-15r&#39;, &#39;NEMA 6-15R&#39;), (&#39;nema-6-20r&#39;, &#39;NEMA 6-20R&#39;), (&#39;nema-6-30r&#39;, &#39;NEMA 6-30R&#39;), (&#39;nema-6-50r&#39;, &#39;NEMA 6-50R&#39;), (&#39;nema-10-30r&#39;, &#39;NEMA 10-30R&#39;), (&#39;nema-10-50r&#39;, &#39;NEMA 10-50R&#39;), (&#39;nema-14-20r&#39;, &#39;NEMA 14-20R&#39;), (&#39;nema-14-30r&#39;, &#39;NEMA 14-30R&#39;), (&#39;nema-14-50r&#39;, &#39;NEMA 14-50R&#39;), (&#39;nema-14-60r&#39;, &#39;NEMA 14-60R&#39;), (&#39;nema-15-15r&#39;, &#39;NEMA 15-15R&#39;), (&#39;nema-15-20r&#39;, &#39;NEMA 15-20R&#39;), (&#39;nema-15-30r&#39;, &#39;NEMA 15-30R&#39;), (&#39;nema-15-50r&#39;, &#39;NEMA 15-50R&#39;), (&#39;nema-15-60r&#39;, &#39;NEMA 15-60R&#39;)] * &#x60;NEMA (Locking)&#x60; - [(&#39;nema-l1-15r&#39;, &#39;NEMA L1-15R&#39;), (&#39;nema-l5-15r&#39;, &#39;NEMA L5-15R&#39;), (&#39;nema-l5-20r&#39;, &#39;NEMA L5-20R&#39;), (&#39;nema-l5-30r&#39;, &#39;NEMA L5-30R&#39;), (&#39;nema-l5-50r&#39;, &#39;NEMA L5-50R&#39;), (&#39;nema-l6-15r&#39;, &#39;NEMA L6-15R&#39;), (&#39;nema-l6-20r&#39;, &#39;NEMA L6-20R&#39;), (&#39;nema-l6-30r&#39;, &#39;NEMA L6-30R&#39;), (&#39;nema-l6-50r&#39;, &#39;NEMA L6-50R&#39;), (&#39;nema-l10-30r&#39;, &#39;NEMA L10-30R&#39;), (&#39;nema-l14-20r&#39;, &#39;NEMA L14-20R&#39;), (&#39;nema-l14-30r&#39;, &#39;NEMA L14-30R&#39;), (&#39;nema-l14-50r&#39;, &#39;NEMA L14-50R&#39;), (&#39;nema-l14-60r&#39;, &#39;NEMA L14-60R&#39;), (&#39;nema-l15-20r&#39;, &#39;NEMA L15-20R&#39;), (&#39;nema-l15-30r&#39;, &#39;NEMA L15-30R&#39;), (&#39;nema-l15-50r&#39;, &#39;NEMA L15-50R&#39;), (&#39;nema-l15-60r&#39;, &#39;NEMA L15-60R&#39;), (&#39;nema-l21-20r&#39;, &#39;NEMA L21-20R&#39;), (&#39;nema-l21-30r&#39;, &#39;NEMA L21-30R&#39;), (&#39;nema-l22-20r&#39;, &#39;NEMA L22-20R&#39;), (&#39;nema-l22-30r&#39;, &#39;NEMA L22-30R&#39;)] * &#x60;California Style&#x60; - [(&#39;CS6360C&#39;, &#39;CS6360C&#39;), (&#39;CS6364C&#39;, &#39;CS6364C&#39;), (&#39;CS8164C&#39;, &#39;CS8164C&#39;), (&#39;CS8264C&#39;, &#39;CS8264C&#39;), (&#39;CS8364C&#39;, &#39;CS8364C&#39;), (&#39;CS8464C&#39;, &#39;CS8464C&#39;)] * &#x60;ITA/International&#x60; - [(&#39;ita-e&#39;, &#39;ITA Type E (CEE 7/5)&#39;), (&#39;ita-f&#39;, &#39;ITA Type F (CEE 7/3)&#39;), (&#39;ita-g&#39;, &#39;ITA Type G (BS 1363)&#39;), (&#39;ita-h&#39;, &#39;ITA Type H&#39;), (&#39;ita-i&#39;, &#39;ITA Type I&#39;), (&#39;ita-j&#39;, &#39;ITA Type J&#39;), (&#39;ita-k&#39;, &#39;ITA Type K&#39;), (&#39;ita-l&#39;, &#39;ITA Type L (CEI 23-50)&#39;), (&#39;ita-m&#39;, &#39;ITA Type M (BS 546)&#39;), (&#39;ita-n&#39;, &#39;ITA Type N&#39;), (&#39;ita-o&#39;, &#39;ITA Type O&#39;), (&#39;ita-multistandard&#39;, &#39;ITA Multistandard&#39;)] * &#x60;USB&#x60; - [(&#39;usb-a&#39;, &#39;USB Type A&#39;), (&#39;usb-micro-b&#39;, &#39;USB Micro B&#39;), (&#39;usb-c&#39;, &#39;USB Type C&#39;)] * &#x60;Molex&#x60; - [(&#39;molex-micro-fit-1x2&#39;, &#39;Molex Micro-Fit 1x2&#39;), (&#39;molex-micro-fit-2x2&#39;, &#39;Molex Micro-Fit 2x2&#39;), (&#39;molex-micro-fit-2x4&#39;, &#39;Molex Micro-Fit 2x4&#39;)] * &#x60;DC&#x60; - [(&#39;dc-terminal&#39;, &#39;DC Terminal&#39;)] * &#x60;Proprietary&#x60; - [(&#39;hdot-cx&#39;, &#39;HDOT Cx&#39;), (&#39;saf-d-grid&#39;, &#39;Saf-D-Grid&#39;), (&#39;neutrik-powercon-20a&#39;, &#39;Neutrik powerCON (20A)&#39;), (&#39;neutrik-powercon-32a&#39;, &#39;Neutrik powerCON (32A)&#39;), (&#39;neutrik-powercon-true1&#39;, &#39;Neutrik powerCON TRUE1&#39;), (&#39;neutrik-powercon-true1-top&#39;, &#39;Neutrik powerCON TRUE1 TOP&#39;), (&#39;ubiquiti-smartpower&#39;, &#39;Ubiquiti SmartPower&#39;)] * &#x60;Other&#x60; - [(&#39;hardwired&#39;, &#39;Hardwired&#39;), (&#39;other&#39;, &#39;Other&#39;)] | [optional] |
-| **type__n** | **string**| * &#x60;IEC 60320&#x60; - [(&#39;iec-60320-c5&#39;, &#39;C5&#39;), (&#39;iec-60320-c7&#39;, &#39;C7&#39;), (&#39;iec-60320-c13&#39;, &#39;C13&#39;), (&#39;iec-60320-c15&#39;, &#39;C15&#39;), (&#39;iec-60320-c19&#39;, &#39;C19&#39;), (&#39;iec-60320-c21&#39;, &#39;C21&#39;)] * &#x60;IEC 60309&#x60; - [(&#39;iec-60309-p-n-e-4h&#39;, &#39;P+N+E 4H&#39;), (&#39;iec-60309-p-n-e-6h&#39;, &#39;P+N+E 6H&#39;), (&#39;iec-60309-p-n-e-9h&#39;, &#39;P+N+E 9H&#39;), (&#39;iec-60309-2p-e-4h&#39;, &#39;2P+E 4H&#39;), (&#39;iec-60309-2p-e-6h&#39;, &#39;2P+E 6H&#39;), (&#39;iec-60309-2p-e-9h&#39;, &#39;2P+E 9H&#39;), (&#39;iec-60309-3p-e-4h&#39;, &#39;3P+E 4H&#39;), (&#39;iec-60309-3p-e-6h&#39;, &#39;3P+E 6H&#39;), (&#39;iec-60309-3p-e-9h&#39;, &#39;3P+E 9H&#39;), (&#39;iec-60309-3p-n-e-4h&#39;, &#39;3P+N+E 4H&#39;), (&#39;iec-60309-3p-n-e-6h&#39;, &#39;3P+N+E 6H&#39;), (&#39;iec-60309-3p-n-e-9h&#39;, &#39;3P+N+E 9H&#39;)] * &#x60;IEC 60906-1&#x60; - [(&#39;iec-60906-1&#39;, &#39;IEC 60906-1&#39;), (&#39;nbr-14136-10a&#39;, &#39;2P+T 10A (NBR 14136)&#39;), (&#39;nbr-14136-20a&#39;, &#39;2P+T 20A (NBR 14136)&#39;)] * &#x60;NEMA (Non-locking)&#x60; - [(&#39;nema-1-15r&#39;, &#39;NEMA 1-15R&#39;), (&#39;nema-5-15r&#39;, &#39;NEMA 5-15R&#39;), (&#39;nema-5-20r&#39;, &#39;NEMA 5-20R&#39;), (&#39;nema-5-30r&#39;, &#39;NEMA 5-30R&#39;), (&#39;nema-5-50r&#39;, &#39;NEMA 5-50R&#39;), (&#39;nema-6-15r&#39;, &#39;NEMA 6-15R&#39;), (&#39;nema-6-20r&#39;, &#39;NEMA 6-20R&#39;), (&#39;nema-6-30r&#39;, &#39;NEMA 6-30R&#39;), (&#39;nema-6-50r&#39;, &#39;NEMA 6-50R&#39;), (&#39;nema-10-30r&#39;, &#39;NEMA 10-30R&#39;), (&#39;nema-10-50r&#39;, &#39;NEMA 10-50R&#39;), (&#39;nema-14-20r&#39;, &#39;NEMA 14-20R&#39;), (&#39;nema-14-30r&#39;, &#39;NEMA 14-30R&#39;), (&#39;nema-14-50r&#39;, &#39;NEMA 14-50R&#39;), (&#39;nema-14-60r&#39;, &#39;NEMA 14-60R&#39;), (&#39;nema-15-15r&#39;, &#39;NEMA 15-15R&#39;), (&#39;nema-15-20r&#39;, &#39;NEMA 15-20R&#39;), (&#39;nema-15-30r&#39;, &#39;NEMA 15-30R&#39;), (&#39;nema-15-50r&#39;, &#39;NEMA 15-50R&#39;), (&#39;nema-15-60r&#39;, &#39;NEMA 15-60R&#39;)] * &#x60;NEMA (Locking)&#x60; - [(&#39;nema-l1-15r&#39;, &#39;NEMA L1-15R&#39;), (&#39;nema-l5-15r&#39;, &#39;NEMA L5-15R&#39;), (&#39;nema-l5-20r&#39;, &#39;NEMA L5-20R&#39;), (&#39;nema-l5-30r&#39;, &#39;NEMA L5-30R&#39;), (&#39;nema-l5-50r&#39;, &#39;NEMA L5-50R&#39;), (&#39;nema-l6-15r&#39;, &#39;NEMA L6-15R&#39;), (&#39;nema-l6-20r&#39;, &#39;NEMA L6-20R&#39;), (&#39;nema-l6-30r&#39;, &#39;NEMA L6-30R&#39;), (&#39;nema-l6-50r&#39;, &#39;NEMA L6-50R&#39;), (&#39;nema-l10-30r&#39;, &#39;NEMA L10-30R&#39;), (&#39;nema-l14-20r&#39;, &#39;NEMA L14-20R&#39;), (&#39;nema-l14-30r&#39;, &#39;NEMA L14-30R&#39;), (&#39;nema-l14-50r&#39;, &#39;NEMA L14-50R&#39;), (&#39;nema-l14-60r&#39;, &#39;NEMA L14-60R&#39;), (&#39;nema-l15-20r&#39;, &#39;NEMA L15-20R&#39;), (&#39;nema-l15-30r&#39;, &#39;NEMA L15-30R&#39;), (&#39;nema-l15-50r&#39;, &#39;NEMA L15-50R&#39;), (&#39;nema-l15-60r&#39;, &#39;NEMA L15-60R&#39;), (&#39;nema-l21-20r&#39;, &#39;NEMA L21-20R&#39;), (&#39;nema-l21-30r&#39;, &#39;NEMA L21-30R&#39;), (&#39;nema-l22-20r&#39;, &#39;NEMA L22-20R&#39;), (&#39;nema-l22-30r&#39;, &#39;NEMA L22-30R&#39;)] * &#x60;California Style&#x60; - [(&#39;CS6360C&#39;, &#39;CS6360C&#39;), (&#39;CS6364C&#39;, &#39;CS6364C&#39;), (&#39;CS8164C&#39;, &#39;CS8164C&#39;), (&#39;CS8264C&#39;, &#39;CS8264C&#39;), (&#39;CS8364C&#39;, &#39;CS8364C&#39;), (&#39;CS8464C&#39;, &#39;CS8464C&#39;)] * &#x60;ITA/International&#x60; - [(&#39;ita-e&#39;, &#39;ITA Type E (CEE 7/5)&#39;), (&#39;ita-f&#39;, &#39;ITA Type F (CEE 7/3)&#39;), (&#39;ita-g&#39;, &#39;ITA Type G (BS 1363)&#39;), (&#39;ita-h&#39;, &#39;ITA Type H&#39;), (&#39;ita-i&#39;, &#39;ITA Type I&#39;), (&#39;ita-j&#39;, &#39;ITA Type J&#39;), (&#39;ita-k&#39;, &#39;ITA Type K&#39;), (&#39;ita-l&#39;, &#39;ITA Type L (CEI 23-50)&#39;), (&#39;ita-m&#39;, &#39;ITA Type M (BS 546)&#39;), (&#39;ita-n&#39;, &#39;ITA Type N&#39;), (&#39;ita-o&#39;, &#39;ITA Type O&#39;), (&#39;ita-multistandard&#39;, &#39;ITA Multistandard&#39;)] * &#x60;USB&#x60; - [(&#39;usb-a&#39;, &#39;USB Type A&#39;), (&#39;usb-micro-b&#39;, &#39;USB Micro B&#39;), (&#39;usb-c&#39;, &#39;USB Type C&#39;)] * &#x60;Molex&#x60; - [(&#39;molex-micro-fit-1x2&#39;, &#39;Molex Micro-Fit 1x2&#39;), (&#39;molex-micro-fit-2x2&#39;, &#39;Molex Micro-Fit 2x2&#39;), (&#39;molex-micro-fit-2x4&#39;, &#39;Molex Micro-Fit 2x4&#39;)] * &#x60;DC&#x60; - [(&#39;dc-terminal&#39;, &#39;DC Terminal&#39;)] * &#x60;Proprietary&#x60; - [(&#39;hdot-cx&#39;, &#39;HDOT Cx&#39;), (&#39;saf-d-grid&#39;, &#39;Saf-D-Grid&#39;), (&#39;neutrik-powercon-20a&#39;, &#39;Neutrik powerCON (20A)&#39;), (&#39;neutrik-powercon-32a&#39;, &#39;Neutrik powerCON (32A)&#39;), (&#39;neutrik-powercon-true1&#39;, &#39;Neutrik powerCON TRUE1&#39;), (&#39;neutrik-powercon-true1-top&#39;, &#39;Neutrik powerCON TRUE1 TOP&#39;), (&#39;ubiquiti-smartpower&#39;, &#39;Ubiquiti SmartPower&#39;)] * &#x60;Other&#x60; - [(&#39;hardwired&#39;, &#39;Hardwired&#39;), (&#39;other&#39;, &#39;Other&#39;)] | [optional] |
+| **type** | **string**| * &#x60;IEC 60320&#x60; - [(&#39;iec-60320-c5&#39;, &#39;C5&#39;), (&#39;iec-60320-c7&#39;, &#39;C7&#39;), (&#39;iec-60320-c13&#39;, &#39;C13&#39;), (&#39;iec-60320-c15&#39;, &#39;C15&#39;), (&#39;iec-60320-c19&#39;, &#39;C19&#39;), (&#39;iec-60320-c21&#39;, &#39;C21&#39;)] * &#x60;IEC 60309&#x60; - [(&#39;iec-60309-p-n-e-4h&#39;, &#39;P+N+E 4H&#39;), (&#39;iec-60309-p-n-e-6h&#39;, &#39;P+N+E 6H&#39;), (&#39;iec-60309-p-n-e-9h&#39;, &#39;P+N+E 9H&#39;), (&#39;iec-60309-2p-e-4h&#39;, &#39;2P+E 4H&#39;), (&#39;iec-60309-2p-e-6h&#39;, &#39;2P+E 6H&#39;), (&#39;iec-60309-2p-e-9h&#39;, &#39;2P+E 9H&#39;), (&#39;iec-60309-3p-e-4h&#39;, &#39;3P+E 4H&#39;), (&#39;iec-60309-3p-e-6h&#39;, &#39;3P+E 6H&#39;), (&#39;iec-60309-3p-e-9h&#39;, &#39;3P+E 9H&#39;), (&#39;iec-60309-3p-n-e-4h&#39;, &#39;3P+N+E 4H&#39;), (&#39;iec-60309-3p-n-e-6h&#39;, &#39;3P+N+E 6H&#39;), (&#39;iec-60309-3p-n-e-9h&#39;, &#39;3P+N+E 9H&#39;)] * &#x60;IEC 60906-1&#x60; - [(&#39;iec-60906-1&#39;, &#39;IEC 60906-1&#39;), (&#39;nbr-14136-10a&#39;, &#39;2P+T 10A (NBR 14136)&#39;), (&#39;nbr-14136-20a&#39;, &#39;2P+T 20A (NBR 14136)&#39;)] * &#x60;NEMA (Non-locking)&#x60; - [(&#39;nema-1-15r&#39;, &#39;NEMA 1-15R&#39;), (&#39;nema-5-15r&#39;, &#39;NEMA 5-15R&#39;), (&#39;nema-5-20r&#39;, &#39;NEMA 5-20R&#39;), (&#39;nema-5-30r&#39;, &#39;NEMA 5-30R&#39;), (&#39;nema-5-50r&#39;, &#39;NEMA 5-50R&#39;), (&#39;nema-6-15r&#39;, &#39;NEMA 6-15R&#39;), (&#39;nema-6-20r&#39;, &#39;NEMA 6-20R&#39;), (&#39;nema-6-30r&#39;, &#39;NEMA 6-30R&#39;), (&#39;nema-6-50r&#39;, &#39;NEMA 6-50R&#39;), (&#39;nema-10-30r&#39;, &#39;NEMA 10-30R&#39;), (&#39;nema-10-50r&#39;, &#39;NEMA 10-50R&#39;), (&#39;nema-14-20r&#39;, &#39;NEMA 14-20R&#39;), (&#39;nema-14-30r&#39;, &#39;NEMA 14-30R&#39;), (&#39;nema-14-50r&#39;, &#39;NEMA 14-50R&#39;), (&#39;nema-14-60r&#39;, &#39;NEMA 14-60R&#39;), (&#39;nema-15-15r&#39;, &#39;NEMA 15-15R&#39;), (&#39;nema-15-20r&#39;, &#39;NEMA 15-20R&#39;), (&#39;nema-15-30r&#39;, &#39;NEMA 15-30R&#39;), (&#39;nema-15-50r&#39;, &#39;NEMA 15-50R&#39;), (&#39;nema-15-60r&#39;, &#39;NEMA 15-60R&#39;)] * &#x60;NEMA (Locking)&#x60; - [(&#39;nema-l1-15r&#39;, &#39;NEMA L1-15R&#39;), (&#39;nema-l5-15r&#39;, &#39;NEMA L5-15R&#39;), (&#39;nema-l5-20r&#39;, &#39;NEMA L5-20R&#39;), (&#39;nema-l5-30r&#39;, &#39;NEMA L5-30R&#39;), (&#39;nema-l5-50r&#39;, &#39;NEMA L5-50R&#39;), (&#39;nema-l6-15r&#39;, &#39;NEMA L6-15R&#39;), (&#39;nema-l6-20r&#39;, &#39;NEMA L6-20R&#39;), (&#39;nema-l6-30r&#39;, &#39;NEMA L6-30R&#39;), (&#39;nema-l6-50r&#39;, &#39;NEMA L6-50R&#39;), (&#39;nema-l10-30r&#39;, &#39;NEMA L10-30R&#39;), (&#39;nema-l14-20r&#39;, &#39;NEMA L14-20R&#39;), (&#39;nema-l14-30r&#39;, &#39;NEMA L14-30R&#39;), (&#39;nema-l14-50r&#39;, &#39;NEMA L14-50R&#39;), (&#39;nema-l14-60r&#39;, &#39;NEMA L14-60R&#39;), (&#39;nema-l15-20r&#39;, &#39;NEMA L15-20R&#39;), (&#39;nema-l15-30r&#39;, &#39;NEMA L15-30R&#39;), (&#39;nema-l15-50r&#39;, &#39;NEMA L15-50R&#39;), (&#39;nema-l15-60r&#39;, &#39;NEMA L15-60R&#39;), (&#39;nema-l21-20r&#39;, &#39;NEMA L21-20R&#39;), (&#39;nema-l21-30r&#39;, &#39;NEMA L21-30R&#39;), (&#39;nema-l22-30r&#39;, &#39;NEMA L22-30R&#39;)] * &#x60;California Style&#x60; - [(&#39;CS6360C&#39;, &#39;CS6360C&#39;), (&#39;CS6364C&#39;, &#39;CS6364C&#39;), (&#39;CS8164C&#39;, &#39;CS8164C&#39;), (&#39;CS8264C&#39;, &#39;CS8264C&#39;), (&#39;CS8364C&#39;, &#39;CS8364C&#39;), (&#39;CS8464C&#39;, &#39;CS8464C&#39;)] * &#x60;ITA/International&#x60; - [(&#39;ita-e&#39;, &#39;ITA Type E (CEE 7/5)&#39;), (&#39;ita-f&#39;, &#39;ITA Type F (CEE 7/3)&#39;), (&#39;ita-g&#39;, &#39;ITA Type G (BS 1363)&#39;), (&#39;ita-h&#39;, &#39;ITA Type H&#39;), (&#39;ita-i&#39;, &#39;ITA Type I&#39;), (&#39;ita-j&#39;, &#39;ITA Type J&#39;), (&#39;ita-k&#39;, &#39;ITA Type K&#39;), (&#39;ita-l&#39;, &#39;ITA Type L (CEI 23-50)&#39;), (&#39;ita-m&#39;, &#39;ITA Type M (BS 546)&#39;), (&#39;ita-n&#39;, &#39;ITA Type N&#39;), (&#39;ita-o&#39;, &#39;ITA Type O&#39;), (&#39;ita-multistandard&#39;, &#39;ITA Multistandard&#39;)] * &#x60;USB&#x60; - [(&#39;usb-a&#39;, &#39;USB Type A&#39;), (&#39;usb-micro-b&#39;, &#39;USB Micro B&#39;), (&#39;usb-c&#39;, &#39;USB Type C&#39;)] * &#x60;Molex&#x60; - [(&#39;molex-micro-fit-1x2&#39;, &#39;Molex Micro-Fit 1x2&#39;), (&#39;molex-micro-fit-2x2&#39;, &#39;Molex Micro-Fit 2x2&#39;), (&#39;molex-micro-fit-2x4&#39;, &#39;Molex Micro-Fit 2x4&#39;)] * &#x60;DC&#x60; - [(&#39;dc-terminal&#39;, &#39;DC Terminal&#39;)] * &#x60;Proprietary&#x60; - [(&#39;hdot-cx&#39;, &#39;HDOT Cx&#39;), (&#39;saf-d-grid&#39;, &#39;Saf-D-Grid&#39;), (&#39;neutrik-powercon-20a&#39;, &#39;Neutrik powerCON (20A)&#39;), (&#39;neutrik-powercon-32a&#39;, &#39;Neutrik powerCON (32A)&#39;), (&#39;neutrik-powercon-true1&#39;, &#39;Neutrik powerCON TRUE1&#39;), (&#39;neutrik-powercon-true1-top&#39;, &#39;Neutrik powerCON TRUE1 TOP&#39;), (&#39;ubiquiti-smartpower&#39;, &#39;Ubiquiti SmartPower&#39;)] * &#x60;Other&#x60; - [(&#39;hardwired&#39;, &#39;Hardwired&#39;), (&#39;other&#39;, &#39;Other&#39;)] | [optional] |
+| **type__n** | **string**| * &#x60;IEC 60320&#x60; - [(&#39;iec-60320-c5&#39;, &#39;C5&#39;), (&#39;iec-60320-c7&#39;, &#39;C7&#39;), (&#39;iec-60320-c13&#39;, &#39;C13&#39;), (&#39;iec-60320-c15&#39;, &#39;C15&#39;), (&#39;iec-60320-c19&#39;, &#39;C19&#39;), (&#39;iec-60320-c21&#39;, &#39;C21&#39;)] * &#x60;IEC 60309&#x60; - [(&#39;iec-60309-p-n-e-4h&#39;, &#39;P+N+E 4H&#39;), (&#39;iec-60309-p-n-e-6h&#39;, &#39;P+N+E 6H&#39;), (&#39;iec-60309-p-n-e-9h&#39;, &#39;P+N+E 9H&#39;), (&#39;iec-60309-2p-e-4h&#39;, &#39;2P+E 4H&#39;), (&#39;iec-60309-2p-e-6h&#39;, &#39;2P+E 6H&#39;), (&#39;iec-60309-2p-e-9h&#39;, &#39;2P+E 9H&#39;), (&#39;iec-60309-3p-e-4h&#39;, &#39;3P+E 4H&#39;), (&#39;iec-60309-3p-e-6h&#39;, &#39;3P+E 6H&#39;), (&#39;iec-60309-3p-e-9h&#39;, &#39;3P+E 9H&#39;), (&#39;iec-60309-3p-n-e-4h&#39;, &#39;3P+N+E 4H&#39;), (&#39;iec-60309-3p-n-e-6h&#39;, &#39;3P+N+E 6H&#39;), (&#39;iec-60309-3p-n-e-9h&#39;, &#39;3P+N+E 9H&#39;)] * &#x60;IEC 60906-1&#x60; - [(&#39;iec-60906-1&#39;, &#39;IEC 60906-1&#39;), (&#39;nbr-14136-10a&#39;, &#39;2P+T 10A (NBR 14136)&#39;), (&#39;nbr-14136-20a&#39;, &#39;2P+T 20A (NBR 14136)&#39;)] * &#x60;NEMA (Non-locking)&#x60; - [(&#39;nema-1-15r&#39;, &#39;NEMA 1-15R&#39;), (&#39;nema-5-15r&#39;, &#39;NEMA 5-15R&#39;), (&#39;nema-5-20r&#39;, &#39;NEMA 5-20R&#39;), (&#39;nema-5-30r&#39;, &#39;NEMA 5-30R&#39;), (&#39;nema-5-50r&#39;, &#39;NEMA 5-50R&#39;), (&#39;nema-6-15r&#39;, &#39;NEMA 6-15R&#39;), (&#39;nema-6-20r&#39;, &#39;NEMA 6-20R&#39;), (&#39;nema-6-30r&#39;, &#39;NEMA 6-30R&#39;), (&#39;nema-6-50r&#39;, &#39;NEMA 6-50R&#39;), (&#39;nema-10-30r&#39;, &#39;NEMA 10-30R&#39;), (&#39;nema-10-50r&#39;, &#39;NEMA 10-50R&#39;), (&#39;nema-14-20r&#39;, &#39;NEMA 14-20R&#39;), (&#39;nema-14-30r&#39;, &#39;NEMA 14-30R&#39;), (&#39;nema-14-50r&#39;, &#39;NEMA 14-50R&#39;), (&#39;nema-14-60r&#39;, &#39;NEMA 14-60R&#39;), (&#39;nema-15-15r&#39;, &#39;NEMA 15-15R&#39;), (&#39;nema-15-20r&#39;, &#39;NEMA 15-20R&#39;), (&#39;nema-15-30r&#39;, &#39;NEMA 15-30R&#39;), (&#39;nema-15-50r&#39;, &#39;NEMA 15-50R&#39;), (&#39;nema-15-60r&#39;, &#39;NEMA 15-60R&#39;)] * &#x60;NEMA (Locking)&#x60; - [(&#39;nema-l1-15r&#39;, &#39;NEMA L1-15R&#39;), (&#39;nema-l5-15r&#39;, &#39;NEMA L5-15R&#39;), (&#39;nema-l5-20r&#39;, &#39;NEMA L5-20R&#39;), (&#39;nema-l5-30r&#39;, &#39;NEMA L5-30R&#39;), (&#39;nema-l5-50r&#39;, &#39;NEMA L5-50R&#39;), (&#39;nema-l6-15r&#39;, &#39;NEMA L6-15R&#39;), (&#39;nema-l6-20r&#39;, &#39;NEMA L6-20R&#39;), (&#39;nema-l6-30r&#39;, &#39;NEMA L6-30R&#39;), (&#39;nema-l6-50r&#39;, &#39;NEMA L6-50R&#39;), (&#39;nema-l10-30r&#39;, &#39;NEMA L10-30R&#39;), (&#39;nema-l14-20r&#39;, &#39;NEMA L14-20R&#39;), (&#39;nema-l14-30r&#39;, &#39;NEMA L14-30R&#39;), (&#39;nema-l14-50r&#39;, &#39;NEMA L14-50R&#39;), (&#39;nema-l14-60r&#39;, &#39;NEMA L14-60R&#39;), (&#39;nema-l15-20r&#39;, &#39;NEMA L15-20R&#39;), (&#39;nema-l15-30r&#39;, &#39;NEMA L15-30R&#39;), (&#39;nema-l15-50r&#39;, &#39;NEMA L15-50R&#39;), (&#39;nema-l15-60r&#39;, &#39;NEMA L15-60R&#39;), (&#39;nema-l21-20r&#39;, &#39;NEMA L21-20R&#39;), (&#39;nema-l21-30r&#39;, &#39;NEMA L21-30R&#39;), (&#39;nema-l22-30r&#39;, &#39;NEMA L22-30R&#39;)] * &#x60;California Style&#x60; - [(&#39;CS6360C&#39;, &#39;CS6360C&#39;), (&#39;CS6364C&#39;, &#39;CS6364C&#39;), (&#39;CS8164C&#39;, &#39;CS8164C&#39;), (&#39;CS8264C&#39;, &#39;CS8264C&#39;), (&#39;CS8364C&#39;, &#39;CS8364C&#39;), (&#39;CS8464C&#39;, &#39;CS8464C&#39;)] * &#x60;ITA/International&#x60; - [(&#39;ita-e&#39;, &#39;ITA Type E (CEE 7/5)&#39;), (&#39;ita-f&#39;, &#39;ITA Type F (CEE 7/3)&#39;), (&#39;ita-g&#39;, &#39;ITA Type G (BS 1363)&#39;), (&#39;ita-h&#39;, &#39;ITA Type H&#39;), (&#39;ita-i&#39;, &#39;ITA Type I&#39;), (&#39;ita-j&#39;, &#39;ITA Type J&#39;), (&#39;ita-k&#39;, &#39;ITA Type K&#39;), (&#39;ita-l&#39;, &#39;ITA Type L (CEI 23-50)&#39;), (&#39;ita-m&#39;, &#39;ITA Type M (BS 546)&#39;), (&#39;ita-n&#39;, &#39;ITA Type N&#39;), (&#39;ita-o&#39;, &#39;ITA Type O&#39;), (&#39;ita-multistandard&#39;, &#39;ITA Multistandard&#39;)] * &#x60;USB&#x60; - [(&#39;usb-a&#39;, &#39;USB Type A&#39;), (&#39;usb-micro-b&#39;, &#39;USB Micro B&#39;), (&#39;usb-c&#39;, &#39;USB Type C&#39;)] * &#x60;Molex&#x60; - [(&#39;molex-micro-fit-1x2&#39;, &#39;Molex Micro-Fit 1x2&#39;), (&#39;molex-micro-fit-2x2&#39;, &#39;Molex Micro-Fit 2x2&#39;), (&#39;molex-micro-fit-2x4&#39;, &#39;Molex Micro-Fit 2x4&#39;)] * &#x60;DC&#x60; - [(&#39;dc-terminal&#39;, &#39;DC Terminal&#39;)] * &#x60;Proprietary&#x60; - [(&#39;hdot-cx&#39;, &#39;HDOT Cx&#39;), (&#39;saf-d-grid&#39;, &#39;Saf-D-Grid&#39;), (&#39;neutrik-powercon-20a&#39;, &#39;Neutrik powerCON (20A)&#39;), (&#39;neutrik-powercon-32a&#39;, &#39;Neutrik powerCON (32A)&#39;), (&#39;neutrik-powercon-true1&#39;, &#39;Neutrik powerCON TRUE1&#39;), (&#39;neutrik-powercon-true1-top&#39;, &#39;Neutrik powerCON TRUE1 TOP&#39;), (&#39;ubiquiti-smartpower&#39;, &#39;Ubiquiti SmartPower&#39;)] * &#x60;Other&#x60; - [(&#39;hardwired&#39;, &#39;Hardwired&#39;), (&#39;other&#39;, &#39;Other&#39;)] | [optional] |
 | **updated_by_request** | **string**|  | [optional] |
 
 ### Return type
@@ -23153,7 +23152,7 @@ void (empty response body)
 ## `dcimPowerOutletsList()`
 
 ```php
-dcimPowerOutletsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $feed_leg, $feed_leg__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $power_port_id, $power_port_id__n, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedPowerOutletList
+dcimPowerOutletsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $feed_leg, $feed_leg__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $power_port_id, $power_port_id__n, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedPowerOutletList
 ```
 
 
@@ -23217,8 +23216,6 @@ $device_role = array('device_role_example'); // string[] | Device role (slug)
 $device_role__n = array('device_role__n_example'); // string[] | Device role (slug)
 $device_role_id = array(56); // int[] | Device role (ID)
 $device_role_id__n = array(56); // int[] | Device role (ID)
-$device_status = array('device_status_example'); // string[]
-$device_status__n = array('device_status__n_example'); // string[]
 $device_type = array('device_type_example'); // string[] | Device type (model)
 $device_type__n = array('device_type__n_example'); // string[] | Device type (model)
 $device_type_id = array(56); // int[] | Device type (ID)
@@ -23280,16 +23277,16 @@ $rack = array('rack_example'); // string[] | Rack (name)
 $rack__n = array('rack__n_example'); // string[] | Rack (name)
 $rack_id = array(56); // int[] | Rack (ID)
 $rack_id__n = array(56); // int[] | Rack (ID)
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $tag = array('tag_example'); // string[]
@@ -23303,7 +23300,7 @@ $virtual_chassis_id = array(56); // int[] | Virtual Chassis (ID)
 $virtual_chassis_id__n = array(56); // int[] | Virtual Chassis (ID)
 
 try {
-    $result = $apiInstance->dcimPowerOutletsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $feed_leg, $feed_leg__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $power_port_id, $power_port_id__n, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
+    $result = $apiInstance->dcimPowerOutletsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $feed_leg, $feed_leg__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $power_port_id, $power_port_id__n, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimPowerOutletsList: ', $e->getMessage(), PHP_EOL;
@@ -23347,8 +23344,6 @@ try {
 | **device_role__n** | [**string[]**](../Model/string.md)| Device role (slug) | [optional] |
 | **device_role_id** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
 | **device_role_id__n** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
-| **device_status** | [**string[]**](../Model/string.md)|  | [optional] |
-| **device_status__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type__n** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
@@ -23410,16 +23405,16 @@ try {
 | **rack__n** | [**string[]**](../Model/string.md)| Rack (name) | [optional] |
 | **rack_id** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
 | **rack_id__n** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -24090,8 +24085,8 @@ $apiInstance = new OpenAPI\Client\Api\DcimApi(
 );
 $contact = array(56); // int[] | Contact
 $contact__n = array(56); // int[] | Contact
-$contact_group = array('contact_group_example'); // string[]
-$contact_group__n = array('contact_group__n_example'); // string[]
+$contact_group = array(56); // int[] | Contact group
+$contact_group__n = array(56); // int[] | Contact group
 $contact_role = array(56); // int[] | Contact Role
 $contact_role__n = array(56); // int[] | Contact Role
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -24128,8 +24123,8 @@ $last_updated__lt = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateT
 $last_updated__lte = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $last_updated__n = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $limit = 56; // int | Number of results to return per page.
-$location_id = array('location_id_example'); // string[]
-$location_id__n = array('location_id__n_example'); // string[]
+$location_id = array(56); // int[] | Location (ID)
+$location_id__n = array(56); // int[] | Location (ID)
 $modified_by_request = 'modified_by_request_example'; // string
 $name = array('name_example'); // string[]
 $name__empty = True; // bool
@@ -24145,16 +24140,16 @@ $name__nisw = array('name__nisw_example'); // string[]
 $offset = 56; // int | The initial index from which to return the results.
 $ordering = 'ordering_example'; // string | Which field to use when ordering the results.
 $q = 'q_example'; // string | Search
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $tag = array('tag_example'); // string[]
@@ -24175,8 +24170,8 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **contact** | [**int[]**](../Model/int.md)| Contact | [optional] |
 | **contact__n** | [**int[]**](../Model/int.md)| Contact | [optional] |
-| **contact_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **contact_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **contact_group** | [**int[]**](../Model/int.md)| Contact group | [optional] |
+| **contact_group__n** | [**int[]**](../Model/int.md)| Contact group | [optional] |
 | **contact_role** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **contact_role__n** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -24213,8 +24208,8 @@ try {
 | **last_updated__lte** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **last_updated__n** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **limit** | **int**| Number of results to return per page. | [optional] |
-| **location_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **location_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **location_id** | [**int[]**](../Model/int.md)| Location (ID) | [optional] |
+| **location_id__n** | [**int[]**](../Model/int.md)| Location (ID) | [optional] |
 | **modified_by_request** | **string**|  | [optional] |
 | **name** | [**string[]**](../Model/string.md)|  | [optional] |
 | **name__empty** | **bool**|  | [optional] |
@@ -24230,16 +24225,16 @@ try {
 | **offset** | **int**| The initial index from which to return the results. | [optional] |
 | **ordering** | **string**| Which field to use when ordering the results. | [optional] |
 | **q** | **string**| Search | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -24804,7 +24799,7 @@ void (empty response body)
 ## `dcimPowerPortTemplatesList()`
 
 ```php
-dcimPowerPortTemplatesList($allocated_draw, $allocated_draw__empty, $allocated_draw__gt, $allocated_draw__gte, $allocated_draw__lt, $allocated_draw__lte, $allocated_draw__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $maximum_draw, $maximum_draw__empty, $maximum_draw__gt, $maximum_draw__gte, $maximum_draw__lt, $maximum_draw__lte, $maximum_draw__n, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedPowerPortTemplateList
+dcimPowerPortTemplatesList($allocated_draw, $allocated_draw__empty, $allocated_draw__gt, $allocated_draw__gte, $allocated_draw__lt, $allocated_draw__lte, $allocated_draw__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $maximum_draw, $maximum_draw__empty, $maximum_draw__gt, $maximum_draw__gte, $maximum_draw__lt, $maximum_draw__lte, $maximum_draw__n, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedPowerPortTemplateList
 ```
 
 
@@ -24863,6 +24858,8 @@ $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
 $device_type_id = array(56); // int[] | Device type (ID)
 $device_type_id__n = array(56); // int[] | Device type (ID)
+$devicetype_id = array(56); // int[] | Device type (ID)
+$devicetype_id__n = array(56); // int[] | Device type (ID)
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -24899,6 +24896,8 @@ $maximum_draw__n = array(56); // int[]
 $modified_by_request = 'modified_by_request_example'; // string
 $module_type_id = array(56); // int[] | Module type (ID)
 $module_type_id__n = array(56); // int[] | Module type (ID)
+$moduletype_id = array(56); // int[] | Module type (ID)
+$moduletype_id__n = array(56); // int[] | Module type (ID)
 $name = array('name_example'); // string[]
 $name__empty = True; // bool
 $name__ic = array('name__ic_example'); // string[]
@@ -24913,12 +24912,12 @@ $name__nisw = array('name__nisw_example'); // string[]
 $offset = 56; // int | The initial index from which to return the results.
 $ordering = 'ordering_example'; // string | Which field to use when ordering the results.
 $q = 'q_example'; // string | Search
-$type = 'type_example'; // string | * `IEC 60320` - [('iec-60320-c6', 'C6'), ('iec-60320-c8', 'C8'), ('iec-60320-c14', 'C14'), ('iec-60320-c16', 'C16'), ('iec-60320-c20', 'C20'), ('iec-60320-c22', 'C22')] * `IEC 60309` - [('iec-60309-p-n-e-4h', 'P+N+E 4H'), ('iec-60309-p-n-e-6h', 'P+N+E 6H'), ('iec-60309-p-n-e-9h', 'P+N+E 9H'), ('iec-60309-2p-e-4h', '2P+E 4H'), ('iec-60309-2p-e-6h', '2P+E 6H'), ('iec-60309-2p-e-9h', '2P+E 9H'), ('iec-60309-3p-e-4h', '3P+E 4H'), ('iec-60309-3p-e-6h', '3P+E 6H'), ('iec-60309-3p-e-9h', '3P+E 9H'), ('iec-60309-3p-n-e-4h', '3P+N+E 4H'), ('iec-60309-3p-n-e-6h', '3P+N+E 6H'), ('iec-60309-3p-n-e-9h', '3P+N+E 9H')] * `IEC 60906-1` - [('iec-60906-1', 'IEC 60906-1'), ('nbr-14136-10a', '2P+T 10A (NBR 14136)'), ('nbr-14136-20a', '2P+T 20A (NBR 14136)')] * `NEMA (Non-locking)` - [('nema-1-15p', 'NEMA 1-15P'), ('nema-5-15p', 'NEMA 5-15P'), ('nema-5-20p', 'NEMA 5-20P'), ('nema-5-30p', 'NEMA 5-30P'), ('nema-5-50p', 'NEMA 5-50P'), ('nema-6-15p', 'NEMA 6-15P'), ('nema-6-20p', 'NEMA 6-20P'), ('nema-6-30p', 'NEMA 6-30P'), ('nema-6-50p', 'NEMA 6-50P'), ('nema-10-30p', 'NEMA 10-30P'), ('nema-10-50p', 'NEMA 10-50P'), ('nema-14-20p', 'NEMA 14-20P'), ('nema-14-30p', 'NEMA 14-30P'), ('nema-14-50p', 'NEMA 14-50P'), ('nema-14-60p', 'NEMA 14-60P'), ('nema-15-15p', 'NEMA 15-15P'), ('nema-15-20p', 'NEMA 15-20P'), ('nema-15-30p', 'NEMA 15-30P'), ('nema-15-50p', 'NEMA 15-50P'), ('nema-15-60p', 'NEMA 15-60P')] * `NEMA (Locking)` - [('nema-l1-15p', 'NEMA L1-15P'), ('nema-l5-15p', 'NEMA L5-15P'), ('nema-l5-20p', 'NEMA L5-20P'), ('nema-l5-30p', 'NEMA L5-30P'), ('nema-l5-50p', 'NEMA L5-50P'), ('nema-l6-15p', 'NEMA L6-15P'), ('nema-l6-20p', 'NEMA L6-20P'), ('nema-l6-30p', 'NEMA L6-30P'), ('nema-l6-50p', 'NEMA L6-50P'), ('nema-l10-30p', 'NEMA L10-30P'), ('nema-l14-20p', 'NEMA L14-20P'), ('nema-l14-30p', 'NEMA L14-30P'), ('nema-l14-50p', 'NEMA L14-50P'), ('nema-l14-60p', 'NEMA L14-60P'), ('nema-l15-20p', 'NEMA L15-20P'), ('nema-l15-30p', 'NEMA L15-30P'), ('nema-l15-50p', 'NEMA L15-50P'), ('nema-l15-60p', 'NEMA L15-60P'), ('nema-l21-20p', 'NEMA L21-20P'), ('nema-l21-30p', 'NEMA L21-30P'), ('nema-l22-20p', 'NEMA L22-20P'), ('nema-l22-30p', 'NEMA L22-30P')] * `California Style` - [('cs6361c', 'CS6361C'), ('cs6365c', 'CS6365C'), ('cs8165c', 'CS8165C'), ('cs8265c', 'CS8265C'), ('cs8365c', 'CS8365C'), ('cs8465c', 'CS8465C')] * `International/ITA` - [('ita-c', 'ITA Type C (CEE 7/16)'), ('ita-e', 'ITA Type E (CEE 7/6)'), ('ita-f', 'ITA Type F (CEE 7/4)'), ('ita-ef', 'ITA Type E/F (CEE 7/7)'), ('ita-g', 'ITA Type G (BS 1363)'), ('ita-h', 'ITA Type H'), ('ita-i', 'ITA Type I'), ('ita-j', 'ITA Type J'), ('ita-k', 'ITA Type K'), ('ita-l', 'ITA Type L (CEI 23-50)'), ('ita-m', 'ITA Type M (BS 546)'), ('ita-n', 'ITA Type N'), ('ita-o', 'ITA Type O')] * `USB` - [('usb-a', 'USB Type A'), ('usb-b', 'USB Type B'), ('usb-c', 'USB Type C'), ('usb-mini-a', 'USB Mini A'), ('usb-mini-b', 'USB Mini B'), ('usb-micro-a', 'USB Micro A'), ('usb-micro-b', 'USB Micro B'), ('usb-micro-ab', 'USB Micro AB'), ('usb-3-b', 'USB 3.0 Type B'), ('usb-3-micro-b', 'USB 3.0 Micro B')] * `Molex` - [('molex-micro-fit-1x2', 'Molex Micro-Fit 1x2'), ('molex-micro-fit-2x2', 'Molex Micro-Fit 2x2'), ('molex-micro-fit-2x4', 'Molex Micro-Fit 2x4')] * `DC` - [('dc-terminal', 'DC Terminal')] * `Proprietary` - [('saf-d-grid', 'Saf-D-Grid'), ('neutrik-powercon-20', 'Neutrik powerCON (20A)'), ('neutrik-powercon-32', 'Neutrik powerCON (32A)'), ('neutrik-powercon-true1', 'Neutrik powerCON TRUE1'), ('neutrik-powercon-true1-top', 'Neutrik powerCON TRUE1 TOP'), ('ubiquiti-smartpower', 'Ubiquiti SmartPower')] * `Other` - [('hardwired', 'Hardwired'), ('other', 'Other')]
-$type__n = 'type__n_example'; // string | * `IEC 60320` - [('iec-60320-c6', 'C6'), ('iec-60320-c8', 'C8'), ('iec-60320-c14', 'C14'), ('iec-60320-c16', 'C16'), ('iec-60320-c20', 'C20'), ('iec-60320-c22', 'C22')] * `IEC 60309` - [('iec-60309-p-n-e-4h', 'P+N+E 4H'), ('iec-60309-p-n-e-6h', 'P+N+E 6H'), ('iec-60309-p-n-e-9h', 'P+N+E 9H'), ('iec-60309-2p-e-4h', '2P+E 4H'), ('iec-60309-2p-e-6h', '2P+E 6H'), ('iec-60309-2p-e-9h', '2P+E 9H'), ('iec-60309-3p-e-4h', '3P+E 4H'), ('iec-60309-3p-e-6h', '3P+E 6H'), ('iec-60309-3p-e-9h', '3P+E 9H'), ('iec-60309-3p-n-e-4h', '3P+N+E 4H'), ('iec-60309-3p-n-e-6h', '3P+N+E 6H'), ('iec-60309-3p-n-e-9h', '3P+N+E 9H')] * `IEC 60906-1` - [('iec-60906-1', 'IEC 60906-1'), ('nbr-14136-10a', '2P+T 10A (NBR 14136)'), ('nbr-14136-20a', '2P+T 20A (NBR 14136)')] * `NEMA (Non-locking)` - [('nema-1-15p', 'NEMA 1-15P'), ('nema-5-15p', 'NEMA 5-15P'), ('nema-5-20p', 'NEMA 5-20P'), ('nema-5-30p', 'NEMA 5-30P'), ('nema-5-50p', 'NEMA 5-50P'), ('nema-6-15p', 'NEMA 6-15P'), ('nema-6-20p', 'NEMA 6-20P'), ('nema-6-30p', 'NEMA 6-30P'), ('nema-6-50p', 'NEMA 6-50P'), ('nema-10-30p', 'NEMA 10-30P'), ('nema-10-50p', 'NEMA 10-50P'), ('nema-14-20p', 'NEMA 14-20P'), ('nema-14-30p', 'NEMA 14-30P'), ('nema-14-50p', 'NEMA 14-50P'), ('nema-14-60p', 'NEMA 14-60P'), ('nema-15-15p', 'NEMA 15-15P'), ('nema-15-20p', 'NEMA 15-20P'), ('nema-15-30p', 'NEMA 15-30P'), ('nema-15-50p', 'NEMA 15-50P'), ('nema-15-60p', 'NEMA 15-60P')] * `NEMA (Locking)` - [('nema-l1-15p', 'NEMA L1-15P'), ('nema-l5-15p', 'NEMA L5-15P'), ('nema-l5-20p', 'NEMA L5-20P'), ('nema-l5-30p', 'NEMA L5-30P'), ('nema-l5-50p', 'NEMA L5-50P'), ('nema-l6-15p', 'NEMA L6-15P'), ('nema-l6-20p', 'NEMA L6-20P'), ('nema-l6-30p', 'NEMA L6-30P'), ('nema-l6-50p', 'NEMA L6-50P'), ('nema-l10-30p', 'NEMA L10-30P'), ('nema-l14-20p', 'NEMA L14-20P'), ('nema-l14-30p', 'NEMA L14-30P'), ('nema-l14-50p', 'NEMA L14-50P'), ('nema-l14-60p', 'NEMA L14-60P'), ('nema-l15-20p', 'NEMA L15-20P'), ('nema-l15-30p', 'NEMA L15-30P'), ('nema-l15-50p', 'NEMA L15-50P'), ('nema-l15-60p', 'NEMA L15-60P'), ('nema-l21-20p', 'NEMA L21-20P'), ('nema-l21-30p', 'NEMA L21-30P'), ('nema-l22-20p', 'NEMA L22-20P'), ('nema-l22-30p', 'NEMA L22-30P')] * `California Style` - [('cs6361c', 'CS6361C'), ('cs6365c', 'CS6365C'), ('cs8165c', 'CS8165C'), ('cs8265c', 'CS8265C'), ('cs8365c', 'CS8365C'), ('cs8465c', 'CS8465C')] * `International/ITA` - [('ita-c', 'ITA Type C (CEE 7/16)'), ('ita-e', 'ITA Type E (CEE 7/6)'), ('ita-f', 'ITA Type F (CEE 7/4)'), ('ita-ef', 'ITA Type E/F (CEE 7/7)'), ('ita-g', 'ITA Type G (BS 1363)'), ('ita-h', 'ITA Type H'), ('ita-i', 'ITA Type I'), ('ita-j', 'ITA Type J'), ('ita-k', 'ITA Type K'), ('ita-l', 'ITA Type L (CEI 23-50)'), ('ita-m', 'ITA Type M (BS 546)'), ('ita-n', 'ITA Type N'), ('ita-o', 'ITA Type O')] * `USB` - [('usb-a', 'USB Type A'), ('usb-b', 'USB Type B'), ('usb-c', 'USB Type C'), ('usb-mini-a', 'USB Mini A'), ('usb-mini-b', 'USB Mini B'), ('usb-micro-a', 'USB Micro A'), ('usb-micro-b', 'USB Micro B'), ('usb-micro-ab', 'USB Micro AB'), ('usb-3-b', 'USB 3.0 Type B'), ('usb-3-micro-b', 'USB 3.0 Micro B')] * `Molex` - [('molex-micro-fit-1x2', 'Molex Micro-Fit 1x2'), ('molex-micro-fit-2x2', 'Molex Micro-Fit 2x2'), ('molex-micro-fit-2x4', 'Molex Micro-Fit 2x4')] * `DC` - [('dc-terminal', 'DC Terminal')] * `Proprietary` - [('saf-d-grid', 'Saf-D-Grid'), ('neutrik-powercon-20', 'Neutrik powerCON (20A)'), ('neutrik-powercon-32', 'Neutrik powerCON (32A)'), ('neutrik-powercon-true1', 'Neutrik powerCON TRUE1'), ('neutrik-powercon-true1-top', 'Neutrik powerCON TRUE1 TOP'), ('ubiquiti-smartpower', 'Ubiquiti SmartPower')] * `Other` - [('hardwired', 'Hardwired'), ('other', 'Other')]
+$type = 'type_example'; // string | * `IEC 60320` - [('iec-60320-c6', 'C6'), ('iec-60320-c8', 'C8'), ('iec-60320-c14', 'C14'), ('iec-60320-c16', 'C16'), ('iec-60320-c20', 'C20'), ('iec-60320-c22', 'C22')] * `IEC 60309` - [('iec-60309-p-n-e-4h', 'P+N+E 4H'), ('iec-60309-p-n-e-6h', 'P+N+E 6H'), ('iec-60309-p-n-e-9h', 'P+N+E 9H'), ('iec-60309-2p-e-4h', '2P+E 4H'), ('iec-60309-2p-e-6h', '2P+E 6H'), ('iec-60309-2p-e-9h', '2P+E 9H'), ('iec-60309-3p-e-4h', '3P+E 4H'), ('iec-60309-3p-e-6h', '3P+E 6H'), ('iec-60309-3p-e-9h', '3P+E 9H'), ('iec-60309-3p-n-e-4h', '3P+N+E 4H'), ('iec-60309-3p-n-e-6h', '3P+N+E 6H'), ('iec-60309-3p-n-e-9h', '3P+N+E 9H')] * `IEC 60906-1` - [('iec-60906-1', 'IEC 60906-1'), ('nbr-14136-10a', '2P+T 10A (NBR 14136)'), ('nbr-14136-20a', '2P+T 20A (NBR 14136)')] * `NEMA (Non-locking)` - [('nema-1-15p', 'NEMA 1-15P'), ('nema-5-15p', 'NEMA 5-15P'), ('nema-5-20p', 'NEMA 5-20P'), ('nema-5-30p', 'NEMA 5-30P'), ('nema-5-50p', 'NEMA 5-50P'), ('nema-6-15p', 'NEMA 6-15P'), ('nema-6-20p', 'NEMA 6-20P'), ('nema-6-30p', 'NEMA 6-30P'), ('nema-6-50p', 'NEMA 6-50P'), ('nema-10-30p', 'NEMA 10-30P'), ('nema-10-50p', 'NEMA 10-50P'), ('nema-14-20p', 'NEMA 14-20P'), ('nema-14-30p', 'NEMA 14-30P'), ('nema-14-50p', 'NEMA 14-50P'), ('nema-14-60p', 'NEMA 14-60P'), ('nema-15-15p', 'NEMA 15-15P'), ('nema-15-20p', 'NEMA 15-20P'), ('nema-15-30p', 'NEMA 15-30P'), ('nema-15-50p', 'NEMA 15-50P'), ('nema-15-60p', 'NEMA 15-60P')] * `NEMA (Locking)` - [('nema-l1-15p', 'NEMA L1-15P'), ('nema-l5-15p', 'NEMA L5-15P'), ('nema-l5-20p', 'NEMA L5-20P'), ('nema-l5-30p', 'NEMA L5-30P'), ('nema-l5-50p', 'NEMA L5-50P'), ('nema-l6-15p', 'NEMA L6-15P'), ('nema-l6-20p', 'NEMA L6-20P'), ('nema-l6-30p', 'NEMA L6-30P'), ('nema-l6-50p', 'NEMA L6-50P'), ('nema-l10-30p', 'NEMA L10-30P'), ('nema-l14-20p', 'NEMA L14-20P'), ('nema-l14-30p', 'NEMA L14-30P'), ('nema-l14-50p', 'NEMA L14-50P'), ('nema-l14-60p', 'NEMA L14-60P'), ('nema-l15-20p', 'NEMA L15-20P'), ('nema-l15-30p', 'NEMA L15-30P'), ('nema-l15-50p', 'NEMA L15-50P'), ('nema-l15-60p', 'NEMA L15-60P'), ('nema-l21-20p', 'NEMA L21-20P'), ('nema-l21-30p', 'NEMA L21-30P'), ('nema-l22-30p', 'NEMA L22-30P')] * `California Style` - [('cs6361c', 'CS6361C'), ('cs6365c', 'CS6365C'), ('cs8165c', 'CS8165C'), ('cs8265c', 'CS8265C'), ('cs8365c', 'CS8365C'), ('cs8465c', 'CS8465C')] * `International/ITA` - [('ita-c', 'ITA Type C (CEE 7/16)'), ('ita-e', 'ITA Type E (CEE 7/6)'), ('ita-f', 'ITA Type F (CEE 7/4)'), ('ita-ef', 'ITA Type E/F (CEE 7/7)'), ('ita-g', 'ITA Type G (BS 1363)'), ('ita-h', 'ITA Type H'), ('ita-i', 'ITA Type I'), ('ita-j', 'ITA Type J'), ('ita-k', 'ITA Type K'), ('ita-l', 'ITA Type L (CEI 23-50)'), ('ita-m', 'ITA Type M (BS 546)'), ('ita-n', 'ITA Type N'), ('ita-o', 'ITA Type O')] * `USB` - [('usb-a', 'USB Type A'), ('usb-b', 'USB Type B'), ('usb-c', 'USB Type C'), ('usb-mini-a', 'USB Mini A'), ('usb-mini-b', 'USB Mini B'), ('usb-micro-a', 'USB Micro A'), ('usb-micro-b', 'USB Micro B'), ('usb-micro-ab', 'USB Micro AB'), ('usb-3-b', 'USB 3.0 Type B'), ('usb-3-micro-b', 'USB 3.0 Micro B')] * `Molex` - [('molex-micro-fit-1x2', 'Molex Micro-Fit 1x2'), ('molex-micro-fit-2x2', 'Molex Micro-Fit 2x2'), ('molex-micro-fit-2x4', 'Molex Micro-Fit 2x4')] * `DC` - [('dc-terminal', 'DC Terminal')] * `Proprietary` - [('saf-d-grid', 'Saf-D-Grid'), ('neutrik-powercon-20', 'Neutrik powerCON (20A)'), ('neutrik-powercon-32', 'Neutrik powerCON (32A)'), ('neutrik-powercon-true1', 'Neutrik powerCON TRUE1'), ('neutrik-powercon-true1-top', 'Neutrik powerCON TRUE1 TOP'), ('ubiquiti-smartpower', 'Ubiquiti SmartPower')] * `Other` - [('hardwired', 'Hardwired'), ('other', 'Other')]
+$type__n = 'type__n_example'; // string | * `IEC 60320` - [('iec-60320-c6', 'C6'), ('iec-60320-c8', 'C8'), ('iec-60320-c14', 'C14'), ('iec-60320-c16', 'C16'), ('iec-60320-c20', 'C20'), ('iec-60320-c22', 'C22')] * `IEC 60309` - [('iec-60309-p-n-e-4h', 'P+N+E 4H'), ('iec-60309-p-n-e-6h', 'P+N+E 6H'), ('iec-60309-p-n-e-9h', 'P+N+E 9H'), ('iec-60309-2p-e-4h', '2P+E 4H'), ('iec-60309-2p-e-6h', '2P+E 6H'), ('iec-60309-2p-e-9h', '2P+E 9H'), ('iec-60309-3p-e-4h', '3P+E 4H'), ('iec-60309-3p-e-6h', '3P+E 6H'), ('iec-60309-3p-e-9h', '3P+E 9H'), ('iec-60309-3p-n-e-4h', '3P+N+E 4H'), ('iec-60309-3p-n-e-6h', '3P+N+E 6H'), ('iec-60309-3p-n-e-9h', '3P+N+E 9H')] * `IEC 60906-1` - [('iec-60906-1', 'IEC 60906-1'), ('nbr-14136-10a', '2P+T 10A (NBR 14136)'), ('nbr-14136-20a', '2P+T 20A (NBR 14136)')] * `NEMA (Non-locking)` - [('nema-1-15p', 'NEMA 1-15P'), ('nema-5-15p', 'NEMA 5-15P'), ('nema-5-20p', 'NEMA 5-20P'), ('nema-5-30p', 'NEMA 5-30P'), ('nema-5-50p', 'NEMA 5-50P'), ('nema-6-15p', 'NEMA 6-15P'), ('nema-6-20p', 'NEMA 6-20P'), ('nema-6-30p', 'NEMA 6-30P'), ('nema-6-50p', 'NEMA 6-50P'), ('nema-10-30p', 'NEMA 10-30P'), ('nema-10-50p', 'NEMA 10-50P'), ('nema-14-20p', 'NEMA 14-20P'), ('nema-14-30p', 'NEMA 14-30P'), ('nema-14-50p', 'NEMA 14-50P'), ('nema-14-60p', 'NEMA 14-60P'), ('nema-15-15p', 'NEMA 15-15P'), ('nema-15-20p', 'NEMA 15-20P'), ('nema-15-30p', 'NEMA 15-30P'), ('nema-15-50p', 'NEMA 15-50P'), ('nema-15-60p', 'NEMA 15-60P')] * `NEMA (Locking)` - [('nema-l1-15p', 'NEMA L1-15P'), ('nema-l5-15p', 'NEMA L5-15P'), ('nema-l5-20p', 'NEMA L5-20P'), ('nema-l5-30p', 'NEMA L5-30P'), ('nema-l5-50p', 'NEMA L5-50P'), ('nema-l6-15p', 'NEMA L6-15P'), ('nema-l6-20p', 'NEMA L6-20P'), ('nema-l6-30p', 'NEMA L6-30P'), ('nema-l6-50p', 'NEMA L6-50P'), ('nema-l10-30p', 'NEMA L10-30P'), ('nema-l14-20p', 'NEMA L14-20P'), ('nema-l14-30p', 'NEMA L14-30P'), ('nema-l14-50p', 'NEMA L14-50P'), ('nema-l14-60p', 'NEMA L14-60P'), ('nema-l15-20p', 'NEMA L15-20P'), ('nema-l15-30p', 'NEMA L15-30P'), ('nema-l15-50p', 'NEMA L15-50P'), ('nema-l15-60p', 'NEMA L15-60P'), ('nema-l21-20p', 'NEMA L21-20P'), ('nema-l21-30p', 'NEMA L21-30P'), ('nema-l22-30p', 'NEMA L22-30P')] * `California Style` - [('cs6361c', 'CS6361C'), ('cs6365c', 'CS6365C'), ('cs8165c', 'CS8165C'), ('cs8265c', 'CS8265C'), ('cs8365c', 'CS8365C'), ('cs8465c', 'CS8465C')] * `International/ITA` - [('ita-c', 'ITA Type C (CEE 7/16)'), ('ita-e', 'ITA Type E (CEE 7/6)'), ('ita-f', 'ITA Type F (CEE 7/4)'), ('ita-ef', 'ITA Type E/F (CEE 7/7)'), ('ita-g', 'ITA Type G (BS 1363)'), ('ita-h', 'ITA Type H'), ('ita-i', 'ITA Type I'), ('ita-j', 'ITA Type J'), ('ita-k', 'ITA Type K'), ('ita-l', 'ITA Type L (CEI 23-50)'), ('ita-m', 'ITA Type M (BS 546)'), ('ita-n', 'ITA Type N'), ('ita-o', 'ITA Type O')] * `USB` - [('usb-a', 'USB Type A'), ('usb-b', 'USB Type B'), ('usb-c', 'USB Type C'), ('usb-mini-a', 'USB Mini A'), ('usb-mini-b', 'USB Mini B'), ('usb-micro-a', 'USB Micro A'), ('usb-micro-b', 'USB Micro B'), ('usb-micro-ab', 'USB Micro AB'), ('usb-3-b', 'USB 3.0 Type B'), ('usb-3-micro-b', 'USB 3.0 Micro B')] * `Molex` - [('molex-micro-fit-1x2', 'Molex Micro-Fit 1x2'), ('molex-micro-fit-2x2', 'Molex Micro-Fit 2x2'), ('molex-micro-fit-2x4', 'Molex Micro-Fit 2x4')] * `DC` - [('dc-terminal', 'DC Terminal')] * `Proprietary` - [('saf-d-grid', 'Saf-D-Grid'), ('neutrik-powercon-20', 'Neutrik powerCON (20A)'), ('neutrik-powercon-32', 'Neutrik powerCON (32A)'), ('neutrik-powercon-true1', 'Neutrik powerCON TRUE1'), ('neutrik-powercon-true1-top', 'Neutrik powerCON TRUE1 TOP'), ('ubiquiti-smartpower', 'Ubiquiti SmartPower')] * `Other` - [('hardwired', 'Hardwired'), ('other', 'Other')]
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->dcimPowerPortTemplatesList($allocated_draw, $allocated_draw__empty, $allocated_draw__gt, $allocated_draw__gte, $allocated_draw__lt, $allocated_draw__lte, $allocated_draw__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $maximum_draw, $maximum_draw__empty, $maximum_draw__gt, $maximum_draw__gte, $maximum_draw__lt, $maximum_draw__lte, $maximum_draw__n, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $type, $type__n, $updated_by_request);
+    $result = $apiInstance->dcimPowerPortTemplatesList($allocated_draw, $allocated_draw__empty, $allocated_draw__gt, $allocated_draw__gte, $allocated_draw__lt, $allocated_draw__lte, $allocated_draw__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $maximum_draw, $maximum_draw__empty, $maximum_draw__gt, $maximum_draw__gte, $maximum_draw__lt, $maximum_draw__lte, $maximum_draw__n, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $q, $type, $type__n, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimPowerPortTemplatesList: ', $e->getMessage(), PHP_EOL;
@@ -24957,6 +24956,8 @@ try {
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **device_type_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -24993,6 +24994,8 @@ try {
 | **modified_by_request** | **string**|  | [optional] |
 | **module_type_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **module_type_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **name** | [**string[]**](../Model/string.md)|  | [optional] |
 | **name__empty** | **bool**|  | [optional] |
 | **name__ic** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -25007,8 +25010,8 @@ try {
 | **offset** | **int**| The initial index from which to return the results. | [optional] |
 | **ordering** | **string**| Which field to use when ordering the results. | [optional] |
 | **q** | **string**| Search | [optional] |
-| **type** | **string**| * &#x60;IEC 60320&#x60; - [(&#39;iec-60320-c6&#39;, &#39;C6&#39;), (&#39;iec-60320-c8&#39;, &#39;C8&#39;), (&#39;iec-60320-c14&#39;, &#39;C14&#39;), (&#39;iec-60320-c16&#39;, &#39;C16&#39;), (&#39;iec-60320-c20&#39;, &#39;C20&#39;), (&#39;iec-60320-c22&#39;, &#39;C22&#39;)] * &#x60;IEC 60309&#x60; - [(&#39;iec-60309-p-n-e-4h&#39;, &#39;P+N+E 4H&#39;), (&#39;iec-60309-p-n-e-6h&#39;, &#39;P+N+E 6H&#39;), (&#39;iec-60309-p-n-e-9h&#39;, &#39;P+N+E 9H&#39;), (&#39;iec-60309-2p-e-4h&#39;, &#39;2P+E 4H&#39;), (&#39;iec-60309-2p-e-6h&#39;, &#39;2P+E 6H&#39;), (&#39;iec-60309-2p-e-9h&#39;, &#39;2P+E 9H&#39;), (&#39;iec-60309-3p-e-4h&#39;, &#39;3P+E 4H&#39;), (&#39;iec-60309-3p-e-6h&#39;, &#39;3P+E 6H&#39;), (&#39;iec-60309-3p-e-9h&#39;, &#39;3P+E 9H&#39;), (&#39;iec-60309-3p-n-e-4h&#39;, &#39;3P+N+E 4H&#39;), (&#39;iec-60309-3p-n-e-6h&#39;, &#39;3P+N+E 6H&#39;), (&#39;iec-60309-3p-n-e-9h&#39;, &#39;3P+N+E 9H&#39;)] * &#x60;IEC 60906-1&#x60; - [(&#39;iec-60906-1&#39;, &#39;IEC 60906-1&#39;), (&#39;nbr-14136-10a&#39;, &#39;2P+T 10A (NBR 14136)&#39;), (&#39;nbr-14136-20a&#39;, &#39;2P+T 20A (NBR 14136)&#39;)] * &#x60;NEMA (Non-locking)&#x60; - [(&#39;nema-1-15p&#39;, &#39;NEMA 1-15P&#39;), (&#39;nema-5-15p&#39;, &#39;NEMA 5-15P&#39;), (&#39;nema-5-20p&#39;, &#39;NEMA 5-20P&#39;), (&#39;nema-5-30p&#39;, &#39;NEMA 5-30P&#39;), (&#39;nema-5-50p&#39;, &#39;NEMA 5-50P&#39;), (&#39;nema-6-15p&#39;, &#39;NEMA 6-15P&#39;), (&#39;nema-6-20p&#39;, &#39;NEMA 6-20P&#39;), (&#39;nema-6-30p&#39;, &#39;NEMA 6-30P&#39;), (&#39;nema-6-50p&#39;, &#39;NEMA 6-50P&#39;), (&#39;nema-10-30p&#39;, &#39;NEMA 10-30P&#39;), (&#39;nema-10-50p&#39;, &#39;NEMA 10-50P&#39;), (&#39;nema-14-20p&#39;, &#39;NEMA 14-20P&#39;), (&#39;nema-14-30p&#39;, &#39;NEMA 14-30P&#39;), (&#39;nema-14-50p&#39;, &#39;NEMA 14-50P&#39;), (&#39;nema-14-60p&#39;, &#39;NEMA 14-60P&#39;), (&#39;nema-15-15p&#39;, &#39;NEMA 15-15P&#39;), (&#39;nema-15-20p&#39;, &#39;NEMA 15-20P&#39;), (&#39;nema-15-30p&#39;, &#39;NEMA 15-30P&#39;), (&#39;nema-15-50p&#39;, &#39;NEMA 15-50P&#39;), (&#39;nema-15-60p&#39;, &#39;NEMA 15-60P&#39;)] * &#x60;NEMA (Locking)&#x60; - [(&#39;nema-l1-15p&#39;, &#39;NEMA L1-15P&#39;), (&#39;nema-l5-15p&#39;, &#39;NEMA L5-15P&#39;), (&#39;nema-l5-20p&#39;, &#39;NEMA L5-20P&#39;), (&#39;nema-l5-30p&#39;, &#39;NEMA L5-30P&#39;), (&#39;nema-l5-50p&#39;, &#39;NEMA L5-50P&#39;), (&#39;nema-l6-15p&#39;, &#39;NEMA L6-15P&#39;), (&#39;nema-l6-20p&#39;, &#39;NEMA L6-20P&#39;), (&#39;nema-l6-30p&#39;, &#39;NEMA L6-30P&#39;), (&#39;nema-l6-50p&#39;, &#39;NEMA L6-50P&#39;), (&#39;nema-l10-30p&#39;, &#39;NEMA L10-30P&#39;), (&#39;nema-l14-20p&#39;, &#39;NEMA L14-20P&#39;), (&#39;nema-l14-30p&#39;, &#39;NEMA L14-30P&#39;), (&#39;nema-l14-50p&#39;, &#39;NEMA L14-50P&#39;), (&#39;nema-l14-60p&#39;, &#39;NEMA L14-60P&#39;), (&#39;nema-l15-20p&#39;, &#39;NEMA L15-20P&#39;), (&#39;nema-l15-30p&#39;, &#39;NEMA L15-30P&#39;), (&#39;nema-l15-50p&#39;, &#39;NEMA L15-50P&#39;), (&#39;nema-l15-60p&#39;, &#39;NEMA L15-60P&#39;), (&#39;nema-l21-20p&#39;, &#39;NEMA L21-20P&#39;), (&#39;nema-l21-30p&#39;, &#39;NEMA L21-30P&#39;), (&#39;nema-l22-20p&#39;, &#39;NEMA L22-20P&#39;), (&#39;nema-l22-30p&#39;, &#39;NEMA L22-30P&#39;)] * &#x60;California Style&#x60; - [(&#39;cs6361c&#39;, &#39;CS6361C&#39;), (&#39;cs6365c&#39;, &#39;CS6365C&#39;), (&#39;cs8165c&#39;, &#39;CS8165C&#39;), (&#39;cs8265c&#39;, &#39;CS8265C&#39;), (&#39;cs8365c&#39;, &#39;CS8365C&#39;), (&#39;cs8465c&#39;, &#39;CS8465C&#39;)] * &#x60;International/ITA&#x60; - [(&#39;ita-c&#39;, &#39;ITA Type C (CEE 7/16)&#39;), (&#39;ita-e&#39;, &#39;ITA Type E (CEE 7/6)&#39;), (&#39;ita-f&#39;, &#39;ITA Type F (CEE 7/4)&#39;), (&#39;ita-ef&#39;, &#39;ITA Type E/F (CEE 7/7)&#39;), (&#39;ita-g&#39;, &#39;ITA Type G (BS 1363)&#39;), (&#39;ita-h&#39;, &#39;ITA Type H&#39;), (&#39;ita-i&#39;, &#39;ITA Type I&#39;), (&#39;ita-j&#39;, &#39;ITA Type J&#39;), (&#39;ita-k&#39;, &#39;ITA Type K&#39;), (&#39;ita-l&#39;, &#39;ITA Type L (CEI 23-50)&#39;), (&#39;ita-m&#39;, &#39;ITA Type M (BS 546)&#39;), (&#39;ita-n&#39;, &#39;ITA Type N&#39;), (&#39;ita-o&#39;, &#39;ITA Type O&#39;)] * &#x60;USB&#x60; - [(&#39;usb-a&#39;, &#39;USB Type A&#39;), (&#39;usb-b&#39;, &#39;USB Type B&#39;), (&#39;usb-c&#39;, &#39;USB Type C&#39;), (&#39;usb-mini-a&#39;, &#39;USB Mini A&#39;), (&#39;usb-mini-b&#39;, &#39;USB Mini B&#39;), (&#39;usb-micro-a&#39;, &#39;USB Micro A&#39;), (&#39;usb-micro-b&#39;, &#39;USB Micro B&#39;), (&#39;usb-micro-ab&#39;, &#39;USB Micro AB&#39;), (&#39;usb-3-b&#39;, &#39;USB 3.0 Type B&#39;), (&#39;usb-3-micro-b&#39;, &#39;USB 3.0 Micro B&#39;)] * &#x60;Molex&#x60; - [(&#39;molex-micro-fit-1x2&#39;, &#39;Molex Micro-Fit 1x2&#39;), (&#39;molex-micro-fit-2x2&#39;, &#39;Molex Micro-Fit 2x2&#39;), (&#39;molex-micro-fit-2x4&#39;, &#39;Molex Micro-Fit 2x4&#39;)] * &#x60;DC&#x60; - [(&#39;dc-terminal&#39;, &#39;DC Terminal&#39;)] * &#x60;Proprietary&#x60; - [(&#39;saf-d-grid&#39;, &#39;Saf-D-Grid&#39;), (&#39;neutrik-powercon-20&#39;, &#39;Neutrik powerCON (20A)&#39;), (&#39;neutrik-powercon-32&#39;, &#39;Neutrik powerCON (32A)&#39;), (&#39;neutrik-powercon-true1&#39;, &#39;Neutrik powerCON TRUE1&#39;), (&#39;neutrik-powercon-true1-top&#39;, &#39;Neutrik powerCON TRUE1 TOP&#39;), (&#39;ubiquiti-smartpower&#39;, &#39;Ubiquiti SmartPower&#39;)] * &#x60;Other&#x60; - [(&#39;hardwired&#39;, &#39;Hardwired&#39;), (&#39;other&#39;, &#39;Other&#39;)] | [optional] |
-| **type__n** | **string**| * &#x60;IEC 60320&#x60; - [(&#39;iec-60320-c6&#39;, &#39;C6&#39;), (&#39;iec-60320-c8&#39;, &#39;C8&#39;), (&#39;iec-60320-c14&#39;, &#39;C14&#39;), (&#39;iec-60320-c16&#39;, &#39;C16&#39;), (&#39;iec-60320-c20&#39;, &#39;C20&#39;), (&#39;iec-60320-c22&#39;, &#39;C22&#39;)] * &#x60;IEC 60309&#x60; - [(&#39;iec-60309-p-n-e-4h&#39;, &#39;P+N+E 4H&#39;), (&#39;iec-60309-p-n-e-6h&#39;, &#39;P+N+E 6H&#39;), (&#39;iec-60309-p-n-e-9h&#39;, &#39;P+N+E 9H&#39;), (&#39;iec-60309-2p-e-4h&#39;, &#39;2P+E 4H&#39;), (&#39;iec-60309-2p-e-6h&#39;, &#39;2P+E 6H&#39;), (&#39;iec-60309-2p-e-9h&#39;, &#39;2P+E 9H&#39;), (&#39;iec-60309-3p-e-4h&#39;, &#39;3P+E 4H&#39;), (&#39;iec-60309-3p-e-6h&#39;, &#39;3P+E 6H&#39;), (&#39;iec-60309-3p-e-9h&#39;, &#39;3P+E 9H&#39;), (&#39;iec-60309-3p-n-e-4h&#39;, &#39;3P+N+E 4H&#39;), (&#39;iec-60309-3p-n-e-6h&#39;, &#39;3P+N+E 6H&#39;), (&#39;iec-60309-3p-n-e-9h&#39;, &#39;3P+N+E 9H&#39;)] * &#x60;IEC 60906-1&#x60; - [(&#39;iec-60906-1&#39;, &#39;IEC 60906-1&#39;), (&#39;nbr-14136-10a&#39;, &#39;2P+T 10A (NBR 14136)&#39;), (&#39;nbr-14136-20a&#39;, &#39;2P+T 20A (NBR 14136)&#39;)] * &#x60;NEMA (Non-locking)&#x60; - [(&#39;nema-1-15p&#39;, &#39;NEMA 1-15P&#39;), (&#39;nema-5-15p&#39;, &#39;NEMA 5-15P&#39;), (&#39;nema-5-20p&#39;, &#39;NEMA 5-20P&#39;), (&#39;nema-5-30p&#39;, &#39;NEMA 5-30P&#39;), (&#39;nema-5-50p&#39;, &#39;NEMA 5-50P&#39;), (&#39;nema-6-15p&#39;, &#39;NEMA 6-15P&#39;), (&#39;nema-6-20p&#39;, &#39;NEMA 6-20P&#39;), (&#39;nema-6-30p&#39;, &#39;NEMA 6-30P&#39;), (&#39;nema-6-50p&#39;, &#39;NEMA 6-50P&#39;), (&#39;nema-10-30p&#39;, &#39;NEMA 10-30P&#39;), (&#39;nema-10-50p&#39;, &#39;NEMA 10-50P&#39;), (&#39;nema-14-20p&#39;, &#39;NEMA 14-20P&#39;), (&#39;nema-14-30p&#39;, &#39;NEMA 14-30P&#39;), (&#39;nema-14-50p&#39;, &#39;NEMA 14-50P&#39;), (&#39;nema-14-60p&#39;, &#39;NEMA 14-60P&#39;), (&#39;nema-15-15p&#39;, &#39;NEMA 15-15P&#39;), (&#39;nema-15-20p&#39;, &#39;NEMA 15-20P&#39;), (&#39;nema-15-30p&#39;, &#39;NEMA 15-30P&#39;), (&#39;nema-15-50p&#39;, &#39;NEMA 15-50P&#39;), (&#39;nema-15-60p&#39;, &#39;NEMA 15-60P&#39;)] * &#x60;NEMA (Locking)&#x60; - [(&#39;nema-l1-15p&#39;, &#39;NEMA L1-15P&#39;), (&#39;nema-l5-15p&#39;, &#39;NEMA L5-15P&#39;), (&#39;nema-l5-20p&#39;, &#39;NEMA L5-20P&#39;), (&#39;nema-l5-30p&#39;, &#39;NEMA L5-30P&#39;), (&#39;nema-l5-50p&#39;, &#39;NEMA L5-50P&#39;), (&#39;nema-l6-15p&#39;, &#39;NEMA L6-15P&#39;), (&#39;nema-l6-20p&#39;, &#39;NEMA L6-20P&#39;), (&#39;nema-l6-30p&#39;, &#39;NEMA L6-30P&#39;), (&#39;nema-l6-50p&#39;, &#39;NEMA L6-50P&#39;), (&#39;nema-l10-30p&#39;, &#39;NEMA L10-30P&#39;), (&#39;nema-l14-20p&#39;, &#39;NEMA L14-20P&#39;), (&#39;nema-l14-30p&#39;, &#39;NEMA L14-30P&#39;), (&#39;nema-l14-50p&#39;, &#39;NEMA L14-50P&#39;), (&#39;nema-l14-60p&#39;, &#39;NEMA L14-60P&#39;), (&#39;nema-l15-20p&#39;, &#39;NEMA L15-20P&#39;), (&#39;nema-l15-30p&#39;, &#39;NEMA L15-30P&#39;), (&#39;nema-l15-50p&#39;, &#39;NEMA L15-50P&#39;), (&#39;nema-l15-60p&#39;, &#39;NEMA L15-60P&#39;), (&#39;nema-l21-20p&#39;, &#39;NEMA L21-20P&#39;), (&#39;nema-l21-30p&#39;, &#39;NEMA L21-30P&#39;), (&#39;nema-l22-20p&#39;, &#39;NEMA L22-20P&#39;), (&#39;nema-l22-30p&#39;, &#39;NEMA L22-30P&#39;)] * &#x60;California Style&#x60; - [(&#39;cs6361c&#39;, &#39;CS6361C&#39;), (&#39;cs6365c&#39;, &#39;CS6365C&#39;), (&#39;cs8165c&#39;, &#39;CS8165C&#39;), (&#39;cs8265c&#39;, &#39;CS8265C&#39;), (&#39;cs8365c&#39;, &#39;CS8365C&#39;), (&#39;cs8465c&#39;, &#39;CS8465C&#39;)] * &#x60;International/ITA&#x60; - [(&#39;ita-c&#39;, &#39;ITA Type C (CEE 7/16)&#39;), (&#39;ita-e&#39;, &#39;ITA Type E (CEE 7/6)&#39;), (&#39;ita-f&#39;, &#39;ITA Type F (CEE 7/4)&#39;), (&#39;ita-ef&#39;, &#39;ITA Type E/F (CEE 7/7)&#39;), (&#39;ita-g&#39;, &#39;ITA Type G (BS 1363)&#39;), (&#39;ita-h&#39;, &#39;ITA Type H&#39;), (&#39;ita-i&#39;, &#39;ITA Type I&#39;), (&#39;ita-j&#39;, &#39;ITA Type J&#39;), (&#39;ita-k&#39;, &#39;ITA Type K&#39;), (&#39;ita-l&#39;, &#39;ITA Type L (CEI 23-50)&#39;), (&#39;ita-m&#39;, &#39;ITA Type M (BS 546)&#39;), (&#39;ita-n&#39;, &#39;ITA Type N&#39;), (&#39;ita-o&#39;, &#39;ITA Type O&#39;)] * &#x60;USB&#x60; - [(&#39;usb-a&#39;, &#39;USB Type A&#39;), (&#39;usb-b&#39;, &#39;USB Type B&#39;), (&#39;usb-c&#39;, &#39;USB Type C&#39;), (&#39;usb-mini-a&#39;, &#39;USB Mini A&#39;), (&#39;usb-mini-b&#39;, &#39;USB Mini B&#39;), (&#39;usb-micro-a&#39;, &#39;USB Micro A&#39;), (&#39;usb-micro-b&#39;, &#39;USB Micro B&#39;), (&#39;usb-micro-ab&#39;, &#39;USB Micro AB&#39;), (&#39;usb-3-b&#39;, &#39;USB 3.0 Type B&#39;), (&#39;usb-3-micro-b&#39;, &#39;USB 3.0 Micro B&#39;)] * &#x60;Molex&#x60; - [(&#39;molex-micro-fit-1x2&#39;, &#39;Molex Micro-Fit 1x2&#39;), (&#39;molex-micro-fit-2x2&#39;, &#39;Molex Micro-Fit 2x2&#39;), (&#39;molex-micro-fit-2x4&#39;, &#39;Molex Micro-Fit 2x4&#39;)] * &#x60;DC&#x60; - [(&#39;dc-terminal&#39;, &#39;DC Terminal&#39;)] * &#x60;Proprietary&#x60; - [(&#39;saf-d-grid&#39;, &#39;Saf-D-Grid&#39;), (&#39;neutrik-powercon-20&#39;, &#39;Neutrik powerCON (20A)&#39;), (&#39;neutrik-powercon-32&#39;, &#39;Neutrik powerCON (32A)&#39;), (&#39;neutrik-powercon-true1&#39;, &#39;Neutrik powerCON TRUE1&#39;), (&#39;neutrik-powercon-true1-top&#39;, &#39;Neutrik powerCON TRUE1 TOP&#39;), (&#39;ubiquiti-smartpower&#39;, &#39;Ubiquiti SmartPower&#39;)] * &#x60;Other&#x60; - [(&#39;hardwired&#39;, &#39;Hardwired&#39;), (&#39;other&#39;, &#39;Other&#39;)] | [optional] |
+| **type** | **string**| * &#x60;IEC 60320&#x60; - [(&#39;iec-60320-c6&#39;, &#39;C6&#39;), (&#39;iec-60320-c8&#39;, &#39;C8&#39;), (&#39;iec-60320-c14&#39;, &#39;C14&#39;), (&#39;iec-60320-c16&#39;, &#39;C16&#39;), (&#39;iec-60320-c20&#39;, &#39;C20&#39;), (&#39;iec-60320-c22&#39;, &#39;C22&#39;)] * &#x60;IEC 60309&#x60; - [(&#39;iec-60309-p-n-e-4h&#39;, &#39;P+N+E 4H&#39;), (&#39;iec-60309-p-n-e-6h&#39;, &#39;P+N+E 6H&#39;), (&#39;iec-60309-p-n-e-9h&#39;, &#39;P+N+E 9H&#39;), (&#39;iec-60309-2p-e-4h&#39;, &#39;2P+E 4H&#39;), (&#39;iec-60309-2p-e-6h&#39;, &#39;2P+E 6H&#39;), (&#39;iec-60309-2p-e-9h&#39;, &#39;2P+E 9H&#39;), (&#39;iec-60309-3p-e-4h&#39;, &#39;3P+E 4H&#39;), (&#39;iec-60309-3p-e-6h&#39;, &#39;3P+E 6H&#39;), (&#39;iec-60309-3p-e-9h&#39;, &#39;3P+E 9H&#39;), (&#39;iec-60309-3p-n-e-4h&#39;, &#39;3P+N+E 4H&#39;), (&#39;iec-60309-3p-n-e-6h&#39;, &#39;3P+N+E 6H&#39;), (&#39;iec-60309-3p-n-e-9h&#39;, &#39;3P+N+E 9H&#39;)] * &#x60;IEC 60906-1&#x60; - [(&#39;iec-60906-1&#39;, &#39;IEC 60906-1&#39;), (&#39;nbr-14136-10a&#39;, &#39;2P+T 10A (NBR 14136)&#39;), (&#39;nbr-14136-20a&#39;, &#39;2P+T 20A (NBR 14136)&#39;)] * &#x60;NEMA (Non-locking)&#x60; - [(&#39;nema-1-15p&#39;, &#39;NEMA 1-15P&#39;), (&#39;nema-5-15p&#39;, &#39;NEMA 5-15P&#39;), (&#39;nema-5-20p&#39;, &#39;NEMA 5-20P&#39;), (&#39;nema-5-30p&#39;, &#39;NEMA 5-30P&#39;), (&#39;nema-5-50p&#39;, &#39;NEMA 5-50P&#39;), (&#39;nema-6-15p&#39;, &#39;NEMA 6-15P&#39;), (&#39;nema-6-20p&#39;, &#39;NEMA 6-20P&#39;), (&#39;nema-6-30p&#39;, &#39;NEMA 6-30P&#39;), (&#39;nema-6-50p&#39;, &#39;NEMA 6-50P&#39;), (&#39;nema-10-30p&#39;, &#39;NEMA 10-30P&#39;), (&#39;nema-10-50p&#39;, &#39;NEMA 10-50P&#39;), (&#39;nema-14-20p&#39;, &#39;NEMA 14-20P&#39;), (&#39;nema-14-30p&#39;, &#39;NEMA 14-30P&#39;), (&#39;nema-14-50p&#39;, &#39;NEMA 14-50P&#39;), (&#39;nema-14-60p&#39;, &#39;NEMA 14-60P&#39;), (&#39;nema-15-15p&#39;, &#39;NEMA 15-15P&#39;), (&#39;nema-15-20p&#39;, &#39;NEMA 15-20P&#39;), (&#39;nema-15-30p&#39;, &#39;NEMA 15-30P&#39;), (&#39;nema-15-50p&#39;, &#39;NEMA 15-50P&#39;), (&#39;nema-15-60p&#39;, &#39;NEMA 15-60P&#39;)] * &#x60;NEMA (Locking)&#x60; - [(&#39;nema-l1-15p&#39;, &#39;NEMA L1-15P&#39;), (&#39;nema-l5-15p&#39;, &#39;NEMA L5-15P&#39;), (&#39;nema-l5-20p&#39;, &#39;NEMA L5-20P&#39;), (&#39;nema-l5-30p&#39;, &#39;NEMA L5-30P&#39;), (&#39;nema-l5-50p&#39;, &#39;NEMA L5-50P&#39;), (&#39;nema-l6-15p&#39;, &#39;NEMA L6-15P&#39;), (&#39;nema-l6-20p&#39;, &#39;NEMA L6-20P&#39;), (&#39;nema-l6-30p&#39;, &#39;NEMA L6-30P&#39;), (&#39;nema-l6-50p&#39;, &#39;NEMA L6-50P&#39;), (&#39;nema-l10-30p&#39;, &#39;NEMA L10-30P&#39;), (&#39;nema-l14-20p&#39;, &#39;NEMA L14-20P&#39;), (&#39;nema-l14-30p&#39;, &#39;NEMA L14-30P&#39;), (&#39;nema-l14-50p&#39;, &#39;NEMA L14-50P&#39;), (&#39;nema-l14-60p&#39;, &#39;NEMA L14-60P&#39;), (&#39;nema-l15-20p&#39;, &#39;NEMA L15-20P&#39;), (&#39;nema-l15-30p&#39;, &#39;NEMA L15-30P&#39;), (&#39;nema-l15-50p&#39;, &#39;NEMA L15-50P&#39;), (&#39;nema-l15-60p&#39;, &#39;NEMA L15-60P&#39;), (&#39;nema-l21-20p&#39;, &#39;NEMA L21-20P&#39;), (&#39;nema-l21-30p&#39;, &#39;NEMA L21-30P&#39;), (&#39;nema-l22-30p&#39;, &#39;NEMA L22-30P&#39;)] * &#x60;California Style&#x60; - [(&#39;cs6361c&#39;, &#39;CS6361C&#39;), (&#39;cs6365c&#39;, &#39;CS6365C&#39;), (&#39;cs8165c&#39;, &#39;CS8165C&#39;), (&#39;cs8265c&#39;, &#39;CS8265C&#39;), (&#39;cs8365c&#39;, &#39;CS8365C&#39;), (&#39;cs8465c&#39;, &#39;CS8465C&#39;)] * &#x60;International/ITA&#x60; - [(&#39;ita-c&#39;, &#39;ITA Type C (CEE 7/16)&#39;), (&#39;ita-e&#39;, &#39;ITA Type E (CEE 7/6)&#39;), (&#39;ita-f&#39;, &#39;ITA Type F (CEE 7/4)&#39;), (&#39;ita-ef&#39;, &#39;ITA Type E/F (CEE 7/7)&#39;), (&#39;ita-g&#39;, &#39;ITA Type G (BS 1363)&#39;), (&#39;ita-h&#39;, &#39;ITA Type H&#39;), (&#39;ita-i&#39;, &#39;ITA Type I&#39;), (&#39;ita-j&#39;, &#39;ITA Type J&#39;), (&#39;ita-k&#39;, &#39;ITA Type K&#39;), (&#39;ita-l&#39;, &#39;ITA Type L (CEI 23-50)&#39;), (&#39;ita-m&#39;, &#39;ITA Type M (BS 546)&#39;), (&#39;ita-n&#39;, &#39;ITA Type N&#39;), (&#39;ita-o&#39;, &#39;ITA Type O&#39;)] * &#x60;USB&#x60; - [(&#39;usb-a&#39;, &#39;USB Type A&#39;), (&#39;usb-b&#39;, &#39;USB Type B&#39;), (&#39;usb-c&#39;, &#39;USB Type C&#39;), (&#39;usb-mini-a&#39;, &#39;USB Mini A&#39;), (&#39;usb-mini-b&#39;, &#39;USB Mini B&#39;), (&#39;usb-micro-a&#39;, &#39;USB Micro A&#39;), (&#39;usb-micro-b&#39;, &#39;USB Micro B&#39;), (&#39;usb-micro-ab&#39;, &#39;USB Micro AB&#39;), (&#39;usb-3-b&#39;, &#39;USB 3.0 Type B&#39;), (&#39;usb-3-micro-b&#39;, &#39;USB 3.0 Micro B&#39;)] * &#x60;Molex&#x60; - [(&#39;molex-micro-fit-1x2&#39;, &#39;Molex Micro-Fit 1x2&#39;), (&#39;molex-micro-fit-2x2&#39;, &#39;Molex Micro-Fit 2x2&#39;), (&#39;molex-micro-fit-2x4&#39;, &#39;Molex Micro-Fit 2x4&#39;)] * &#x60;DC&#x60; - [(&#39;dc-terminal&#39;, &#39;DC Terminal&#39;)] * &#x60;Proprietary&#x60; - [(&#39;saf-d-grid&#39;, &#39;Saf-D-Grid&#39;), (&#39;neutrik-powercon-20&#39;, &#39;Neutrik powerCON (20A)&#39;), (&#39;neutrik-powercon-32&#39;, &#39;Neutrik powerCON (32A)&#39;), (&#39;neutrik-powercon-true1&#39;, &#39;Neutrik powerCON TRUE1&#39;), (&#39;neutrik-powercon-true1-top&#39;, &#39;Neutrik powerCON TRUE1 TOP&#39;), (&#39;ubiquiti-smartpower&#39;, &#39;Ubiquiti SmartPower&#39;)] * &#x60;Other&#x60; - [(&#39;hardwired&#39;, &#39;Hardwired&#39;), (&#39;other&#39;, &#39;Other&#39;)] | [optional] |
+| **type__n** | **string**| * &#x60;IEC 60320&#x60; - [(&#39;iec-60320-c6&#39;, &#39;C6&#39;), (&#39;iec-60320-c8&#39;, &#39;C8&#39;), (&#39;iec-60320-c14&#39;, &#39;C14&#39;), (&#39;iec-60320-c16&#39;, &#39;C16&#39;), (&#39;iec-60320-c20&#39;, &#39;C20&#39;), (&#39;iec-60320-c22&#39;, &#39;C22&#39;)] * &#x60;IEC 60309&#x60; - [(&#39;iec-60309-p-n-e-4h&#39;, &#39;P+N+E 4H&#39;), (&#39;iec-60309-p-n-e-6h&#39;, &#39;P+N+E 6H&#39;), (&#39;iec-60309-p-n-e-9h&#39;, &#39;P+N+E 9H&#39;), (&#39;iec-60309-2p-e-4h&#39;, &#39;2P+E 4H&#39;), (&#39;iec-60309-2p-e-6h&#39;, &#39;2P+E 6H&#39;), (&#39;iec-60309-2p-e-9h&#39;, &#39;2P+E 9H&#39;), (&#39;iec-60309-3p-e-4h&#39;, &#39;3P+E 4H&#39;), (&#39;iec-60309-3p-e-6h&#39;, &#39;3P+E 6H&#39;), (&#39;iec-60309-3p-e-9h&#39;, &#39;3P+E 9H&#39;), (&#39;iec-60309-3p-n-e-4h&#39;, &#39;3P+N+E 4H&#39;), (&#39;iec-60309-3p-n-e-6h&#39;, &#39;3P+N+E 6H&#39;), (&#39;iec-60309-3p-n-e-9h&#39;, &#39;3P+N+E 9H&#39;)] * &#x60;IEC 60906-1&#x60; - [(&#39;iec-60906-1&#39;, &#39;IEC 60906-1&#39;), (&#39;nbr-14136-10a&#39;, &#39;2P+T 10A (NBR 14136)&#39;), (&#39;nbr-14136-20a&#39;, &#39;2P+T 20A (NBR 14136)&#39;)] * &#x60;NEMA (Non-locking)&#x60; - [(&#39;nema-1-15p&#39;, &#39;NEMA 1-15P&#39;), (&#39;nema-5-15p&#39;, &#39;NEMA 5-15P&#39;), (&#39;nema-5-20p&#39;, &#39;NEMA 5-20P&#39;), (&#39;nema-5-30p&#39;, &#39;NEMA 5-30P&#39;), (&#39;nema-5-50p&#39;, &#39;NEMA 5-50P&#39;), (&#39;nema-6-15p&#39;, &#39;NEMA 6-15P&#39;), (&#39;nema-6-20p&#39;, &#39;NEMA 6-20P&#39;), (&#39;nema-6-30p&#39;, &#39;NEMA 6-30P&#39;), (&#39;nema-6-50p&#39;, &#39;NEMA 6-50P&#39;), (&#39;nema-10-30p&#39;, &#39;NEMA 10-30P&#39;), (&#39;nema-10-50p&#39;, &#39;NEMA 10-50P&#39;), (&#39;nema-14-20p&#39;, &#39;NEMA 14-20P&#39;), (&#39;nema-14-30p&#39;, &#39;NEMA 14-30P&#39;), (&#39;nema-14-50p&#39;, &#39;NEMA 14-50P&#39;), (&#39;nema-14-60p&#39;, &#39;NEMA 14-60P&#39;), (&#39;nema-15-15p&#39;, &#39;NEMA 15-15P&#39;), (&#39;nema-15-20p&#39;, &#39;NEMA 15-20P&#39;), (&#39;nema-15-30p&#39;, &#39;NEMA 15-30P&#39;), (&#39;nema-15-50p&#39;, &#39;NEMA 15-50P&#39;), (&#39;nema-15-60p&#39;, &#39;NEMA 15-60P&#39;)] * &#x60;NEMA (Locking)&#x60; - [(&#39;nema-l1-15p&#39;, &#39;NEMA L1-15P&#39;), (&#39;nema-l5-15p&#39;, &#39;NEMA L5-15P&#39;), (&#39;nema-l5-20p&#39;, &#39;NEMA L5-20P&#39;), (&#39;nema-l5-30p&#39;, &#39;NEMA L5-30P&#39;), (&#39;nema-l5-50p&#39;, &#39;NEMA L5-50P&#39;), (&#39;nema-l6-15p&#39;, &#39;NEMA L6-15P&#39;), (&#39;nema-l6-20p&#39;, &#39;NEMA L6-20P&#39;), (&#39;nema-l6-30p&#39;, &#39;NEMA L6-30P&#39;), (&#39;nema-l6-50p&#39;, &#39;NEMA L6-50P&#39;), (&#39;nema-l10-30p&#39;, &#39;NEMA L10-30P&#39;), (&#39;nema-l14-20p&#39;, &#39;NEMA L14-20P&#39;), (&#39;nema-l14-30p&#39;, &#39;NEMA L14-30P&#39;), (&#39;nema-l14-50p&#39;, &#39;NEMA L14-50P&#39;), (&#39;nema-l14-60p&#39;, &#39;NEMA L14-60P&#39;), (&#39;nema-l15-20p&#39;, &#39;NEMA L15-20P&#39;), (&#39;nema-l15-30p&#39;, &#39;NEMA L15-30P&#39;), (&#39;nema-l15-50p&#39;, &#39;NEMA L15-50P&#39;), (&#39;nema-l15-60p&#39;, &#39;NEMA L15-60P&#39;), (&#39;nema-l21-20p&#39;, &#39;NEMA L21-20P&#39;), (&#39;nema-l21-30p&#39;, &#39;NEMA L21-30P&#39;), (&#39;nema-l22-30p&#39;, &#39;NEMA L22-30P&#39;)] * &#x60;California Style&#x60; - [(&#39;cs6361c&#39;, &#39;CS6361C&#39;), (&#39;cs6365c&#39;, &#39;CS6365C&#39;), (&#39;cs8165c&#39;, &#39;CS8165C&#39;), (&#39;cs8265c&#39;, &#39;CS8265C&#39;), (&#39;cs8365c&#39;, &#39;CS8365C&#39;), (&#39;cs8465c&#39;, &#39;CS8465C&#39;)] * &#x60;International/ITA&#x60; - [(&#39;ita-c&#39;, &#39;ITA Type C (CEE 7/16)&#39;), (&#39;ita-e&#39;, &#39;ITA Type E (CEE 7/6)&#39;), (&#39;ita-f&#39;, &#39;ITA Type F (CEE 7/4)&#39;), (&#39;ita-ef&#39;, &#39;ITA Type E/F (CEE 7/7)&#39;), (&#39;ita-g&#39;, &#39;ITA Type G (BS 1363)&#39;), (&#39;ita-h&#39;, &#39;ITA Type H&#39;), (&#39;ita-i&#39;, &#39;ITA Type I&#39;), (&#39;ita-j&#39;, &#39;ITA Type J&#39;), (&#39;ita-k&#39;, &#39;ITA Type K&#39;), (&#39;ita-l&#39;, &#39;ITA Type L (CEI 23-50)&#39;), (&#39;ita-m&#39;, &#39;ITA Type M (BS 546)&#39;), (&#39;ita-n&#39;, &#39;ITA Type N&#39;), (&#39;ita-o&#39;, &#39;ITA Type O&#39;)] * &#x60;USB&#x60; - [(&#39;usb-a&#39;, &#39;USB Type A&#39;), (&#39;usb-b&#39;, &#39;USB Type B&#39;), (&#39;usb-c&#39;, &#39;USB Type C&#39;), (&#39;usb-mini-a&#39;, &#39;USB Mini A&#39;), (&#39;usb-mini-b&#39;, &#39;USB Mini B&#39;), (&#39;usb-micro-a&#39;, &#39;USB Micro A&#39;), (&#39;usb-micro-b&#39;, &#39;USB Micro B&#39;), (&#39;usb-micro-ab&#39;, &#39;USB Micro AB&#39;), (&#39;usb-3-b&#39;, &#39;USB 3.0 Type B&#39;), (&#39;usb-3-micro-b&#39;, &#39;USB 3.0 Micro B&#39;)] * &#x60;Molex&#x60; - [(&#39;molex-micro-fit-1x2&#39;, &#39;Molex Micro-Fit 1x2&#39;), (&#39;molex-micro-fit-2x2&#39;, &#39;Molex Micro-Fit 2x2&#39;), (&#39;molex-micro-fit-2x4&#39;, &#39;Molex Micro-Fit 2x4&#39;)] * &#x60;DC&#x60; - [(&#39;dc-terminal&#39;, &#39;DC Terminal&#39;)] * &#x60;Proprietary&#x60; - [(&#39;saf-d-grid&#39;, &#39;Saf-D-Grid&#39;), (&#39;neutrik-powercon-20&#39;, &#39;Neutrik powerCON (20A)&#39;), (&#39;neutrik-powercon-32&#39;, &#39;Neutrik powerCON (32A)&#39;), (&#39;neutrik-powercon-true1&#39;, &#39;Neutrik powerCON TRUE1&#39;), (&#39;neutrik-powercon-true1-top&#39;, &#39;Neutrik powerCON TRUE1 TOP&#39;), (&#39;ubiquiti-smartpower&#39;, &#39;Ubiquiti SmartPower&#39;)] * &#x60;Other&#x60; - [(&#39;hardwired&#39;, &#39;Hardwired&#39;), (&#39;other&#39;, &#39;Other&#39;)] | [optional] |
 | **updated_by_request** | **string**|  | [optional] |
 
 ### Return type
@@ -25569,7 +25572,7 @@ void (empty response body)
 ## `dcimPowerPortsList()`
 
 ```php
-dcimPowerPortsList($allocated_draw, $allocated_draw__empty, $allocated_draw__gt, $allocated_draw__gte, $allocated_draw__lt, $allocated_draw__lte, $allocated_draw__n, $cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $maximum_draw, $maximum_draw__empty, $maximum_draw__gt, $maximum_draw__gte, $maximum_draw__lt, $maximum_draw__lte, $maximum_draw__n, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedPowerPortList
+dcimPowerPortsList($allocated_draw, $allocated_draw__empty, $allocated_draw__gt, $allocated_draw__gte, $allocated_draw__lt, $allocated_draw__lte, $allocated_draw__n, $cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $maximum_draw, $maximum_draw__empty, $maximum_draw__gt, $maximum_draw__gte, $maximum_draw__lt, $maximum_draw__lte, $maximum_draw__n, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedPowerPortList
 ```
 
 
@@ -25640,8 +25643,6 @@ $device_role = array('device_role_example'); // string[] | Device role (slug)
 $device_role__n = array('device_role__n_example'); // string[] | Device role (slug)
 $device_role_id = array(56); // int[] | Device role (ID)
 $device_role_id__n = array(56); // int[] | Device role (ID)
-$device_status = array('device_status_example'); // string[]
-$device_status__n = array('device_status__n_example'); // string[]
 $device_type = array('device_type_example'); // string[] | Device type (model)
 $device_type__n = array('device_type__n_example'); // string[] | Device type (model)
 $device_type_id = array(56); // int[] | Device type (ID)
@@ -25706,16 +25707,16 @@ $rack = array('rack_example'); // string[] | Rack (name)
 $rack__n = array('rack__n_example'); // string[] | Rack (name)
 $rack_id = array(56); // int[] | Rack (ID)
 $rack_id__n = array(56); // int[] | Rack (ID)
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $tag = array('tag_example'); // string[]
@@ -25729,7 +25730,7 @@ $virtual_chassis_id = array(56); // int[] | Virtual Chassis (ID)
 $virtual_chassis_id__n = array(56); // int[] | Virtual Chassis (ID)
 
 try {
-    $result = $apiInstance->dcimPowerPortsList($allocated_draw, $allocated_draw__empty, $allocated_draw__gt, $allocated_draw__gte, $allocated_draw__lt, $allocated_draw__lte, $allocated_draw__n, $cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $maximum_draw, $maximum_draw__empty, $maximum_draw__gt, $maximum_draw__gte, $maximum_draw__lt, $maximum_draw__lte, $maximum_draw__n, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
+    $result = $apiInstance->dcimPowerPortsList($allocated_draw, $allocated_draw__empty, $allocated_draw__gt, $allocated_draw__gte, $allocated_draw__lt, $allocated_draw__lte, $allocated_draw__n, $cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $connected, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $maximum_draw, $maximum_draw__empty, $maximum_draw__gt, $maximum_draw__gte, $maximum_draw__lt, $maximum_draw__lte, $maximum_draw__n, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimPowerPortsList: ', $e->getMessage(), PHP_EOL;
@@ -25780,8 +25781,6 @@ try {
 | **device_role__n** | [**string[]**](../Model/string.md)| Device role (slug) | [optional] |
 | **device_role_id** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
 | **device_role_id__n** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
-| **device_status** | [**string[]**](../Model/string.md)|  | [optional] |
-| **device_status__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type__n** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
@@ -25846,16 +25845,16 @@ try {
 | **rack__n** | [**string[]**](../Model/string.md)| Rack (name) | [optional] |
 | **rack_id** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
 | **rack_id__n** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -26558,36 +26557,36 @@ $last_updated__lt = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateT
 $last_updated__lte = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $last_updated__n = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $limit = 56; // int | Number of results to return per page.
-$location = array('location_example'); // string[]
-$location__n = array('location__n_example'); // string[]
-$location_id = array('location_id_example'); // string[]
-$location_id__n = array('location_id__n_example'); // string[]
+$location = array(56); // int[] | Location (slug)
+$location__n = array(56); // int[] | Location (slug)
+$location_id = array(56); // int[] | Location (ID)
+$location_id__n = array(56); // int[] | Location (ID)
 $modified_by_request = 'modified_by_request_example'; // string
 $offset = 56; // int | The initial index from which to return the results.
 $ordering = 'ordering_example'; // string | Which field to use when ordering the results.
 $q = 'q_example'; // string | Search
 $rack_id = array(56); // int[] | Rack (ID)
 $rack_id__n = array(56); // int[] | Rack (ID)
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site (slug)
 $site__n = array('site__n_example'); // string[] | Site (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $unit = 3.4; // float
@@ -26643,36 +26642,36 @@ try {
 | **last_updated__lte** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **last_updated__n** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **limit** | **int**| Number of results to return per page. | [optional] |
-| **location** | [**string[]**](../Model/string.md)|  | [optional] |
-| **location__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **location_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **location_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **location** | [**int[]**](../Model/int.md)| Location (slug) | [optional] |
+| **location__n** | [**int[]**](../Model/int.md)| Location (slug) | [optional] |
+| **location_id** | [**int[]**](../Model/int.md)| Location (ID) | [optional] |
+| **location_id__n** | [**int[]**](../Model/int.md)| Location (ID) | [optional] |
 | **modified_by_request** | **string**|  | [optional] |
 | **offset** | **int**| The initial index from which to return the results. | [optional] |
 | **ordering** | **string**| Which field to use when ordering the results. | [optional] |
 | **q** | **string**| Search | [optional] |
 | **rack_id** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
 | **rack_id__n** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **unit** | **float**|  | [optional] |
@@ -27655,859 +27654,6 @@ try {
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
-## `dcimRackTypesBulkDestroy()`
-
-```php
-dcimRackTypesBulkDestroy($rack_type_request)
-```
-
-
-
-Delete a list of rack type objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\DcimApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$rack_type_request = array(new \OpenAPI\Client\Model\RackTypeRequest()); // \OpenAPI\Client\Model\RackTypeRequest[]
-
-try {
-    $apiInstance->dcimRackTypesBulkDestroy($rack_type_request);
-} catch (Exception $e) {
-    echo 'Exception when calling DcimApi->dcimRackTypesBulkDestroy: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **rack_type_request** | [**\OpenAPI\Client\Model\RackTypeRequest[]**](../Model/RackTypeRequest.md)|  | |
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: Not defined
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `dcimRackTypesBulkPartialUpdate()`
-
-```php
-dcimRackTypesBulkPartialUpdate($rack_type_request): \OpenAPI\Client\Model\RackType[]
-```
-
-
-
-Patch a list of rack type objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\DcimApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$rack_type_request = array(new \OpenAPI\Client\Model\RackTypeRequest()); // \OpenAPI\Client\Model\RackTypeRequest[]
-
-try {
-    $result = $apiInstance->dcimRackTypesBulkPartialUpdate($rack_type_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling DcimApi->dcimRackTypesBulkPartialUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **rack_type_request** | [**\OpenAPI\Client\Model\RackTypeRequest[]**](../Model/RackTypeRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\RackType[]**](../Model/RackType.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `dcimRackTypesBulkUpdate()`
-
-```php
-dcimRackTypesBulkUpdate($rack_type_request): \OpenAPI\Client\Model\RackType[]
-```
-
-
-
-Put a list of rack type objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\DcimApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$rack_type_request = array(new \OpenAPI\Client\Model\RackTypeRequest()); // \OpenAPI\Client\Model\RackTypeRequest[]
-
-try {
-    $result = $apiInstance->dcimRackTypesBulkUpdate($rack_type_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling DcimApi->dcimRackTypesBulkUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **rack_type_request** | [**\OpenAPI\Client\Model\RackTypeRequest[]**](../Model/RackTypeRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\RackType[]**](../Model/RackType.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `dcimRackTypesCreate()`
-
-```php
-dcimRackTypesCreate($writable_rack_type_request): \OpenAPI\Client\Model\RackType
-```
-
-
-
-Post a list of rack type objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\DcimApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$writable_rack_type_request = new \OpenAPI\Client\Model\WritableRackTypeRequest(); // \OpenAPI\Client\Model\WritableRackTypeRequest
-
-try {
-    $result = $apiInstance->dcimRackTypesCreate($writable_rack_type_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling DcimApi->dcimRackTypesCreate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **writable_rack_type_request** | [**\OpenAPI\Client\Model\WritableRackTypeRequest**](../Model/WritableRackTypeRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\RackType**](../Model/RackType.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `dcimRackTypesDestroy()`
-
-```php
-dcimRackTypesDestroy($id)
-```
-
-
-
-Delete a rack type object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\DcimApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this rack type.
-
-try {
-    $apiInstance->dcimRackTypesDestroy($id);
-} catch (Exception $e) {
-    echo 'Exception when calling DcimApi->dcimRackTypesDestroy: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this rack type. | |
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: Not defined
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `dcimRackTypesList()`
-
-```php
-dcimRackTypesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $desc_units, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $form_factor, $form_factor__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $max_weight, $max_weight__empty, $max_weight__gt, $max_weight__gte, $max_weight__lt, $max_weight__lte, $max_weight__n, $model, $model__empty, $model__ic, $model__ie, $model__iew, $model__isw, $model__n, $model__nic, $model__nie, $model__niew, $model__nisw, $modified_by_request, $mounting_depth, $mounting_depth__empty, $mounting_depth__gt, $mounting_depth__gte, $mounting_depth__lt, $mounting_depth__lte, $mounting_depth__n, $offset, $ordering, $outer_depth, $outer_depth__empty, $outer_depth__gt, $outer_depth__gte, $outer_depth__lt, $outer_depth__lte, $outer_depth__n, $outer_unit, $outer_unit__n, $outer_width, $outer_width__empty, $outer_width__gt, $outer_width__gte, $outer_width__lt, $outer_width__lte, $outer_width__n, $q, $slug, $slug__empty, $slug__ic, $slug__ie, $slug__iew, $slug__isw, $slug__n, $slug__nic, $slug__nie, $slug__niew, $slug__nisw, $starting_unit, $starting_unit__empty, $starting_unit__gt, $starting_unit__gte, $starting_unit__lt, $starting_unit__lte, $starting_unit__n, $tag, $tag__n, $u_height, $u_height__empty, $u_height__gt, $u_height__gte, $u_height__lt, $u_height__lte, $u_height__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n, $weight_unit, $weight_unit__n, $width, $width__n): \OpenAPI\Client\Model\PaginatedRackTypeList
-```
-
-
-
-Get a list of rack type objects.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\DcimApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$created__empty = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$created__gt = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$created__gte = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$created__lt = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$created__lte = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$created__n = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$created_by_request = 'created_by_request_example'; // string
-$desc_units = True; // bool
-$description = array('description_example'); // string[]
-$description__empty = True; // bool
-$description__ic = array('description__ic_example'); // string[]
-$description__ie = array('description__ie_example'); // string[]
-$description__iew = array('description__iew_example'); // string[]
-$description__isw = array('description__isw_example'); // string[]
-$description__n = array('description__n_example'); // string[]
-$description__nic = array('description__nic_example'); // string[]
-$description__nie = array('description__nie_example'); // string[]
-$description__niew = array('description__niew_example'); // string[]
-$description__nisw = array('description__nisw_example'); // string[]
-$form_factor = array('form_factor_example'); // string[]
-$form_factor__n = array('form_factor__n_example'); // string[]
-$id = array(56); // int[]
-$id__empty = True; // bool
-$id__gt = array(56); // int[]
-$id__gte = array(56); // int[]
-$id__lt = array(56); // int[]
-$id__lte = array(56); // int[]
-$id__n = array(56); // int[]
-$last_updated = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$last_updated__empty = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$last_updated__gt = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$last_updated__gte = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$last_updated__lt = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$last_updated__lte = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$last_updated__n = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
-$limit = 56; // int | Number of results to return per page.
-$manufacturer = array('manufacturer_example'); // string[] | Manufacturer (slug)
-$manufacturer__n = array('manufacturer__n_example'); // string[] | Manufacturer (slug)
-$manufacturer_id = array(56); // int[] | Manufacturer (ID)
-$manufacturer_id__n = array(56); // int[] | Manufacturer (ID)
-$max_weight = array(56); // int[]
-$max_weight__empty = True; // bool
-$max_weight__gt = array(56); // int[]
-$max_weight__gte = array(56); // int[]
-$max_weight__lt = array(56); // int[]
-$max_weight__lte = array(56); // int[]
-$max_weight__n = array(56); // int[]
-$model = array('model_example'); // string[]
-$model__empty = True; // bool
-$model__ic = array('model__ic_example'); // string[]
-$model__ie = array('model__ie_example'); // string[]
-$model__iew = array('model__iew_example'); // string[]
-$model__isw = array('model__isw_example'); // string[]
-$model__n = array('model__n_example'); // string[]
-$model__nic = array('model__nic_example'); // string[]
-$model__nie = array('model__nie_example'); // string[]
-$model__niew = array('model__niew_example'); // string[]
-$model__nisw = array('model__nisw_example'); // string[]
-$modified_by_request = 'modified_by_request_example'; // string
-$mounting_depth = array(56); // int[]
-$mounting_depth__empty = True; // bool
-$mounting_depth__gt = array(56); // int[]
-$mounting_depth__gte = array(56); // int[]
-$mounting_depth__lt = array(56); // int[]
-$mounting_depth__lte = array(56); // int[]
-$mounting_depth__n = array(56); // int[]
-$offset = 56; // int | The initial index from which to return the results.
-$ordering = 'ordering_example'; // string | Which field to use when ordering the results.
-$outer_depth = array(56); // int[]
-$outer_depth__empty = True; // bool
-$outer_depth__gt = array(56); // int[]
-$outer_depth__gte = array(56); // int[]
-$outer_depth__lt = array(56); // int[]
-$outer_depth__lte = array(56); // int[]
-$outer_depth__n = array(56); // int[]
-$outer_unit = 'outer_unit_example'; // string | * `mm` - Millimeters * `in` - Inches
-$outer_unit__n = 'outer_unit__n_example'; // string | * `mm` - Millimeters * `in` - Inches
-$outer_width = array(56); // int[]
-$outer_width__empty = True; // bool
-$outer_width__gt = array(56); // int[]
-$outer_width__gte = array(56); // int[]
-$outer_width__lt = array(56); // int[]
-$outer_width__lte = array(56); // int[]
-$outer_width__n = array(56); // int[]
-$q = 'q_example'; // string | Search
-$slug = array('slug_example'); // string[]
-$slug__empty = True; // bool
-$slug__ic = array('slug__ic_example'); // string[]
-$slug__ie = array('slug__ie_example'); // string[]
-$slug__iew = array('slug__iew_example'); // string[]
-$slug__isw = array('slug__isw_example'); // string[]
-$slug__n = array('slug__n_example'); // string[]
-$slug__nic = array('slug__nic_example'); // string[]
-$slug__nie = array('slug__nie_example'); // string[]
-$slug__niew = array('slug__niew_example'); // string[]
-$slug__nisw = array('slug__nisw_example'); // string[]
-$starting_unit = array(56); // int[]
-$starting_unit__empty = True; // bool
-$starting_unit__gt = array(56); // int[]
-$starting_unit__gte = array(56); // int[]
-$starting_unit__lt = array(56); // int[]
-$starting_unit__lte = array(56); // int[]
-$starting_unit__n = array(56); // int[]
-$tag = array('tag_example'); // string[]
-$tag__n = array('tag__n_example'); // string[]
-$u_height = array(56); // int[]
-$u_height__empty = True; // bool
-$u_height__gt = array(56); // int[]
-$u_height__gte = array(56); // int[]
-$u_height__lt = array(56); // int[]
-$u_height__lte = array(56); // int[]
-$u_height__n = array(56); // int[]
-$updated_by_request = 'updated_by_request_example'; // string
-$weight = array(3.4); // float[]
-$weight__empty = True; // bool
-$weight__gt = array(3.4); // float[]
-$weight__gte = array(3.4); // float[]
-$weight__lt = array(3.4); // float[]
-$weight__lte = array(3.4); // float[]
-$weight__n = array(3.4); // float[]
-$weight_unit = 'weight_unit_example'; // string | * `kg` - Kilograms * `g` - Grams * `lb` - Pounds * `oz` - Ounces
-$weight_unit__n = 'weight_unit__n_example'; // string | * `kg` - Kilograms * `g` - Grams * `lb` - Pounds * `oz` - Ounces
-$width = array(56); // int[] | Rail-to-rail width
-$width__n = array(56); // int[] | Rail-to-rail width
-
-try {
-    $result = $apiInstance->dcimRackTypesList($created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $desc_units, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $form_factor, $form_factor__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $max_weight, $max_weight__empty, $max_weight__gt, $max_weight__gte, $max_weight__lt, $max_weight__lte, $max_weight__n, $model, $model__empty, $model__ic, $model__ie, $model__iew, $model__isw, $model__n, $model__nic, $model__nie, $model__niew, $model__nisw, $modified_by_request, $mounting_depth, $mounting_depth__empty, $mounting_depth__gt, $mounting_depth__gte, $mounting_depth__lt, $mounting_depth__lte, $mounting_depth__n, $offset, $ordering, $outer_depth, $outer_depth__empty, $outer_depth__gt, $outer_depth__gte, $outer_depth__lt, $outer_depth__lte, $outer_depth__n, $outer_unit, $outer_unit__n, $outer_width, $outer_width__empty, $outer_width__gt, $outer_width__gte, $outer_width__lt, $outer_width__lte, $outer_width__n, $q, $slug, $slug__empty, $slug__ic, $slug__ie, $slug__iew, $slug__isw, $slug__n, $slug__nic, $slug__nie, $slug__niew, $slug__nisw, $starting_unit, $starting_unit__empty, $starting_unit__gt, $starting_unit__gte, $starting_unit__lt, $starting_unit__lte, $starting_unit__n, $tag, $tag__n, $u_height, $u_height__empty, $u_height__gt, $u_height__gte, $u_height__lt, $u_height__lte, $u_height__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n, $weight_unit, $weight_unit__n, $width, $width__n);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling DcimApi->dcimRackTypesList: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **created__empty** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **created__gt** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **created__gte** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **created__lt** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **created__lte** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **created__n** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **created_by_request** | **string**|  | [optional] |
-| **desc_units** | **bool**|  | [optional] |
-| **description** | [**string[]**](../Model/string.md)|  | [optional] |
-| **description__empty** | **bool**|  | [optional] |
-| **description__ic** | [**string[]**](../Model/string.md)|  | [optional] |
-| **description__ie** | [**string[]**](../Model/string.md)|  | [optional] |
-| **description__iew** | [**string[]**](../Model/string.md)|  | [optional] |
-| **description__isw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **description__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **description__nic** | [**string[]**](../Model/string.md)|  | [optional] |
-| **description__nie** | [**string[]**](../Model/string.md)|  | [optional] |
-| **description__niew** | [**string[]**](../Model/string.md)|  | [optional] |
-| **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **form_factor** | [**string[]**](../Model/string.md)|  | [optional] |
-| **form_factor__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **id** | [**int[]**](../Model/int.md)|  | [optional] |
-| **id__empty** | **bool**|  | [optional] |
-| **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **id__gte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **id__lt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **id__lte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **id__n** | [**int[]**](../Model/int.md)|  | [optional] |
-| **last_updated** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **last_updated__empty** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **last_updated__gt** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **last_updated__gte** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **last_updated__lt** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **last_updated__lte** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **last_updated__n** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
-| **limit** | **int**| Number of results to return per page. | [optional] |
-| **manufacturer** | [**string[]**](../Model/string.md)| Manufacturer (slug) | [optional] |
-| **manufacturer__n** | [**string[]**](../Model/string.md)| Manufacturer (slug) | [optional] |
-| **manufacturer_id** | [**int[]**](../Model/int.md)| Manufacturer (ID) | [optional] |
-| **manufacturer_id__n** | [**int[]**](../Model/int.md)| Manufacturer (ID) | [optional] |
-| **max_weight** | [**int[]**](../Model/int.md)|  | [optional] |
-| **max_weight__empty** | **bool**|  | [optional] |
-| **max_weight__gt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **max_weight__gte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **max_weight__lt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **max_weight__lte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **max_weight__n** | [**int[]**](../Model/int.md)|  | [optional] |
-| **model** | [**string[]**](../Model/string.md)|  | [optional] |
-| **model__empty** | **bool**|  | [optional] |
-| **model__ic** | [**string[]**](../Model/string.md)|  | [optional] |
-| **model__ie** | [**string[]**](../Model/string.md)|  | [optional] |
-| **model__iew** | [**string[]**](../Model/string.md)|  | [optional] |
-| **model__isw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **model__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **model__nic** | [**string[]**](../Model/string.md)|  | [optional] |
-| **model__nie** | [**string[]**](../Model/string.md)|  | [optional] |
-| **model__niew** | [**string[]**](../Model/string.md)|  | [optional] |
-| **model__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **modified_by_request** | **string**|  | [optional] |
-| **mounting_depth** | [**int[]**](../Model/int.md)|  | [optional] |
-| **mounting_depth__empty** | **bool**|  | [optional] |
-| **mounting_depth__gt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **mounting_depth__gte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **mounting_depth__lt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **mounting_depth__lte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **mounting_depth__n** | [**int[]**](../Model/int.md)|  | [optional] |
-| **offset** | **int**| The initial index from which to return the results. | [optional] |
-| **ordering** | **string**| Which field to use when ordering the results. | [optional] |
-| **outer_depth** | [**int[]**](../Model/int.md)|  | [optional] |
-| **outer_depth__empty** | **bool**|  | [optional] |
-| **outer_depth__gt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **outer_depth__gte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **outer_depth__lt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **outer_depth__lte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **outer_depth__n** | [**int[]**](../Model/int.md)|  | [optional] |
-| **outer_unit** | **string**| * &#x60;mm&#x60; - Millimeters * &#x60;in&#x60; - Inches | [optional] |
-| **outer_unit__n** | **string**| * &#x60;mm&#x60; - Millimeters * &#x60;in&#x60; - Inches | [optional] |
-| **outer_width** | [**int[]**](../Model/int.md)|  | [optional] |
-| **outer_width__empty** | **bool**|  | [optional] |
-| **outer_width__gt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **outer_width__gte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **outer_width__lt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **outer_width__lte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **outer_width__n** | [**int[]**](../Model/int.md)|  | [optional] |
-| **q** | **string**| Search | [optional] |
-| **slug** | [**string[]**](../Model/string.md)|  | [optional] |
-| **slug__empty** | **bool**|  | [optional] |
-| **slug__ic** | [**string[]**](../Model/string.md)|  | [optional] |
-| **slug__ie** | [**string[]**](../Model/string.md)|  | [optional] |
-| **slug__iew** | [**string[]**](../Model/string.md)|  | [optional] |
-| **slug__isw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **slug__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **slug__nic** | [**string[]**](../Model/string.md)|  | [optional] |
-| **slug__nie** | [**string[]**](../Model/string.md)|  | [optional] |
-| **slug__niew** | [**string[]**](../Model/string.md)|  | [optional] |
-| **slug__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **starting_unit** | [**int[]**](../Model/int.md)|  | [optional] |
-| **starting_unit__empty** | **bool**|  | [optional] |
-| **starting_unit__gt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **starting_unit__gte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **starting_unit__lt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **starting_unit__lte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **starting_unit__n** | [**int[]**](../Model/int.md)|  | [optional] |
-| **tag** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **u_height** | [**int[]**](../Model/int.md)|  | [optional] |
-| **u_height__empty** | **bool**|  | [optional] |
-| **u_height__gt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **u_height__gte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **u_height__lt** | [**int[]**](../Model/int.md)|  | [optional] |
-| **u_height__lte** | [**int[]**](../Model/int.md)|  | [optional] |
-| **u_height__n** | [**int[]**](../Model/int.md)|  | [optional] |
-| **updated_by_request** | **string**|  | [optional] |
-| **weight** | [**float[]**](../Model/float.md)|  | [optional] |
-| **weight__empty** | **bool**|  | [optional] |
-| **weight__gt** | [**float[]**](../Model/float.md)|  | [optional] |
-| **weight__gte** | [**float[]**](../Model/float.md)|  | [optional] |
-| **weight__lt** | [**float[]**](../Model/float.md)|  | [optional] |
-| **weight__lte** | [**float[]**](../Model/float.md)|  | [optional] |
-| **weight__n** | [**float[]**](../Model/float.md)|  | [optional] |
-| **weight_unit** | **string**| * &#x60;kg&#x60; - Kilograms * &#x60;g&#x60; - Grams * &#x60;lb&#x60; - Pounds * &#x60;oz&#x60; - Ounces | [optional] |
-| **weight_unit__n** | **string**| * &#x60;kg&#x60; - Kilograms * &#x60;g&#x60; - Grams * &#x60;lb&#x60; - Pounds * &#x60;oz&#x60; - Ounces | [optional] |
-| **width** | [**int[]**](../Model/int.md)| Rail-to-rail width | [optional] |
-| **width__n** | [**int[]**](../Model/int.md)| Rail-to-rail width | [optional] |
-
-### Return type
-
-[**\OpenAPI\Client\Model\PaginatedRackTypeList**](../Model/PaginatedRackTypeList.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `dcimRackTypesPartialUpdate()`
-
-```php
-dcimRackTypesPartialUpdate($id, $patched_writable_rack_type_request): \OpenAPI\Client\Model\RackType
-```
-
-
-
-Patch a rack type object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\DcimApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this rack type.
-$patched_writable_rack_type_request = new \OpenAPI\Client\Model\PatchedWritableRackTypeRequest(); // \OpenAPI\Client\Model\PatchedWritableRackTypeRequest
-
-try {
-    $result = $apiInstance->dcimRackTypesPartialUpdate($id, $patched_writable_rack_type_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling DcimApi->dcimRackTypesPartialUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this rack type. | |
-| **patched_writable_rack_type_request** | [**\OpenAPI\Client\Model\PatchedWritableRackTypeRequest**](../Model/PatchedWritableRackTypeRequest.md)|  | [optional] |
-
-### Return type
-
-[**\OpenAPI\Client\Model\RackType**](../Model/RackType.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `dcimRackTypesRetrieve()`
-
-```php
-dcimRackTypesRetrieve($id): \OpenAPI\Client\Model\RackType
-```
-
-
-
-Get a rack type object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\DcimApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this rack type.
-
-try {
-    $result = $apiInstance->dcimRackTypesRetrieve($id);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling DcimApi->dcimRackTypesRetrieve: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this rack type. | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\RackType**](../Model/RackType.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `dcimRackTypesUpdate()`
-
-```php
-dcimRackTypesUpdate($id, $writable_rack_type_request): \OpenAPI\Client\Model\RackType
-```
-
-
-
-Put a rack type object.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: cookieAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('sessionid', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('sessionid', 'Bearer');
-
-// Configure API key authorization: tokenAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\DcimApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$id = 56; // int | A unique integer value identifying this rack type.
-$writable_rack_type_request = new \OpenAPI\Client\Model\WritableRackTypeRequest(); // \OpenAPI\Client\Model\WritableRackTypeRequest
-
-try {
-    $result = $apiInstance->dcimRackTypesUpdate($id, $writable_rack_type_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling DcimApi->dcimRackTypesUpdate: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **int**| A unique integer value identifying this rack type. | |
-| **writable_rack_type_request** | [**\OpenAPI\Client\Model\WritableRackTypeRequest**](../Model/WritableRackTypeRequest.md)|  | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\RackType**](../Model/RackType.md)
-
-### Authorization
-
-[cookieAuth](../../README.md#cookieAuth), [tokenAuth](../../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`, `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
 ## `dcimRacksBulkDestroy()`
 
 ```php
@@ -28935,7 +28081,7 @@ try {
 ## `dcimRacksList()`
 
 ```php
-dcimRacksList($airflow, $airflow__n, $asset_tag, $asset_tag__empty, $asset_tag__ic, $asset_tag__ie, $asset_tag__iew, $asset_tag__isw, $asset_tag__n, $asset_tag__nic, $asset_tag__nie, $asset_tag__niew, $asset_tag__nisw, $contact, $contact__n, $contact_group, $contact_group__n, $contact_role, $contact_role__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $desc_units, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $facility_id, $facility_id__empty, $facility_id__ic, $facility_id__ie, $facility_id__iew, $facility_id__isw, $facility_id__n, $facility_id__nic, $facility_id__nie, $facility_id__niew, $facility_id__nisw, $form_factor, $form_factor__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $max_weight, $max_weight__empty, $max_weight__gt, $max_weight__gte, $max_weight__lt, $max_weight__lte, $max_weight__n, $modified_by_request, $mounting_depth, $mounting_depth__empty, $mounting_depth__gt, $mounting_depth__gte, $mounting_depth__lt, $mounting_depth__lte, $mounting_depth__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $outer_depth, $outer_depth__empty, $outer_depth__gt, $outer_depth__gte, $outer_depth__lt, $outer_depth__lte, $outer_depth__n, $outer_unit, $outer_unit__n, $outer_width, $outer_width__empty, $outer_width__gt, $outer_width__gte, $outer_width__lt, $outer_width__lte, $outer_width__n, $q, $rack_type, $rack_type__n, $rack_type_id, $rack_type_id__n, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $serial, $serial__empty, $serial__ic, $serial__ie, $serial__iew, $serial__isw, $serial__n, $serial__nic, $serial__nie, $serial__niew, $serial__nisw, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $starting_unit, $starting_unit__empty, $starting_unit__gt, $starting_unit__gte, $starting_unit__lt, $starting_unit__lte, $starting_unit__n, $status, $status__n, $tag, $tag__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $u_height, $u_height__empty, $u_height__gt, $u_height__gte, $u_height__lt, $u_height__lte, $u_height__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n, $weight_unit, $weight_unit__n, $width, $width__n): \OpenAPI\Client\Model\PaginatedRackList
+dcimRacksList($asset_tag, $asset_tag__empty, $asset_tag__ic, $asset_tag__ie, $asset_tag__iew, $asset_tag__isw, $asset_tag__n, $asset_tag__nic, $asset_tag__nie, $asset_tag__niew, $asset_tag__nisw, $contact, $contact__n, $contact_group, $contact_group__n, $contact_role, $contact_role__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $desc_units, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $facility_id, $facility_id__empty, $facility_id__ic, $facility_id__ie, $facility_id__iew, $facility_id__isw, $facility_id__n, $facility_id__nic, $facility_id__nie, $facility_id__niew, $facility_id__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $max_weight, $max_weight__empty, $max_weight__gt, $max_weight__gte, $max_weight__lt, $max_weight__lte, $max_weight__n, $modified_by_request, $mounting_depth, $mounting_depth__empty, $mounting_depth__gt, $mounting_depth__gte, $mounting_depth__lt, $mounting_depth__lte, $mounting_depth__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $outer_depth, $outer_depth__empty, $outer_depth__gt, $outer_depth__gte, $outer_depth__lt, $outer_depth__lte, $outer_depth__n, $outer_unit, $outer_unit__n, $outer_width, $outer_width__empty, $outer_width__gt, $outer_width__gte, $outer_width__lt, $outer_width__lte, $outer_width__n, $q, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $serial, $serial__empty, $serial__ic, $serial__ie, $serial__iew, $serial__isw, $serial__n, $serial__nic, $serial__nie, $serial__niew, $serial__nisw, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $starting_unit, $starting_unit__empty, $starting_unit__gt, $starting_unit__gte, $starting_unit__lt, $starting_unit__lte, $starting_unit__n, $status, $status__n, $tag, $tag__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $type, $type__n, $u_height, $u_height__empty, $u_height__gt, $u_height__gte, $u_height__lt, $u_height__lte, $u_height__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n, $weight_unit, $weight_unit__n, $width, $width__n): \OpenAPI\Client\Model\PaginatedRackList
 ```
 
 
@@ -28966,8 +28112,6 @@ $apiInstance = new OpenAPI\Client\Api\DcimApi(
     new GuzzleHttp\Client(),
     $config
 );
-$airflow = 'airflow_example'; // string | * `front-to-rear` - Front to rear * `rear-to-front` - Rear to front
-$airflow__n = 'airflow__n_example'; // string | * `front-to-rear` - Front to rear * `rear-to-front` - Rear to front
 $asset_tag = array('asset_tag_example'); // string[]
 $asset_tag__empty = True; // bool
 $asset_tag__ic = array('asset_tag__ic_example'); // string[]
@@ -28981,8 +28125,8 @@ $asset_tag__niew = array('asset_tag__niew_example'); // string[]
 $asset_tag__nisw = array('asset_tag__nisw_example'); // string[]
 $contact = array(56); // int[] | Contact
 $contact__n = array(56); // int[] | Contact
-$contact_group = array('contact_group_example'); // string[]
-$contact_group__n = array('contact_group__n_example'); // string[]
+$contact_group = array(56); // int[] | Contact group
+$contact_group__n = array(56); // int[] | Contact group
 $contact_role = array(56); // int[] | Contact Role
 $contact_role__n = array(56); // int[] | Contact Role
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -29016,8 +28160,6 @@ $facility_id__nic = array('facility_id__nic_example'); // string[]
 $facility_id__nie = array('facility_id__nie_example'); // string[]
 $facility_id__niew = array('facility_id__niew_example'); // string[]
 $facility_id__nisw = array('facility_id__nisw_example'); // string[]
-$form_factor = array('form_factor_example'); // string[]
-$form_factor__n = array('form_factor__n_example'); // string[]
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -29033,14 +28175,10 @@ $last_updated__lt = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateT
 $last_updated__lte = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $last_updated__n = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $limit = 56; // int | Number of results to return per page.
-$location = array('location_example'); // string[]
-$location__n = array('location__n_example'); // string[]
-$location_id = array('location_id_example'); // string[]
-$location_id__n = array('location_id__n_example'); // string[]
-$manufacturer = array('manufacturer_example'); // string[] | Manufacturer (slug)
-$manufacturer__n = array('manufacturer__n_example'); // string[] | Manufacturer (slug)
-$manufacturer_id = array(56); // int[] | Manufacturer (ID)
-$manufacturer_id__n = array(56); // int[] | Manufacturer (ID)
+$location = array(56); // int[] | Location (slug)
+$location__n = array(56); // int[] | Location (slug)
+$location_id = array(56); // int[] | Location (ID)
+$location_id__n = array(56); // int[] | Location (ID)
 $max_weight = array(56); // int[]
 $max_weight__empty = True; // bool
 $max_weight__gt = array(56); // int[]
@@ -29086,14 +28224,10 @@ $outer_width__lt = array(56); // int[]
 $outer_width__lte = array(56); // int[]
 $outer_width__n = array(56); // int[]
 $q = 'q_example'; // string | Search
-$rack_type = array('rack_type_example'); // string[] | Rack type (slug)
-$rack_type__n = array('rack_type__n_example'); // string[] | Rack type (slug)
-$rack_type_id = array(56); // int[] | Rack type (ID)
-$rack_type_id__n = array(56); // int[] | Rack type (ID)
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $role = array('role_example'); // string[] | Role (slug)
 $role__n = array('role__n_example'); // string[] | Role (slug)
 $role_id = array(56); // int[] | Role (ID)
@@ -29111,10 +28245,10 @@ $serial__niew = array('serial__niew_example'); // string[]
 $serial__nisw = array('serial__nisw_example'); // string[]
 $site = array('site_example'); // string[] | Site (slug)
 $site__n = array('site__n_example'); // string[] | Site (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $starting_unit = array(56); // int[]
@@ -29130,12 +28264,14 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
+$type = array('type_example'); // string[]
+$type__n = array('type__n_example'); // string[]
 $u_height = array(56); // int[]
 $u_height__empty = True; // bool
 $u_height__gt = array(56); // int[]
@@ -29157,7 +28293,7 @@ $width = array(56); // int[] | Rail-to-rail width
 $width__n = array(56); // int[] | Rail-to-rail width
 
 try {
-    $result = $apiInstance->dcimRacksList($airflow, $airflow__n, $asset_tag, $asset_tag__empty, $asset_tag__ic, $asset_tag__ie, $asset_tag__iew, $asset_tag__isw, $asset_tag__n, $asset_tag__nic, $asset_tag__nie, $asset_tag__niew, $asset_tag__nisw, $contact, $contact__n, $contact_group, $contact_group__n, $contact_role, $contact_role__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $desc_units, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $facility_id, $facility_id__empty, $facility_id__ic, $facility_id__ie, $facility_id__iew, $facility_id__isw, $facility_id__n, $facility_id__nic, $facility_id__nie, $facility_id__niew, $facility_id__nisw, $form_factor, $form_factor__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $manufacturer, $manufacturer__n, $manufacturer_id, $manufacturer_id__n, $max_weight, $max_weight__empty, $max_weight__gt, $max_weight__gte, $max_weight__lt, $max_weight__lte, $max_weight__n, $modified_by_request, $mounting_depth, $mounting_depth__empty, $mounting_depth__gt, $mounting_depth__gte, $mounting_depth__lt, $mounting_depth__lte, $mounting_depth__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $outer_depth, $outer_depth__empty, $outer_depth__gt, $outer_depth__gte, $outer_depth__lt, $outer_depth__lte, $outer_depth__n, $outer_unit, $outer_unit__n, $outer_width, $outer_width__empty, $outer_width__gt, $outer_width__gte, $outer_width__lt, $outer_width__lte, $outer_width__n, $q, $rack_type, $rack_type__n, $rack_type_id, $rack_type_id__n, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $serial, $serial__empty, $serial__ic, $serial__ie, $serial__iew, $serial__isw, $serial__n, $serial__nic, $serial__nie, $serial__niew, $serial__nisw, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $starting_unit, $starting_unit__empty, $starting_unit__gt, $starting_unit__gte, $starting_unit__lt, $starting_unit__lte, $starting_unit__n, $status, $status__n, $tag, $tag__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $u_height, $u_height__empty, $u_height__gt, $u_height__gte, $u_height__lt, $u_height__lte, $u_height__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n, $weight_unit, $weight_unit__n, $width, $width__n);
+    $result = $apiInstance->dcimRacksList($asset_tag, $asset_tag__empty, $asset_tag__ic, $asset_tag__ie, $asset_tag__iew, $asset_tag__isw, $asset_tag__n, $asset_tag__nic, $asset_tag__nie, $asset_tag__niew, $asset_tag__nisw, $contact, $contact__n, $contact_group, $contact_group__n, $contact_role, $contact_role__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $desc_units, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $facility_id, $facility_id__empty, $facility_id__ic, $facility_id__ie, $facility_id__iew, $facility_id__isw, $facility_id__n, $facility_id__nic, $facility_id__nie, $facility_id__niew, $facility_id__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $max_weight, $max_weight__empty, $max_weight__gt, $max_weight__gte, $max_weight__lt, $max_weight__lte, $max_weight__n, $modified_by_request, $mounting_depth, $mounting_depth__empty, $mounting_depth__gt, $mounting_depth__gte, $mounting_depth__lt, $mounting_depth__lte, $mounting_depth__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $outer_depth, $outer_depth__empty, $outer_depth__gt, $outer_depth__gte, $outer_depth__lt, $outer_depth__lte, $outer_depth__n, $outer_unit, $outer_unit__n, $outer_width, $outer_width__empty, $outer_width__gt, $outer_width__gte, $outer_width__lt, $outer_width__lte, $outer_width__n, $q, $region, $region__n, $region_id, $region_id__n, $role, $role__n, $role_id, $role_id__n, $serial, $serial__empty, $serial__ic, $serial__ie, $serial__iew, $serial__isw, $serial__n, $serial__nic, $serial__nie, $serial__niew, $serial__nisw, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $starting_unit, $starting_unit__empty, $starting_unit__gt, $starting_unit__gte, $starting_unit__lt, $starting_unit__lte, $starting_unit__n, $status, $status__n, $tag, $tag__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $type, $type__n, $u_height, $u_height__empty, $u_height__gt, $u_height__gte, $u_height__lt, $u_height__lte, $u_height__n, $updated_by_request, $weight, $weight__empty, $weight__gt, $weight__gte, $weight__lt, $weight__lte, $weight__n, $weight_unit, $weight_unit__n, $width, $width__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimRacksList: ', $e->getMessage(), PHP_EOL;
@@ -29168,8 +28304,6 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **airflow** | **string**| * &#x60;front-to-rear&#x60; - Front to rear * &#x60;rear-to-front&#x60; - Rear to front | [optional] |
-| **airflow__n** | **string**| * &#x60;front-to-rear&#x60; - Front to rear * &#x60;rear-to-front&#x60; - Rear to front | [optional] |
 | **asset_tag** | [**string[]**](../Model/string.md)|  | [optional] |
 | **asset_tag__empty** | **bool**|  | [optional] |
 | **asset_tag__ic** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -29183,8 +28317,8 @@ try {
 | **asset_tag__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **contact** | [**int[]**](../Model/int.md)| Contact | [optional] |
 | **contact__n** | [**int[]**](../Model/int.md)| Contact | [optional] |
-| **contact_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **contact_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **contact_group** | [**int[]**](../Model/int.md)| Contact group | [optional] |
+| **contact_group__n** | [**int[]**](../Model/int.md)| Contact group | [optional] |
 | **contact_role** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **contact_role__n** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -29218,8 +28352,6 @@ try {
 | **facility_id__nie** | [**string[]**](../Model/string.md)|  | [optional] |
 | **facility_id__niew** | [**string[]**](../Model/string.md)|  | [optional] |
 | **facility_id__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **form_factor** | [**string[]**](../Model/string.md)|  | [optional] |
-| **form_factor__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -29235,14 +28367,10 @@ try {
 | **last_updated__lte** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **last_updated__n** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **limit** | **int**| Number of results to return per page. | [optional] |
-| **location** | [**string[]**](../Model/string.md)|  | [optional] |
-| **location__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **location_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **location_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **manufacturer** | [**string[]**](../Model/string.md)| Manufacturer (slug) | [optional] |
-| **manufacturer__n** | [**string[]**](../Model/string.md)| Manufacturer (slug) | [optional] |
-| **manufacturer_id** | [**int[]**](../Model/int.md)| Manufacturer (ID) | [optional] |
-| **manufacturer_id__n** | [**int[]**](../Model/int.md)| Manufacturer (ID) | [optional] |
+| **location** | [**int[]**](../Model/int.md)| Location (slug) | [optional] |
+| **location__n** | [**int[]**](../Model/int.md)| Location (slug) | [optional] |
+| **location_id** | [**int[]**](../Model/int.md)| Location (ID) | [optional] |
+| **location_id__n** | [**int[]**](../Model/int.md)| Location (ID) | [optional] |
 | **max_weight** | [**int[]**](../Model/int.md)|  | [optional] |
 | **max_weight__empty** | **bool**|  | [optional] |
 | **max_weight__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -29288,14 +28416,10 @@ try {
 | **outer_width__lte** | [**int[]**](../Model/int.md)|  | [optional] |
 | **outer_width__n** | [**int[]**](../Model/int.md)|  | [optional] |
 | **q** | **string**| Search | [optional] |
-| **rack_type** | [**string[]**](../Model/string.md)| Rack type (slug) | [optional] |
-| **rack_type__n** | [**string[]**](../Model/string.md)| Rack type (slug) | [optional] |
-| **rack_type_id** | [**int[]**](../Model/int.md)| Rack type (ID) | [optional] |
-| **rack_type_id__n** | [**int[]**](../Model/int.md)| Rack type (ID) | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **role** | [**string[]**](../Model/string.md)| Role (slug) | [optional] |
 | **role__n** | [**string[]**](../Model/string.md)| Role (slug) | [optional] |
 | **role_id** | [**int[]**](../Model/int.md)| Role (ID) | [optional] |
@@ -29313,10 +28437,10 @@ try {
 | **serial__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **starting_unit** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -29332,12 +28456,14 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
+| **type** | [**string[]**](../Model/string.md)|  | [optional] |
+| **type__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **u_height** | [**int[]**](../Model/int.md)|  | [optional] |
 | **u_height__empty** | **bool**|  | [optional] |
 | **u_height__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -29916,7 +29042,7 @@ void (empty response body)
 ## `dcimRearPortTemplatesList()`
 
 ```php
-dcimRearPortTemplatesList($color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $positions, $positions__empty, $positions__gt, $positions__gte, $positions__lt, $positions__lte, $positions__n, $q, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedRearPortTemplateList
+dcimRearPortTemplatesList($color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $positions, $positions__empty, $positions__gt, $positions__gte, $positions__lt, $positions__lte, $positions__n, $q, $type, $type__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedRearPortTemplateList
 ```
 
 
@@ -29979,6 +29105,8 @@ $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
 $device_type_id = array(56); // int[] | Device type (ID)
 $device_type_id__n = array(56); // int[] | Device type (ID)
+$devicetype_id = array(56); // int[] | Device type (ID)
+$devicetype_id__n = array(56); // int[] | Device type (ID)
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -30008,6 +29136,8 @@ $limit = 56; // int | Number of results to return per page.
 $modified_by_request = 'modified_by_request_example'; // string
 $module_type_id = array(56); // int[] | Module type (ID)
 $module_type_id__n = array(56); // int[] | Module type (ID)
+$moduletype_id = array(56); // int[] | Module type (ID)
+$moduletype_id__n = array(56); // int[] | Module type (ID)
 $name = array('name_example'); // string[]
 $name__empty = True; // bool
 $name__ic = array('name__ic_example'); // string[]
@@ -30034,7 +29164,7 @@ $type__n = array('type__n_example'); // string[]
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->dcimRearPortTemplatesList($color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $positions, $positions__empty, $positions__gt, $positions__gte, $positions__lt, $positions__lte, $positions__n, $q, $type, $type__n, $updated_by_request);
+    $result = $apiInstance->dcimRearPortTemplatesList($color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device_type_id, $device_type_id__n, $devicetype_id, $devicetype_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $module_type_id, $module_type_id__n, $moduletype_id, $moduletype_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $offset, $ordering, $positions, $positions__empty, $positions__gt, $positions__gte, $positions__lt, $positions__lte, $positions__n, $q, $type, $type__n, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimRearPortTemplatesList: ', $e->getMessage(), PHP_EOL;
@@ -30077,6 +29207,8 @@ try {
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **device_type_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
+| **devicetype_id__n** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -30106,6 +29238,8 @@ try {
 | **modified_by_request** | **string**|  | [optional] |
 | **module_type_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **module_type_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
+| **moduletype_id__n** | [**int[]**](../Model/int.md)| Module type (ID) | [optional] |
 | **name** | [**string[]**](../Model/string.md)|  | [optional] |
 | **name__empty** | **bool**|  | [optional] |
 | **name__ic** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -30689,7 +29823,7 @@ void (empty response body)
 ## `dcimRearPortsList()`
 
 ```php
-dcimRearPortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $positions, $positions__empty, $positions__gt, $positions__gte, $positions__lt, $positions__lte, $positions__n, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedRearPortList
+dcimRearPortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $positions, $positions__empty, $positions__gt, $positions__gte, $positions__lt, $positions__lte, $positions__n, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n): \OpenAPI\Client\Model\PaginatedRearPortList
 ```
 
 
@@ -30763,8 +29897,6 @@ $device_role = array('device_role_example'); // string[] | Device role (slug)
 $device_role__n = array('device_role__n_example'); // string[] | Device role (slug)
 $device_role_id = array(56); // int[] | Device role (ID)
 $device_role_id__n = array(56); // int[] | Device role (ID)
-$device_status = array('device_status_example'); // string[]
-$device_status__n = array('device_status__n_example'); // string[]
 $device_type = array('device_type_example'); // string[] | Device type (model)
 $device_type__n = array('device_type__n_example'); // string[] | Device type (model)
 $device_type_id = array(56); // int[] | Device type (ID)
@@ -30829,16 +29961,16 @@ $rack = array('rack_example'); // string[] | Rack (name)
 $rack__n = array('rack__n_example'); // string[] | Rack (name)
 $rack_id = array(56); // int[] | Rack (ID)
 $rack_id__n = array(56); // int[] | Rack (ID)
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $tag = array('tag_example'); // string[]
@@ -30852,7 +29984,7 @@ $virtual_chassis_id = array(56); // int[] | Virtual Chassis (ID)
 $virtual_chassis_id__n = array(56); // int[] | Virtual Chassis (ID)
 
 try {
-    $result = $apiInstance->dcimRearPortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_status, $device_status__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $positions, $positions__empty, $positions__gt, $positions__gte, $positions__lt, $positions__lte, $positions__n, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
+    $result = $apiInstance->dcimRearPortsList($cable_end, $cable_end__n, $cable_id, $cable_id__n, $cabled, $color, $color__empty, $color__ic, $color__ie, $color__iew, $color__isw, $color__n, $color__nic, $color__nie, $color__niew, $color__nisw, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $device, $device__n, $device_id, $device_id__n, $device_role, $device_role__n, $device_role_id, $device_role_id__n, $device_type, $device_type__n, $device_type_id, $device_type_id__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $label, $label__empty, $label__ic, $label__ie, $label__iew, $label__isw, $label__n, $label__nic, $label__nie, $label__niew, $label__nisw, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $location, $location__n, $location_id, $location_id__n, $mark_connected, $modified_by_request, $module_id, $module_id__n, $name, $name__empty, $name__ic, $name__ie, $name__iew, $name__isw, $name__n, $name__nic, $name__nie, $name__niew, $name__nisw, $occupied, $offset, $ordering, $positions, $positions__empty, $positions__gt, $positions__gte, $positions__lt, $positions__lte, $positions__n, $q, $rack, $rack__n, $rack_id, $rack_id__n, $region, $region__n, $region_id, $region_id__n, $site, $site__n, $site_group, $site_group__n, $site_group_id, $site_group_id__n, $site_id, $site_id__n, $tag, $tag__n, $type, $type__n, $updated_by_request, $virtual_chassis, $virtual_chassis__n, $virtual_chassis_id, $virtual_chassis_id__n);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DcimApi->dcimRearPortsList: ', $e->getMessage(), PHP_EOL;
@@ -30906,8 +30038,6 @@ try {
 | **device_role__n** | [**string[]**](../Model/string.md)| Device role (slug) | [optional] |
 | **device_role_id** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
 | **device_role_id__n** | [**int[]**](../Model/int.md)| Device role (ID) | [optional] |
-| **device_status** | [**string[]**](../Model/string.md)|  | [optional] |
-| **device_status__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **device_type** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type__n** | [**string[]**](../Model/string.md)| Device type (model) | [optional] |
 | **device_type_id** | [**int[]**](../Model/int.md)| Device type (ID) | [optional] |
@@ -30972,16 +30102,16 @@ try {
 | **rack__n** | [**string[]**](../Model/string.md)| Rack (name) | [optional] |
 | **rack_id** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
 | **rack_id__n** | [**int[]**](../Model/int.md)| Rack (ID) | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -31650,14 +30780,14 @@ $apiInstance = new OpenAPI\Client\Api\DcimApi(
     new GuzzleHttp\Client(),
     $config
 );
-$ancestor = array('ancestor_example'); // string[]
-$ancestor__n = array('ancestor__n_example'); // string[]
-$ancestor_id = array('ancestor_id_example'); // string[]
-$ancestor_id__n = array('ancestor_id__n_example'); // string[]
+$ancestor = array(56); // int[] | Region (slug)
+$ancestor__n = array(56); // int[] | Region (slug)
+$ancestor_id = array(56); // int[] | Region (ID)
+$ancestor_id__n = array(56); // int[] | Region (ID)
 $contact = array(56); // int[] | Contact
 $contact__n = array(56); // int[] | Contact
-$contact_group = array('contact_group_example'); // string[]
-$contact_group__n = array('contact_group__n_example'); // string[]
+$contact_group = array(56); // int[] | Contact group
+$contact_group__n = array(56); // int[] | Contact group
 $contact_role = array(56); // int[] | Contact Role
 $contact_role__n = array(56); // int[] | Contact Role
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -31740,14 +30870,14 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **ancestor** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **ancestor** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **ancestor__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **ancestor_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **ancestor_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **contact** | [**int[]**](../Model/int.md)| Contact | [optional] |
 | **contact__n** | [**int[]**](../Model/int.md)| Contact | [optional] |
-| **contact_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **contact_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **contact_group** | [**int[]**](../Model/int.md)| Contact group | [optional] |
+| **contact_group__n** | [**int[]**](../Model/int.md)| Contact group | [optional] |
 | **contact_role** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **contact_role__n** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -32407,14 +31537,14 @@ $apiInstance = new OpenAPI\Client\Api\DcimApi(
     new GuzzleHttp\Client(),
     $config
 );
-$ancestor = array('ancestor_example'); // string[]
-$ancestor__n = array('ancestor__n_example'); // string[]
-$ancestor_id = array('ancestor_id_example'); // string[]
-$ancestor_id__n = array('ancestor_id__n_example'); // string[]
+$ancestor = array(56); // int[] | Site group (slug)
+$ancestor__n = array(56); // int[] | Site group (slug)
+$ancestor_id = array(56); // int[] | Site group (ID)
+$ancestor_id__n = array(56); // int[] | Site group (ID)
 $contact = array(56); // int[] | Contact
 $contact__n = array(56); // int[] | Contact
-$contact_group = array('contact_group_example'); // string[]
-$contact_group__n = array('contact_group__n_example'); // string[]
+$contact_group = array(56); // int[] | Contact group
+$contact_group__n = array(56); // int[] | Contact group
 $contact_role = array(56); // int[] | Contact Role
 $contact_role__n = array(56); // int[] | Contact Role
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -32497,14 +31627,14 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **ancestor** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **ancestor** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **ancestor__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **ancestor_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **ancestor_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **contact** | [**int[]**](../Model/int.md)| Contact | [optional] |
 | **contact__n** | [**int[]**](../Model/int.md)| Contact | [optional] |
-| **contact_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **contact_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **contact_group** | [**int[]**](../Model/int.md)| Contact group | [optional] |
+| **contact_group__n** | [**int[]**](../Model/int.md)| Contact group | [optional] |
 | **contact_role** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **contact_role__n** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -33170,8 +32300,8 @@ $asn_id = array(56); // int[] | AS (ID)
 $asn_id__n = array(56); // int[] | AS (ID)
 $contact = array(56); // int[] | Contact
 $contact__n = array(56); // int[] | Contact
-$contact_group = array('contact_group_example'); // string[]
-$contact_group__n = array('contact_group__n_example'); // string[]
+$contact_group = array(56); // int[] | Contact group
+$contact_group__n = array(56); // int[] | Contact group
 $contact_role = array(56); // int[] | Contact Role
 $contact_role__n = array(56); // int[] | Contact Role
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -33204,10 +32334,10 @@ $facility__nic = array('facility__nic_example'); // string[]
 $facility__nie = array('facility__nie_example'); // string[]
 $facility__niew = array('facility__niew_example'); // string[]
 $facility__nisw = array('facility__nisw_example'); // string[]
-$group = array('group_example'); // string[]
-$group__n = array('group__n_example'); // string[]
-$group_id = array('group_id_example'); // string[]
-$group_id__n = array('group_id__n_example'); // string[]
+$group = array(56); // int[] | Group (slug)
+$group__n = array(56); // int[] | Group (slug)
+$group_id = array(56); // int[] | Group (ID)
+$group_id__n = array(56); // int[] | Group (ID)
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -33252,10 +32382,10 @@ $name__nisw = array('name__nisw_example'); // string[]
 $offset = 56; // int | The initial index from which to return the results.
 $ordering = 'ordering_example'; // string | Which field to use when ordering the results.
 $q = 'q_example'; // string | Search
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $slug = array('slug_example'); // string[]
 $slug__empty = True; // bool
 $slug__ic = array('slug__ic_example'); // string[]
@@ -33273,10 +32403,10 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $time_zone = array('time_zone_example'); // string[]
@@ -33309,8 +32439,8 @@ try {
 | **asn_id__n** | [**int[]**](../Model/int.md)| AS (ID) | [optional] |
 | **contact** | [**int[]**](../Model/int.md)| Contact | [optional] |
 | **contact__n** | [**int[]**](../Model/int.md)| Contact | [optional] |
-| **contact_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **contact_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **contact_group** | [**int[]**](../Model/int.md)| Contact group | [optional] |
+| **contact_group__n** | [**int[]**](../Model/int.md)| Contact group | [optional] |
 | **contact_role** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **contact_role__n** | [**int[]**](../Model/int.md)| Contact Role | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -33343,10 +32473,10 @@ try {
 | **facility__nie** | [**string[]**](../Model/string.md)|  | [optional] |
 | **facility__niew** | [**string[]**](../Model/string.md)|  | [optional] |
 | **facility__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **group** | [**int[]**](../Model/int.md)| Group (slug) | [optional] |
+| **group__n** | [**int[]**](../Model/int.md)| Group (slug) | [optional] |
+| **group_id** | [**int[]**](../Model/int.md)| Group (ID) | [optional] |
+| **group_id__n** | [**int[]**](../Model/int.md)| Group (ID) | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -33391,10 +32521,10 @@ try {
 | **offset** | **int**| The initial index from which to return the results. | [optional] |
 | **ordering** | **string**| Which field to use when ordering the results. | [optional] |
 | **q** | **string**| Search | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **slug** | [**string[]**](../Model/string.md)|  | [optional] |
 | **slug__empty** | **bool**|  | [optional] |
 | **slug__ic** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -33412,10 +32542,10 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **time_zone** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -34090,16 +33220,16 @@ $name__nisw = array('name__nisw_example'); // string[]
 $offset = 56; // int | The initial index from which to return the results.
 $ordering = 'ordering_example'; // string | Which field to use when ordering the results.
 $q = 'q_example'; // string | Search
-$region = array('region_example'); // string[]
-$region__n = array('region__n_example'); // string[]
-$region_id = array('region_id_example'); // string[]
-$region_id__n = array('region_id__n_example'); // string[]
+$region = array(56); // int[] | Region (slug)
+$region__n = array(56); // int[] | Region (slug)
+$region_id = array(56); // int[] | Region (ID)
+$region_id__n = array(56); // int[] | Region (ID)
 $site = array('site_example'); // string[] | Site name (slug)
 $site__n = array('site__n_example'); // string[] | Site name (slug)
-$site_group = array('site_group_example'); // string[]
-$site_group__n = array('site_group__n_example'); // string[]
-$site_group_id = array('site_group_id_example'); // string[]
-$site_group_id__n = array('site_group_id__n_example'); // string[]
+$site_group = array(56); // int[] | Site group (slug)
+$site_group__n = array(56); // int[] | Site group (slug)
+$site_group_id = array(56); // int[] | Site group (ID)
+$site_group_id__n = array(56); // int[] | Site group (ID)
 $site_id = array(56); // int[] | Site (ID)
 $site_id__n = array(56); // int[] | Site (ID)
 $tag = array('tag_example'); // string[]
@@ -34193,16 +33323,16 @@ try {
 | **offset** | **int**| The initial index from which to return the results. | [optional] |
 | **ordering** | **string**| Which field to use when ordering the results. | [optional] |
 | **q** | **string**| Search | [optional] |
-| **region** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **region_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **region** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region__n** | [**int[]**](../Model/int.md)| Region (slug) | [optional] |
+| **region_id** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
+| **region_id__n** | [**int[]**](../Model/int.md)| Region (ID) | [optional] |
 | **site** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
 | **site__n** | [**string[]**](../Model/string.md)| Site name (slug) | [optional] |
-| **site_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **site_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **site_group** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group__n** | [**int[]**](../Model/int.md)| Site group (slug) | [optional] |
+| **site_group_id** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
+| **site_group_id__n** | [**int[]**](../Model/int.md)| Site group (ID) | [optional] |
 | **site_id** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **site_id__n** | [**int[]**](../Model/int.md)| Site (ID) | [optional] |
 | **tag** | [**string[]**](../Model/string.md)|  | [optional] |
@@ -34875,10 +34005,10 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $updated_by_request = 'updated_by_request_example'; // string
@@ -34968,10 +34098,10 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **updated_by_request** | **string**|  | [optional] |

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**virtual_machine** | [**\OpenAPI\Client\Model\BriefVirtualMachineRequest**](BriefVirtualMachineRequest.md) |  |
+**virtual_machine** | [**\OpenAPI\Client\Model\VirtualMachineRequest**](VirtualMachineRequest.md) |  |
 **name** | **string** |  |
 **enabled** | **bool** |  | [optional]
 **parent** | [**\OpenAPI\Client\Model\NestedVMInterfaceRequest**](NestedVMInterfaceRequest.md) |  | [optional]
@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 **mac_address** | **string** |  | [optional]
 **description** | **string** |  | [optional]
 **mode** | **string** | * &#x60;access&#x60; - Access * &#x60;tagged&#x60; - Tagged * &#x60;tagged-all&#x60; - Tagged (All) | [optional]
-**untagged_vlan** | [**\OpenAPI\Client\Model\BriefVLANRequest**](BriefVLANRequest.md) |  | [optional]
+**untagged_vlan** | [**\OpenAPI\Client\Model\VLANRequest**](VLANRequest.md) |  | [optional]
 **tagged_vlans** | **int[]** |  | [optional]
-**vrf** | [**\OpenAPI\Client\Model\BriefVRFRequest**](BriefVRFRequest.md) |  | [optional]
+**vrf** | [**\OpenAPI\Client\Model\VRFRequest**](VRFRequest.md) |  | [optional]
 **tags** | [**\OpenAPI\Client\Model\NestedTagRequest[]**](NestedTagRequest.md) |  | [optional]
 **custom_fields** | **array<string,mixed>** |  | [optional]
 

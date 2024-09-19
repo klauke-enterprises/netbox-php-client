@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user** | [**\OpenAPI\Client\Model\BriefUserRequest**](BriefUserRequest.md) |  | [optional]
+**user** | [**\OpenAPI\Client\Model\UserRequest**](UserRequest.md) |  | [optional]
 **expires** | **\DateTime** |  | [optional]
 **last_used** | **\DateTime** |  | [optional]
 **key** | **string** |  | [optional]

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  | [optional]
 **rd** | **string** | Unique route distinguisher (as defined in RFC 4364) | [optional]
-**tenant** | [**\OpenAPI\Client\Model\BriefTenantRequest**](BriefTenantRequest.md) |  | [optional]
+**tenant** | [**\OpenAPI\Client\Model\TenantRequest**](TenantRequest.md) |  | [optional]
 **enforce_unique** | **bool** | Prevent duplicate prefixes/IP addresses within this VRF | [optional]
 **description** | **string** |  | [optional]
 **comments** | **string** |  | [optional]

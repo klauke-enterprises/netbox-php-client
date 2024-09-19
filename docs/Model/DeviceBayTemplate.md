@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**device_type** | [**\OpenAPI\Client\Model\BriefDeviceType**](BriefDeviceType.md) |  |
+**device_type** | [**\OpenAPI\Client\Model\DeviceType**](DeviceType.md) |  |
 **name** | **string** | {module} is accepted as a substitution for the module bay position when attached to a module type. |
 **label** | **string** | Physical label | [optional]
 **description** | **string** |  | [optional]

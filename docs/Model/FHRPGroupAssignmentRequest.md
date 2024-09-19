@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**group** | [**\OpenAPI\Client\Model\BriefFHRPGroupRequest**](BriefFHRPGroupRequest.md) |  |
+**group** | [**\OpenAPI\Client\Model\FHRPGroupRequest**](FHRPGroupRequest.md) |  |
 **interface_type** | **string** |  |
 **interface_id** | **int** |  |
 **priority** | **int** |  |

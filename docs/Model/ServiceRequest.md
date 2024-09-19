@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**device** | [**\OpenAPI\Client\Model\BriefDeviceRequest**](BriefDeviceRequest.md) |  | [optional]
-**virtual_machine** | [**\OpenAPI\Client\Model\BriefVirtualMachineRequest**](BriefVirtualMachineRequest.md) |  | [optional]
+**device** | [**\OpenAPI\Client\Model\DeviceRequest**](DeviceRequest.md) |  | [optional]
+**virtual_machine** | [**\OpenAPI\Client\Model\VirtualMachineRequest**](VirtualMachineRequest.md) |  | [optional]
 **name** | **string** |  |
 **protocol** | **string** | * &#x60;tcp&#x60; - TCP * &#x60;udp&#x60; - UDP * &#x60;sctp&#x60; - SCTP | [optional]
 **ports** | **int[]** |  |

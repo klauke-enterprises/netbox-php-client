@@ -6,11 +6,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [readonly]
 **url** | **string** |  | [readonly]
-**display_url** | **string** |  | [readonly]
 **display** | **string** |  | [readonly]
-**device** | [**\OpenAPI\Client\Model\BriefDevice**](BriefDevice.md) |  |
+**device** | [**\OpenAPI\Client\Model\Device**](Device.md) |  |
 **vdcs** | [**\OpenAPI\Client\Model\VirtualDeviceContext[]**](VirtualDeviceContext.md) |  | [optional]
-**module** | [**\OpenAPI\Client\Model\BriefModule**](BriefModule.md) |  | [optional]
+**module** | [**\OpenAPI\Client\Model\Module**](Module.md) |  | [optional]
 **name** | **string** |  |
 **label** | **string** | Physical label | [optional]
 **type** | [**\OpenAPI\Client\Model\InterfaceType**](InterfaceType.md) |  |
@@ -33,17 +32,17 @@ Name | Type | Description | Notes
 **rf_channel_frequency** | **float** | Populated by selected channel (if set) | [optional]
 **rf_channel_width** | **float** | Populated by selected channel (if set) | [optional]
 **tx_power** | **int** |  | [optional]
-**untagged_vlan** | [**\OpenAPI\Client\Model\BriefVLAN**](BriefVLAN.md) |  | [optional]
+**untagged_vlan** | [**\OpenAPI\Client\Model\VLAN**](VLAN.md) |  | [optional]
 **tagged_vlans** | [**\OpenAPI\Client\Model\VLAN[]**](VLAN.md) |  | [optional]
 **mark_connected** | **bool** | Treat as if a cable is connected | [optional]
-**cable** | [**\OpenAPI\Client\Model\BriefCable**](BriefCable.md) |  | [readonly]
+**cable** | [**\OpenAPI\Client\Model\Cable**](Cable.md) |  | [readonly]
 **cable_end** | **string** |  | [readonly]
 **wireless_link** | [**\OpenAPI\Client\Model\NestedWirelessLink**](NestedWirelessLink.md) |  | [readonly]
 **link_peers** | **mixed[]** |  | [readonly]
 **link_peers_type** | **string** | Return the type of the peer link terminations, or None. | [readonly]
 **wireless_lans** | [**\OpenAPI\Client\Model\WirelessLAN[]**](WirelessLAN.md) |  | [optional]
-**vrf** | [**\OpenAPI\Client\Model\BriefVRF**](BriefVRF.md) |  | [optional]
-**l2vpn_termination** | [**\OpenAPI\Client\Model\BriefL2VPNTermination**](BriefL2VPNTermination.md) |  | [readonly]
+**vrf** | [**\OpenAPI\Client\Model\VRF**](VRF.md) |  | [optional]
+**l2vpn_termination** | [**\OpenAPI\Client\Model\L2VPNTermination**](L2VPNTermination.md) |  | [readonly]
 **connected_endpoints** | **mixed[]** |  | [readonly]
 **connected_endpoints_type** | **string** |  | [readonly]
 **connected_endpoints_reachable** | **bool** |  | [readonly]

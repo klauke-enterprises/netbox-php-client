@@ -1,6 +1,6 @@
 # OpenAPI\Client\WirelessApi
 
-All URIs are relative to https://demo.netbox.dev/api/schema, except if the operation defines another base path.
+All URIs are relative to https://netbox.demodash.at/api/schema, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
@@ -400,10 +400,10 @@ $apiInstance = new OpenAPI\Client\Api\WirelessApi(
     new GuzzleHttp\Client(),
     $config
 );
-$ancestor = array('ancestor_example'); // string[]
-$ancestor__n = array('ancestor__n_example'); // string[]
-$ancestor_id = array('ancestor_id_example'); // string[]
-$ancestor_id__n = array('ancestor_id__n_example'); // string[]
+$ancestor = array(56); // int[]
+$ancestor__n = array(56); // int[]
+$ancestor_id = array(56); // int[]
+$ancestor_id__n = array(56); // int[]
 $created = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $created__empty = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
 $created__gt = array(new \DateTime("2013-10-20T19:20:30+01:00")); // \DateTime[]
@@ -484,10 +484,10 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **ancestor** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **ancestor_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **ancestor** | [**int[]**](../Model/int.md)|  | [optional] |
+| **ancestor__n** | [**int[]**](../Model/int.md)|  | [optional] |
+| **ancestor_id** | [**int[]**](../Model/int.md)|  | [optional] |
+| **ancestor_id__n** | [**int[]**](../Model/int.md)|  | [optional] |
 | **created** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **created__empty** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
 | **created__gt** | [**\DateTime[]**](../Model/\DateTime.md)|  | [optional] |
@@ -1179,10 +1179,10 @@ $description__nic = array('description__nic_example'); // string[]
 $description__nie = array('description__nie_example'); // string[]
 $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
-$group = array('group_example'); // string[]
-$group__n = array('group__n_example'); // string[]
-$group_id = array('group_id_example'); // string[]
-$group_id__n = array('group_id__n_example'); // string[]
+$group = array(56); // int[]
+$group__n = array(56); // int[]
+$group_id = array(56); // int[]
+$group_id__n = array(56); // int[]
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -1221,10 +1221,10 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $updated_by_request = 'updated_by_request_example'; // string
@@ -1277,10 +1277,10 @@ try {
 | **description__nie** | [**string[]**](../Model/string.md)|  | [optional] |
 | **description__niew** | [**string[]**](../Model/string.md)|  | [optional] |
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **group** | [**int[]**](../Model/int.md)|  | [optional] |
+| **group__n** | [**int[]**](../Model/int.md)|  | [optional] |
+| **group_id** | [**int[]**](../Model/int.md)|  | [optional] |
+| **group_id__n** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -1319,10 +1319,10 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **updated_by_request** | **string**|  | [optional] |
@@ -1887,7 +1887,7 @@ void (empty response body)
 ## `wirelessWirelessLinksList()`
 
 ```php
-wirelessWirelessLinksList($auth_cipher, $auth_cipher__n, $auth_psk, $auth_psk__empty, $auth_psk__ic, $auth_psk__ie, $auth_psk__iew, $auth_psk__isw, $auth_psk__n, $auth_psk__nic, $auth_psk__nie, $auth_psk__niew, $auth_psk__nisw, $auth_type, $auth_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $distance, $distance__empty, $distance__gt, $distance__gte, $distance__lt, $distance__lte, $distance__n, $distance_unit, $distance_unit__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $interface_a_id, $interface_a_id__n, $interface_b_id, $interface_b_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $offset, $ordering, $q, $ssid, $ssid__empty, $ssid__ic, $ssid__ie, $ssid__iew, $ssid__isw, $ssid__n, $ssid__nic, $ssid__nie, $ssid__niew, $ssid__nisw, $status, $status__n, $tag, $tag__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedWirelessLinkList
+wirelessWirelessLinksList($auth_cipher, $auth_cipher__n, $auth_psk, $auth_psk__empty, $auth_psk__ic, $auth_psk__ie, $auth_psk__iew, $auth_psk__isw, $auth_psk__n, $auth_psk__nic, $auth_psk__nie, $auth_psk__niew, $auth_psk__nisw, $auth_type, $auth_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $interface_a_id, $interface_a_id__n, $interface_b_id, $interface_b_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $offset, $ordering, $q, $ssid, $ssid__empty, $ssid__ic, $ssid__ie, $ssid__iew, $ssid__isw, $ssid__n, $ssid__nic, $ssid__nie, $ssid__niew, $ssid__nisw, $status, $status__n, $tag, $tag__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $updated_by_request): \OpenAPI\Client\Model\PaginatedWirelessLinkList
 ```
 
 
@@ -1952,15 +1952,6 @@ $description__nic = array('description__nic_example'); // string[]
 $description__nie = array('description__nie_example'); // string[]
 $description__niew = array('description__niew_example'); // string[]
 $description__nisw = array('description__nisw_example'); // string[]
-$distance = array(3.4); // float[]
-$distance__empty = True; // bool
-$distance__gt = array(3.4); // float[]
-$distance__gte = array(3.4); // float[]
-$distance__lt = array(3.4); // float[]
-$distance__lte = array(3.4); // float[]
-$distance__n = array(3.4); // float[]
-$distance_unit = 'distance_unit_example'; // string | * `km` - Kilometers * `m` - Meters * `mi` - Miles * `ft` - Feet
-$distance_unit__n = 'distance_unit__n_example'; // string | * `km` - Kilometers * `m` - Meters * `mi` - Miles * `ft` - Feet
 $id = array(56); // int[]
 $id__empty = True; // bool
 $id__gt = array(56); // int[]
@@ -2001,16 +1992,16 @@ $tag = array('tag_example'); // string[]
 $tag__n = array('tag__n_example'); // string[]
 $tenant = array('tenant_example'); // string[] | Tenant (slug)
 $tenant__n = array('tenant__n_example'); // string[] | Tenant (slug)
-$tenant_group = array('tenant_group_example'); // string[]
-$tenant_group__n = array('tenant_group__n_example'); // string[]
-$tenant_group_id = array('tenant_group_id_example'); // string[]
-$tenant_group_id__n = array('tenant_group_id__n_example'); // string[]
+$tenant_group = array(56); // int[] | Tenant Group (slug)
+$tenant_group__n = array(56); // int[] | Tenant Group (slug)
+$tenant_group_id = array(56); // int[] | Tenant Group (ID)
+$tenant_group_id__n = array(56); // int[] | Tenant Group (ID)
 $tenant_id = array(56); // int[] | Tenant (ID)
 $tenant_id__n = array(56); // int[] | Tenant (ID)
 $updated_by_request = 'updated_by_request_example'; // string
 
 try {
-    $result = $apiInstance->wirelessWirelessLinksList($auth_cipher, $auth_cipher__n, $auth_psk, $auth_psk__empty, $auth_psk__ic, $auth_psk__ie, $auth_psk__iew, $auth_psk__isw, $auth_psk__n, $auth_psk__nic, $auth_psk__nie, $auth_psk__niew, $auth_psk__nisw, $auth_type, $auth_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $distance, $distance__empty, $distance__gt, $distance__gte, $distance__lt, $distance__lte, $distance__n, $distance_unit, $distance_unit__n, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $interface_a_id, $interface_a_id__n, $interface_b_id, $interface_b_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $offset, $ordering, $q, $ssid, $ssid__empty, $ssid__ic, $ssid__ie, $ssid__iew, $ssid__isw, $ssid__n, $ssid__nic, $ssid__nie, $ssid__niew, $ssid__nisw, $status, $status__n, $tag, $tag__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $updated_by_request);
+    $result = $apiInstance->wirelessWirelessLinksList($auth_cipher, $auth_cipher__n, $auth_psk, $auth_psk__empty, $auth_psk__ic, $auth_psk__ie, $auth_psk__iew, $auth_psk__isw, $auth_psk__n, $auth_psk__nic, $auth_psk__nie, $auth_psk__niew, $auth_psk__nisw, $auth_type, $auth_type__n, $created, $created__empty, $created__gt, $created__gte, $created__lt, $created__lte, $created__n, $created_by_request, $description, $description__empty, $description__ic, $description__ie, $description__iew, $description__isw, $description__n, $description__nic, $description__nie, $description__niew, $description__nisw, $id, $id__empty, $id__gt, $id__gte, $id__lt, $id__lte, $id__n, $interface_a_id, $interface_a_id__n, $interface_b_id, $interface_b_id__n, $last_updated, $last_updated__empty, $last_updated__gt, $last_updated__gte, $last_updated__lt, $last_updated__lte, $last_updated__n, $limit, $modified_by_request, $offset, $ordering, $q, $ssid, $ssid__empty, $ssid__ic, $ssid__ie, $ssid__iew, $ssid__isw, $ssid__n, $ssid__nic, $ssid__nie, $ssid__niew, $ssid__nisw, $status, $status__n, $tag, $tag__n, $tenant, $tenant__n, $tenant_group, $tenant_group__n, $tenant_group_id, $tenant_group_id__n, $tenant_id, $tenant_id__n, $updated_by_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling WirelessApi->wirelessWirelessLinksList: ', $e->getMessage(), PHP_EOL;
@@ -2055,15 +2046,6 @@ try {
 | **description__nie** | [**string[]**](../Model/string.md)|  | [optional] |
 | **description__niew** | [**string[]**](../Model/string.md)|  | [optional] |
 | **description__nisw** | [**string[]**](../Model/string.md)|  | [optional] |
-| **distance** | [**float[]**](../Model/float.md)|  | [optional] |
-| **distance__empty** | **bool**|  | [optional] |
-| **distance__gt** | [**float[]**](../Model/float.md)|  | [optional] |
-| **distance__gte** | [**float[]**](../Model/float.md)|  | [optional] |
-| **distance__lt** | [**float[]**](../Model/float.md)|  | [optional] |
-| **distance__lte** | [**float[]**](../Model/float.md)|  | [optional] |
-| **distance__n** | [**float[]**](../Model/float.md)|  | [optional] |
-| **distance_unit** | **string**| * &#x60;km&#x60; - Kilometers * &#x60;m&#x60; - Meters * &#x60;mi&#x60; - Miles * &#x60;ft&#x60; - Feet | [optional] |
-| **distance_unit__n** | **string**| * &#x60;km&#x60; - Kilometers * &#x60;m&#x60; - Meters * &#x60;mi&#x60; - Miles * &#x60;ft&#x60; - Feet | [optional] |
 | **id** | [**int[]**](../Model/int.md)|  | [optional] |
 | **id__empty** | **bool**|  | [optional] |
 | **id__gt** | [**int[]**](../Model/int.md)|  | [optional] |
@@ -2104,10 +2086,10 @@ try {
 | **tag__n** | [**string[]**](../Model/string.md)|  | [optional] |
 | **tenant** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
 | **tenant__n** | [**string[]**](../Model/string.md)| Tenant (slug) | [optional] |
-| **tenant_group** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group__n** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id** | [**string[]**](../Model/string.md)|  | [optional] |
-| **tenant_group_id__n** | [**string[]**](../Model/string.md)|  | [optional] |
+| **tenant_group** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group__n** | [**int[]**](../Model/int.md)| Tenant Group (slug) | [optional] |
+| **tenant_group_id** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
+| **tenant_group_id__n** | [**int[]**](../Model/int.md)| Tenant Group (ID) | [optional] |
 | **tenant_id** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **tenant_id__n** | [**int[]**](../Model/int.md)| Tenant (ID) | [optional] |
 | **updated_by_request** | **string**|  | [optional] |
