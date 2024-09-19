@@ -9,7 +9,7 @@
         "generatorName": "php",
         "output": "./",
         "skipValidateSpec": true,
-        "additionalProperties": {
+        "configOptions": {
           "composerPackageName": "netbox-php",
           "packageName": "netbox-php",
           "developerOrganization": "Klauke Enterprises GmbH & Co. KG",
