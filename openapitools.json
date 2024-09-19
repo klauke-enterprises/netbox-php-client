@@ -2,6 +2,22 @@
   "$schema": "./node_modules/@openapitools/openapi-generator-cli/config.schema.json",
   "spaces": 2,
   "generator-cli": {
-    "version": "7.8.0"
+    "version": "7.8.0",
+    "generators": {
+      "php": {
+        "inputSpec": "https://demo.netbox.dev/api/schema",
+        "generatorName": "php",
+        "output": "./",
+        "skipValidateSpec": true,
+        "additionalProperties": {
+          "composerPackageName": "netbox-php",
+          "packageName": "netbox-php",
+          "developerOrganization": "Klauke Enterprises GmbH & Co. KG",
+          "developerOrganizationUrl": "https://klauke-enterprises.com",
+          "artifactVersion": "1.0.0"
+        }
+      }
+    }
   }
-}
+}	
+

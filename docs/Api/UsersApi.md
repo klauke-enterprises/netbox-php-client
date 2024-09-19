@@ -1,6 +1,6 @@
 # OpenAPI\Client\UsersApi
 
-All URIs are relative to http://localhost, except if the operation defines another base path.
+All URIs are relative to https://demo.netbox.dev/api/schema, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
