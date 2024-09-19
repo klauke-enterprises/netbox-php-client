@@ -1,0 +1,14 @@
+# # PatchedModuleBayTemplateRequest
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**device_type** | [**\OpenAPI\Client\Model\BriefDeviceTypeRequest**](BriefDeviceTypeRequest.md) |  | [optional]
+**module_type** | [**\OpenAPI\Client\Model\BriefModuleTypeRequest**](BriefModuleTypeRequest.md) |  | [optional]
+**name** | **string** | {module} is accepted as a substitution for the module bay position when attached to a module type. | [optional]
+**label** | **string** | Physical label | [optional]
+**position** | **string** | Identifier to reference when renaming installed components | [optional]
+**description** | **string** |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
